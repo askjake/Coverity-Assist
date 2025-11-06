@@ -1,0 +1,277 @@
+CMD: curl -X GET "localhost:9200/rtr-prod/_search?q=alert_name:IP_AD_INSERTION*"
+RET=7
+STDOUT:
+
+STDERR:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to localhost port 9200: Connection refused
+
+
+CMD: psql -c "SELECT * FROM ds_stbh_live_eks.ds_stbh_live_dishconnected WHERE alert_name LIKE 'IP_AD_INSERTION%'"
+RET=127
+STDOUT:
+
+STDERR:
+/bin/sh: 1: psql: not found
+
+
+CMD: aws athena start-query-execution --query-string "SELECT alert_name
+RET=2
+STDOUT:
+
+STDERR:
+/bin/sh: 1: Syntax error: Unterminated quoted string
+
+
+CMD: curl -X GET "https://your-elasticsearch-endpoint/_cat/indices" -H "Content-Type: application/json"
+RET=6
+STDOUT:
+
+STDERR:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: your-elasticsearch-endpoint
+
+
+CMD: aws rds describe-db-instances --query "DBInstances[*].[Endpoint.Address
+RET=2
+STDOUT:
+
+STDERR:
+/bin/sh: 1: Syntax error: Unterminated quoted string
+
+
+CMD: aws athena start-query-execution --query-string "SELECT alert_name
+RET=2
+STDOUT:
+
+STDERR:
+/bin/sh: 1: Syntax error: Unterminated quoted string
+
+
+CMD: curl -X GET "localhost:9200/_cat/indices?v"
+RET=7
+STDOUT:
+
+STDERR:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to localhost port 9200: Connection refused
+
+
+CMD: sudo apt-get install -y postgresql-client && psql -h <hostname> -U <username> -d <database> -c "SELECT alert_name
+RET=2
+STDOUT:
+
+STDERR:
+/bin/sh: 1: Syntax error: Unterminated quoted string
+
+
+CMD: aws configure list
+RET=0
+STDOUT:
+NAME       : VALUE                    : TYPE             : LOCATION
+profile    : <not set>                : None             : None
+access_key : ****************BGOM     : iam-role         : 
+secret_key : ****************N532     : iam-role         : 
+region     : us-west-2                : imds             : 
+
+STDERR:
+
+
+CMD: aws athena list-databases --catalog-name AwsDataCatalog
+RET=0
+STDOUT:
+{
+    "DatabaseList": [
+        {
+            "Name": "atv"
+        },
+        {
+            "Name": "aws-logs"
+        },
+        {
+            "Name": "cas_prod"
+        },
+        {
+            "Name": "db_refactoring"
+        },
+        {
+            "Name": "db_refactoring_quality"
+        },
+        {
+            "Name": "dc_analytics",
+            "Description": ""
+        },
+        {
+            "Name": "default",
+            "Description": "Default Hive database"
+        },
+        {
+            "Name": "default_quality",
+            "Parameters": {
+                "owner": "spark"
+            }
+        },
+        {
+            "Name": "dishedw-pvm_adtrack-v5"
+        },
+        {
+            "Name": "dishedw-pvm_dvr-v5"
+        },
+        {
+            "Name": "dishedw-pvm_invidi-v5"
+        },
+        {
+            "Name": "dishedw-pvm_lindvr-v5"
+        },
+        {
+            "Name": "dishedw-pvm_linear-v5"
+        },
+        {
+            "Name": "dishproductshare"
+        },
+        {
+            "Name": "ds-bitmovin"
+        },
+        {
+            "Name": "ds-leviosa-catalog"
+        },
+        {
+            "Name": "ds-psampletest-db"
+        },
+        {
+            "Name": "ds-relhist-v1"
+        },
+        {
+            "Name": "ds-vm-agg-watch-hours"
+        },
+        {
+            "Name": "ds-ymal"
+        },
+        {
+            "Name": "ds_chat",
+            "Description": "Dish-Chat related logging and data"
+        },
+        {
+            "Name": "ds_epg"
+        },
+        {
+            "Name": "ds_qos",
+            "Description": "Dish Quality of Service (QoS)"
+        },
+        {
+            "Name": "ds_stb_data_pipeline"
+        },
+        {
+            "Name": "ds_stbh_live"
+        },
+        {
+            "Name": "ds_stbh_live_eks"
+        },
+        {
+            "Name": "ds_stbh_live_eks_quality",
+            "Parameters": {
+                "owner": "spark"
+            }
+        },
+        {
+            "Name": "ds_vm_agg_accounts"
+        },
+        {
+            "Name": "firestorm-relhist-v1"
+        },
+        {
+            "Name": "flights-db"
+        },
+        {
+            "Name": "monitoring"
+        },
+        {
+            "Name": "nagrastar-test"
+        },
+        {
+            "Name": "netra-metrics-cf",
+            "Description": ""
+        },
+        {
+            "Name": "od_recommendation"
+        },
+        {
+            "Name": "p_aiops",
+            "Description": ""
+        },
+        {
+            "Name": "p_aiops_rl",
+            "Description": ""
+        },
+        {
+            "Name": "qos_pre_agg",
+            "Description": "QoS Pre-Aggragated data"
+        },
+        {
+            "Name": "rtr_data"
+        },
+        {
+            "Name": "security_events"
+        },
+        {
+            "Name": "stb_debug_logs"
+        },
+        {
+            "Name": "stbhealth"
+        },
+        {
+            "Name": "stbreport"
+        },
+        {
+            "Name": "stbreport_np"
+        },
+        {
+            "Name": "stbsummary"
+        },
+        {
+            "Name": "stbsummary_np"
+        },
+        {
+            "Name": "superset_dashboards"
+        },
+        {
+            "Name": "test-nikhil"
+        },
+        {
+            "Name": "test-sanjay"
+        },
+        {
+            "Name": "tmp_sandbox"
+        },
+        {
+            "Name": "topics"
+        },
+        {
+            "Name": "uit"
+        },
+        {
+            "Name": "uploadlogs"
+        },
+        {
+            "Name": "viewermeasurement"
+        },
+        {
+            "Name": "vsf-summary",
+            "Description": ""
+        }
+    ]
+}
+
+STDERR:
+
+

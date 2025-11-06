@@ -1,0 +1,581 @@
+URL: URL (if any)
+ERROR: Invalid URL 'URL (if any)': No scheme supplied. Perhaps you meant https://URL (if any)?
+
+CMD: Required bash command (if any)
+RET=2
+STDOUT:
+
+STDERR:
+/bin/sh: 1: Syntax error: "(" unexpected
+
+
+URL: https://www.fbi.gov/contact-us/field-offices/denver/news/fbi-seeks-potential-victims-of-aurora-sro-aaron-jake-bunch
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'www.fbi.gov',cType: 'managed',cRay: '999751f8ad4bd106',cH: 'lvzHC4sB8qXczx9QFoc5sNZ8lV6A6PpIsYvbYssqExs-1762292955-1.2.1.1-9bMvI6EV8D6Ol8DxI7ALy6RaQJOpLh4M8EmJKjlsqzaB5iRzckbM5Plen5xNuqTd',cUPMDTk:"\/contact-us\/field-offices\/denver\/news\/fbi-seeks-potential-victims-of-aurora-sro-aaron-jake-bunch?__cf_chl_tk=FqDnNVQXUkUZoIiDJ2kVM29TEADRcabpiNBI21BOOcY-1762292955-1.0.1.1-4JInutlIasTYAZumvYV5mVtsrXwgFtmQYB3xt9_J0h8",cFPWv: 'g',cITimeS: '1762292955',cTplC:0,cTplV:5,cTplB: '0',fa:"\/contact-us\/field-offices\/denver\/news\/fbi-seeks-potential-victims-of-aurora-sro-aaron-jake-bunch?__cf_chl_f_tk=FqDnNVQXUkUZoIiDJ2kVM29TEADRcabpiNBI21BOOcY-1762292955-1.0.1.1-4JInutlIasTYAZumvYV5mVtsrXwgFtmQYB3xt9_J0h8",md: 'Aip.8cEwPs_cGZGwhmGOclji00GFpBDUV59hn1KwONo-1762292955-1.2.1.1-nAXytsRKC0AqE0O7CUjdswz0pmfYyEB3Ofi7gSMU.SH8mYkrefKiE60gTmrJui_HhyTLWlVN04DlFEvHNNGZvDyQt6EFyW2FJLCzHVyx4yTRn6kmS.fpYYz1HNwYj7krni.4s.nO.yLFWw0LNXn.kNFvJS41j2zVXvfQT1rU9FbnACll9cDF2aYL_pwayGtpckN0FKpjlYvbcc61.z07whKMHIJKUOBj7Ih9cNhMEociQ4jrK9J2K7KL30pkY3XVkW9VqKUYZIUfMCf_sjbNLZ9MTzZmIETXIcO69UXxZK0hHxTO_O0Qb9fYIA3du6210Q21662n9_.rK9vkz.qx0V4B8H6j4umRVFj1XU0a3ilUr7y.eC5yOflCJAOpYowHj_KsSkZY6wpDXWWYyeWPhqwBAJhp3ffmOp4zum4bSMbLpUdR7dOvmANp1wWJpiX1UvwvAeS7R0b.XglC9cB9yn1JjI9qOLOJn2SdDmedzSzTaDX8GVQGlS9vnH5GsmDe0r96r83lXs1RXvN8YWc_pmfFFL__QTwBlc38EgIIu9Pl._NROq.0qo6JjLP75yh50l2cDi_zUt0tdw4zUrlTdJVwAcW6A69qOLC7LjZwnDzMOpQlB_tdvnlrPWzz6K207uh6ZH3omLAD2zRUNt5N0Ba.WP7s8fNjVJFoBUj0yqSdEiQT_m_mSAr.G1cqq.fLShIqoGDf728yg4s55moSOI3ZoFO0uBvwFwzk.d7BGJVWsxdbmv4BE4sqfDRlf9.r3CnOzzAO6BGLliH.mDjK7udLQhcbElDLWqqO079OaWicPIcjCzMKTDN8S3J3i8Gxm.01fYD3IVCrByn.qi3bueGjRldU8r_2MmfoOafKp9zM_2K0bu71s8lWsh0TD6B9Dy5UV_.EQvNA9ci7qhx6IBeqmmzos2vOojq.y.vA2fYfDA4Pj5s7XHj68ee5trkD9ssDIT86Quc1aNYYtCd6gJRyml_xsijlnTLE25RIoeNvueXH_xP93gdMXPZ3GuN71jkagGXedH4qMwkUEuA4MZtkXwjL8lGdydwbAJ2qFlM',mdrd: '8Z_5L1Ba6Xjy52xPgVrXJA2ULkAG8hqXPSI8Xhy2z8M-1762292955-1.2.1.1-i_wfHfsLY0fSGPe4bRf.A4YYkypDULvAtmRF3he74LdumFXcQUtxomf2tk3bHWXx8OlmY_2OWPYTYeld.W3Y8mA3RBBiJSoBnwnvZyWGzXBCtUKEJ.Ypfbb9igQQ8x8zDhooK5KcPQmFoKiFwAz_0tNuDvmOOVcLl9hGxrp_jNVIbeaDOzVQfymIoU2FNYzyKlkz5VHemzvjkiBQ8aiwpct.M5H.t98oIwMtm8Tcdj8UU1iXErWooffcEdH_OhgAKSw.lLspS89BD.aya6.tgHkVPqdu.FwwmNQMXQvKBGUn9nVcUPW5wTQT_5uDrR71a9ptFZm7Ax13XQmz3XpLgzQX_3dXRJfHeXJWu8Ojan5Pgln7IIN5IHdqqLi58mjueGV_C4RaX9sGZkopPjyl8MtOI7a3YJsJPE0d3BNay5RLvqodE_QqVwV7t31LvykrioFqUwEGtNAnN5YTAClxcH71tX1b3WkopnD6LW9PFVqf1TMpR_2DxExCHk8nQyF6Sx3Uk4tpX8ScVxY64vcLraMeEHnITpzpQz.fKr6dGzFF4VJJCrm77LVCdSXC6l4xtzri3QRygrzwlVtCW8LWfM3vkyb5H5NvL3KMaxSuxTtTKNtw0mAtcoBdGJkZxNrwMDE_gjBMJfp2S07be4MIcN5jZ_iVD0eR8JpjfAjaKALQ_Lo.LKkNNUe5DKOsvNT.hrvEyB8yhxVuJ3kaN6FYs72YYnqOEUlCgGKRsbideaAAvZcAtREIZxxaJWff8mZf8NWBHsqmYDDepYP9A1coD19rWkFJBD58825.Y0xIzjDM8.gojgT3OzdKsDV58chiO0Sfkq.j0j8IVHKU_qsC4up9KK6WJ13FpYDYBfZrJ.CCoJnWBVcenvq1LKDFqMzrG5A_7cC4N3u50qx26TZT8iWkQzTNOjsTY1gO5k41W6Inxn2l8nhSahzojTOxp3hBOQhNMrENUi3h1CjPxM2WQLIt96GTsMrl0yylGWQVugi34s5I7wjD92F_oxKogK8pgoPTC2JoA6skfHn1YOg63SXlrl5i5IVjtPtssj0rNeSUd.is9mmcjPq0A69l1Q_GyG.a5kHrQXZNmilx0quoyXIsdMjDk6AzISJrK_UMspYuQKt0I1y1jnFIwQlegeJ.ADpy1jBXqHqK2IKf0F8bklFfGBLGx1dn1DHJaVb1AohWW86XXA7ItAG1Jxzn6D2RbzZK5yz9HV6FaKNOn3gAMiJTR2WxOjY1pjbdCY4GAMUPhz1xguSpYREgo6FZE7ysvO.O1UvZ3PKlVADkEbUnsWEZn5VjpTEnWtD3a9JdhrTBKGZmLLUtcAqwc4VsLH0P.k.HzpvPZ7hTUnmRNd2YSopcAoA2vkQQjShlmh1jH3Ihn9Tw5vkDyWgTzIbiqVxItB0P01SCyQ6UIDqJHxqlqxsR.H8tR_s0CDOv9dsZqB9qprwxWu0fCaWyAvgD5vvoF0cr1fZF9ofYGEEfYKPK6l6vjuDrkp_3iXa5KA.hY5Vikd51WDmvUl38gEgqOJSKh6dHVfT.qRzUfdbCOq7DC028ID09PY7xvZGM6Q5jxjBXPGfb.Ts5h3N8XIkPAaF1Eu9P2pejnrHnOQ.DrLxyPr_SSo.0OjGD4Tm0OE.acSCE0Uwn1Acfh2yiKrP35VkOChiGZVSYwufABuFjMKa71GEqtjAjrzmQxqdJFq_v_uDgdagEu92CIBU8S3dLEN0vPGoPm7H4kEc6e9czjErwnsVSyPL3d3WybXA0qNytGvNjR9KIBIcMitmjHwyV05Ut1qOcXtXjf9n11sO.x2c11QpyF.GOUtsDBg8GwsthJDood5P80YjSjm57VRf3OJ9bxQjF3eQUuEYhRNixXMPYeAkLvyiWLt_Ehi6q0UBKmcUAreWRlxGRfJAMRfz01B18ZT3JZPcFJRF_SjFEzP.9hdfc1CVTuzfSCpyHf3Q5X.8FBI6iedJMzucNnKEpoiHUi4zBlil5mSVqwRaH7GpH8GvsVyTBUH._Geq.Vn_shkKiYx5D2NFMRpvKHop1hdEdsKI3NCI12UHMok8hRbj8h042nK84_K7tU7_lU8u7d9wRnSBD6dSdbZm_DMQabTe13X5QNNmdcFFw7oA1sGaZRHMGbYB6LwPZ6bdXQEtyRLpNuZH8V2t0eqdN05ar_BO_ykUrK48SYuNHjYRqsZrg0CDuFiVkKr5JP20IVGs9bUVG2v4BNybyrsYvsT4ebbAExeC2Th4M1hI84Xgi1VWNBVRrJK6CBjGYP.xmUYq8RXzCR35aDYHTjeLko6Is_DGcW7a_TNecaQp9CTWsR7xdFDp8j3pQp7.JQQvbZc0I5DpMqxG7ivUw3joPJe0a3daLsi5MkZRYPjPA.mqYHi.PqEqNl1ij7xQYXXrpPxqdkrFbmPMyyWxOoahsIP8EIUJ5',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=999751f8ad4bd106';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/contact-us\/field-offices\/denver\/news\/fbi-seeks-potential-victims-of-aurora-sro-aaron-jake-bunch?__cf_chl_rt_tk=FqDnNVQXUkUZoIiDJ2kVM29TEADRcabpiNBI21BOOcY-1762292955-1.0.1.1-4JInutlIasTYAZumvYV5mVtsrXwgFtmQYB3xt9_J0h8"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+
+URL: https://www.denverpost.com/2025/10/23/child-abuse-charges-aaron-bunch-denver-aurora/
+			<!DOCTYPE html>
+			<html lang="en-US">
+			<head>
+				<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><meta charset="UTF-8"><meta name="application-name" id="app-name" content="thedenverpost"><meta name="viewport" content="width=device-width, initial-scale=1">			<meta name="msvalidate.01" content="4B535F7EB2971D1FCBA5D1D3E3E292C3" />
+					<meta name="robots" content="noarchive" />
+					<meta name="tdm-reservation" content="1" />
+		<meta property="mrf:authors" content="Katie Langford" /><meta property="mrf:canonical" content="https://www.denverpost.com/2025/10/23/child-abuse-charges-aaron-bunch-denver-aurora/" /><title>Aurora sergeant shared child sex abuse material, affidavit says</title>
+<link rel='preload' as='image' fetchpriority='high' href='https://www.denverpost.com/wp-content/uploads/2020/11/dp-logo-1.svg' type='image/svg+xml' />
+<meta name='robots' content='max-image-preview:large' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var scriptHelpers = {"staticPath":"https:\/\/www.denverpost.com\/wp-content\/themes\/assets\/static\/"};
+/* ]]> */
+</script>
+		<style>body{--primary:#007580;--secondary:#ffea00;--tertiary:#00838f;--primary-light:#00838f;--primary-dark:#0a5962;--primary-darker:#014a52;--subsite-custom:#0097a7;--font-primary:"Noto Serif",Helvetica,serif;--font-secondary:"Noto Sans",Helvetica,sans-serif}:root{--primary:#006fb7;--secondary:#d70000;--tertiary:#ffc518;--primary-lighter:#47b6ff;--primary-light:#0093f5;--primary-dark:#00568f;--primary-darker:#003d66;--site-branding-primary:#00102e;--site-branding-secondary:#233452;--site-branding-tertiary:#3d5268;--site-branding-gray-100:#38322a;--site-branding-gray-200:#5d5b5a;--site-branding-gray-300:#9d9a98;--site-branding-gray-400:#aaa7a4;--site-branding-gray-500:#d7d6d2;--site-branding-gray-600:#f1efeb;--primary-obit:#8d092d;--primary-obit-light:#c00c3d;--secondary-obit:#946c82;--tertiary-obit:#227db4;--quaternary-obit:#b3bc9c}:root{--site-branding-font-family-headers:"Noto Serif",serif;--site-branding-font-family-copy:"Noto Sans",sans-serif;--site-branding-font-style:normal;--site-branding-font-size-copy:0.875rem;--site-branding-font-size-headline:1.812rem;--site-branding-font-size-subheadline:1.125rem}.icon-arrow-down,.icon-arrow-right,.icon-hamburger,.icon-home3,.icon-plus,.icon-search,.icon-share-alt,.pushnav .menu-item-has-children:not(.nav-alt-links)>a:before{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;font-family:icomoon;font-style:normal;font-variant:normal;font-weight:400;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;line-height:1;speak:none;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-arrow-down:before,.icon-arrow-right:before,.icon-hamburger:before,.icon-home3:before,.icon-plus:before,.icon-search:before,.icon-share-alt:before,.pushnav .menu-item-has-children:not(.nav-alt-links)>a:before{color:inherit;font-size:inherit}:root{--icon-access-time:"";--icon-amazon:"";--icon-android:"";--icon-appleinc:"";--icon-arrow-down:"";--icon-arrow-left:"";--icon-arrow-right:"";--icon-arrow-up:"";--icon-attachment:"";--icon-backward2:"";--icon-bell-cross:"";--icon-bell2:"";--icon-bell3:"";--icon-bin:"";--icon-bookmark2:"";--icon-bookmark3:"";--icon-bookmarks:"";--icon-bubble2:"";--icon-bubbles3:"";--icon-calendar-empty:"";--icon-camera:"";--icon-cart-add2:"";--icon-cart-add:"";--icon-cart-remove:"";--icon-cart4:"";--icon-cart5:"";--icon-checkmark3:"";--icon-circle-small:"";--icon-city:"";--icon-close:"";--icon-cog:"";--icon-coin-dollar:"";--icon-comment:"";--icon-content_copy:"";--icon-credit-card2:"󮤢";--icon-dollar:"";--icon-download4:"";--icon-email:"";--icon-enlarge2:"";--icon-enlarge:"";--icon-equalizer2:"";--icon-eye-blocked:"";--icon-eye:"";--icon-facebook:"";--icon-feed:"";--icon-film4:"";--icon-first:"";--icon-floppy-disk:"";--icon-flower2:"";--icon-flower:"";--icon-gift2-share-01:"";--icon-gift2:"";--icon-google-plus:"";--icon-google:"";--icon-graduation:"";--icon-grid2:"";--icon-hamburger:"";--icon-headset:"";--icon-heart3:"";--icon-heart4:"";--icon-home3:"";--icon-info2:"";--icon-info:"";--icon-instagram:"";--icon-ios_share:"";--icon-key:"";--icon-last:"";--icon-library2:"";--icon-library:"";--icon-link:"";--icon-linkedin:"";--icon-location:"";--icon-magazine:"";--icon-map4:"";--icon-meter-medium:"";--icon-minus:"";--icon-mng-podcast1:"";--icon-mng-podcast:"";--icon-mobile:"";--icon-more2:"";--icon-music5:"";--icon-mute:"";--icon-new-tab:"";--icon-newspaper:"";--icon-next2:"";--icon-next:"";--icon-notification2:"";--icon-notification:"";--icon-office:"";--icon-paperplane:"";--icon-pause2:"";--icon-paypal:"";--icon-pen6:"";--icon-phone2:"";--icon-phone:"";--icon-piggy-bank:"";--icon-pinterest-p:"";--icon-play-arrow:"";--icon-plus:"";--icon-previous2:"";--icon-print:"";--icon-question3:"";--icon-question4:"";--icon-reddit:"";--icon-search:"";--icon-share-alt:"";--icon-share-more:"";--icon-share2:"";--icon-shrink2:"";--icon-shrink7:"";--icon-slideshow:"";--icon-sms:"";--icon-soundcloud:"";--icon-spam:"";--icon-sphere:"";--icon-spotify:"";--icon-stackoverflow:"";--icon-star-empty2:"";--icon-star-empty:"";--icon-star-full:"";--icon-stitcher:"";--icon-stop2:"";--icon-store:"";--icon-stumbleupon:"";--icon-thumbs-down2:"";--icon-thumbs-up2:"";--icon-tree2:"";--icon-tree:"";--icon-tumblr:"";--icon-twitter:"";--icon-unlink:"";--icon-unlocked:"";--icon-upload4:"";--icon-user-minus:"";--icon-user-plus:"";--icon-user4:"";--icon-user:"";--icon-users:"";--icon-vimeo:"";--icon-volume-decrease:"";--icon-volume-high:"";--icon-volume-increase:"";--icon-volume-low:"";--icon-volume-medium:"";--icon-volume-mute:"";--icon-warning2:"";--icon-warning:"";--icon-windows8:"";--icon-x:"";--icon-yelp:"";--icon-youtube:"";--icon-zoom-in2:"";--icon-zoom-out2:"";--icon-book:"";--icon-book3:"e993";--icon-quill3:"";--icon-quill4:"";--icon-google-color:"";--icon-padlock:"";--icon-bluesky:"";--icon-arrow-outline-up:"";--icon-arrow-outline-right:"";--icon-arrow-outline-left:"";--icon-arrow-outline-down:"";--icon-users4:"";--icon-heart-broken2:"";--icon-arrow-up11:"";--icon-arrow-right11:"";--icon-arrow-down11:"";--icon-arrow-left11:"";--icon-threads:"";--icon-swap:"";--icon-checkmark-circle:"";--icon-radio-unchecked:""}.icon-arrow-down:before{content:var(--icon-arrow-down)}.icon-arrow-right:before{content:var(--icon-arrow-right)}.icon-hamburger:before{content:var(--icon-hamburger)}.icon-home3:before{content:var(--icon-home3)}.icon-plus:before{content:var(--icon-plus)}.icon-search:before{content:var(--icon-search)}.icon-share-alt:before{content:var(--icon-share-alt)}a,article,aside,body,div,figure,form,h1,h2,h3,header,html,i,iframe,img,label,li,nav,p,span,ul{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,figure,header,nav{display:block}body{line-height:1}ul{list-style:none}button{border:none;background-color:rgba(0,0,0,0);font-size:inherit;appearance:none;-webkit-appearance:none;-moz-appearance:none}#content,.trending-bar .trending-bar-wrapper{max-width:81.25em;margin:0 auto;padding:0 .625rem}html{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:100%}html *,html :after,html :before{-webkit-box-sizing:inherit;box-sizing:inherit}html a{text-decoration:none}body{font-family:Helvetica,sans-serif;font-size:100%;margin:0;text-shadow:1px 1px 1px rgba(0,0,0,.004);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}h1{font:normal 600 2.25em/1.1666666667 "Noto Serif",Helvetica,serif}h2{font:normal 600 1.875em/1.0666666667 "Noto Serif",Helvetica,serif}h3{font:normal 600 1.5em/1.1666666667 "Noto Serif",Helvetica,serif}a{color:inherit}img{display:block;height:auto;max-width:100%}body,html{-webkit-overflow-scrolling:touch}#page{position:relative;overflow-x:initial;overflow-y:visible}#content{margin-bottom:1em;margin-top:1em}@media (max-width:64.9375em){#content{margin-top:1em}}#content:after,.article-share:after,.full-view:after,.full-view>header:after,.site-header:after,.trending-bar .trending-bar-wrapper:after,form:after{clear:both;content:"";display:table}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.newsletter-simple a{font:normal 400 .9375em/1.0666666667 Noto Sans,Helvetica,sans-serif;border:1px solid rgba(0,0,0,.15);padding:.75em 1.0625em}.body-copy>*{margin-bottom:1em}input[type=text]{border:1px solid #9d9a98;border-radius:0;color:#0a0908;height:30px;padding:.5em .625em}.search-form [class^=icon-]{color:var(--primary);font-size:1em;position:absolute;right:.3125em;top:.4375em}body{background-color:#fff}.full-view .article-sidebar .dfm-sidebar-most-popular-flex-container{font:normal 400 1.25em/1.1 Noto Sans,Helvetica,sans-serif;color:#38322a;letter-spacing:.035em;margin-bottom:.75em;text-transform:uppercase}.full-view .article-sidebar .dfm-sidebar-most-popular-flex-container ul{border-top:2px solid var(--primary)}.full-view .article-sidebar .dfm-sidebar-most-popular-flex-container a{border-bottom:2px solid var(--primary);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;padding-bottom:.3125em}.newsletter-simple a{font:normal 600 .9375em/1 Noto Sans,Helvetica,sans-serif;border-radius:4px;color:#fff;padding:.8125em 1.0625em;text-shadow:0 0 1px var(--primary-dark);text-transform:uppercase}.full-view .article-share .sd-social-icon div.sd-content ul li.share-facebook,.full-view .article-share .sd-social-icon div.sd-content ul li.share-print,.full-view .article-share .sd-social-icon div.sd-content ul li.share-reddit,.full-view .article-share .sd-social-icon div.sd-content ul li.share-twitter,.newsletter-simple a,.site-header .article-share .sd-social-icon div.sd-content ul li.share-facebook,.site-header .article-share .sd-social-icon div.sd-content ul li.share-print,.site-header .article-share .sd-social-icon div.sd-content ul li.share-reddit,.site-header .article-share .sd-social-icon div.sd-content ul li.share-twitter{background-color:var(--primary)}a img{border:none}.breadcrumbs{float:left;clear:both;text-transform:uppercase}.breadcrumbs .icon-arrow-right{display:inline-block;font-size:.875em;line-height:1;color:#d7d6d2;padding:5px}.header-title-area .breadcrumbs div.breadcrumbs-bar{font:normal 700 1em/1.375 Noto Sans,Helvetica,sans-serif;display:inline-block;letter-spacing:normal;color:inherit}figure{font-size:1rem}.image-wrapper{height:0;padding-bottom:56.25%;overflow:hidden;position:relative;width:100%}.image-wrapper img{left:0;position:absolute;top:0;width:100%}.header-features .image-wrapper{height:auto;padding-bottom:0;overflow:visible}.header-features .image-wrapper img{position:relative}.footer-menus a{color:#000}.site-footer .menu-item-has-children .expander{position:absolute;display:none;top:0;right:0;width:2.9375em;height:2.9375em;text-align:center;z-index:5}.site-footer .menu-item-has-children .expander a{position:relative;display:inline-block;line-height:3;vertical-align:middle}@media (max-width:39.9375em){.site-footer .menu-item-has-children .expander{display:block}}.dfm-site-info .colophon ul{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;margin-top:1.25em}@media (max-width:49.9375em){.dfm-site-info .colophon ul{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}}.dfm-site-info .colophon .footer-flex-menu-wrap ul{display:contents;margin:0 auto 0 0;padding:0;width:auto}.site-header{background-color:#fff;position:relative}.site-header .input-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:100%;width:95%;margin:0 auto}.site-header #search-bar{background:#fff;position:absolute;right:0;-webkit-box-shadow:0 3px 3px rgba(0,0,0,.25);box-shadow:0 3px 3px rgba(0,0,0,.25);border-top:2px solid rgba(0,0,0,.5);display:none;height:4rem;margin:4rem auto;z-index:100;width:100%}.site-header #search-bar input[type=text]{width:92%;padding:1.3em .3em;outline:none;font-size:.9375em}@media (max-width:49.9375em){.site-header #search-bar input[type=text]{font-size:1rem}}.site-header .search-button-container{width:5%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.site-header .search-button-container .search-button{width:75px;font-size:.9375rem;font-weight:600;color:#fff;background:var(--primary);border-radius:5px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:0 auto}.site-header .icon-search,.site-header .search-button-container .search-button{height:2rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.site-header .icon-search{color:#0a0908;font-size:1.2rem;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;position:relative;top:0}@media (min-width:65em){.site-header{height:auto}}.site-header .article-share,.site-header .hidden_article_headline{display:none}.nav-wrapper-primary{border-bottom:1px solid #9d9a98}.nav-wrapper-primary .nav-primary-bottom,.nav-wrapper-primary .nav-primary-middle,.nav-wrapper-primary .nav-primary-top{max-width:95%;margin:0 auto}@media (max-width:79.9375em){.nav-wrapper-primary .nav-wrapper-secondary{max-width:79.9375em}}.nav-wrapper-primary .accuweather-wrap{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;width:33%;-ms-flex-item-align:center;align-self:center;padding:.9375rem}.nav-wrapper-primary .accuweather-wrap,.nav-wrapper-primary .accuweather-wrap .weather-date{display:-webkit-box;display:-ms-flexbox;display:flex}.nav-wrapper-primary .accuweather-wrap .weather-date .dfm_accuweather_current_conditions{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-item-align:center;align-self:center}.nav-wrapper-primary .accuweather-wrap .weather-date .dfm_accuweather_current_conditions a{display:-webkit-box;display:-ms-flexbox;display:flex}.nav-wrapper-primary .accuweather-wrap .weather-date span{font-size:1em;font-weight:700;position:relative;color:#0a0908}.nav-wrapper-primary .accuweather-wrap .weather-date i{font-size:1.65rem}.nav-wrapper-primary .accuweather-wrap .weather-date .date{margin-left:.8em;font:normal 600 .9375em/1.0666666667 Noto Sans,Helvetica,sans-serif;color:#0a0908}.nav-wrapper-primary .accuweather-wrap .weather-date .date .e-edition{font-size:.8em;font-weight:500;margin-top:5.5%;color:#0a0908}.nav-wrapper-primary .nav-primary-top{display:-webkit-box;display:-ms-flexbox;display:flex;height:4em;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.nav-wrapper-primary .nav-primary-top .pushnav-flex-wrapper{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;width:33%}@media (max-width:49.9375em){.nav-wrapper-primary .nav-primary-top .pushnav-flex-wrapper{width:23%}}.nav-wrapper-primary .nav-primary-top .accuweather-wrap{padding:0 15px 5px;width:100%;display:none}@media (max-width:64.9375em){.nav-wrapper-primary .nav-primary-top .accuweather-wrap{display:block}}.nav-wrapper-primary .nav-primary-top #dfm-digisubs-menu{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex}.nav-wrapper-primary .nav-primary-top .digisubs-pushmenu{display:none}.nav-wrapper-primary .nav-primary-top .digisubs-wrapper{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3;width:30%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.nav-wrapper-primary .nav-primary-top .digisubs-wrapper .icon-arrow-down{font-size:.7em;padding-left:5px}@media (max-width:49.9375em){.nav-wrapper-primary .nav-primary-top .digisubs-wrapper{width:20%}}@media (max-width:64.9375em){.nav-wrapper-primary .nav-primary-top .digisubs-wrapper .digisubs-pushmenu{display:block}.nav-wrapper-primary .nav-primary-top .digisubs-wrapper .digisubs-pushmenu #mng-icon-image{display:-webkit-box;display:-ms-flexbox;display:flex}.nav-wrapper-primary .nav-primary-top .digisubs-wrapper .digisubs-pushmenu .wrapper-nav-subs{height:calc(100vh - 64px);width:300px}.nav-wrapper-primary .nav-primary-top .digisubs-wrapper .digisubs-pushmenu .wrapper-nav-subs .border-container{min-height:65vh}.nav-wrapper-primary .nav-primary-top .digisubs-wrapper .digisubs-pushmenu .wrapper-nav-subs .border-container #push-account-content{margin:.75rem auto;width:230px;display:none}.nav-wrapper-primary .nav-primary-top .digisubs-wrapper .digisubs-pushmenu .wrapper-nav-subs .border-container #push-account-content .show-digisubs-push{display:grid;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.nav-wrapper-primary .nav-primary-top .digisubs-wrapper .digisubs-pushmenu .wrapper-nav-subs .border-container .menu-item{height:3.5em}.nav-wrapper-primary .nav-primary-top .digisubs-wrapper .digisubs-pushmenu .subscribe-special.custom-button>a{width:230px;font:normal 600 .9375em/1.7333333333 Noto Sans,Helvetica,sans-serif;color:#fff;background:var(--primary);border-radius:5px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:.875rem .625rem;margin:.75rem auto}}.nav-wrapper-primary .nav-primary-top .digisubs-wrapper .digisubs-wrapper-large{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.nav-wrapper-primary .nav-primary-top .digisubs-wrapper .digisubs-wrapper-large #dfm-digisubs-menu{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:15px}.nav-wrapper-primary .nav-primary-top .digisubs-wrapper .digisubs-wrapper-large #dfm-digisubs-menu .subscribe-special.custom-button>a{background-color:var(--primary-dark);color:#fff;text-align:center;font:normal 600 .9375em/1.7333333333 Noto Sans,Helvetica,sans-serif;border-radius:4px;display:-webkit-box;display:-ms-flexbox;display:flex;width:120px;height:45px;padding:10px 7px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:24px}.nav-wrapper-primary .nav-primary-top .search-icon-wrapper{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4;width:4%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:.9375rem}.nav-wrapper-primary .nav-primary-middle{display:-webkit-box;display:-ms-flexbox;display:flex;min-height:5em;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}@media (max-width:64.9375em){.nav-wrapper-primary .nav-primary-middle{display:none}}.nav-wrapper-primary .nav-primary-middle .sponsorship-ad-wrapper{width:33%;-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3;-ms-flex-item-align:center;align-self:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;display:-webkit-box;display:-ms-flexbox;display:flex}.nav-wrapper-primary .nav-primary-bottom{display:-webkit-box;display:-ms-flexbox;display:flex;height:3em;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direct
+
+URL: https://www.denver7.com/news/front-range/aurora/aurora-pd-sergeant-who-serves-as-sro-supervisor-arrested-by-fbis-child-exploitation-task-force
+<!DOCTYPE html>
+<html class="Page-body ArticlePage" lang="en">
+<head>
+    <script>
+        window.environment='production';
+        window.callLetters='kmgh';
+    </script>
+
+    <!-- Early Elements go here -->
+    
+
+    <link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net">
+    <link rel="preconnect" href="https://securepubads.g.doubleclick.net">
+    <link rel="preconnect" href="https://securepubads.g.doubleclick.net" crossorigin>
+
+    <link rel="preload" href="https://assets.scrippsdigital.com/fontawesome/css/fontawesome.min.gz.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://assets.scrippsdigital.com/fontawesome/css/fontawesome.min.gz.css"></noscript>
+    <link rel="preload" href="https://assets.scrippsdigital.com/fontawesome/css/brands.min.gz.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://assets.scrippsdigital.com/fontawesome/css/brands.min.gz.css"></noscript>
+    <link rel="preload" href="https://assets.scrippsdigital.com/fontawesome/css/solid.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://assets.scrippsdigital.com/fontawesome/css/solid.min.css"></noscript>
+
+    
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://ewscripps.brightspotcdn.com/resource/00000198-cdbf-db5f-abfb-edfff7140000/styleguide/All.min.0bf77f81ab112b73a13513c74d12bf24.gz.css">
+
+    <style>.newsletter-opt{box-sizing: border-box; padding: 20px;box-shadow: 1px 0px 9px #e7e7e7;border: 1px solid #e7e7e7;border-top:4px solid #318CC7;border-radius: 4px;margin: 30px 0;}
+.newsletter-opt #email{width: 80%;padding: 10px;margin: 8px 0;margin-right: 1%;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;font-size: 1em;}
+.newsletter-opt #newSub{width: 18%;background-color: #005687;color: white;padding: 10px;margin: 8px 0;border: 1px solid #005687;border-radius: 4px;cursor: pointer;font-size: 1em;-webkit-appearance: none;}
+.newsletter-opt #emailForm{margin-bottom: 0;}
+.newsletter-opt span{font-weight:bold;color:#005687;}
+.newsletter-opt #news-success{text-align: center;}
+.newsletter-opt  #news-success a{display: inline-block; margin: 10px 0; color: #fff; background: #005687; padding: 10px; font-size: 14px; border-radius: 4px;}
+
+@media screen and (max-width: 800px){
+  .newsletter-opt #email,  .newsletter-opt #newSub{width: 100%; display: block;}
+}</style>
+<style>figcaption {display: none;}
+.ArticlePage figcaption{display:block;}</style>
+<style>.electionDisclaimer{border-radius: 4px;background: #e7e7e7;padding: 20px;text-align: center;margin-bottom: 20px;}
+.electionDisclaimer{display: none;}</style>
+<style>.showcase-low-row + .showcase-low-row {
+    margin-top: 15px;
+}</style>
+<style>.BigNews-Election.List .ad--container{display:none;}</style>
+<style>.Page-below .QuickList.toc.flexIt{display:none;}</style>
+<style>#MAD_INVIEW {
+  max-height: 120px;
+};</style>
+<style>.left-column .ArticlePage-articleBody .List {font-family: 'proxima-nova';}</style>
+<style>.boxule{background:#293c50; color:#fff;}
+.boxule a{color:#fff; font-weight:bold;}
+.boxule h2 {font-weight: bold;font-size:1.5em;}
+.boxule-link {background-color: #318CC7; padding: 10px;margin:10px 0; display:inline-block; border-radius:10px;font-size:1em;text-decoration:none!important;}</style>
+<style>.Page-main .BigNews.Ongoing .List-items-row .BigNewsSmallBackground {height: 193px;}
+@media screen and (max-width: 1400px){.Page-main .BigNews.Ongoing .List-items-row .BigNewsSmallBackground {height: 120px;}}
+@media screen and (max-width: 500px){.Page-main .BigNews.Ongoing .List-items-row .BigNewsSmallBackground {height: 100px;}}</style>
+<style>.ArticlePage-main .module--election-results {
+	display: none;
+}</style>
+<style>.home .module--election-results div, .home .module--election-results header, .home .module--election-results p {
+    display: none;
+}
+
+.home .module--election-results div.election-results__main{
+display: block;
+}</style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SRO supervisor with Aurora PD arrested by FBI&#x27;s Child Exploitation Task Force</title>
+    <meta name="description" content="An Aurora police sergeant who serves as a school resource officer supervisor was arrested Wednesday by the FBI&#x27;s Child Exploitation Task Force.">
+    <meta name="keywords" content="Aaron Bunch,aurora pd,aurora police,aurora police sergeant,child exploitation task force,fbi,school resource officer,sro ,supervisor">
+    <link rel="canonical" href="https://www.denver7.com/news/front-range/aurora/aurora-pd-sergeant-who-serves-as-sro-supervisor-arrested-by-fbis-child-exploitation-task-force">
+    <meta name="brightspot.contentId" content="00000199-c65c-dab0-a7bd-f67d65a10002">
+    
+    <meta property="og:title" content="Aurora PD sergeant who serves as SRO supervisor arrested by FBI&#x27;s Child Exploitation Task Force">
+
+    <meta property="og:url" content="https://www.denver7.com/news/front-range/aurora/aurora-pd-sergeant-who-serves-as-sro-supervisor-arrested-by-fbis-child-exploitation-task-force">
+<meta property="og:image" content="https://ewscripps.brightspotcdn.com/dims4/default/9aeb8ce/2147483647/strip/true/crop/1280x672+0+24/resize/1200x630!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2Fdf%2F74%2F42ab93384c0f8b896ace4ebc0dd0%2Fposter-image-1.jpg">
+
+
+<meta property="og:image:url" content="https://ewscripps.brightspotcdn.com/dims4/default/9aeb8ce/2147483647/strip/true/crop/1280x672+0+24/resize/1200x630!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2Fdf%2F74%2F42ab93384c0f8b896ace4ebc0dd0%2Fposter-image-1.jpg">
+
+    <meta property="og:image:secure_url" content="https://ewscripps.brightspotcdn.com/dims4/default/9aeb8ce/2147483647/strip/true/crop/1280x672+0+24/resize/1200x630!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2Fdf%2F74%2F42ab93384c0f8b896ace4ebc0dd0%2Fposter-image-1.jpg">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+
+    <meta property="og:image:alt" content="aurora police.jpg">
+
+    <meta property="og:description" content="An Aurora police sergeant who serves as a school resource officer supervisor was arrested Wednesday by the FBI&#x27;s Child Exploitation Task Force. ">
+
+    <meta property="og:site_name" content="Denver 7 Colorado News (KMGH)">
+
+
+    <meta property="og:type" content="article">
+
+    <meta property="article:author" content="https://www.denver7.com/sydney-isenberg">
+
+    <meta property="article:published_time" content="2025-10-09T00:44:52.584">
+
+    <meta property="article:modified_time" content="2025-10-09T04:18:00.428">
+
+    <meta property="article:section" content="Aurora">
+
+    <meta property="article:tag" content="News">
+
+    <meta property="article:tag" content="Homepage Showcase">
+
+    <meta property="article:tag" content="Mobile Showcase">
+
+    <meta property="article:tag" content="Local News">
+
+    <meta property="article:tag" content="Crime">
+
+    <meta property="article:tag" content="Aurora">
+
+<meta name="twitter:card" content="summary_large_image"/>
+
+    <meta name="twitter:creator" content="@sydisenberg"/>
+
+
+
+
+
+    <meta name="twitter:description" content="An Aurora police sergeant who serves as a school resource officer supervisor was arrested Wednesday by the FBI&#x27;s Child Exploitation Task Force. "/>
+
+
+
+    
+    <meta name="twitter:image" content="https://ewscripps.brightspotcdn.com/dims4/default/84fe115/2147483647/strip/true/crop/1280x720+0+0/resize/1200x675!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2Fdf%2F74%2F42ab93384c0f8b896ace4ebc0dd0%2Fposter-image-1.jpg"/>
+
+
+
+    <meta name="twitter:image:alt" content="aurora police.jpg"/>
+
+
+
+    <meta name="twitter:site" content="@DenverChannel"/>
+
+
+
+
+
+    <meta name="twitter:title" content="Aurora PD sergeant who serves as SRO supervisor arrested by FBI&#x27;s Child Exploitation Task Force"/>
+
+
+
+    <meta property="fb:app_id" content="283504728416642">
+
+    <meta property="fb:profile_id" content="SydneyIsenbergNews">
+
+
+
+    
+        <meta name="robots" content="max-image-preview:[large]">
+    
+
+    
+    <link rel="apple-touch-icon"sizes="180x180"href="/apple-touch-icon.png">
+<link rel="icon"type="image/png"href="/favicon-32x32.png">
+<link rel="icon"type="image/png"href="/favicon-16x16.png">
+
+
+    
+
+    
+    
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"NewsArticle","articleBody":"AURORA, Colo. — An Aurora police sergeant who serves as a school resource officer supervisor was arrested Wednesday by the FBI's Child Exploitation Task Force. Sergeant Aaron Bunch, 47, was arrested on charges \"related to the online sexual exploitation of a child,\" and those charges involve \"the electronic exchange of child exploitation material via the internet,\" according to the Aurora Police Department. He was booked into the Denver Detention Center and will be prosecuted by the Denver District Attorney's Office. Denver7's Ryan Fish spoke with neighbors who saw the large police presence. Hear more in the video player belowAPD initially said that Bunch faced federal charges, but issued a correction a short time later clarifying that the charges are state charges. Bunch was hired by the department in 2005 and serves as a school resource officer supervisor, according to Aurora PD. He is not assigned to any specific school. The department said there is no evidence at this time that any students or children within Aurora Public Schools, the Cherry Creek School District or the overall Aurora community were impacted or victimized. The Aurora Public Schools and Cherry Creek School District superintendents have been notified, per APD, and are \"working collaboratively with the department to ensure transparency and the continued safety of our students and community.\"In a statement, Aurora Police Chief Todd Chamberlain called this a \"sad and angering day\" and said the case \"will be investigated thoroughly.\" Bunch has been placed on unpaid administrative leave. The FBI is handling the criminal investigation, while Aurora PD is conducting an administrative investigation \"to address policy and conduct violations.\"","author":[{"@context":"http://schema.org","@type":"Person","affiliation":"Denver7","description":"Sydney Isenberg is an Emmy-nominated digital content producer. She began her career in Bakersfield, after graduating from the ASU Walter Cronkite School of Journalism and Mass Communication in 2018.","email":"Sydney.Isenberg@TheDenverChannel.com","image":{"@context":"http://schema.org","@type":"ImageObject"},"jobTitle":"Digital Producer","name":"Sydney Isenberg","url":"https://www.denver7.com/sydney-isenberg"}],"dateModified":"2025-10-08T22:18:00-0600","datePublished":"2025-10-08T18:44:52-0600","description":"An Aurora police sergeant who serves as a school resource officer supervisor was arrested Wednesday by the FBI's Child Exploitation Task Force.","headline":"Aurora PD sergeant who serves as SRO supervisor arrested by FBI's Child Exploitation Task Force","name":"Denver 7 Colorado News (KMGH)","publisher":{"@context":"http://schema.org","@type":"NewsMediaOrganization","diversityPolicy":"https://scripps.com/corporate-social-responsibility/equity-diversity-and-inclusion","ethicsPolicy":"https://assets.scrippsdigital.com/docs/journalism-ethics-guidelines.pdf","logo":{"@context":"http://schema.org","@type":"ImageObject","url":"https://ewscripps.brightspotcdn.com/7b/fc/dd46fc4d482e879643a0bdf5f826/kmgh-main-logo-160x80.png","width":160,"height":80},"name":"Denver 7 Colorado News (KMGH)","sameAs":["https://www.facebook.com/Denver7News","https://www.instagram.com/thedenverchannel/","https://twitter.com/DenverChannel"],"url":"https://www.denver7.com/news/front-range/aurora/aurora-pd-sergeant-who-serves-as-sro-supervisor-arrested-by-fbis-child-exploitation-task-force"},"speakable":{"@context":"http://schema.org","@type":"SpeakableSpecification","cssSelector":[".RichTextArticleBody","title"],"name":"Denver 7 Colorado News (KMGH)","sameAs":["https://www.facebook.com/Denver7News","https://www.instagram.com/thedenverchannel/","https://twitter.com/DenverChannel"],"url":"https://www.denver7.com/news/front-range/aurora/aurora-pd-sergeant-who-serves-as-sro-supervisor-arrested-by-fbis-child-exploitation-task-force"},"url":"https://www.denver7.com/news/front-range/aurora/aurora-pd-sergeant-who-serves-as-sro-supervisor-arrested-by-fbis-child-exploitation-task-force","video":{"@context":"http://schema.org","@type":"VideoObject","description":"Aurora PD sergeant who serves as SRO supervisor arrested by FBI's Child Exploitation Task Force","name":"Aurora PD sergeant who serves as SRO supervisor arrested by FBI's Child Exploitation Task Force","publication":{"@context":"http://schema.org","@type":"BroadcastEvent","endDate":"2025-11-04T21:49Z","isLiveBroadcast":false,"name":"Aurora PD sergeant who serves as SRO supervisor arrested by FBI's Child Exploitation Task Force","startDate":"2025-11-04T21:49Z"},"thumbnailUrl":"https://ewscripps.brightspotcdn.com/dims4/default/e15a86a/2147483647/strip/false/crop/720x720+280+0/resize/1200x1200!/quality/90/?url=https%3A%2F%2Fcf.cdn.uplynk.com%2Fause1%2Fslices%2Ff33%2F0e3a3b3bc3ae4d6eac785fb8a26bdb6b%2Ff33559a44a794427ac14e9d3d7f2bf32%2Fposter_ce49debe1faf4a3ba004ce4dde91d15c.jpg","uploadDate":"2025-10-09T04:15:12Z"}}</script>
+
+    
+    
+
+    
+    
+<meta name="brightspot.cached" content="true">
+
+    <!-- Custom head embeds go here -->
+    <script>window.environment='production';</script>
+<script>
+if(navigator.userAgent.indexOf('MSIE')!==-1
+|| navigator.appVersion.indexOf('Trident/') > -1){
+   document.write('<scr' + 'ipt src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></scr' + 'ipt>')
+}
+</script>
+<meta name="apple-itunes-app" content="app-id=530157928">
+<script>
+
+window.callLetters = 'kmgh';
+
+window.jsTitle = "Aurora PD sergeant who serves as SRO supervisor arrested by FBI's Child Exploitation Task Force"
+window.jsTags = "News,Homepage Showcase,Mobile Showcase,Local News,Crime,Aurora";
+window.jsPublishDate = '2025-10-08T20:44:52.584-0400';
+window.jsUpdateDate = '2025-10-09T00:18:00.428-0400';
+window.jsIsBreaking = 'false';
+window.jsIsAlert = '';
+window.jsAuthors = "Sydney Isenberg";
+window.jsHasVideo = 'true';
+window.jsSection = "Aurora";
+window.jsPageType = 'article';
+window.jsDisablePrerollAds = 'false';
+window.jsDisableDisplayAds = 'false';
+window.jsDisableInlineVideoAds = 'false';
+window.jsFname = 'aurora-pd-sergeant-who-serves-as-sro-supervisor-arrested-by-fbis-child-exploitation-task-force';
+
+var daysSincePublished = "";
+var datePublished = "";
+var publishedTime = document.querySelector('meta[property="article:published_time"]');
+if(publishedTime) {
+  publishedTime = new Date(publishedTime.getAttribute("content"));
+  datePublished =  publishedTime.getMonth().toString() + '/' + publishedTime.getDate().toString() + '/' + publishedTime.getFullYear().toString()
+}
+
+var modifiedTime = document.querySelector('meta[property="article:modified_time"]');
+if(modifiedTime) modifiedTime = new Date(modifiedTime.getAttribute("content"));
+
+var daysSince = new Date() - publishedTime 
+daysSince = Math.round(daysSince / ( 1000 * 3600 * 24 ))
+if (daysSince < 1) {
+    daysSince = 0
+}
+
+
+function getCookie(e){var n=" "+document.cookie,i=n.indexOf(" "+e+"=");if(-1==i)n=null;else{i=n.indexOf("=",i)+1;var o=n.indexOf(";",i);-1==o&&(o=n.length),n=unescape(n.substring(i,o))}return n}
+
+var gtmObj = {
+    'isGallery': (window.jsPageType == 'gallery' ? 'true' : 'false'),
+    'isStory':  (window.jsPageType == 'article' ? 'true' : 'false'),
+    'DatePublished': datePublished,
+    'Author': window.jsAuthors,
+    'Editor': '',
+    'Category': window.jsSection,
+    'SubCat': window.jsTags,
+    'DaysSincePublished': daysSince,
+    'LoggedIn': getCookie("uh_is_logged_in")
+};
+var loggedIn = false
+if (getCookie("uh_is_logged_in")) {
+    loggedIn = true
+}
+//add additional gtm data for ga4
+if ("true" == "true" ) 
+{
+  ga4Data = {
+    'scripps_build': '4.2.16.14',
+    'scripps_platform': 'Brightspot',
+    'scripps_environment': 'production',
+    'content_author': window.jsAuthors,
+    'content_editor': window.jsAuthors,
+    'content_category': window.jsSection, 
+    'content_type': window.jsHasVideo?"Has Video":window.jsPageType,
+    'days_since_published': daysSince, 
+    'date_published': datePublished,
+    'user_type': loggedIn?'Logged In':'Unknown', 
+    'data_sharing': 'Unknown',
+    'content_section': window.jsSection,
+    'ontent_subsection': window.jsTags,
+    'content_title': window.jsTitle,
+    'content_language': 'en',
+    'content_keywords': window.jsTags,
+
+ }
+  gtmObj = {...gtmObj, ...ga4Data}
+}
+dataLayer = [gtmObj];
+</script>
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-FSC5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var
+f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5TWL');
+</script>
+<meta content="0x3KYshnSIjfB_4KdciPswj2dViwTaZ4WunECwymxI4" name="google-site-verification" />
+<meta property="fb:pages" content="294814128270" />
+<script src="//d3plfjw9uod7ab.cloudfront.net/6d6d25e3-5be4-444b-82ae-a8f0bb892234.js" type="text/javascript"></script>
+<script type="text/javascript">
+function onReady(e){(document.attachEvent?"complete"===document.readyState:"loading"!==document.readyState)?e():document.addEventListener("DOMContentLoaded",e)}
+onReady(function(){
+         var element = document.createElement('script');
+         element.id = 'parsely-cfg';
+         element.src = '//cdn.parsely.com/keys/thedenverchannel.com/p.js';
+         document.body.prepend(element);
+     });
+     </script>
+<meta name="parsely-title" content="Aurora PD sergeant who serves as SRO supervisor arrested by FBI's Child Exploitation Task Force" />
+<meta name="parsely-link" content="https://www.denver7.com/news/front-range/aurora/aurora-pd-sergeant-who-serves-as-sro-supervisor-arrested-by-fbis-child-exploitation-task-force" />
+<meta name="parsely-type" content="article" />
+<meta name="parsely-image-url" content="https://ewscripps.brightspotcdn.com/df/74/42ab93384c0f8b896ace4ebc0dd0/poster-image-1.jpg" />
+<meta name="parsely-pub-date" content="2025-10-08T20:44:52.584-0400" />
+<meta name="parsely-section" content="Aurora" />
+<meta name="parsely-author" content="Sydney Isenberg" />
+<meta name="parsely-tags" content="News,Homepage Showcase,Mobile Showcase,Local News,Crime,Aurora" />
+<meta name="parsely-network-canonical" content="https://www.denver7.com/news/front-range/aurora/aurora-pd-sergeant-who-serves-as-sro-supervisor-arrested-by-fbis-child-exploitation-task-force" />
+<!-- OneTrust Cookies Consent Notice start -->
+
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="000000" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<style type="text/css">
+#ot-sdk-btn.ot-sdk-show-settings, #ot-sdk-btn.optanon-show-settings{
+
+}
+</style>
+
+<!-- OneTrust Cookies Consent Notice end -->
+<noscript><img src=""></noscript>
+<script type='text/javascript'>
+if ("ZN_2hG8GbItrg6XGfA") {
+(function(){var g=function(e,h,f,g){
+this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
+this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime(
+
+URL: https://www.msn.com/en-us/news/crime/arrest-warrant-reveals-more-details-about-aurora-police-sergeant-accused-of-child-exploitation/ar-AA1ObQhm
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" >
+<head data-info="f:msnallexpusers,prg-sp-liveapi,prod-ch-lsbho,1s-dsbl-tmpl-vwslyt,prg-ad-c-stab-bn,prg-c-stab-bn,prg-rmvfollowing,prg-nofollowing,prg-pr2-nofollow,prg-1sw-satrv3cc1,prg-1sw-sa-l3c-cc,prg-1sw-sa-docuidtt,1s-blis-exp3c,prg-adspeek,btie-bsftyvid-c,1s-fcrypt,prg-1sw-sawavipr,prg-ctr-pnpc,prg-upsaip-w1-t,prg-cg-bdg-v2-2,prg-cg-bdg-v2,1s-rpssecautht,jj_fac_c,prg-pr2-dmat,prg-pr2-dmabrowser,1s-wpo-pr2xapw,1s-exp2ph3,prg-pr2-c-rubyboards,prg-pr2-rubyretail-t,1s-cg-rubymini-pr2,1s-wpo-pv2p,prg-1sw-miniw1,prg-1sw-p2wtmw,prg-pr2-copilotbg,prg-pr2-hidentfdtl,prg-pr2-miniruby,prg-pr2-nohidepa,prg-pr2-p2momw,prg-pr2-ruby-dummy,prg-wxrb-cospot,rpr2-clarity,chatn_v2_t1,1s-ntf2-fx3,1s-wpo-pr2-cstbv3,prg-csacclink,prg-1s-acclnk,prg-accountlink,1s-notifmapping,prg-sh-lowinv1,prg-sh-lowinv,prg-sh-dealsdaypdp,prg-sh-rmitmlnk-c,nopinglancecardit,ads-nopostsq-t,ads-nopostsq,1s-uasdisf-t,ads-anjson-migt,fv-cgsb-stagec,sh-bdvid,prg-sh-bd-video,ads-nooutbrain,release-outlook-app,ads-prcrid-bi,ads-addlog,cg-ab-testing-c,1s-p2-bg-appanon,ads-bcn-cndomain,prg-cg-int-ad-pod,msph-benchmark,prg-pr2-lifecyclebac,prg-1sw-wxnhcolk,prg-1sw-crypinf,prg-cg-lock_c,prg-1sw-cryptren,prg-cg-zhcnfx,prg-cg-lstfix,prg-1sw-tbrfltr,prg-1sw-tvid-int-t1,1s-p1-vid-vs-int,prg-1sw-tvid-p1-int,prg-1sw-videopb,prg-1sw-videosxap,prg-p1-txt2,prg-p1-uc3,prg-pr1-videos,prg-tv-api,prg-tv-segcap10,prg-vid-trdcache,prg-1sw-tvid-int-t2,1s-p2-vid-vp-int,prg-1sw-tvid-p2-int,prg-p2-txt2,prg-p2-uc3,prg-pr2-setdur-t2,prg-pr2-videos,prg-pr2-wtab-oo,prg-tv-p2-api,prg-tv-p2-segcap10,prg-pr2-wwidgets-t,bing_native_chat_t,prg-1s-dwvid-wpo-ctr,1s-newsfeed-worknews,bing_uni_iab_t,prg-pr2-imghttd-t,prg-pr2-imghtdd-t,btie-asyncpa-uber,prg-1sw-newe2e,1s-ls-uppermuid,prg-1sw-wxncvf,prg-1sw-wxtrlog,prg-1sw-dw-multi-c,prg-pr2-ntf-rel,prg-1sw-pawpor1,prg-1sw-spawpor1,prg-1sw-dwvid-wpo-2,1s-wpo-ntp-videos2,prg-hp-lockscreen,prg-1sw-sfexpdat,1s-ntfa-fpmeta,prg-1sw-analysisdata,ads-3pctve-filter,prg-cg-2nd-maxdur,prg-ad-tmt,1s-deprecate-pgids,prg-1sw-hide-lckprev,1s-hide-lckprev,cookmonceto,cntrl1s-p2-cmp-c,prg-pr2-aadpmiti,msphxap-chatbot,prg-pr2-twi-99,prg-pr2-reclaim,prg-pr2-sr-10,prg-1sw-lottie,prg-cmc-river6,1s-moc-gemqualitys6,prg-cmc-river,prg-pr2-lottie-tbr,prg-pr2-lottie-brds,prg-watch-copilot,prg-1sw-lottie-r,1s-featureservice-t,prg-discover-mo6,prg-cg-iap-guest,msph-newconvi,prg-ad-fdbck,prg-cg-1crr2,prg-ad-wea-bdupe,msph-newconrep,1s-xapretry-t,msph-botupdate,msph-pcmfeed,prg-vid-pers-vol-c,prg-watch-rtms,prg-earn-hub,msph-revagvnext,prg-wtch-sh-c,prg-1sw-vdwnd1,1s-ntf2-coexv2t4,1s-p2-vid-rev,prg-ntf1-1expcard,prg-ntf1-expv2capping,prg-ntf1-relall,prg-ntf1-worlow,prg-pr2-coldexp2rel0,prg-pr2-coldexpworfi3,prg-pr2-exptagtopt,prg-watch-ovnad,prg-cg-cfrubyads;" data-canvas-info="f:prg-c-stab-bn,prg-pr2-nohidepa,prg-ad-tmt,prg-cmc-river,prg-watch-rtms,prg-watch-ovnad" data-ads-numberline="f:anaheimmuidads1=btie-bsftyvid-c,5qos=ads-nopostsq-t,5ui9=ads-anjson-migt,63hy=ads-nooutbrain,649x=ads-prcrid-bi,649y=ads-addlog,6965=ads-bcn-cndomain,anaheimmuidadsupv1=btie-asyncpa-uber,7khg=ads-3pctve-filter;" data-client-settings="{&quot;aid&quot;:&quot;690a74dc485e491ca27bfcfa95718df2&quot;, &quot;fd_muid&quot;:&quot;166A32C2AA3C646210852458AB94650D&quot;, &quot;static_page&quot;:&quot;false&quot;, &quot;queryparams&quot;:&quot;&quot;, &quot;apptype&quot;:&quot;views&quot;, &quot;pagetype&quot;:&quot;article&quot;, &quot;configRootUrl&quot;:&quot;https://assets.msn.com/config/v1/&quot;, &quot;feedBaseDomain&quot;:&quot;&quot;, &quot;deviceFormFactor&quot;:&quot;desktop&quot;, &quot;pageGenTime&quot;:&quot;2025-11-04T21:49:16Z&quot;, &quot;pcsInfo&quot;:{&quot;v&quot;:&quot;20251103.1&quot;, &quot;env&quot;:&quot;prod&quot;}, &quot;locale&quot;:{&quot;language&quot;:&quot;en&quot;, &quot;market&quot;:&quot;us&quot;, &quot;content&quot;:{&quot;language&quot;:&quot;en&quot;, &quot;market&quot;:&quot;us&quot;}, &quot;display&quot;:{&quot;language&quot;:&quot;en&quot;, &quot;market&quot;:&quot;us&quot;}}, &quot;featureFlags&quot;:{}, &quot;market&quot;:{ &quot;requestInput&quot;:{ &quot;language&quot;:&quot;en&quot;,&quot;region&quot;:&quot;us&quot;, &quot;geo_country&quot;:&quot;US&quot;}, &quot;detection&quot;:{ &quot;type&quot;:&quot;url&quot;,&quot;geo_country&quot;:&quot;&quot;,&quot;geo_countrycf&quot;:&quot;&quot;, &quot;recommendLanguageCoachmark&quot;: &quot;false&quot;}}, &quot;servicesEndpoints&quot;:{&quot;staticConfig&quot;: {&quot;domain&quot;: &quot;https://assets.msn.com&quot;, &quot;path&quot;: &quot;/config/v3/&quot;, &quot;v&quot;: &quot;&quot;},&quot;crs&quot;: {&quot;domain&quot;: &quot;https://assets.msn.com&quot;, &quot;path&quot;: &quot;/resolver/api/resolve/&quot;, &quot;v&quot;: &quot;v3&quot;},&quot;feedService&quot;: {&quot;domain&quot;: &quot;https://assets.msn.com&quot;, &quot;path&quot;: &quot;&quot;, &quot;v&quot;: &quot;&quot;},&quot;enterpriseFeedService&quot;: {&quot;domain&quot;: &quot;https://ent-api.msn.com/&quot;, &quot;path&quot;: &quot;&quot;, &quot;v&quot;: &quot;&quot;}}, &quot;bundleInfo&quot;:{&quot;v&quot;:&quot;20251104.75&quot;, &quot;alias&quot;:&quot;latest&quot;}, &quot;browser&quot;:{&quot;detected&quot;:{ &quot;browserType&quot;: &quot;unknown&quot;, &quot;version&quot;: &quot;0&quot;, &quot;isMobile&quot;: &quot;false&quot;}}, &quot;verticalKey&quot;:&quot;news&quot;, &quot;categoryKey&quot;:&quot;newscrime&quot;, &quot;domain&quot;:&quot;www.msn.com&quot;, &quot;requestTrailInfo&quot;:{&quot;cdn&quot;:&quot;Akamai&quot;, &quot;flightVersion&quot;:&quot;53550225&quot;}, &quot;detection&quot;:{&quot;scrubbedIp&quot;:&quot;35.165.254.0&quot;, &quot;tier&quot;:&quot;b&quot;, &quot;authType&quot;:&quot;Web&quot;, &quot;authSCN&quot;:&quot;anon&quot;}, &quot;geo_country&quot;:&quot;US&quot;, &quot;geo_countryname&quot;:&quot;United States&quot;, &quot;geo_subdivision&quot;:&quot;Oregon&quot;, &quot;geo_zip&quot;:&quot;97818&quot;, &quot;geo_city&quot;:&quot;Boardman&quot;, &quot;geo_lat&quot;:&quot;45.8303&quot;, &quot;geo_long&quot;:&quot;-119.7095&quot;, &quot;geo_citycf&quot;:&quot;8&quot;, &quot;geo_countrycf&quot;:&quot;9&quot;, &quot;requestMuid&quot;:&quot;notFound&quot;}" data-diagnostics="">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    
+
+    <title>MSN</title>
+
+    
+    
+
+
+    
+    
+
+    
+
+    <script type="text/javascript" nonce="">
+        try {
+            window._pageTimings = { TTJSStart: Math.round(performance.now()) };
+            window._clientSettings = JSON.parse(document.head.dataset.clientSettings);
+        } catch (e) {
+            console.error("Error in adding TTJSStart marker");
+        }
+    </script>
+
+        <script nonce="">
+            function getCookieConsentRequired(){return false;}
+            window._ssrServiceEntryUrl="/bundles/v1/views/latest/SSR-service-entry.7458eeb38739202b5ccb.js";
+        </script>
+
+
+        <script type="text/javascript" id="inlinehead-inline-script" nonce="">
+            window["_webWorkerBundle"] = "/bundles/v1/views/latest/web-worker.9efd4161cef77cabf3ea.js";
+            window["_authCookieName"] = "ace";
+            !function(){"use strict";var t={},n={};function e(o){var i=n[o];if(void 0!==i)return i.exports;var r=n[o]={exports:{}};return t[o](r,r.exports,e),r.exports}function o(){return!("undefined"==typeof window||!window.document||!window.document.createElement||window.isRenderServiceEnv)}e.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(t){if("object"==typeof window)return window}}(),function(){if(void 0!==e){const t=e.e,n={};e.e=function(o){return t(o).catch(function(t){const i=n.hasOwnProperty(o)?n[o]:2;if(i<1)throw t;return new Promise(function(t){setTimeout(function(){n[o]=i-1,t(e.e(o))},100)})})}}}();let i=new Map;const r=Object.freeze({set(t,n){return i.set(t,n),this},get(t,n){let e=i.get(t);return void 0===e&&n&&(e=n(),i.set(t,e)),e},clear(){i.clear()},delete:t=>i.delete(t),has:t=>i.has(t)});const s="__RequestDataInstance__";class c{constructor(t,n){if(this.url=new URL(t.href),this.innerHeight=t.innerHeight,this.devicePixelRatio=t.devicePixelRatio,this.canUseCssGrid=t.canUseCssGrid,this.requestId=t.requestId,this.cookie=t.cookie,this.referer=t.referer,this.userAgent=t.userAgent,this.clientData=t.clientData,this.vpCetoToken=t.vpCetoToken,this.oneServiceHeaders=d(t.oneServiceHeaders)||{},this.isPssrMode=n,n){const t=u("OSATE",this.cookie),n=!!t&&"1"===t,e=u("OSAT",this.cookie);if(n&&e||!t&&!e)return this.msalAuthReady=!0,void(e&&(this.oneServiceHeaders.Authorization=`Bearer ${e}`));this.msalAuthReady=!1,this.pssrRejectedReason=t&&!n?"interactiveLogin":t&&!e?"missOSAT":"missOSATE"}}static getInstance(){const t=r.get(s);return t||(e.g.TEST_ENV?a({href:"http://localhost:8080/",innerHeight:768,devicePixelRatio:1,canUseCssGrid:!1,requestId:"0",cookie:"",userAgent:"",referer:"",oneServiceHeaders:"",vpCetoToken:""}):a({href:"http://localhost:8080/",innerHeight:0,devicePixelRatio:0,canUseCssGrid:!1,requestId:"0",cookie:"",userAgent:"",referer:"",oneServiceHeaders:"",vpCetoToken:""}))}static resetInstance(t){const n=new c(t,arguments.length>1&&void 0!==arguments[1]&&arguments[1]);return r.set(s,n),n}}function u(t,n){if(n&&t){const e=new RegExp("\\b"+t+"\\s*=\\s*([^;]*)","i").exec(n);return e&&e.length>1?e[1]:null}return null}function d(t){try{if(t)return JSON.parse(t)}catch(t){}}const a=c.resetInstance,l=()=>c.getInstance();function w(){return o()?window.location.search:l().url.search}function h(){return o()?window.location.pathname:l().url.pathname}var f,p;!function(t){t.Anon="ANON",t.AppAnon="APP_ANON",t.Unknown=""}(f||(f={})),function(t){t.AnonCookieExists="ace",t.AppAnonCookieExists="aace"}(p||(p={}));function m(t,n){if(t){const e=new RegExp("\\b"+n+"\\s*=\\s*([^;]*)","i").exec(t);return e&&e.length>1?e[1]:null}return null}function v(t){try{if(t)return JSON.parse(t)}catch(t){}return null}const g="prg-";var b;function y(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:g;const e=n.length,o=[];return t&&t.length&&(t.forEach(t=>{const i=t&&t.trim();i&&i.length>=e&&i.substring(0,e).toLowerCase()===n&&o.push(i.toLowerCase())}),o.sort()),o}function S(t){let n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"",e=g;var o,i;return arguments.length>1&&void 0!==arguments[1]&&arguments[1]?e="prg-pw-":n.toLocaleLowerCase()==="windowsShell".toLocaleLowerCase()||n.toLocaleLowerCase()==="windowsShellV2".toLocaleLowerCase()?e="prg-1sw-":n.toLocaleLowerCase()!=="winWidgets".toLocaleLowerCase()||(null===(o=window)||void 0===o||null===(o=o.location)||void 0===o||null===(o=o.search)||void 0===o?void 0:o.includes("reqsrc=vp"))||null!==(i=window)&&void 0!==i&&null!==(i=i.location)&&void 0!==i&&null!==(i=i.search)&&void 0!==i&&i.includes("vptest")||(e="prg-pr2-"),e}function _(t){var n;return document.head.dataset[t]||(null===(n=O())||void 0===n?void 0:n.dataset[t])}let x;function O(){return void 0===x&&(x=document.getElementsByClassName("peregrine-widget-settings")[0]||null),x}function I(t){var n;if(!t||!t.startsWith("f:"))return;const e=(t.match(/f:\s*([^;]+)/i)||[])[1];return e?null===(n=e.toLowerCase().split(","))||void 0===n?void 0:n.sort():[]}!function(t){t.Treatment1="prg-ad-xan-tmx1",t.Treatment2="prg-ad-xan-tmx2",t.Treatment3="prg-ad-xan-tmx3",t.Treatment4="prg-ad-xan-tmx4",t.Treatment5="prg-ad-xan-tmx5",t.Treatment6="prg-ad-xan-tmx6"}(b||(b={}));const k="Authorization";var A,N;!function(t){t.Presentation="presentation"}(A||(A={})),function(t){t.Unknown="Unknown",t.Portrait="Portrait",t.Landscape="Landscape"}(N||(N={}));var T,C;!function(t){t[t.Undefined=0]="Undefined",t[t.Basic=1]="Basic",t[t.Advanced=2]="Advanced",t[t.Premium=3]="Premium"}(T||(T={})),function(t){t.Init="init",t.Config="config",t.Targeted="targeted",t.Sticky="sticky",t.NoSticky="no_sticky",t.Admin="admin",t.Forced="forced",t.Manual="manual"}(C||(C={}));const $=new Set(["finance-app-win","weather-app-win","winpstoreapp"]),W=new Set(["hpmsn"]);new Set(["chromentpnews"]);function M(){var t;return o()?(window._clientSettings=window._clientSettings||v(document.head.dataset.clientSettings||(null===(t=document.getElementsByClassName("peregrine-widget-settings")[0])||void 0===t?void 0:t.getAttribute("data-client-settings"))),window._clientSettings):null}const R="feed/personalize/settings";function E(t,n){const e=n.replace(/[[\]]/g,"\\$&"),o=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)").exec(t);if(!o)return null;const i=o[2];return decodeURIComponent(i.replace(/\+/g," "))||""}let P=new class{constructor(){o()?(this.isDebugEnabled=(E(window.location.href,"debug")||"").toLowerCase()in{1:1,true:1}||"vp"===(E(window.location.href,"reqsrc")||"").toLowerCase(),this.isDebugEnabled&&!e.g.TEST_ENV&&(window.webpackRequire=e)):this.isDebugEnabled=!1}getLoggingService(){return null}isDebug(){return this.isDebugEnabled}setDebug(t){this.isDebugEnabled=t}setTags(t){}log(t,n){this.isDebug()&&console.info(t)}logError(t){console.error(t)}logCallback(t){this.isDebug()&&console.info(t())}logObjects(){this.isDebug()&&console.log(...arguments)}logSingleObject(t,n){this.isDebug()&&console.log(t)}};class U{get supported(){return!!this.storage}constructor(t){this.storage=t}getItem(t){if(this.supported)return this.storage.getItem(t)}getObject(t,n){const e=this.getItem(t);if(null!=e){const t=v(e);if(null!=t)return t}return n}key(t){if(this.supported&&t>=0)return this.storage.key(t)}keys(){return this.supported?Object.keys(this.storage):[]}setObject(t,n){void 0!==n?this.setItem(t,JSON.stringify(n)):this.removeItem(t)}removeObject(t){const n=this.removeItem(t);if(null!=n)return v(n)}setItem(t,n){let e=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(this.supported)try{if(!n)throw"Attempted to store null/undefined value: "+n;this.storage.setItem(t,n)}catch(t){if(!e)throw t;P.logError(t)}else if(!e)throw new Error("WebStorage not supported")}get length(){if(this.supported)return this.storage.length}removeItem(t){if(this.supported){const n=this.getItem(t);return this.storage.removeItem(t),n}}clear(){this.supported&&this.storage.clear()}removeSubstringKeys(t){if(!this.supported||!t)return;const n=[];for(let e=0;e<this.storage.length;e++){const o=this.key(e);o&&o.includes(t)&&n.push(o)}for(let t=0;t<n.length;t++)this.removeItem(n[t])}}let D=new class extends U{constructor(){let t=null;if(o())try{t=localStorage}catch(t){}super(t)}};const F="1s-tokens";var j;let q,J,H;function L(){return q=K(),q&&q.accessToken?q:void 0}function K(){return q=q||void 0===q&&D.getObject(F)||null,q}function B(t){try{return decodeURIComponent(t)}catch(t){}}function z(t,n){if(!t)return null;if(n)return function(t){var n;const e=null===(n=document.cookie)||void 0===n?void 0:n.match(`\\b${t}=([^;]*)`);return e?B(e[1]):null}(t);if(!H){const t="undefined"!=typeof document&&document.cookie.split("; ");H={};const n=t&&t.length;for(let e=0;e<n;e++){const n=t[e].indexOf("=");H[t[e].slice(0,n).toLocaleLowerCase()]=B(t[e].slice(n+1))}}const e=t.toLocaleLowerCase();return H[e]||null}function G(t){const n=z(t);return n&&encodeURIComponent(n)||null}function V(t){let n,e=!1;const o=function(){return e||(e=!0,n=t()),n};return o.cache={clear(){e=!1,n=void 0}},o}!function(t){t.NotAvailable="notAvailable",t.Expired="expired",t.Valid="valid"}(j||(j={}));const X="currentaccount",Y=V(()=>{const t=z(X,!0),n=t&&v(t),{login_hint:e}=n||{};return e&&n}),Q=V(()=>!!z(X));function Z(){try{return localStorage}catch(t){return null}}const tt="__PageExperimentInstance__";function nt(t){r.set(tt,t)}function et(t){if(!r.has(tt)&&o()){var n;nt(ot(document.head.dataset.info||(null===(n=window.document.getElementsByClassName("peregrine-widget-settings")[0])||void 0===n||null===(n=n.dataset)||void 0===n?void 0:n.info)||""))}const e=r.get(tt);return e&&e.has(t)}function ot(t){const n=(t||"").replace(/(^f:|;.*$)/g,"").split(",");return new Set(n)}const it="uxlogin",rt="uxlogout",st="uxedit",ct="useRedirect",ut="uxswitch",dt=V(()=>{const t=Z();return t&&"1"===t.getItem(it)||o()&&location.search&&location.search.includes(`${it}=1`)});const at=V(()=>{const t=function(){try{return sessionStorage}catch(t){return null}}();return t&&!!t.getItem(rt)});const lt=V(()=>{const t=Z();return t&&"1"===t.getItem(st)});const wt=V(()=>{const t=Z();return!et("prg-noredirect")&&t&&"1"===t.getItem(ct)&&function(){const{browser:t}=window._clientSettings||{},{browserType:n=""}=t||{};return!!/safari/i.test(n)}()});const ht=V(()=>{const t=Z();return t&&"1"===t.getItem(ut)});const ft="launcherInterests",pt="cp_msn_cmc",mt="_ocidIsomorphicKey",vt=()=>(r.get(mt)||r.set(mt,Wt("ocid").toLowerCase()),r.get(mt)),gt="_platformFlagKey",bt="_hostAppNameKey",yt="_clientTypeKey",St=()=>(r.get(gt)||r.set(gt,Wt("chpltfm")),r.get(gt)),_t=()=>{if(!r.get(bt)){const t=St();r.set(bt,t.toLowerCase().split("-")[0])}return r.get(bt)};function xt(){if(!o()||Ct())return!1;const t=window.sapphireWebViewBridge,n=window.webkit,e=t&&t.send,i=n&&n.messageHandlers&&n.messageHandlers.send&&n.messageHandlers.send.postMessage;return!(!e&&!i)}function Ot(){return window&&!!window._isCopilotBridge||"copilot"===Wt("MBApp")}function It(){const t=St()&&"outlook"===_t()&&["ios","android","ipados"].includes((()=>{if(!r.get(yt)){const t=St();r.set(yt,t.toLowerCase().split("-")[1])}return r.get(yt)})()),n=vt()==="OnOOutlookMobile".toLowerCase();return t||n}function kt(){return!(!o()||Ct())&&(xt()||vt()==="OnOStartApp".toLowerCase()||vt()==="superappdhp".toLowerCase())}function At(){const t=Wt("edge");return("emmx"===_t()||"1"===t)&&kt()||"mmx"===vt()}function Nt(){return"3rdp"===_t()||vt().startsWith("xmweather-")||Ct()}function Tt(){return["launcherntp".toLowerCase(),ft.toLowerCase()].includes(vt())&&kt()}function Ct(){return vt().toLowerCase()==="swiftKey".toLowerCase()||"swiftkey"==_t().toLowerCase()}const $t=V(()=>xt()||It()||kt()||vt()==="weather-app-win".toLowerCase()||vt()==="finance-app-win".toLowerCase()||At()||Nt()||Tt()||Ct()||-1!==window.location.href.indexOf("metaos=true")||Ot()||!!o()&&vt()===pt&&"true"===Wt("hasBridge"));function Wt(t){try{return new URL(location.href).searchParams.get(t)||""}catch(t){return""}}const Mt=M()||{};const Rt={winWidgets:1,webWidgets:1,windowsShell:1,windowsShellV2:1,distribution:1,superApp:1,channelmobile:1,edgeMobile:1},Et={edgeChromium:1},Pt={winWidgets:1,webWidgets:1},Ut={edgeChromium:1,shopping:1,winWidgets:1,webWidgets:1,windowsShell:1,windowsShellV2:1,msn:1},Dt={edgeChromium:1,channelmobile:1,cgHomePage:1,distribution:1,winWidgets:1,webWidgets:1,windowsShell:1,windowsShellV2:1,superApp:1,edgeMobile:1},Ft=V(()=>Mt&&Mt.apptype),jt=(V(()=>o()&&Ft()in Pt),V(()=>o()&&!$t()&&!(Ft()in Rt)&&!Ht()&&!Lt())),qt=V(()=>jt()&&!(Ft()in Et));V(()=>jt()&&(!(Ft()in Et)||!Q())),V(()=>jt()&&!Bt()&&!zt());const Jt=V(()=>zt()||Bt()),Ht=V(()=>!(Ft()in Ut)&&Gt()&&function(){if("homePage"==Ft())return!0;const t=new URLSearchParams(w()).get("ocid")||(null==Mt?void 0:Mt.ocid),n=null==t?void 0:t.toLowerCase();if(W.has(n))return!0;return!$.has(n)}()&&!function(){const t="homePage"==Ft()&&"hp"==(Mt&&Mt.pagetype)&&(o()?window.location.href:l().url.href).includes(`${R}`);return t}());const Lt=()=>o()&&document&&document.body&&document.body.getElementsByClassName("peregrine-widgets").length>0;V(()=>Ft()in Dt||Ht());function Kt(){if(J)return J;const t=L();return t||void 0}function Bt(){return qt()&&dt()||function(){const t=qt()&&!Vt()&&!dt()&&Y()&&("expired"==function(){if(q=K(),!q)return"notAvailable";const t=q.expiresOn,n=new Date(t),e="expired";return n.getTime()&&n>new Date?"valid":e}()||lt());return t}()||at()||wt()}function zt(){return qt()&&!Y()&&ht()}const Gt=V(()=>{const{browser:t}=Mt,{browserType:n="",detected:e={}}=t||{},{browserType:o=""}=e||{};return/edgeChromium/i.test(n)||/edgeAndroid/i.test(n)||/edgeiOS/i.test(n)||/edge/i.test(o)});V(()=>qt()&&!Ht());const Vt=()=>{const t=Y();if(!t)return!1;let n;switch(t.accoun
+
+URL: https://www.cbsnews.com/colorado/news/former-aurora-school-officer-released-fbi-seeks-child-victims/
+<!DOCTYPE html>
+<html lang="en-US" class="
+    theme--responsive
+  device--type-desktop
+  device--platform-web
+  device--size-
+  content--type-article
+  context--slug-former-aurora-school-officer-released-fbi-seeks-child-victims
+  page--type-news-item
+    
+  
+  
+  edition--col
+
+  edition--local
+  
+      has-story-redesign     no-touch  ">
+    <head prefix="og: https://ogp.me/ns#">
+        <meta charset="UTF-8">
+        <title>
+    Former Aurora school officer released on bond, FBI seeks more victims in child sexual exploitation investigation - CBS Colorado</title>                <!-- Fly Version: 9c506172a5d086fe5db9a7441ffc4c0e -->
+            
+        
+                          <meta http-equiv="origin-trial" content="AmtAue1qy0WZcnNRHnKQlcvSEjITSYWYxUsUV2v3ZOTe8x0RnUkMR08fdhsEsqUc+5eYM4ZCuPg62po9e1wgrgwAAABkeyJvcmlnaW4iOiJodHRwczovL3d3dy5jYnNuZXdzLmNvbTo0NDMiLCJmZWF0dXJlIjoiSFRNTEludGVyZXN0VGFyZ2V0QXR0cmlidXRlIiwiZXhwaXJ5IjoxNzYyODE5MjAwfQ==">
+            
+                          <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+            
+                          <meta name="color-scheme" content="only light">
+            
+            
+      			      				<meta name="robots" content="index, follow, max-image-preview:large">
+      			
+      			                <meta name="description" content="A former Aurora police school resource officer, arrested earlier this month by the FBI, was released from the Denver jail on a $50,000 cash-only bond last week, and now the FBI thinks there are more victims over the past 20 years.">
+            
+                            <meta name="keywords" content="">
+            
+                            <meta name="news_keywords" content="">
+            
+                
+
+
+
+
+
+
+    
+
+    
+
+
+<link rel="alternate" href="ios-app://334256223/https/www.cbsnews.com/colorado/news/former-aurora-school-officer-released-fbi-seeks-child-victims/">
+<link rel="alternate" href="android-app://com.treemolabs.apps.cbsnews/https/www.cbsnews.com/colorado/news/former-aurora-school-officer-released-fbi-seeks-child-victims/">
+
+
+<meta property="al:web:url" content="https://www.cbsnews.com/colorado/news/former-aurora-school-officer-released-fbi-seeks-child-victims/">
+<meta property="al:ios:app_name" content="CBS News">
+<meta property="al:ios:app_store_id" content="334256223">
+<meta property="al:ios:url" content="cbsnewsapp://cbsnews.com/colorado/news/former-aurora-school-officer-released-fbi-seeks-child-victims/">
+<meta property="al:android:app_name" content="CBS News">
+<meta property="al:android:package" content="com.treemolabs.apps.cbsnews">
+<meta property="al:android:url" content="cbsnewsapp://cbsnews.com/colorado/news/former-aurora-school-officer-released-fbi-seeks-child-victims/">
+
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.cbsnews.com/colorado/news/former-aurora-school-officer-released-fbi-seeks-child-victims/">
+<meta property="og:title" content="Former Aurora school officer released on bond, FBI seeks more victims in child sexual exploitation investigation">
+<meta property="og:description" content="A former Aurora police school resource officer, arrested earlier this month by the FBI, was released from the Denver jail on a $50,000 cash-only bond last week, and now the FBI thinks there are more victims over the past 20 years.">
+<meta property="og:image" content="https://assets3.cbsnewsstatic.com/hub/i/r/2025/10/22/b2b3c4f3-8178-4dd9-b40d-1ef5fc200cfc/thumbnail/1200x630/3cfae75a6d1c94e5d5f0685fed0d45fb/aaron-bunch-for-web.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<meta property="fb:app_id" content="1536620209892267">
+<meta property="fb:pages" content="52552983299">
+
+
+<meta property="article:publisher" content="https://www.facebook.com/CBSColorado/">
+
+  <meta property="article:content_tier" content="free">
+  <meta property="article:opinion" content="false">
+
+<meta name="twitter:dnt" content="on">
+<meta name="twitter:app:country" content="US">
+<meta name="twitter:app:name:iphone" content="CBS News">
+<meta name="twitter:app:id:iphone" content="334256223">
+<meta name="twitter:app:url:iphone" content="cbsnewsapp://cbsnews.com/colorado/news/former-aurora-school-officer-released-fbi-seeks-child-victims/">
+<meta name="twitter:app:name:ipad" content="CBS News">
+<meta name="twitter:app:id:ipad" content="334256223">
+<meta name="twitter:app:url:ipad" content="cbsnewsapp://cbsnews.com/colorado/news/former-aurora-school-officer-released-fbi-seeks-child-victims/">
+<meta name="twitter:app:name:googleplay" content="CBS News">
+<meta name="twitter:app:id:googleplay" content="com.treemolabs.apps.cbsnews">
+<meta name="twitter:app:url:googleplay" content="cbsnewsapp://cbsnews.com/colorado/news/former-aurora-school-officer-released-fbi-seeks-child-victims/">
+<meta name="twitter:site" content="@CBSNewsColorado">
+<meta name="twitter:title" content="Former Aurora school officer released on bond, FBI seeks more victims in child sexual exploitation investigation">
+<meta name="twitter:description" content="A former Aurora police school resource officer, arrested earlier this month by the FBI, was released from the Denver jail on a $50,000 cash-only bond last week, and now the FBI thinks there are more victims over the past 20 years.">
+<meta name="twitter:image" content="https://assets3.cbsnewsstatic.com/hub/i/r/2025/10/22/b2b3c4f3-8178-4dd9-b40d-1ef5fc200cfc/thumbnail/1200x630/3cfae75a6d1c94e5d5f0685fed0d45fb/aaron-bunch-for-web.png">
+
+  <meta name="twitter:creator" content="@https://twitter.com/AustenErblat">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+
+  <link rel="amphtml" href="https://www.cbsnews.com/amp/colorado/news/former-aurora-school-officer-released-fbi-seeks-child-victims/">
+
+<link rel="alternate" type="application/rss+xml" title="Colorado &raquo; Feed" href="https://www.cbsnews.com/latest/rss/main">
+  <link rel="alternate" type="application/rss+xml" title="Colorado &raquo; Local News Feed" href="https://www.cbsnews.com/latest/rss/local-news">
+
+
+      <script type="application/ld+json">
+      {"@context":"https:\/\/schema.org","@type":"NewsMediaOrganization","@id":"https:\/\/www.cbsnews.com\/colorado\/","name":"CBS Colorado","sameAs":["https:\/\/www.cbsdenver.com","https:\/\/www.facebook.com\/CBSColorado\/","https:\/\/www.instagram.com\/CBSColorado\/","https:\/\/twitter.com\/CBSNewsColorado","https:\/\/www.youtube.com\/@CBSColorado","https:\/\/en.wikipedia.org\/wiki\/KCNC-TV"],"url":"https:\/\/www.cbsnews.com\/colorado\/","publishingPrinciples":"https:\/\/www.cbsnews.com\/news\/cbs-news-publishing-principles\/"}
+    </script>
+      <script type="application/ld+json">
+      {"@context":"https:\/\/schema.org","@type":"NewsArticle","articleBody":"A former Aurora police school resource officer -- arrested earlier this month by the FBI and charged with three counts of sexual exploitation of a child -- was released from the Denver jail on a $50,000 cash-only bond last week, and now the FBI thinks there are more victims over the past 20 years.Aaron \"Jake\" Bunch\u00a0served as an Aurora Police Department school resource officer in Aurora area schools since 2005 until his arrest by a SWAT team on Oct. 8 as officers and agents served a search warrant through the FBI\u0027s Child Exploitation Task Force. Most recently, he was a school resource sergeant and supervisor.Bunch, 47, was booked into the Denver Downtown Jail that night until he posted bond on Oct. 17, a Denver Sheriff Department spokesperson said. On Wednesday, the FBI said it believes Bunch \"might have sought out minor victims while serving in a position of trust.\"The charges against him include:Sexual Exploitation of a Child (Sell\/Publish)Sexual Exploitation of a Child (Possession)Sexual Exploitation of a Child (Video)-Extraordinary RiskThe night he was arrested, the Aurora Police Department said in a statement, \"At this stage, there is no evidence indicating that any students or children within Aurora Public Schools, the Cherry Creek School District, or the Aurora Community were impacted or victimized.\"A department spokesman on Wednesday referred questions about whether that had changed to the FBI, but at the time of Bunch\u0027s arrest,  Aurora Police Chief Matt Chamberlain said, \"The allegations against this individual are disturbing and completely contrary to the values and mission of this department. This person has brought shame and disgrace to the badge and to an honorable profession. Such behavior undermines the trust and legitimacy that our officers work hard to earn every single day.\"The FBI has set up a link for victims and witnesses to provide information: https:\/\/forms.fbi.gov\/victims\/AaronBunchVictims\/And while the FBI is leading the investigation, the Denver District Attorney\u0027s Office is prosecuting the case.Bunch is due back in court on Nov. 5. A message was left with his attorney seeking comment on Wednesday.","dateModified":"2025-10-22T14:54:43-0600","articleSection":["Local News"],"author":[{"@type":"Person","name":"Austen  Erblat","url":"https:\/\/www.cbsnews.com\/team\/austen-erblat\/"}],"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.cbsnews.com\/colorado\/news\/former-aurora-school-officer-released-fbi-seeks-child-victims\/","inLanguage  ":"en","name":"Former Aurora school officer released on bond, FBI seeks more victims in child sexual exploitation investigation","headline":"Former Aurora school officer released on bond, FBI seeks more victims in child sexual exploitation investigation","description":"A former Aurora police school resource officer, arrested earlier this month by the FBI, was released from the Denver jail on a $50,000 cash-only bond last week, and now the FBI thinks there are more victims over the past 20 years.","isAccessibleForFree":true},"headline":"Former Aurora school officer released on bond, FBI seeks more victims in child sexual exploitation investigation","description":"A former Aurora police school resource officer, arrested earlier this month by the FBI, was released from the Denver jail on a $50,000 cash-only bond last week, and now the FBI thinks there are more victims over the past 20 years.","url":"https:\/\/www.cbsnews.com\/colorado\/news\/former-aurora-school-officer-released-fbi-seeks-child-victims\/","image":{"@context":"https:\/\/schema.org","@type":"ImageObject","height":630,"width":1200,"url":"https:\/\/assets3.cbsnewsstatic.com\/hub\/i\/r\/2025\/10\/22\/b2b3c4f3-8178-4dd9-b40d-1ef5fc200cfc\/thumbnail\/1200x630\/3cfae75a6d1c94e5d5f0685fed0d45fb\/aaron-bunch-for-web.png"},"thumbnailUrl":"https:\/\/assets3.cbsnewsstatic.com\/hub\/i\/r\/2025\/10\/22\/b2b3c4f3-8178-4dd9-b40d-1ef5fc200cfc\/thumbnail\/1200x630\/3cfae75a6d1c94e5d5f0685fed0d45fb\/aaron-bunch-for-web.png","datePublished":"2025-10-22T13:10:00-0600","publisher":{"@id":"https:\/\/www.cbsnews.com\/"},"alternativeHeadline":"Former Aurora SRO released on bond; FBI seeks victims in child sex crimes case"}
+    </script>
+      <script type="application/ld+json">
+      {"@context":"http:\/\/schema.org\/","@type":"WebPage","name":"Former Aurora school officer released on bond, FBI seeks more victims in child sexual exploitation investigation","url":"https:\/\/www.cbsnews.com\/colorado\/news\/former-aurora-school-officer-released-fbi-seeks-child-victims\/"}
+    </script>
+      <script type="application/ld+json">
+      {"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.cbsnews.com\/colorado\/","@type":"WebPage","@name":"CBSNews.com"}},{"@type":"ListItem","position":2,"name":"Local News","item":{"@id":"https:\/\/www.cbsnews.com\/colorado\/local-news","@type":"CollectionPage","@name":"Local News"}},{"@type":"ListItem","position":3,"name":"Former Aurora SRO released on bond; FBI seeks victims in child sex crimes case","item":{"@id":"https:\/\/www.cbsnews.com\/colorado\/news\/former-aurora-school-officer-released-fbi-seeks-child-victims\/","@name":"Former Aurora SRO released on bond; FBI seeks victims in child sex crimes case"}}]}
+    </script>
+  
+                    <meta name="origin" content="colorado">
+
+  <meta name="topic_id" content="efbf9cf6-8b87-4a33-ad0d-cd769ff06725">
+
+                    
+                            
+                                    <link rel="canonical" href="https://www.cbsnews.com/colorado/news/former-aurora-school-officer-released-fbi-seeks-child-victims/">
+            
+            
+                <meta name="theme-color" content="#101010">
+<link rel="manifest" href="/manifest.json">
+
+<link rel="shortcut icon mask-icon" type="image/svg+xml" href="https://www.cbsnews.com/fly/bundles/cbsnewscore/icons/icon.svg" color="#101010">
+<link rel="alternate icon" sizes="32x32" href="https://www.cbsnews.com/fly/bundles/cbsnewscore/icons/icon-32x32.png">
+
+<link rel="apple-touch-icon" href="https://www.cbsnews.com/fly/bundles/cbsnewscore/icons/icon-192x192.png">
+<link rel="apple-touch-startup-image" href="https://www.cbsnews.com/fly/bundles/cbsnewscore/icons/icon-512x512.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="CBS News">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+            <link rel="preconnect" href="https://assets1.cbsnewsstatic.com">
+            <link rel="preconnect" href="https://assets2.cbsnewsstatic.com">
+            <link rel="preconnect" href="https://assets3.cbsnewsstatic.com">
+        
+        
+                                <link rel="dns-prefetch" href="https://global.ketchcdn.com" data-no-header>
+<link rel="dns-prefetch" href="https://cdn.privacy.paramount.com" data-no-header>
+<script>!function(){window.semaphore=window.semaphore||[],window.ketch=function(){window.semaphore.push(arguments)};var e=document.createElement("script");e.type="text/javascript",e.src="https://global.ketchcdn.com/web/v3/config/cbs_news/cbsnews/boot.js",e.defer=e.async=!0,document.getElementsByTagName("head")[0].appendChild(e)}();</script>
+<script type="text/javascript">
+    window.ASSETS_VERSION = '9c506172a5d086fe5db9a7441ffc4c0e';
+
+    // CBSOptanon Bootstrap Code.
+    (function(a){
+        const w=window,b='cbsoptanon',q='cmd',r='config';
+        w[b] = w[b] ? w[b] : {};
+        w[b][q] = w[b][q] ? w[b][q] : [];
+        w[b][r] = w[b][r] ? w[b][r] : [];
+        a.forEach(function(z){
+            w[b][z] = w[b][z] || function(){
+                var c=arguments;
+                w[b][q].push(function(){
+                    w[b][z].apply(w[b],c);
+                })
+            }
+        });
+    })(["onIframesReady","onFormsReady","onScriptsReady","onAdsReady"]);
+</script>
+<script id="bb-cbsoptanon" src="https://cdn.privacy.paramount.com/dist/optanon-v2.0.0.js" type="text/javascript" async></script>
+<script type="text/javascript">
+    window.cbsoptanon.config.push({
+        enableServices: false, // Code needed for ads / BidBarrel to work right.
+        setNpaOnConsentChange: true, // ensures BB knows it can perform header bidding again.
+    });
+    window.cbsoptanon.onIframesReady(function(_cbsoptanon) {
+        _cbsoptanon.tags.load('IFRAME');
+    });
+</script>
+                <script class="optanon-category-4" data-name="minutelyScript" defer id="script_minutely" data-src="https://apv-launcher.minute.ly/api/launcher/MIN-903100.js" data-type="text/javascript">
+    </script>
+
+                            
+        <script type="application/javascript" data-f="false">
+            function loadAdmiralScript() {
+                if (window.self === window.top) {
+                    !(function(S,_name){S[_name]=S[_name]||function I(){(I.q=I.q||[]).push(arguments)},S[_name].v=S[_name].v||2,S[_name].s="3";!(function(S,I,V,t){function P(V,t){try{P=S.localStorage,(V=JSON.parse(P[decodeURI(decodeURI('%256%37%2565%25%37%34%2549%25%374%25%365%6d'))]("_aQS01RDlDQzI1QTgyQ0FFMzUwNTQ5RkMwQUMtMg")).lgk||[])&&(t=S[I].pubads())&&V.forEach((function(S){S&&S[0]&&t.setTargeting(S[0],S[1]||"")}))}catch(A){}var P}try{(t=S[I]=S[I]||{}).cmd=t.cmd||[],typeof t.pubads===V?P():typeof t.cmd.unshift===V?t.cmd.unshift(P):t.cmd.push(P)}catch(A){}})(window,decodeURI(decodeURI('%25%36%37%25%36f%6f%67%6c%65t%61%256%37')),"function");;})(window,decodeURI(decodeURI('%61%2564%6d%256%39r%2561%25%36c')));!(function(S,I,V,t,P,A,a,C,Z,b,k,f,J,R,L,c,B,z,n,Q,U,e,p,r,D){function H(V,A){navigator.onLine&&Q&&(Q=!1,(A=(function(S,I,V){if(!c)return!1;for(I=(S=c.getEntriesByType("resource")).length;V=S[--I];)if(!V.deliveryType&&V.transferSize>300&&V.fetchStart>B)return!0;return!1})())||(D=8),!U&&n&&(D=16),!U&&!A||(function(V,A,a){if(!/bot|spider|headlesschrome|java\//i.test(navigator.userAgent||"")&&(new(function(){V=(function h(e,t,r,n){if(!e||(function e(r,n,i,o){for(o=0;r&&o<r.length;o+=2)o>0&&(r[o+1]||[]).unshift(i),i=(n=t[r[o]])&&n(e,r[o+1]||[]);return i})(e))return r.apply(this,n||[])}([0,[[1,[[[3,["%25%36%31%25%364m%62%65%25%36e%25%365%2566%25%36%39%257%34s"],2,[""]]]]]]],[function a(e,t){return!e(t[0])},function o(e,t){for(var r=!1,n=0;!r&&t[0]&&n<t[0].length;n++)r=e(t[0][n]);return r},function u(e,t,r,n){return r=t[0]||"",(n=t[1]||"")?-1!==r.indexOf(n):!!r},function f(e,t,r){return(r=(document.cookie||"").match(new RegExp("(^|;\\s*)"+decodeURI(decodeURI(t[0]))+"\\s*=\\s*([^;]+)")))?r[2]:void 0}],function(d,c,e,f,i,m,y){e=d.createElement("div");e.innerHTML="<div class=\"DCDOr\"><div class=\"eRIqgq a__s1p0xe8r-0\"><div class=\"ezkXGa a__s1p0xe8r-0\"><div class=\"jozuUb\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/CBS_News.svg/1200px-CBS_News.svg.png\" class=\"hgqALM\"><\/img><\/div><div class=\"heZdyW\"><h3 class=\"kMGqeO\">Enable Ads to Continue<\/h3><div class=\"eFEjHN\">We use ads to keep our content free. To access our site, disable your adblocker.<\/div><button data-ko4at-0 data-0hqg20zgvw=\"https://my.g%65t%61dm%69%72a%6c.com/instructions\" class=\"kWmXCH a__s1p0xe8r-1\">Allow Ads on CBS News<\/button><button data-ko4at-2 class=\"jgxFyc a__s1p0xe8r-1\">Continue without disabling<\/button><\/div><\/div><\/div><div class=\"ddIumf\"><span class=\"bRORkN\">Need help? <a href=\"https://g%65t%61dm%69ra%6c.typeform.com/to/s8M2nY5H\" target=\"_blank\" class=\"izqWcg\">Contact support<\/a><\/span><span class=\"bRORkN\">|<\/span><span class=\"bRORkN\"><a href=\"https://%67e%74a%64m%69ra%6c.com/pb/\" target=\"_blank\" class=\"izqWcg\">We're using&nbsp;<img src=\"https://pubgifs.com/412d3544394343323541383243414533353035343946433041432d32_logo.svg\" class=\"ggJJaU\"><\/img><\/a><\/span><\/div><\/div>";function onClose(){e.remove()}f=["click",function(e){var t=e.currentTarget.getAttribute("data-0hqg20zgvw"),r=e.currentTarget.parentElement,n=document.createElement("iframe");n.src=t,n.style="margin: 36px 0;outline: 0;border: 0;width: 100%;height: 400px;",r.replaceWith(n);var i=function(e){var t=e.data,o=t.goBack,c=t.blockerDisabled;o?(n.replaceWith(r),window.removeEventListener("message",i)):c&&window.location.reload()};window.addEventListener("message",i)},"click",onClose];for (i=0;i<f.length;i+=2){(m=e.querySelector('[data-ko4at-'+i+']'))&&m.addEventListener(f[i],f[i+1])}y=d.createElement("style");y[c](d.createTextNode(".DCDOr{all:initial;position:fixed;top:0;right:0;bottom:0;left:0;font-family:Arial;overflow:auto;background-color:rgba(255,255,255,1);z-index:2147483647;}.DCDOr .a__s1p0xe8r-0{width:100%;height:100%;margin:0 auto;}.DCDOr .a__s1p0xe8r-1{cursor:pointer;border:none;font-weight:700;}.eRIqgq{max-width:740px;position:relative;}.ezkXGa{box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;-webkit-box-pack:center;-webkit-justify-conten
+

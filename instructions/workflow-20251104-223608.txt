@@ -1,0 +1,913 @@
+URL: https://www.nfl.com/teams/denver-broncos/
+
+
+<!DOCTYPE html>
+    <html lang="en-US" dir="ltr" />
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="dns-prefetch" href="//nflenterprises.tt.omtrdc.net" crossorigin>
+
+  <link rel="preconnect" href="//securepubads.g.doubleclick.net" crossorigin>
+    <link rel="preconnect" href="//cdn.onesignal.com" crossorigin>
+    <link rel="preconnect" href="//assets.adobedtm.com" crossorigin>
+
+
+
+
+
+
+<title>Denver Broncos News, Scores, Stats, Schedule | NFL.com</title>
+<meta name="description" content="Get the latest Denver Broncos news. Find news, video, standings, scores and schedule information for the Denver Broncos" />
+<meta name="keywords" content="" />
+
+<meta property="og:title" content="NFL.com | Official Site of the National Football League" />
+<meta property="og:description" content="The official source for NFL news, video highlights, fantasy football, game-day coverage, schedules, stats, scores and more." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.nfl.com/teams/denver-broncos/" />
+<meta property="og:site_name" content="NFL.com" />
+<meta property="og:locale" content="en-US" />
+<meta property="og:image" content="https://static.www.nfl.com/t_headshot_desktop/league/api/clubs/logos/DEN" />
+<meta property="og:image:type" content="image/jpeg" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="NFL.com | Official Site of the National Football League" />
+<meta name="twitter:description" content="The official source for NFL news, video highlights, fantasy football, game-day coverage, schedules, stats, scores and more." />
+<meta name="twitter:image:src" content="https://static.www.nfl.com/t_headshot_desktop/league/api/clubs/logos/DEN" />
+<meta name="twitter:site" content="@NFL" />
+
+<link rel="canonical" href="https://www.nfl.com/teams/denver-broncos/" />  
+  
+  <link href="/manifest.json" rel="manifest" />
+  
+
+
+<link rel="icon" href="https://static.www.nfl.com/league/run3dfyjniqxah4ehxfu" />
+
+<link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProDisplayC/All-ProDisplayC-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProDisplayC/All-ProDisplayC-BoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProSans/All-ProSans--bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProSans/All-ProSans--boldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProSans/All-ProSans--regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProSans/All-ProSans--regularItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProStats/All-ProStats--bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProStats/All-ProStats--medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProStats/All-ProStats--regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Druk/Druk--Bold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Druk/Druk--BoldItalic.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Druk/Druk--SuperItalic.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Black.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Bold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--ExtraBold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--ExtraLight.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Light.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Medium.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Regular.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Thin.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+<link href="https://www.nfl.com/compiledassets/css/base.css?_t=87e91fa39991dbda1c46f4501bf54b27" rel="preload" as="style" crossorigin type="text/css" /><link href="https://www.nfl.com/compiledassets/css/base.css?_t=87e91fa39991dbda1c46f4501bf54b27" rel="stylesheet" type="text/css" />  <link rel="preload" as="style" href="https://www.nfl.com/compiledassets/theming/5f330197ad251d8e6747ab2d34f39a11" crossorigin/>
+  <link rel="stylesheet" type="text/css" href="https://www.nfl.com/compiledassets/theming/5f330197ad251d8e6747ab2d34f39a11" />
+  <link rel="dns-prefetch" as="style" href="https://p.nfltags.com/nfl/live/tailwind.generated.css" crossorigin />
+  <link rel="preconnect" as="style" href="https://p.nfltags.com/nfl/live/tailwind.generated.css" crossorigin />
+  <link rel="stylesheet" type="text/css" href="https://p.nfltags.com/nfl/live/tailwind.generated.css" />
+<script>
+  // Picture element HTML5 shiv
+  document.createElement("picture");
+  window.baseUrl = "https://www.nfl.com";
+  window.fbappid = "404205130228139";
+  window.marketoHostName = "";
+</script>
+  
+
+
+  <!-- OneTrust Cookies Consent Notice start -->
+  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+          type="text/javascript" charset="UTF-8"
+          data-domain-script="e7957cc7-f869-4093-8b89-94bbc6dd16d8"></script>
+
+
+
+<script type="text/javascript">
+  function OptanonWrapper() {
+    oneTrustAppendScriptHelper();
+    oneTrustInsertScriptHelper();
+    oneTrustDataRequire();
+    setAdsRestrictDataProcessingLocalStorage();
+    refreshPageAfterCookiesSettingsChange();
+    showCookiesMessageForHiddenModules();
+  }
+
+  function showCookiesMessageForHiddenModules() {
+    var dataOneTrustHiddenMessages = document.querySelectorAll('[data-onetrust-hidden-message]');
+    if (!dataOneTrustHiddenMessages) {
+      return;
+    }
+
+    ///1. For each module with hidden message div
+    dataOneTrustHiddenMessages.forEach(function (element) {
+      ///2. Check for the cookie categories attribute
+      var cookieCategories = element.getAttribute('data-onetrust-category-hidden-message');
+      if (!cookieCategories) {
+        return;
+      }
+
+      ///3. Split the cookie categories string
+      var splittedCategories = cookieCategories.split('-');
+      ///4. If the module cookie categories are not all included in the window.OnetrustActiveGroups
+      if (!splittedCategories.every(c => window.OnetrustActiveGroups.includes(c))) {
+        ///Update the hidden message text based on the metadata
+        element.innerHTML = 'You are unable to interact with this content due to your Cookie Consent choices, you can enable cookies in the footer by selecting Cookie Settings.';
+        ///Show the message removing the hidden class
+        element.classList.remove('nfl-u-visibility-hidden');
+      }
+    });
+  }
+
+  function oneTrustInsertScriptHelper() {
+    /// Docs: https://my.onetrust.com/s/article/UUID-518074a1-a6da-81c3-be52-bae7685d9c94#UUID-518074a1-a6da-81c3-be52-bae7685d9c94_N1690409864050
+    var scriptsToInsert = document.querySelectorAll('[data-onetrust-insert-script]');
+    if (!scriptsToInsert) {
+      return;
+    }
+
+    scriptsToInsert.forEach(function (element) {
+      var isAsync = element.hasAttribute('async');
+      var srcValue = element.getAttribute('data-src');
+      var cookieCategory = element.getAttribute('data-onetrust-category');
+
+      window.OneTrust.InsertScript(srcValue, 'head', null, null, cookieCategory, isAsync);
+    });
+  }
+
+  function oneTrustAppendScriptHelper() {
+    ///Custom logic (i.e.: for Microsoft Dynamics v1)
+    var scriptsToAppend = document.querySelectorAll('[data-onetrust-append-script-custom]');
+    if (!scriptsToAppend) {
+      return;
+    }
+
+    scriptsToAppend.forEach(function (element) {
+      var cookieCategory = element.getAttribute('data-onetrust-category');
+      if (window.OnetrustActiveGroups.indexOf(cookieCategory) === -1) {
+        return;
+      }
+
+      var source = element.getAttribute('data-src');
+      if (source) {
+        //We need to add a new DOM node containing 'src' to fire the MutationObserver and load the script
+        var clonedNode = element.cloneNode(true);
+        clonedNode.setAttribute('src', source);
+        clonedNode.removeAttribute('data-onetrust-append-script-custom');
+        clonedNode.removeAttribute('data-src');
+        element.replaceWith(clonedNode);
+        return;
+      }
+
+      var type = element.getAttribute('type');
+      if (type && type == 'text/plain') {
+        //We need to add a timeout to be sure that this script is loaded after the first one
+        var timeOutScript;
+        clearTimeout(timeOutScript);
+
+        timeOutScript = setTimeout(function () {
+          //We need to add a new DOM node containing 'src' to fire the MutationObserver and load the script
+          var clonedNode = element.cloneNode(true);
+          clonedNode.setAttribute('type', "text/javascript");
+          clonedNode.removeAttribute('data-onetrust-append-script-custom');
+          element.replaceWith(clonedNode);
+        }, 2000);
+      }
+    });
+  }
+
+  function oneTrustDataRequire() {
+    /// Custom method for the 'data-require' modules
+    var dataOneTrustRequireItems = document.querySelectorAll('[data-onetrust-require]');
+    if (!dataOneTrustRequireItems) {
+      return;
+    }
+
+    dataOneTrustRequireItems.forEach(function (element) {
+      var cookieCategory = element.getAttribute('data-onetrust-category');
+      if (window.OnetrustActiveGroups.indexOf(cookieCategory) === -1) {
+        return;
+      }
+
+      var dataRequire = element.getAttribute('data-onetrust-require');
+
+      //We need to add a new DOM node containing 'data-require' to fire the MutationObserver in the requireModule.js and load the data-require script
+      var clonedNode = element.cloneNode(true);
+      clonedNode.setAttribute('data-require', dataRequire);
+      clonedNode.removeAttribute('data-onetrust-require');
+      element.replaceWith(clonedNode);
+    });
+  }
+
+  function setAdsRestrictDataProcessingLocalStorage() {
+    if (window.OnetrustActiveGroups.indexOf('C0004') > 0) {
+      localStorage.setItem('user.restrictDataProcessing', 0);
+    }
+    else {
+      localStorage.setItem('user.restrictDataProcessing', 1);
+    }
+  }
+
+  function getCookie(name) {
+    /// function to pull cookie value
+    var value = "; " + document.cookie;
+    var parts = value.split("; " + name + "=");
+    if (parts.length == 2) return parts.pop().split(";").shift();
+  }
+
+  function refreshPageAfterCookiesSettingsChange() {
+    /// Docs: https://my.onetrust.com/s/article/UUID-534defd9-7ec8-fc0e-78bf-8dce8c6c5593?language=en_US
+    var OABCcookieName = "OptanonAlertBoxClosed";
+    var bannerAcceptBtn = document.getElementById("onetrust-accept-btn-handler");
+    var pcAllowAllBtn = document.getElementById("accept-recommended-btn-handler");
+    var pcRejectAllBtn = document.getElementById("onetrust-reject-all-handler");
+    var pcSaveBtn = document.getElementsByClassName("save-preference-btn-handler onetrust-close-btn-handler")[0];
+    var pcRefuseAllBtn = document.getElementsByClassName("ot-pc-refuse-all-handler")[0];
+    var OABCcookie = getCookie(OABCcookieName);
+
+    // IF logic needed here because ot-banner-sdk DIV is not injected on page loads if banner is not exposed
+    if (!OABCcookie && bannerAcceptBtn) {
+      bannerAcceptBtn.addEventListener('click', function () {
+        window.console.log("Allowed all via Banner");
+        window.location.reload();
+      });
+    }
+    if (pcAllowAllBtn) {
+      pcAllowAllBtn.addEventListener('click', function () {
+          window.console.log("Allowed all via Preference Center");
+          window.location.reload();
+      });
+    }
+    if (pcRejectAllBtn) {
+      pcRejectAllBtn.addEventListener('click', function () {
+        window.console.log("Rejected all via Preference Center");
+        window.location.reload();
+      });
+    }
+    if (pcSaveBtn) {
+      pcSaveBtn.addEventListener('click', function () {
+          setTimeout(() => {
+              window.console.log("Set custom settings via Preference Center");
+              window.location.reload();
+          }, 1000) //quick timeout so that the consent receipt can be sent and the cookie can be updated
+      });
+    }
+    if (pcRefuseAllBtn) {
+      pcRefuseAllBtn.addEventListener('click', function () {
+        window.console.log("Rejected all via Preference Center");
+        window.location.reload();
+      });
+    }
+  }
+</script>  <!-- OneTrust Cookies Consent Notice end -->
+  <!-- IAB CCPA script start -->
+  <!-- IAB CCPA script end -->
+
+  
+<script data-onetrust-insert-script data-src=//apv-launcher.minute.ly/api/launcher/MIN-70000.js data-onetrust-category=C0004 async></script>
+  <script async defer src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script type="text/javascript" src="https://imasdk.googleapis.com/js/sdkloader/gpt_proxy.js"></script>
+  
+
+
+<script type="text/javascript">
+  window.gptconfig = {};
+  var googletag = window.googletag || {};
+  googletag.cmd = window.googletag.cmd || [];
+  window.gptSlots = [];
+  var advPageInfo = {"Sections":["teams","denver-broncos","landing"],"AdUnitName":"teams/denver-broncos/landing","IsCustom":false};
+  var adUnitName = advPageInfo.AdUnitName;
+  var clubAdvId = '/4595/nfl.com/';
+  var leagueAdvId = '/4595/nfl.com/';
+  var testParameter = '';
+window.adUnit = leagueAdvId + adUnitName;
+  var screenWidth = window.innerWidth;
+  var companionSize = [[0, 0]];
+  var companionVidSkinSize = [[0, 0]];
+  if (screenWidth > 1024) {
+    companionSize = [[970, 90], [728, 90]];
+    companionVidSkinSize = [[1, 1]];
+  }
+  else if (screenWidth > 760 && screenWidth <= 1024) {
+    companionSize = [[728, 90]];
+  } 
+  else if (screenWidth > 100 && screenWidth <= 760) {
+
+    companionSize = [[320, 50]]
+  }
+
+  googletag.cmd.push(function () {
+    gptconfig.responsiveMappings = {};
+    gptconfig.responsiveMappings['leaderboard'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+    [728, 90],
+    [970, 90]
+    ]).
+    addSize([760, 1], [
+    [728, 90]
+    ]).
+    addSize([100, 1], [
+    [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['inpage_1'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+      [728, 90],
+      [970, 90]
+    ]).
+    addSize([760, 1], [
+      [728, 90]
+    ]).
+    addSize([100, 1], [
+      [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['inpage_2'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+      [728, 90],
+      [970, 90]
+    ]).
+    addSize([760, 1], [
+      [728, 90]
+    ]).
+    addSize([100, 1], [
+      [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['mrec'] = googletag.sizeMapping().
+    addSize([100,1],[
+    [300, 250]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['mrec-photogallery'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [300, 600],
+    [300, 250]
+    ]).
+    addSize([100,1],[
+    [300, 250]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['mrec-photogallery-list'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+    [728, 90],
+    [970, 250],
+    [970, 90]
+    ]).
+    addSize([100, 1], [
+    [300, 250],
+    [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['package-c'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [300, 600]
+    ]).
+    addSize([100,1],[
+    [300, 250]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['package-b'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [160, 600]
+    ]).
+    addSize([100,1],[
+    [300, 250]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['presented-by'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [100, 30]
+    ]).
+    addSize([100,1],[
+    [100, 30],
+    [30, 30]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['companion'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [728, 90],
+    [970, 90]
+    ]).
+    addSize([760, 1], [
+    [728, 90]
+    ]).
+    addSize([100,1],[
+    [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['interstitials'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [1, 4]
+    ]).
+    addSize([760,1],[
+    [3, 4]
+    ]).
+    addSize([100,1],[
+    [3, 4]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['game_sched_inline'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+    [728, 90],
+    [970, 90]
+    ]).
+    addSize([760, 1], [
+    [728, 90]
+    ]).
+    addSize([100, 1], [
+    [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['teaminfo'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+      [300, 250]
+    ]).
+    addSize([760, 1], [
+      [300, 250]
+    ]).
+    addSize([100, 1], [
+      [300, 250]
+    ]).
+    addSize([0, 0], []).
+      build();
+
+    gptconfig.responsiveMappings['billboard'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+      [970, 415]
+    ]).
+    addSize([760, 1], [
+      [640, 415]
+    ]).
+    addSize([100, 1], [
+      [300, 300]
+    ]).
+    addSize([0, 0], []).
+      build();
+
+
+    gptconfig.responsiveMappings["rightrail"] = googletag.sizeMapping()
+      .addSize([992, 0], [
+          [300, 250],
+      ])
+      .addSize([768, 0], [
+          [300, 250],
+      ])
+      .addSize([0, 0], [
+          [300, 250]
+      ])
+      .build();
+
+    gptconfig.responsiveMappings["picks-rightrail"] = googletag.sizeMapping()
+      .addSize([0, 0], [
+        [300, 250],
+    ]).build();
+
+    gptconfig.responsiveMappings["prospects-rightrail"] = googletag.sizeMapping()
+      .addSize([992, 0], [
+          [300, 600]
+      ])
+      .addSize([768, 0], [
+          [728, 90]
+      ])
+      .addSize([0, 0], [
+          [320, 50]
+      ])
+      .build();
+
+    gptconfig.responsiveMappings["teams-rightrail"] = googletag.sizeMapping()
+      .addSize([992, 0], [
+          [300, 250]
+      ])
+      .addSize([768, 0], [
+          [728, 90]
+      ])
+      .addSize([0, 0], [
+          [320, 50]
+      ])
+      .build();
+
+    gptconfig.responsiveMappings['bottom'] = googletag.sizeMapping()
+      .addSize([0, 0], [
+          [300, 250]
+      ])
+      .addSize([768, 0], [
+          [728, 90]
+      ])
+      .addSize([1024, 0], [
+          [300,
+
+URL: https://www.espn.com/nfl/team/_/name/den/denver-broncos
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+Request blocked.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: I0P14AcKVGp1INaNPTszJwhgMkY4YiegYDdzIQlQqktPFSZE9mR2lQ==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+
+URL: https://www.vegasinsider.com/nfl/odds/
+<!DOCTYPE html> <html> <head> <title>VegasInsider - Page Not Found</title> <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" /> <meta name="apple-mobile-web-app-capable" content="yes" /> <link rel="stylesheet" media="none" onload="if (media !== 'all') media = 'all';" type="text/css" href="https://bctn-vi.s3.amazonaws.com/css/error.css?v=203bcd9" /> <link rel="stylesheet" media="none" onload="if (media !== 'all') media = 'all';" type="text/css" href="https://fonts.googleapis.com/css?family=Saira+Condensed:400,700&display=swap" /> </head> <body> <header class="alt-header"> <div class="alt-splash"> <a href="/"> <img class="alt-logo" src="https://bctn-vi.s3.amazonaws.com/img/logo.svg?v=203bcd9" alt="VegasInsider" /> </a> </div> </header> <div class="module error"> <div class="module-body"> <div class="error-image"> <img width="" src="https://cdn.vegasinsider.com/themes/vegasinsider/assets/public/images/VI404_dog.webp" alt="Out of Bounds" /> </div> <div class="error-top"> <span class="error-top-code">404</span> <h1 class="error-top-status">Not Found</h1> <span class="error-top-message bold">Post not found: nfl--odds</span> <p class="error-top-worry">But don't worry, we have other pages...</p> </div> <div class="error-bottom"> <div class="error-bottom-buttons"> <a href="/picks/" class="button">EXPERT PICKS</a> <a href="/odds/" class="button">VEGAS ODDS</a> <a href="/scores/" class="button">LATEST SCORES</a> </div> <ul class="error-bottom-links"> <li>Return to the <a href="/" style="color:#FCC138">VegasInsider homepage</a></li> <li>Sign in to your <a href="/sign-in/" style="color:#FCC138">MyInsider Account</a></li> <li>Looking to bet in your state?</li> <li>Visit our <a href="/sportsbooks/states/" style="color:#FCC138">US sportsbooks state overview</a></li> </ul> </div> </div> </div> </body> </html>
+
+URL: https://weather.gov
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<title>National Weather Service</title>
+<meta name="DC.title" content="National Weather Service" />
+<meta name="DC.description" content="NOAA National Weather Service National Weather Service" />
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" />
+<meta name="DC.date.created" scheme="ISO8601" content="" />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.keywords" content="weather, National Weather Service" />
+<meta name="DC.publisher" content="NOAA's National Weather Service" />
+<meta name="DC.contributor" content="National Weather Service" />
+<meta name="DC.rights" content="/disclaimer.php" />
+<meta name="rating" content="General" />
+<meta name="robots" content="index,follow" />
+
+
+        <link href="/css/weatherstyle.css" rel="stylesheet" type="text/css" />
+        <link href="/css/template.css" rel="stylesheet" type="text/css" />
+        <link href="/css/myfcst.css" rel="stylesheet" type="text/css" />
+        <link href="/css/ForecastSearch.css" rel="stylesheet" type="text/css" />
+        <link href="/css/pointforecast.css" rel="stylesheet" type="text/css" />
+        <link href="/css/jqueryui10_3_1custom/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>        <script type="text/javascript" src="/js/jquery-ui-1.10.3.custom.min.js"></script>        <script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>        <script type="text/javascript" src="/js/ForecastSearch.js"></script>        <script type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&sub-agency=NOAA&yt=true&pga4=G-736JJ6NL0V"></script>        <script type="text/javascript" src="/js/topNavMenu.js"></script>        <script type="text/javascript" src="/js/NidsESRI.js"></script>        <script type="text/javascript" src="/js/nwsexit.js"></script>
+
+
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-736JJ6NL0V"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+            gtag('config', 'G-736JJ6NL0V');
+    </script>
+
+    </head>
+
+    <body> 
+        
+
+        <div class="header">
+    <div class="header-content">
+        <a href="https://www.weather.gov" class="header-nws"><img src="/bundles/templating/images/header/header.png" alt="National Weather Service"/></a>
+        <a href="http://www.commerce.gov" class="header-doc"><img src="/bundles/templating/images/header/header_doc.png" alt="United States Department of Commerce"/></a>
+        <a href="http://www.noaa.gov" class="header-noaa" title="National Oceanic and Atmospheric Administration"></a>
+    </div>
+    <div style="clear:both"></div>
+</div>
+<div class="header-shadow">
+    <div class="header-shadow-content"></div>
+</div>
+<script>
+    var domains = {
+        weather: "https://www.weather.gov",
+        forecast: "https://forecast.weather.gov",
+        airquality: "https://airquality.weather.gov",
+        aviation: "https://aviationweather.gov",
+        water: "https://water.weather.gov",
+        graphical: "https://graphical.weather.gov",
+        api: "https://api.weather.gov",
+        radar: "https://radar.weather.gov",
+        esriGeocode: "https://geocode.arcgis.com"
+    }
+</script>
+
+
+        <div class="center">
+
+            <div class="content">
+    <div class="topnav">
+        <ul id="topnav">
+            <li>
+                <script type="text/javascript">
+                    function goBack() {
+                        if (document.referrer.toLowerCase().indexOf("weather.gov") != -1) {
+                            history.back();
+                        } else {
+                            document.location.href = "https://www.weather.gov";
+                        }
+                    }
+                </script>
+                <div class="topMenuNavList home">
+                    <a href="#" onclick="goBack();">HOME</a>
+                </div>
+            </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/forecastmaps/">FORECAST</a>
+                    </div>
+                                                                        <div style="opacity: 0;" class="sub">
+                                <ul>
+                                                                            <li>
+                                            <a href="https://www.weather.gov">Local</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://digital.weather.gov">Graphical</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://aviationweather.gov">Aviation</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/marine/">Marine</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://water.noaa.gov">Rivers and Lakes</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.nhc.noaa.gov">Hurricanes</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.spc.noaa.gov">Severe Weather</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/fire/">Fire Weather</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://gml.noaa.gov/grad/solcalc/">Sunrise/Sunset</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.cpc.ncep.noaa.gov">Long Range Forecasts</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.cpc.ncep.noaa.gov">Climate Prediction</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.swpc.noaa.gov">Space Weather</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                                                            </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/wrh/climate">PAST WEATHER</a>
+                    </div>
+                                                                        <div style="opacity: 0;" class="sub">
+                                <ul>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/wrh/climate">Past Weather</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://gml.noaa.gov/grad/solcalc/">Astronomical Data</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.climate.gov/maps-data/dataset/past-weather-zip-code-data-table">Certified Weather Data</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                                                            </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/safety/">SAFETY</a>
+                    </div>
+                                                                                </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/informationcenter">INFORMATION</a>
+                    </div>
+                                                                        <div style="opacity: 0;" class="sub">
+                                <ul>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/wrn/wea">Wireless Emergency Alerts</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/owlie/publication_brochures">Brochures</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/wrn/">Weather-Ready Nation</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/coop/">Cooperative Observers</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/briefing/">Daily Briefing</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/hazstat">Damage/Fatality/Injury Statistics</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="http://mag.ncep.noaa.gov">Forecast Models</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/gis/">GIS Data Portal</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/nwr">NOAA Weather Radio</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/publications/">Publications</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/skywarn/">SKYWARN Storm Spotters</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/stormready">StormReady</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/tsunamiready/">TsunamiReady</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/notification/">Service Change Notices</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                                                            </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/education/">EDUCATION</a>
+                    </div>
+                                                                                </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/news">NEWS</a>
+                    </div>
+                                                                                </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/search/">SEARCH</a>
+                    </div>
+                                            <div style="opacity: 0;" class="sub">
+                            <ul class="no-links">
+                            <li><!-- Begin search code -->
+                                <div id="site-search">
+                                    <form method="get" action="https://search.usa.gov/search" style="margin-bottom: 0; margin-top: 0;">
+                                        <input type="hidden" name="v:project" value="firstgov" />
+                                        <label for="query">Search For</label>
+                                        <input type="text" name="query" id="query" size="12" />
+                                        <input type="submit" value="Go" />
+                                        <p>
+                                            <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+                                            <label for="nws" class="search-scope">NWS</label>
+                                            <input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+                                            <label for="noaa" class="search-scope">All NOAA</label>
+                                        </p>
+                                    </form>
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                                    </li>
+                            <li class="last">
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/about/">ABOUT</a>
+                    </div>
+                                                                        <div style="opacity: 0;" class="sub">
+                                <ul>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/about/">About NWS</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/organization">Organization</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://sites.google.com/a/noaa.gov/nws-insider/">For NWS Employees</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/ncep/">National Centers</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.noaa.gov/nws-careers">Careers</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/contact">Contact Us</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://forecast.weather.gov/glossary.php">Glossary</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/socialmedia">Social Media</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.noaa.gov/NWStransformation">NWS Transformation</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                                                            </li>
+                    </ul>
+    </div>
+</div>
+
+
+            <div class="center-content">
+               <div id="zipcity_news">
+                <div class="one-sixth-first">
+    <div id="forecast-lookup">
+        <form name="getForecast" id="getForecast" action="https://forecast.weather.gov/zipcity.php" method="get">
+            <label for="inputstring">Local forecast by <br />"City, St" or ZIP code</label>
+            <input id="inputstring" name="inputstring" type="text" value="Enter location ..." onclick="this.value=''" />
+            <input name="btnSearch" id="btnSearch" type="submit" value="Go" />
+            <div id="txtError">
+                <div id="errorNoResults" style="display:none;">Sorry, the location you searched for was not found. Please try another search.</div>
+                <div id="errorMultipleResults" style="display:none">Multiple locations were found. Please select one of the following:</div>
+                <div id="errorChoices" style="display:none"></div>
+                <input id="btnCloseError" type="button" value="Close" style="display:none" />
+            </div>
+            <div id="txtHelp"><a style="text-decoration: underline;" href="javascript:void(window.open('https://www.weather.gov/ForecastSearchHelp.html','locsearchhelp','status=0,toolbar=0,location=0,menubar=0,directories=0,resizable=1,scrollbars=1,height=500,width=530').focus());">Location Help</a></div>
+        </form>
+    </div>
+</div>
+
+                    <div class="five-sixth-last">
+                    <style type="text/css">
+                #topnews.important {
+                    background-color: #d2d2d2;
+                    height: 100%;
+                    margin-bottom: 5px;
+                    position: relative;
+                }
+
+                #topnews .icon {
+                    display: none;
+                }
+
+                #topnews.important .icon {
+                    background-color: #135997;
+                    display: table-cell;
+                    height: 100%;
+                    text-a
+
+URL: https://www.pro-football-reference.com/teams/den/
+
+<!DOCTYPE html>
+<html data-version="klecko-" data-root="/home/pfr/build" lang="en" class="no-js" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+    <link rel="dns-prefetch" href="https://cdn.ssref.net/req/202510282" />
+<script>
+/* https://docs.osano.com/hc/en-us/articles/22469433444372-Google-Consent-Mode-v2  */
+  window.dataLayer = window.dataLayer ||[];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent','default',{
+        'ad_storage':'denied',
+        'analytics_storage':'denied',
+        'ad_user_data':'denied',
+        'ad_personalization':'denied',
+        'personalization_storage':'denied',
+        'functionality_storage':'granted',
+        'security_storage':'granted',
+        'wait_for_update': 500
+      });
+      gtag("set", "ads_data_redaction", true);
+</script>
+<script src="https://cmp.osano.com/16CGnCU8UtNhM14sg/12669873-8cf8-41e2-be1f-1cb803cbffe0/osano.js"></script>
+<style>.osano-cm-widget{display: none;}</style> 
+
+
+
+
+    <title>Denver Broncos Team Records, Leaders, and League Ranks | Pro-Football-Reference.com</title>
+
+    
+    
+    <meta name="Description" content="Checkout the Denver Broncos Records, Top 12 Leaders, League Ranks, history and more on Pro-Football-Reference.com">
+    <link rel="canonical" href="https://www.pro-football-reference.com/teams/den/index.htm" />
+
+
+<!-- include:start ="/inc/klecko_header_pfr.html_f" -->
+<!-- no:cookie fast load the css.           -->
+<script>function gup(n) {n = n.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]'); var r = new RegExp('[\\?&]'+n+'=([^&#]*)'); var re = r.exec(location.search);   return re === null?'':decodeURIComponent(re[1].replace(/\+/g,' '));}; document.srdev = gup('srdev')</script>
+<script>if (!document.srdev && (location.hostname === 'sup.fb.srdevel.com')) { document.srdev = 'aw'; }/* sf: hardcode this in for sup.fb.srdevel.com for testing purposes. */</script>
+<link rel="preconnect" href="https://cdn.ssref.net" crossorigin>
+<link rel="preconnect" href="https://www.google-analytics.com"  crossorigin>
+<link rel="preconnect" href="https://www.googletagservices.com" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/202510282/js/pfr/sr-min.js" as="script" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/202510282/icons/sr_icons-min.svg?pfr" as="fetch" crossorigin>
+<link rel="preload"    href="https://www.pro-football-reference.com/short/inc/main_nav_menu.json" as="fetch" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/201604190/images/chosen-sprite.png" as="image" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/202510282/css/pfr/sr-min.css" as="style"    crossorigin>
+
+<!-- CSS start -->
+ <style>html,body{margin:0;padding:0;font:14px/1.25 "Helvetica Neue",helvetica,arial,sans-serif;color:#000}@media(prefers-reduced-motion:no-preference){html:not(.backstop){scroll-behavior:smooth}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*{animation:none!important;transition-duration:0s!important}}html:not(.backstop) div,html:not(.backstop) span{scroll-margin:2.5em 0 0 0;scroll-snap-margin:2.5em 0 0 0}body{position:relative;background:#c9cbcd;z-index:0;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none}a img{border:0}ul,li,ol{margin:0;padding:0;list-style-type:none}table th,table td{border:0}iframe{max-width:100%}code{background:#eee}a,button,input,select,textarea,label,summary{touch-action:manipulation;-ms-touch-action:manipulation}::selection{background:#ff0;text-shadow:none}html.no-js .hasmore,html.no-js .js,html.js .no-js,html.no-js button,html.is_build .hide_build,html.is_dev .hide_dev,html.is_live .hide_live{display:none!important}.js-select{visibility:hidden}a[href]{color:#34d}a[href]:visited{color:#848}a[href]:hover{color:#5e44b3}a[href]:active{color:#b12}a[href^="tel:"]::before{content:"\260E";display:inline-block;margin-right:0}a[href^="mailto:"]::before{content:"\2709";display:inline-block;margin-right:0}.icon_group a[href^="tel:"]:before,.icon_group a[href^="mailto:"]:before{content:""}.screen_only{display:initial}.user_logged_in .not_logged_in,.logged_in,.sr_cpi_control,.print_only{display:none}#perflog,#modernizr,.user_logged_in .logged_in{display:block}h2{color:#000;margin-bottom:5px;font-size:1.5em}img.right{float:right;margin:0 0 5px 5px}img.left{float:left;margin:0 15px 15px 0}sup{font-size:.75em;position:relative;top:-0.4em;vertical-align:baseline}#wrap{width:100%;background:#fff;position:relative}#wrap>div,#wrap>ul{width:100%;position:relative;clear:both}.hidden-iso,.hidden,#content .hidden,.gutterad,.more,.print_only,#warnings.hide,#nag_devs{display:none}#inner_nav.hidden{visibility:hidden}.float_wrap{overflow:hidden}.grid2{display:grid;grid-column-gap:10px;grid-template-columns:1fr 1fr}.grid2 img{max-width:100%}.grid2.heavyleft{grid-template-columns:2fr 1fr}.grid2.heavyright{grid-template-columns:1fr 2fr}#header{overflow:visible;background:#edefee;border-bottom:3px solid #008445;min-height:50px}#header img{height:25px;float:left;padding:8px 0 8px 2%;max-width:71%;max-width:calc(95% - 80px)}#header #nav_trigger{display:block;cursor:pointer;float:right;padding:7px 2% 7px 1%;height:30px}#header #nav_trigger a{color:#005228;font-size:20px;font-weight:bold;text-decoration:none;display:inline-block}#header #nav_trigger a:before{color:#005228;content:"\2630 ";font-weight:normal}#header #nav{display:none;clear:both;width:88%;background:#fff;padding:7px 6% 0;border-bottom:3px solid #005228;border-top:3px solid #005228;overflow:hidden;font-size:12px}#header #nav .usertools{font-weight:bold;font-size:12px;margin:0 0 4px;padding:7px 6% 0;border-top:1px solid #c9cbcd}#header #nav .breadcrumbs{font-size:12px;padding:7px 6%;border-top:1px solid #c9cbcd}#header #nav_trigger.open{background:#005228}#header #nav_trigger.open a{color:#fff}#header #nav_trigger.open a:before{color:#fff}#header #nav.open{display:block}#header .social{margin:15px 0;display:none}#header.open_search{margin-bottom:50px}#header #subnav{display:none}#translations{background-color:#ffa;padding:4px 0;text-align:center;display:none}#translations.show{display:block}#translations .closer{top:4px}#translations .langs{display:inline-block}#translations .links{margin:0 35px 0 0}#translations .links>div{display:inline-block}#translations .links .welcome{font-weight:bold}#header .search{margin-top:10px;clear:both;padding:0 2% 6px}#header .search input,#header .search input:active,#header .search input:focus{height:32px;font-size:20px}.search input[type="search"]{padding:4px 5px;border:#747678 1px solid;width:73%;margin-right:2%}.search input[type="search"].prefilled{background-color:#ffa}.search input[type="submit"]{float:right;background:#005228;color:white;border:1px solid #747678;padding:0;border-radius:5px;height:24px;width:25%;width:calc(25% - 2px)}.search input[type="submit"]:hover{text-decoration:underline}.search input[type="submit"]:active{background-color:#404542}.search .ac-outline{width:73%;margin-right:2%}.search .ac-outline input[type="search"]{width:100%;margin:0}@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width:400px){#header .search input,#header .search input:active,#header .search input:focus{height:32px;font-size:20px}}#wrap>#info{width:96%;margin:0 auto;padding-bottom:10px}#info .opener,#info .opener:active,#inner_nav div .opener{color:#900;font-weight:bold;clear:both;width:100%;text-align:left;padding:10px 0;border:0;background:transparent}#info button#meta_more_button{border:1px solid #c9cbcd;background-color:#edefee;padding:.5em;margin:.5em 0;text-align:center;width:100%;max-width:400px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:none}#info button#meta_more_button.show{display:inline-block}#info #meta>div>p:nth-child(n+6){display:none}#info.open #meta>div>p:nth-child(n+6){display:block}#info #meta .opener{display:none}#info #meta{margin-top:10px;overflow:hidden}#info #meta p{font-size:.93em;margin:3px 0}#info #meta>div.media-item{float:right;margin-left:10px;width:70px}#info #meta>div.media-item.country{width:100px;height:75px}#info #meta>div.media-item.country .flag{width:100%;height:100%;background-size:100%}#info .media-item img{width:100%;height:auto;border:1px solid black;box-sizing:border-box}#info .media-item img.additional{display:none}#info .media-item.logo img,.bbr #info .media-item img,.cbb #info .media-item img{border:0}#info #meta .media-item p{margin:3px 0;font-size:.785em;font-style:italic}#info #meta .media-item.loader p{visibility:hidden}#info h1{margin-top:0;margin-bottom:5px;line-height:1.1em;font-size:1.5em}#info h1+p{margin-top:5px}#info #bling{margin:6px 1% 6px 0;color:#fff;height:24px;overflow:hidden;float:left;width:88%;display:grid;grid-gap:5px 4px;grid-template-columns:repeat(auto-fill,minmax(100px,1fr))}#info.teams #bling{width:100%}#info #bling li{padding:4px 1.25%;text-align:center;position:relative;height:15px;background:#005228;font-size:.85em;word-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-radius:5px;display:inline-block;width:27%;margin-bottom:5px}#info.teams #bling li{width:45%}#bling li a{color:inherit;position:relative;z-index:1}#info #bling li.bling_hof{background-color:#ffdb1c;color:#000}#info #bling li.bling_all_star{background-color:#c9cbcd;color:#404542}#info #bling li.bling_hof,#info.teams #bling li.bling_all_star,#info.teams #bling li.bling_champ{grid-column-end:span 2}#info #bling li.important{grid-column-end:span 2}#info #bling li.special{background-color:#ffdb1c;color:#000}#info #bling li.all_star{background-color:#c9cbcd;color:#404542}#info.open #bling{height:auto;width:100%;margin-right:0;float:none;overflow:visible}@supports(display:grid){#info #bling li,#info.open #bling li,#info.teams #bling li{width:auto!important;margin-bottom:0!important}}.uni_holder{margin:3px 0;float:none;width:100%;position:relative}#info .uni_holder{float:left}#bling+.uni_holder{width:11%}#info.open #bling+.uni_holder{width:100%;overflow:visible;float:none;margin-bottom:5px}.uni_holder>a{display:inline-block;position:relative;height:auto;width:28px;margin-bottom:3px;margin-right:.3em;text-decoration:none;overflow:hidden}.uni_holder svg{height:28px;width:28px}.uni_holder svg.jersey{height:35px}.uni_holder svg text{font-size:1.8em;font-weight:bold}.uni_holder svg text.string{font-size:1.3em}.uni_holder svg.jersey text{font-size:1.5em}.uni_holder svg.jersey text.string{font-size:.7em}#info #bling+.uni_holder>a{display:none}#info .uni_holder>a.default,#info.open .uni_holder>a,#info #bling+.uni_holder>a.default{display:inline-block}#info .uni_holder .counter{display:none;position:absolute;height:14px;width:18px;border-radius:50%;color:#fff;font-weight:bold;font-size:10px;top:-4px;left:18px;background:black;text-align:center;border:0;padding:4px 0 0;cursor:pointer;text-overflow:inherit}#info .uni_holder .counter:after{content:'';padding:0;font-size:0}#info #bling+.uni_holder .counter{display:block}#info.open #bling+.uni_holder .counter{display:none}#info.open #bling+.uni_holder>a{display:inline-block}#info.open .uni_holder>a{display:inline-block;width:33px}#info.open .uni_holder svg{height:33px;width:33px}#info.open .uni_holder svg.jersey{height:41px}.stats_pullout{overflow:hidden;text-align:center;width:96%;margin:0 auto 15px 0;padding-top:6px}.stats_pullout>div{float:left}.stats_pullout>div:first-child{text-align:left}.stats_pullout>div.p2,.stats_pullout>div.p3{display:none}.stats_pullout>div>div{float:left;margin-left:15px}.stats_pullout>div>div.p2{display:none}.stats_pullout>div:first-child>div{margin-left:0}.stats_pullout span,.stats_pullout h4{color:#900;margin:2px 0;font-size:.785714286em;text-align:center}.stats_pullout p{margin:2px 0;font-size:1.1em}.stats_pullout .caption{clear:both;text-align:left}@media screen and (min-width:520px){.stats_pullout>div.p2{display:block}}@media screen and (min-width:600px){.stats_pullout>div{border-left:1px solid #c9cbcd;margin-left:10px}.stats_pullout>div:first-child{border-left:none;margin-left:0}}@media screen and (min-width:736px){.stats_pullout>div.p2{display:none}}@media screen and (min-width:800px){.stats_pullout>div.p2{display:block}.stats_pullout>div>div.p2{display:block}}.opener{cursor:pointer;position:relative;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.opener:after{content:"\25BC";font-size:.75em;padding-left:5px;display:inline-block;text-decoration:none}.opener.open:after{content:"\25B2"}.note .opener{white-space:normal}.toggleable{display:none}.toggleable.open{display:block}tr.toggleable.open{display:table-row}table.toggleable.open{display:table}span.toggleable.open,em.toggleable.open{display:inline}.hoverer{cursor:pointer}.hoverer:after{content:"\25BC";position:absolute;top:7px;right:0}html.no-touchevents .hoverer:hover:after{content:"\25B2"}ul.news_stories>li{margin:5px 10px 0 0;float:none}ul.news_stories.more{display:none}ul.news_stories.more.open{display:block}.bullets{padding-left:20px}.bullets>li{margin-left:0;margin-bottom:6px}ul.bullets>li{list-style-type:disc}ol.bullets>li{list-style-type:decimal}.bullets-inline>li{display:inline-block;margin-right:9px;margin-bottom:10px}.bullets-inline>li:after{content:"\00B7";margin-left:9px}.bullets-inline>li:last-child:after{content:"";margin-left:0}.bullets-inline>li.logged_in{display:none}.user_logged_in .bullets-inline>li.logged_in{display:inline-block}.desc{font-style:italic;font-size:.93em}.hilite{background-color:#ffa}.modified,.modified *{background-color:#f5f5f5}tr.hilite th,tr.hilite td{background-color:#ffa}.callout{margin:10px 0;padding:10px 15px;border:1px solid #aaa;background:#404542;color:#c9cbcd;font-size:1.1em}.callout a{color:#b3beff}.callout a:visited,.callout a:active{color:#a4adff}.callout a:hover,.callout a:visited:hover,.callout a:active:hover{color:#c4cfff}.callout.light{border-color:#747678;background:#eee;color:#404452}.callout.light a{color:#34d}.callout.light a.button,.callout.light a.button:hover{color:white}.callout.light a:hover{color:#5e44b3}.callout.light h3{background-color:transparent}#content>.notables{background-color:#ffa;border:1px dotted #747678;margin:0 auto;padding:6px;text-align:center;width:auto;max-width:500px;font-size:.93em;display:table}.notables li{margin-top:8px}.notables li:first-child{margin-top:0}.note{color:#444;font-size:.92em}.header{font-weight:bold;font-size:1.16em}.pagelog{width:90%;overflow:scroll}.preformatted-desc{width:90%;overflow:auto}.callout.new_stathead_player_highlight{background-image:url('https://cdn.ssref.net/req/202301032/images/stathead/stathead-newspaper-texture.jpg');background-repeat:repeat;background-position:0 25px;background-color:#fff;border:1px solid #7e3e89;text-align:center;padding:10px 20px 0 20px}.callout.new_stathead_player_highlight #powered_by{color:#fff}.new_stathead_player_highlight .callout_logos{display:flex;justify-content:center;align-items:center;font-weight:bold;font-size:.8em;min-width:500px}.callout_logos div{margin:0 20px}.new_stathead_player_highlight .cta{font-size:90%}.new_stathead_player_highlight .button.stathead_button{background-color:#7e3e89;display:none}.new_stathead_player_highlight img{height:30px}.new_stathead_player_highlight_content{background-color:white;border:1px solid black;border-radius:5px;margin:10px;padding:10px}.box .new_stathead_player_highlight{max-width:900px}.new_stathead_player_highlight .new_stathead_player_highlight_content>div:first-child{margin-bottom:.25em}@media screen and (min-width:736px){.callout.new_stathead_player_highlight{display:grid;align-items:center;justify-content:center}.new_stathead_player_highlight .button.stathead_button{display:block}.new_stathead_player_highlight img{width:100%}}@media screen and (max-width:735px){.new_stathead_player_highlight .callout_logos{min-width:auto}.new_stathead_player_highlight img{height:20px}}.callout.stathead_player_highlight{background:#fff;border:1px solid #7e3e89;text-align:center}.stathead_player_highlight .cta{font-size:90%}.stathead_player_highlight .button.stathead_button{background-color:#7e3e89;display:none}.stathead_player_highlight img{max-width:300px}.stathead_player_highlight .stathead_player_highlight_content>div:first-child{margin-bottom:.25em}@media screen and (min-width:736px){.callout.stathead_player_highlight{display:grid;grid-template-columns:minmax(205px,1fr) 4fr minmax(175px,1fr);grid-column-gap:10px;align-items:center}.stathead_player_highlight .button.stathead_button{display:block}.stathead_player_highlight img{width:100%}}#info .adblock{display:none}.adblock{overflow:hidden}.adblock>p{font-size:.93em;margin:2px 0}.adblock img{display:block;margin:0 auto}.adblock{background-color:white;text-align:center}.adblock.ad728{display:none}body.hr #srcom .adblock.ad728{display:block}.adblock.ad300{padding:10px}.adblock.grouped{float:left;padding:0}.adblock.ad300.grouped{float:none;padding:10px}#srcom .adblock.ad728:only-child{float:revert}.adblock.rails{display:none}#div-gpt-ad-728x90-BTF-1{max-height:340px}@media screen and (min-width:481px){.adblock.ad300{padding:10px 0}}@media screen and (min-width:800px){.adblock.ad728{display:block;float:none;margin-bottom:10px}.adblock.ad300{display:none}.adblock.grouped.ad728{display:none}.adblock.grouped.ad300{float:left;width:320px;background:0;padding:0;display:block}}@media screen and (min-width:1810px){.adblock.rails{display:block;height:600px;width:160px;background-color:transparent;position:absolute;top:96px}.adblock.rails.left{left:0}.adblock.rails.right{right:0}}@media screen and (max-width:330px){.adblock{padding:0}.adblock.grouped{padding:0}.adblock.ad300.grouped{padding:0}}.button{background-color:#005228;padding:10px 15px;color:white;text-decoration:none;display:inline-block;text-align:center;font-size:1.1em;margin:10px 0;border-radius:5px;cursor:pointer}div>a.button.inverse{color:#043462;outline:2px solid #043462;outline-offset:-2px;background-color:white}.button.stathead_button{background-color:#7e3e89}h1 .button.stathead_button{font-size:14px;padding:6px 15px;margin:0 0 0 20px;vertical-align:bottom}.button:active,.button:visited,a.button,a.button:visited,a.button:hover{color:white}.button.alt{background:#008445;border:#747678 1px solid;display:block}.button.mini{font-size:.8em;padding:4px 8px;cursor:auto}button.tooltip,button.modal-trigger,button[popovertarget]{background:transparent;border:0;padding:0 0 0 10px}.button2{display:inline-block;border:1px solid #c9cbcd;border-radius:3px;background-color:#edefee;font-size:.93em;font-weight:normal;margin:0 8px 0 0;padding:8px 12px;width:auto;text-align:center}#meta .button2{font-size:.785714286em;margin:0 6px 0 0;padding:8px 7px}.button2[href]{text-decoration:none}.button2.next{text-align:right}.button2.prev{text-align:left}.button2.index,.button2.index:hover,.button2.index:active,.button2.index:visited{background-color:#404542;color:#fff}.button2.index:hover{color:#ccc}.button2.current{text-align:left;background-color:#fff;border:0;font-weight:bold;padding-left:0;padding-right:0;margin-left:-8px;margin-right:0}.button2:last-child{margin-right:0}.button2.next:after{content:"\203A\203A";padding-left:6px;color:black}.button2.prev:before{content:"\2039\2039";padding-right:6px;color:black}#info_box div.prevnext{margin-left:1em}.prevnext{margin:10px 0 15px 0}#content .prevnext>*{margin:.25em}#header #main_nav{color:#404542;overflow:hidden}#header #main_nav>li{border-top:1px solid #c9cbcd}#header #main_nav>li:first-child{border-top:0}#header #main_nav>li>a{display:block;padding:8px 0 8px 6%;font-weight:bold;text-decoration:none;font-size:1.4em}html.no-touchevents #header #main_nav>li:active{background-color:#404542}#header #main_nav>li:active>a{color:#edefee}#header #main_nav li.current{background-color:#005228}#header #main_nav li.current>a{color:#edefee}#header #main_nav h4{m
+

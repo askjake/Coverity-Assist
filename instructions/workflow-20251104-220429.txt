@@ -1,0 +1,991 @@
+URL: URL (if any)
+ERROR: Invalid URL 'URL (if any)': No scheme supplied. Perhaps you meant https://URL (if any)?
+
+CMD: Required bash command (if any)
+RET=2
+STDOUT:
+
+STDERR:
+/bin/sh: 1: Syntax error: "(" unexpected
+
+
+URL: https://www.nfl.com/teams/denver-broncos/
+
+
+<!DOCTYPE html>
+    <html lang="en-US" dir="ltr" />
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="dns-prefetch" href="//nflenterprises.tt.omtrdc.net" crossorigin>
+
+  <link rel="preconnect" href="//securepubads.g.doubleclick.net" crossorigin>
+    <link rel="preconnect" href="//cdn.onesignal.com" crossorigin>
+    <link rel="preconnect" href="//assets.adobedtm.com" crossorigin>
+
+
+
+
+
+
+<title>Denver Broncos News, Scores, Stats, Schedule | NFL.com</title>
+<meta name="description" content="Get the latest Denver Broncos news. Find news, video, standings, scores and schedule information for the Denver Broncos" />
+<meta name="keywords" content="" />
+
+<meta property="og:title" content="NFL.com | Official Site of the National Football League" />
+<meta property="og:description" content="The official source for NFL news, video highlights, fantasy football, game-day coverage, schedules, stats, scores and more." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.nfl.com/teams/denver-broncos/" />
+<meta property="og:site_name" content="NFL.com" />
+<meta property="og:locale" content="en-US" />
+<meta property="og:image" content="https://static.www.nfl.com/t_headshot_desktop/league/api/clubs/logos/DEN" />
+<meta property="og:image:type" content="image/jpeg" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="NFL.com | Official Site of the National Football League" />
+<meta name="twitter:description" content="The official source for NFL news, video highlights, fantasy football, game-day coverage, schedules, stats, scores and more." />
+<meta name="twitter:image:src" content="https://static.www.nfl.com/t_headshot_desktop/league/api/clubs/logos/DEN" />
+<meta name="twitter:site" content="@NFL" />
+
+<link rel="canonical" href="https://www.nfl.com/teams/denver-broncos/" />  
+  
+  <link href="/manifest.json" rel="manifest" />
+  
+
+
+<link rel="icon" href="https://static.www.nfl.com/league/run3dfyjniqxah4ehxfu" />
+
+<link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProDisplayC/All-ProDisplayC-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProDisplayC/All-ProDisplayC-BoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProSans/All-ProSans--bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProSans/All-ProSans--boldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProSans/All-ProSans--regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProSans/All-ProSans--regularItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProStats/All-ProStats--bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProStats/All-ProStats--medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProStats/All-ProStats--regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Druk/Druk--Bold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Druk/Druk--BoldItalic.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Druk/Druk--SuperItalic.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Black.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Bold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--ExtraBold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--ExtraLight.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Light.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Medium.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Regular.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Thin.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+<link href="https://www.nfl.com/compiledassets/css/base.css?_t=87e91fa39991dbda1c46f4501bf54b27" rel="preload" as="style" crossorigin type="text/css" /><link href="https://www.nfl.com/compiledassets/css/base.css?_t=87e91fa39991dbda1c46f4501bf54b27" rel="stylesheet" type="text/css" />  <link rel="preload" as="style" href="https://www.nfl.com/compiledassets/theming/5f330197ad251d8e6747ab2d34f39a11" crossorigin/>
+  <link rel="stylesheet" type="text/css" href="https://www.nfl.com/compiledassets/theming/5f330197ad251d8e6747ab2d34f39a11" />
+  <link rel="dns-prefetch" as="style" href="https://p.nfltags.com/nfl/live/tailwind.generated.css" crossorigin />
+  <link rel="preconnect" as="style" href="https://p.nfltags.com/nfl/live/tailwind.generated.css" crossorigin />
+  <link rel="stylesheet" type="text/css" href="https://p.nfltags.com/nfl/live/tailwind.generated.css" />
+<script>
+  // Picture element HTML5 shiv
+  document.createElement("picture");
+  window.baseUrl = "https://www.nfl.com";
+  window.fbappid = "404205130228139";
+  window.marketoHostName = "";
+</script>
+  
+
+
+  <!-- OneTrust Cookies Consent Notice start -->
+  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+          type="text/javascript" charset="UTF-8"
+          data-domain-script="e7957cc7-f869-4093-8b89-94bbc6dd16d8"></script>
+
+
+
+<script type="text/javascript">
+  function OptanonWrapper() {
+    oneTrustAppendScriptHelper();
+    oneTrustInsertScriptHelper();
+    oneTrustDataRequire();
+    setAdsRestrictDataProcessingLocalStorage();
+    refreshPageAfterCookiesSettingsChange();
+    showCookiesMessageForHiddenModules();
+  }
+
+  function showCookiesMessageForHiddenModules() {
+    var dataOneTrustHiddenMessages = document.querySelectorAll('[data-onetrust-hidden-message]');
+    if (!dataOneTrustHiddenMessages) {
+      return;
+    }
+
+    ///1. For each module with hidden message div
+    dataOneTrustHiddenMessages.forEach(function (element) {
+      ///2. Check for the cookie categories attribute
+      var cookieCategories = element.getAttribute('data-onetrust-category-hidden-message');
+      if (!cookieCategories) {
+        return;
+      }
+
+      ///3. Split the cookie categories string
+      var splittedCategories = cookieCategories.split('-');
+      ///4. If the module cookie categories are not all included in the window.OnetrustActiveGroups
+      if (!splittedCategories.every(c => window.OnetrustActiveGroups.includes(c))) {
+        ///Update the hidden message text based on the metadata
+        element.innerHTML = 'You are unable to interact with this content due to your Cookie Consent choices, you can enable cookies in the footer by selecting Cookie Settings.';
+        ///Show the message removing the hidden class
+        element.classList.remove('nfl-u-visibility-hidden');
+      }
+    });
+  }
+
+  function oneTrustInsertScriptHelper() {
+    /// Docs: https://my.onetrust.com/s/article/UUID-518074a1-a6da-81c3-be52-bae7685d9c94#UUID-518074a1-a6da-81c3-be52-bae7685d9c94_N1690409864050
+    var scriptsToInsert = document.querySelectorAll('[data-onetrust-insert-script]');
+    if (!scriptsToInsert) {
+      return;
+    }
+
+    scriptsToInsert.forEach(function (element) {
+      var isAsync = element.hasAttribute('async');
+      var srcValue = element.getAttribute('data-src');
+      var cookieCategory = element.getAttribute('data-onetrust-category');
+
+      window.OneTrust.InsertScript(srcValue, 'head', null, null, cookieCategory, isAsync);
+    });
+  }
+
+  function oneTrustAppendScriptHelper() {
+    ///Custom logic (i.e.: for Microsoft Dynamics v1)
+    var scriptsToAppend = document.querySelectorAll('[data-onetrust-append-script-custom]');
+    if (!scriptsToAppend) {
+      return;
+    }
+
+    scriptsToAppend.forEach(function (element) {
+      var cookieCategory = element.getAttribute('data-onetrust-category');
+      if (window.OnetrustActiveGroups.indexOf(cookieCategory) === -1) {
+        return;
+      }
+
+      var source = element.getAttribute('data-src');
+      if (source) {
+        //We need to add a new DOM node containing 'src' to fire the MutationObserver and load the script
+        var clonedNode = element.cloneNode(true);
+        clonedNode.setAttribute('src', source);
+        clonedNode.removeAttribute('data-onetrust-append-script-custom');
+        clonedNode.removeAttribute('data-src');
+        element.replaceWith(clonedNode);
+        return;
+      }
+
+      var type = element.getAttribute('type');
+      if (type && type == 'text/plain') {
+        //We need to add a timeout to be sure that this script is loaded after the first one
+        var timeOutScript;
+        clearTimeout(timeOutScript);
+
+        timeOutScript = setTimeout(function () {
+          //We need to add a new DOM node containing 'src' to fire the MutationObserver and load the script
+          var clonedNode = element.cloneNode(true);
+          clonedNode.setAttribute('type', "text/javascript");
+          clonedNode.removeAttribute('data-onetrust-append-script-custom');
+          element.replaceWith(clonedNode);
+        }, 2000);
+      }
+    });
+  }
+
+  function oneTrustDataRequire() {
+    /// Custom method for the 'data-require' modules
+    var dataOneTrustRequireItems = document.querySelectorAll('[data-onetrust-require]');
+    if (!dataOneTrustRequireItems) {
+      return;
+    }
+
+    dataOneTrustRequireItems.forEach(function (element) {
+      var cookieCategory = element.getAttribute('data-onetrust-category');
+      if (window.OnetrustActiveGroups.indexOf(cookieCategory) === -1) {
+        return;
+      }
+
+      var dataRequire = element.getAttribute('data-onetrust-require');
+
+      //We need to add a new DOM node containing 'data-require' to fire the MutationObserver in the requireModule.js and load the data-require script
+      var clonedNode = element.cloneNode(true);
+      clonedNode.setAttribute('data-require', dataRequire);
+      clonedNode.removeAttribute('data-onetrust-require');
+      element.replaceWith(clonedNode);
+    });
+  }
+
+  function setAdsRestrictDataProcessingLocalStorage() {
+    if (window.OnetrustActiveGroups.indexOf('C0004') > 0) {
+      localStorage.setItem('user.restrictDataProcessing', 0);
+    }
+    else {
+      localStorage.setItem('user.restrictDataProcessing', 1);
+    }
+  }
+
+  function getCookie(name) {
+    /// function to pull cookie value
+    var value = "; " + document.cookie;
+    var parts = value.split("; " + name + "=");
+    if (parts.length == 2) return parts.pop().split(";").shift();
+  }
+
+  function refreshPageAfterCookiesSettingsChange() {
+    /// Docs: https://my.onetrust.com/s/article/UUID-534defd9-7ec8-fc0e-78bf-8dce8c6c5593?language=en_US
+    var OABCcookieName = "OptanonAlertBoxClosed";
+    var bannerAcceptBtn = document.getElementById("onetrust-accept-btn-handler");
+    var pcAllowAllBtn = document.getElementById("accept-recommended-btn-handler");
+    var pcRejectAllBtn = document.getElementById("onetrust-reject-all-handler");
+    var pcSaveBtn = document.getElementsByClassName("save-preference-btn-handler onetrust-close-btn-handler")[0];
+    var pcRefuseAllBtn = document.getElementsByClassName("ot-pc-refuse-all-handler")[0];
+    var OABCcookie = getCookie(OABCcookieName);
+
+    // IF logic needed here because ot-banner-sdk DIV is not injected on page loads if banner is not exposed
+    if (!OABCcookie && bannerAcceptBtn) {
+      bannerAcceptBtn.addEventListener('click', function () {
+        window.console.log("Allowed all via Banner");
+        window.location.reload();
+      });
+    }
+    if (pcAllowAllBtn) {
+      pcAllowAllBtn.addEventListener('click', function () {
+          window.console.log("Allowed all via Preference Center");
+          window.location.reload();
+      });
+    }
+    if (pcRejectAllBtn) {
+      pcRejectAllBtn.addEventListener('click', function () {
+        window.console.log("Rejected all via Preference Center");
+        window.location.reload();
+      });
+    }
+    if (pcSaveBtn) {
+      pcSaveBtn.addEventListener('click', function () {
+          setTimeout(() => {
+              window.console.log("Set custom settings via Preference Center");
+              window.location.reload();
+          }, 1000) //quick timeout so that the consent receipt can be sent and the cookie can be updated
+      });
+    }
+    if (pcRefuseAllBtn) {
+      pcRefuseAllBtn.addEventListener('click', function () {
+        window.console.log("Rejected all via Preference Center");
+        window.location.reload();
+      });
+    }
+  }
+</script>  <!-- OneTrust Cookies Consent Notice end -->
+  <!-- IAB CCPA script start -->
+  <!-- IAB CCPA script end -->
+
+  
+<script data-onetrust-insert-script data-src=//apv-launcher.minute.ly/api/launcher/MIN-70000.js data-onetrust-category=C0004 async></script>
+  <script async defer src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script type="text/javascript" src="https://imasdk.googleapis.com/js/sdkloader/gpt_proxy.js"></script>
+  
+
+
+<script type="text/javascript">
+  window.gptconfig = {};
+  var googletag = window.googletag || {};
+  googletag.cmd = window.googletag.cmd || [];
+  window.gptSlots = [];
+  var advPageInfo = {"Sections":["teams","denver-broncos","landing"],"AdUnitName":"teams/denver-broncos/landing","IsCustom":false};
+  var adUnitName = advPageInfo.AdUnitName;
+  var clubAdvId = '/4595/nfl.com/';
+  var leagueAdvId = '/4595/nfl.com/';
+  var testParameter = '';
+window.adUnit = leagueAdvId + adUnitName;
+  var screenWidth = window.innerWidth;
+  var companionSize = [[0, 0]];
+  var companionVidSkinSize = [[0, 0]];
+  if (screenWidth > 1024) {
+    companionSize = [[970, 90], [728, 90]];
+    companionVidSkinSize = [[1, 1]];
+  }
+  else if (screenWidth > 760 && screenWidth <= 1024) {
+    companionSize = [[728, 90]];
+  } 
+  else if (screenWidth > 100 && screenWidth <= 760) {
+
+    companionSize = [[320, 50]]
+  }
+
+  googletag.cmd.push(function () {
+    gptconfig.responsiveMappings = {};
+    gptconfig.responsiveMappings['leaderboard'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+    [728, 90],
+    [970, 90]
+    ]).
+    addSize([760, 1], [
+    [728, 90]
+    ]).
+    addSize([100, 1], [
+    [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['inpage_1'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+      [728, 90],
+      [970, 90]
+    ]).
+    addSize([760, 1], [
+      [728, 90]
+    ]).
+    addSize([100, 1], [
+      [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['inpage_2'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+      [728, 90],
+      [970, 90]
+    ]).
+    addSize([760, 1], [
+      [728, 90]
+    ]).
+    addSize([100, 1], [
+      [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['mrec'] = googletag.sizeMapping().
+    addSize([100,1],[
+    [300, 250]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['mrec-photogallery'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [300, 600],
+    [300, 250]
+    ]).
+    addSize([100,1],[
+    [300, 250]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['mrec-photogallery-list'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+    [728, 90],
+    [970, 250],
+    [970, 90]
+    ]).
+    addSize([100, 1], [
+    [300, 250],
+    [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['package-c'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [300, 600]
+    ]).
+    addSize([100,1],[
+    [300, 250]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['package-b'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [160, 600]
+    ]).
+    addSize([100,1],[
+    [300, 250]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['presented-by'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [100, 30]
+    ]).
+    addSize([100,1],[
+    [100, 30],
+    [30, 30]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['companion'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [728, 90],
+    [970, 90]
+    ]).
+    addSize([760, 1], [
+    [728, 90]
+    ]).
+    addSize([100,1],[
+    [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['interstitials'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [1, 4]
+    ]).
+    addSize([760,1],[
+    [3, 4]
+    ]).
+    addSize([100,1],[
+    [3, 4]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['game_sched_inline'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+    [728, 90],
+    [970, 90]
+    ]).
+    addSize([760, 1], [
+    [728, 90]
+    ]).
+    addSize([100, 1], [
+    [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['teaminfo'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+      [300, 250]
+    ]).
+    addSize([760, 1], [
+      [300, 250]
+    ]).
+    addSize([100, 1], [
+      [300, 250]
+    ]).
+    addSize([0, 0], []).
+      build();
+
+    gptconfig.responsiveMappings['billboard'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+      [970, 415]
+    ]).
+    addSize([760, 1], [
+      [640, 415]
+    ]).
+    addSize([100, 1], [
+      [300, 300]
+    ]).
+    addSize([0, 0], []).
+      build();
+
+
+    gptconfig.responsiveMappings["rightrail"] = googletag.sizeMapping()
+      .addSize([992, 0], [
+          [300, 250],
+      ])
+      .addSize([768, 0], [
+          [300, 250],
+      ])
+      .addSize([0, 0], [
+          [300, 250]
+      ])
+      .build();
+
+    gptconfig.responsiveMappings["picks-rightrail"] = googletag.sizeMapping()
+      .addSize([0, 0], [
+        [300, 250],
+    ]).build();
+
+    gptconfig.responsiveMappings["prospects-rightrail"] = googletag.sizeMapping()
+      .addSize([992, 0], [
+          [300, 600]
+      ])
+      .addSize([768, 0], [
+          [728, 90]
+      ])
+      .addSize([0, 0], [
+          [320, 50]
+      ])
+      .build();
+
+    gptconfig.responsiveMappings["teams-rightrail"] = googletag.sizeMapping()
+      .addSize([992, 0], [
+          [300, 250]
+      ])
+      .addSize([768, 0], [
+          [728, 90]
+      ])
+      .addSize([0, 0], [
+          [320, 50]
+      ])
+      .build();
+
+    gptconfig.responsiveMappings['bottom'] = googletag.sizeMapping()
+      .addSize([0, 0], [
+          [300, 250]
+      ])
+      .addSize([768, 0], [
+          [728, 90]
+      ])
+      .addSize([1024, 0], [
+          [300,
+
+URL: https://www.espn.com/nfl/team/_/name/den/denver-broncos
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+Request blocked.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: wICT_Bsz8vbG7Gn1iPcO-h5k-nrhPRrhjAUeryLRCjP1Eiy1n5Dq3w==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+
+URL: https://www.pro-football-reference.com/teams/den/
+
+<!DOCTYPE html>
+<html data-version="klecko-" data-root="/home/pfr/build" lang="en" class="no-js" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+    <link rel="dns-prefetch" href="https://cdn.ssref.net/req/202510282" />
+<script>
+/* https://docs.osano.com/hc/en-us/articles/22469433444372-Google-Consent-Mode-v2  */
+  window.dataLayer = window.dataLayer ||[];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent','default',{
+        'ad_storage':'denied',
+        'analytics_storage':'denied',
+        'ad_user_data':'denied',
+        'ad_personalization':'denied',
+        'personalization_storage':'denied',
+        'functionality_storage':'granted',
+        'security_storage':'granted',
+        'wait_for_update': 500
+      });
+      gtag("set", "ads_data_redaction", true);
+</script>
+<script src="https://cmp.osano.com/16CGnCU8UtNhM14sg/12669873-8cf8-41e2-be1f-1cb803cbffe0/osano.js"></script>
+<style>.osano-cm-widget{display: none;}</style> 
+
+
+
+
+    <title>Denver Broncos Team Records, Leaders, and League Ranks | Pro-Football-Reference.com</title>
+
+    
+    
+    <meta name="Description" content="Checkout the Denver Broncos Records, Top 12 Leaders, League Ranks, history and more on Pro-Football-Reference.com">
+    <link rel="canonical" href="https://www.pro-football-reference.com/teams/den/index.htm" />
+
+
+<!-- include:start ="/inc/klecko_header_pfr.html_f" -->
+<!-- no:cookie fast load the css.           -->
+<script>function gup(n) {n = n.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]'); var r = new RegExp('[\\?&]'+n+'=([^&#]*)'); var re = r.exec(location.search);   return re === null?'':decodeURIComponent(re[1].replace(/\+/g,' '));}; document.srdev = gup('srdev')</script>
+<script>if (!document.srdev && (location.hostname === 'sup.fb.srdevel.com')) { document.srdev = 'aw'; }/* sf: hardcode this in for sup.fb.srdevel.com for testing purposes. */</script>
+<link rel="preconnect" href="https://cdn.ssref.net" crossorigin>
+<link rel="preconnect" href="https://www.google-analytics.com"  crossorigin>
+<link rel="preconnect" href="https://www.googletagservices.com" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/202510282/js/pfr/sr-min.js" as="script" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/202510282/icons/sr_icons-min.svg?pfr" as="fetch" crossorigin>
+<link rel="preload"    href="https://www.pro-football-reference.com/short/inc/main_nav_menu.json" as="fetch" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/201604190/images/chosen-sprite.png" as="image" crossorigin>
+<link rel="preload"    href="https://cdn.ssref.net/req/202510282/css/pfr/sr-min.css" as="style"    crossorigin>
+
+<!-- CSS start -->
+ <style>html,body{margin:0;padding:0;font:14px/1.25 "Helvetica Neue",helvetica,arial,sans-serif;color:#000}@media(prefers-reduced-motion:no-preference){html:not(.backstop){scroll-behavior:smooth}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*{animation:none!important;transition-duration:0s!important}}html:not(.backstop) div,html:not(.backstop) span{scroll-margin:2.5em 0 0 0;scroll-snap-margin:2.5em 0 0 0}body{position:relative;background:#c9cbcd;z-index:0;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none}a img{border:0}ul,li,ol{margin:0;padding:0;list-style-type:none}table th,table td{border:0}iframe{max-width:100%}code{background:#eee}a,button,input,select,textarea,label,summary{touch-action:manipulation;-ms-touch-action:manipulation}::selection{background:#ff0;text-shadow:none}html.no-js .hasmore,html.no-js .js,html.js .no-js,html.no-js button,html.is_build .hide_build,html.is_dev .hide_dev,html.is_live .hide_live{display:none!important}.js-select{visibility:hidden}a[href]{color:#34d}a[href]:visited{color:#848}a[href]:hover{color:#5e44b3}a[href]:active{color:#b12}a[href^="tel:"]::before{content:"\260E";display:inline-block;margin-right:0}a[href^="mailto:"]::before{content:"\2709";display:inline-block;margin-right:0}.icon_group a[href^="tel:"]:before,.icon_group a[href^="mailto:"]:before{content:""}.screen_only{display:initial}.user_logged_in .not_logged_in,.logged_in,.sr_cpi_control,.print_only{display:none}#perflog,#modernizr,.user_logged_in .logged_in{display:block}h2{color:#000;margin-bottom:5px;font-size:1.5em}img.right{float:right;margin:0 0 5px 5px}img.left{float:left;margin:0 15px 15px 0}sup{font-size:.75em;position:relative;top:-0.4em;vertical-align:baseline}#wrap{width:100%;background:#fff;position:relative}#wrap>div,#wrap>ul{width:100%;position:relative;clear:both}.hidden-iso,.hidden,#content .hidden,.gutterad,.more,.print_only,#warnings.hide,#nag_devs{display:none}#inner_nav.hidden{visibility:hidden}.float_wrap{overflow:hidden}.grid2{display:grid;grid-column-gap:10px;grid-template-columns:1fr 1fr}.grid2 img{max-width:100%}.grid2.heavyleft{grid-template-columns:2fr 1fr}.grid2.heavyright{grid-template-columns:1fr 2fr}#header{overflow:visible;background:#edefee;border-bottom:3px solid #008445;min-height:50px}#header img{height:25px;float:left;padding:8px 0 8px 2%;max-width:71%;max-width:calc(95% - 80px)}#header #nav_trigger{display:block;cursor:pointer;float:right;padding:7px 2% 7px 1%;height:30px}#header #nav_trigger a{color:#005228;font-size:20px;font-weight:bold;text-decoration:none;display:inline-block}#header #nav_trigger a:before{color:#005228;content:"\2630 ";font-weight:normal}#header #nav{display:none;clear:both;width:88%;background:#fff;padding:7px 6% 0;border-bottom:3px solid #005228;border-top:3px solid #005228;overflow:hidden;font-size:12px}#header #nav .usertools{font-weight:bold;font-size:12px;margin:0 0 4px;padding:7px 6% 0;border-top:1px solid #c9cbcd}#header #nav .breadcrumbs{font-size:12px;padding:7px 6%;border-top:1px solid #c9cbcd}#header #nav_trigger.open{background:#005228}#header #nav_trigger.open a{color:#fff}#header #nav_trigger.open a:before{color:#fff}#header #nav.open{display:block}#header .social{margin:15px 0;display:none}#header.open_search{margin-bottom:50px}#header #subnav{display:none}#translations{background-color:#ffa;padding:4px 0;text-align:center;display:none}#translations.show{display:block}#translations .closer{top:4px}#translations .langs{display:inline-block}#translations .links{margin:0 35px 0 0}#translations .links>div{display:inline-block}#translations .links .welcome{font-weight:bold}#header .search{margin-top:10px;clear:both;padding:0 2% 6px}#header .search input,#header .search input:active,#header .search input:focus{height:32px;font-size:20px}.search input[type="search"]{padding:4px 5px;border:#747678 1px solid;width:73%;margin-right:2%}.search input[type="search"].prefilled{background-color:#ffa}.search input[type="submit"]{float:right;background:#005228;color:white;border:1px solid #747678;padding:0;border-radius:5px;height:24px;width:25%;width:calc(25% - 2px)}.search input[type="submit"]:hover{text-decoration:underline}.search input[type="submit"]:active{background-color:#404542}.search .ac-outline{width:73%;margin-right:2%}.search .ac-outline input[type="search"]{width:100%;margin:0}@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width:400px){#header .search input,#header .search input:active,#header .search input:focus{height:32px;font-size:20px}}#wrap>#info{width:96%;margin:0 auto;padding-bottom:10px}#info .opener,#info .opener:active,#inner_nav div .opener{color:#900;font-weight:bold;clear:both;width:100%;text-align:left;padding:10px 0;border:0;background:transparent}#info button#meta_more_button{border:1px solid #c9cbcd;background-color:#edefee;padding:.5em;margin:.5em 0;text-align:center;width:100%;max-width:400px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:none}#info button#meta_more_button.show{display:inline-block}#info #meta>div>p:nth-child(n+6){display:none}#info.open #meta>div>p:nth-child(n+6){display:block}#info #meta .opener{display:none}#info #meta{margin-top:10px;overflow:hidden}#info #meta p{font-size:.93em;margin:3px 0}#info #meta>div.media-item{float:right;margin-left:10px;width:70px}#info #meta>div.media-item.country{width:100px;height:75px}#info #meta>div.media-item.country .flag{width:100%;height:100%;background-size:100%}#info .media-item img{width:100%;height:auto;border:1px solid black;box-sizing:border-box}#info .media-item img.additional{display:none}#info .media-item.logo img,.bbr #info .media-item img,.cbb #info .media-item img{border:0}#info #meta .media-item p{margin:3px 0;font-size:.785em;font-style:italic}#info #meta .media-item.loader p{visibility:hidden}#info h1{margin-top:0;margin-bottom:5px;line-height:1.1em;font-size:1.5em}#info h1+p{margin-top:5px}#info #bling{margin:6px 1% 6px 0;color:#fff;height:24px;overflow:hidden;float:left;width:88%;display:grid;grid-gap:5px 4px;grid-template-columns:repeat(auto-fill,minmax(100px,1fr))}#info.teams #bling{width:100%}#info #bling li{padding:4px 1.25%;text-align:center;position:relative;height:15px;background:#005228;font-size:.85em;word-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-radius:5px;display:inline-block;width:27%;margin-bottom:5px}#info.teams #bling li{width:45%}#bling li a{color:inherit;position:relative;z-index:1}#info #bling li.bling_hof{background-color:#ffdb1c;color:#000}#info #bling li.bling_all_star{background-color:#c9cbcd;color:#404542}#info #bling li.bling_hof,#info.teams #bling li.bling_all_star,#info.teams #bling li.bling_champ{grid-column-end:span 2}#info #bling li.important{grid-column-end:span 2}#info #bling li.special{background-color:#ffdb1c;color:#000}#info #bling li.all_star{background-color:#c9cbcd;color:#404542}#info.open #bling{height:auto;width:100%;margin-right:0;float:none;overflow:visible}@supports(display:grid){#info #bling li,#info.open #bling li,#info.teams #bling li{width:auto!important;margin-bottom:0!important}}.uni_holder{margin:3px 0;float:none;width:100%;position:relative}#info .uni_holder{float:left}#bling+.uni_holder{width:11%}#info.open #bling+.uni_holder{width:100%;overflow:visible;float:none;margin-bottom:5px}.uni_holder>a{display:inline-block;position:relative;height:auto;width:28px;margin-bottom:3px;margin-right:.3em;text-decoration:none;overflow:hidden}.uni_holder svg{height:28px;width:28px}.uni_holder svg.jersey{height:35px}.uni_holder svg text{font-size:1.8em;font-weight:bold}.uni_holder svg text.string{font-size:1.3em}.uni_holder svg.jersey text{font-size:1.5em}.uni_holder svg.jersey text.string{font-size:.7em}#info #bling+.uni_holder>a{display:none}#info .uni_holder>a.default,#info.open .uni_holder>a,#info #bling+.uni_holder>a.default{display:inline-block}#info .uni_holder .counter{display:none;position:absolute;height:14px;width:18px;border-radius:50%;color:#fff;font-weight:bold;font-size:10px;top:-4px;left:18px;background:black;text-align:center;border:0;padding:4px 0 0;cursor:pointer;text-overflow:inherit}#info .uni_holder .counter:after{content:'';padding:0;font-size:0}#info #bling+.uni_holder .counter{display:block}#info.open #bling+.uni_holder .counter{display:none}#info.open #bling+.uni_holder>a{display:inline-block}#info.open .uni_holder>a{display:inline-block;width:33px}#info.open .uni_holder svg{height:33px;width:33px}#info.open .uni_holder svg.jersey{height:41px}.stats_pullout{overflow:hidden;text-align:center;width:96%;margin:0 auto 15px 0;padding-top:6px}.stats_pullout>div{float:left}.stats_pullout>div:first-child{text-align:left}.stats_pullout>div.p2,.stats_pullout>div.p3{display:none}.stats_pullout>div>div{float:left;margin-left:15px}.stats_pullout>div>div.p2{display:none}.stats_pullout>div:first-child>div{margin-left:0}.stats_pullout span,.stats_pullout h4{color:#900;margin:2px 0;font-size:.785714286em;text-align:center}.stats_pullout p{margin:2px 0;font-size:1.1em}.stats_pullout .caption{clear:both;text-align:left}@media screen and (min-width:520px){.stats_pullout>div.p2{display:block}}@media screen and (min-width:600px){.stats_pullout>div{border-left:1px solid #c9cbcd;margin-left:10px}.stats_pullout>div:first-child{border-left:none;margin-left:0}}@media screen and (min-width:736px){.stats_pullout>div.p2{display:none}}@media screen and (min-width:800px){.stats_pullout>div.p2{display:block}.stats_pullout>div>div.p2{display:block}}.opener{cursor:pointer;position:relative;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.opener:after{content:"\25BC";font-size:.75em;padding-left:5px;display:inline-block;text-decoration:none}.opener.open:after{content:"\25B2"}.note .opener{white-space:normal}.toggleable{display:none}.toggleable.open{display:block}tr.toggleable.open{display:table-row}table.toggleable.open{display:table}span.toggleable.open,em.toggleable.open{display:inline}.hoverer{cursor:pointer}.hoverer:after{content:"\25BC";position:absolute;top:7px;right:0}html.no-touchevents .hoverer:hover:after{content:"\25B2"}ul.news_stories>li{margin:5px 10px 0 0;float:none}ul.news_stories.more{display:none}ul.news_stories.more.open{display:block}.bullets{padding-left:20px}.bullets>li{margin-left:0;margin-bottom:6px}ul.bullets>li{list-style-type:disc}ol.bullets>li{list-style-type:decimal}.bullets-inline>li{display:inline-block;margin-right:9px;margin-bottom:10px}.bullets-inline>li:after{content:"\00B7";margin-left:9px}.bullets-inline>li:last-child:after{content:"";margin-left:0}.bullets-inline>li.logged_in{display:none}.user_logged_in .bullets-inline>li.logged_in{display:inline-block}.desc{font-style:italic;font-size:.93em}.hilite{background-color:#ffa}.modified,.modified *{background-color:#f5f5f5}tr.hilite th,tr.hilite td{background-color:#ffa}.callout{margin:10px 0;padding:10px 15px;border:1px solid #aaa;background:#404542;color:#c9cbcd;font-size:1.1em}.callout a{color:#b3beff}.callout a:visited,.callout a:active{color:#a4adff}.callout a:hover,.callout a:visited:hover,.callout a:active:hover{color:#c4cfff}.callout.light{border-color:#747678;background:#eee;color:#404452}.callout.light a{color:#34d}.callout.light a.button,.callout.light a.button:hover{color:white}.callout.light a:hover{color:#5e44b3}.callout.light h3{background-color:transparent}#content>.notables{background-color:#ffa;border:1px dotted #747678;margin:0 auto;padding:6px;text-align:center;width:auto;max-width:500px;font-size:.93em;display:table}.notables li{margin-top:8px}.notables li:first-child{margin-top:0}.note{color:#444;font-size:.92em}.header{font-weight:bold;font-size:1.16em}.pagelog{width:90%;overflow:scroll}.preformatted-desc{width:90%;overflow:auto}.callout.new_stathead_player_highlight{background-image:url('https://cdn.ssref.net/req/202301032/images/stathead/stathead-newspaper-texture.jpg');background-repeat:repeat;background-position:0 25px;background-color:#fff;border:1px solid #7e3e89;text-align:center;padding:10px 20px 0 20px}.callout.new_stathead_player_highlight #powered_by{color:#fff}.new_stathead_player_highlight .callout_logos{display:flex;justify-content:center;align-items:center;font-weight:bold;font-size:.8em;min-width:500px}.callout_logos div{margin:0 20px}.new_stathead_player_highlight .cta{font-size:90%}.new_stathead_player_highlight .button.stathead_button{background-color:#7e3e89;display:none}.new_stathead_player_highlight img{height:30px}.new_stathead_player_highlight_content{background-color:white;border:1px solid black;border-radius:5px;margin:10px;padding:10px}.box .new_stathead_player_highlight{max-width:900px}.new_stathead_player_highlight .new_stathead_player_highlight_content>div:first-child{margin-bottom:.25em}@media screen and (min-width:736px){.callout.new_stathead_player_highlight{display:grid;align-items:center;justify-content:center}.new_stathead_player_highlight .button.stathead_button{display:block}.new_stathead_player_highlight img{width:100%}}@media screen and (max-width:735px){.new_stathead_player_highlight .callout_logos{min-width:auto}.new_stathead_player_highlight img{height:20px}}.callout.stathead_player_highlight{background:#fff;border:1px solid #7e3e89;text-align:center}.stathead_player_highlight .cta{font-size:90%}.stathead_player_highlight .button.stathead_button{background-color:#7e3e89;display:none}.stathead_player_highlight img{max-width:300px}.stathead_player_highlight .stathead_player_highlight_content>div:first-child{margin-bottom:.25em}@media screen and (min-width:736px){.callout.stathead_player_highlight{display:grid;grid-template-columns:minmax(205px,1fr) 4fr minmax(175px,1fr);grid-column-gap:10px;align-items:center}.stathead_player_highlight .button.stathead_button{display:block}.stathead_player_highlight img{width:100%}}#info .adblock{display:none}.adblock{overflow:hidden}.adblock>p{font-size:.93em;margin:2px 0}.adblock img{display:block;margin:0 auto}.adblock{background-color:white;text-align:center}.adblock.ad728{display:none}body.hr #srcom .adblock.ad728{display:block}.adblock.ad300{padding:10px}.adblock.grouped{float:left;padding:0}.adblock.ad300.grouped{float:none;padding:10px}#srcom .adblock.ad728:only-child{float:revert}.adblock.rails{display:none}#div-gpt-ad-728x90-BTF-1{max-height:340px}@media screen and (min-width:481px){.adblock.ad300{padding:10px 0}}@media screen and (min-width:800px){.adblock.ad728{display:block;float:none;margin-bottom:10px}.adblock.ad300{display:none}.adblock.grouped.ad728{display:none}.adblock.grouped.ad300{float:left;width:320px;background:0;padding:0;display:block}}@media screen and (min-width:1810px){.adblock.rails{display:block;height:600px;width:160px;background-color:transparent;position:absolute;top:96px}.adblock.rails.left{left:0}.adblock.rails.right{right:0}}@media screen and (max-width:330px){.adblock{padding:0}.adblock.grouped{padding:0}.adblock.ad300.grouped{padding:0}}.button{background-color:#005228;padding:10px 15px;color:white;text-decoration:none;display:inline-block;text-align:center;font-size:1.1em;margin:10px 0;border-radius:5px;cursor:pointer}div>a.button.inverse{color:#043462;outline:2px solid #043462;outline-offset:-2px;background-color:white}.button.stathead_button{background-color:#7e3e89}h1 .button.stathead_button{font-size:14px;padding:6px 15px;margin:0 0 0 20px;vertical-align:bottom}.button:active,.button:visited,a.button,a.button:visited,a.button:hover{color:white}.button.alt{background:#008445;border:#747678 1px solid;display:block}.button.mini{font-size:.8em;padding:4px 8px;cursor:auto}button.tooltip,button.modal-trigger,button[popovertarget]{background:transparent;border:0;padding:0 0 0 10px}.button2{display:inline-block;border:1px solid #c9cbcd;border-radius:3px;background-color:#edefee;font-size:.93em;font-weight:normal;margin:0 8px 0 0;padding:8px 12px;width:auto;text-align:center}#meta .button2{font-size:.785714286em;margin:0 6px 0 0;padding:8px 7px}.button2[href]{text-decoration:none}.button2.next{text-align:right}.button2.prev{text-align:left}.button2.index,.button2.index:hover,.button2.index:active,.button2.index:visited{background-color:#404542;color:#fff}.button2.index:hover{color:#ccc}.button2.current{text-align:left;background-color:#fff;border:0;font-weight:bold;padding-left:0;padding-right:0;margin-left:-8px;margin-right:0}.button2:last-child{margin-right:0}.button2.next:after{content:"\203A\203A";padding-left:6px;color:black}.button2.prev:before{content:"\2039\2039";padding-right:6px;color:black}#info_box div.prevnext{margin-left:1em}.prevnext{margin:10px 0 15px 0}#content .prevnext>*{margin:.25em}#header #main_nav{color:#404542;overflow:hidden}#header #main_nav>li{border-top:1px solid #c9cbcd}#header #main_nav>li:first-child{border-top:0}#header #main_nav>li>a{display:block;padding:8px 0 8px 6%;font-weight:bold;text-decoration:none;font-size:1.4em}html.no-touchevents #header #main_nav>li:active{background-color:#404542}#header #main_nav>li:active>a{color:#edefee}#header #main_nav li.current{background-color:#005228}#header #main_nav li.current>a{color:#edefee}#header #main_nav h4{m
+
+URL: https://twitter.com/Broncos
+<!DOCTYPE html><html dir="ltr" lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover" /><link rel="preconnect" href="//abs.twimg.com" /><link rel="dns-prefetch" href="//abs.twimg.com" /><link rel="preconnect" href="//api.twitter.com" /><link rel="dns-prefetch" href="//api.twitter.com" /><link rel="preconnect" href="//api.x.com" /><link rel="dns-prefetch" href="//api.x.com" /><link rel="preconnect" href="//pbs.twimg.com" /><link rel="dns-prefetch" href="//pbs.twimg.com" /><link rel="preconnect" href="//t.co" /><link rel="dns-prefetch" href="//t.co" /><link rel="preconnect" href="//video.twimg.com" /><link rel="dns-prefetch" href="//video.twimg.com" /><link nonce="Nzk2NWY2MTUtOGI4Ni00MTFiLTk4OTQtMWQyZDgwMmJiNTY3" rel="preload" as="script" crossorigin="anonymous" href="https://abs.twimg.com/responsive-web/client-web/vendor.df72254a.js" /><link nonce="Nzk2NWY2MTUtOGI4Ni00MTFiLTk4OTQtMWQyZDgwMmJiNTY3" rel="preload" as="script" crossorigin="anonymous" href="https://abs.twimg.com/responsive-web/client-web/i18n/en.5a14e5fa.js" /><link nonce="Nzk2NWY2MTUtOGI4Ni00MTFiLTk4OTQtMWQyZDgwMmJiNTY3" rel="preload" as="script" crossorigin="anonymous" href="https://abs.twimg.com/responsive-web/client-web/main.74fa2aaa.js" /><meta http-equiv="onion-location" content="https://twitter3e4tixl4xyajtrzo62zg5vztmjuricljdp2c5kshju4avyoid.onion/" /><meta property="fb:app_id" content="2231777543" /><meta content="X (formerly Twitter)" property="og:site_name" /><meta name="google-site-verification" content="reUF-TgZq93ZGtzImw42sfYglI2hY0QiGRmfc4jeKbs" /><meta name="facebook-domain-verification" content="x6sdcc8b5ju3bh8nbm59eswogvg6t1" /><link rel="search" type="application/opensearchdescription+xml" href="/os-x.xml" title="X">
+<link rel="search" type="application/opensearchdescription+xml" href="/os-grok.xml" title="Grok"><link rel="apple-touch-icon" sizes="192x192" href="https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png" /><meta name="twitter-site-verification" content="twWhQ3W7VqwXUab9NU7uEBKW/G7EQjumPwe+5POlqvA2+sFh0DkG+mQ212jOmEYM" /><link rel="manifest" href="/manifest.json" crossOrigin="use-credentials" /><link rel="search" type="application/opensearchdescription+xml" href="/os-x.xml" title="X"><link rel="search" type="application/opensearchdescription+xml" href="/os-grok.xml" title="Grok"><link rel="mask-icon" sizes="any" href="https://abs.twimg.com/responsive-web/client-web/icon-svg.ea5ff4aa.svg" color="#1D9BF0"><link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF" /><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" /><meta http-equiv="origin-trial" content="AlpCmb40F5ZjDi9ZYe+wnr/V8MF+XmY41K4qUhoq+2mbepJTNd3q4CRqlACfnythEPZqcjryfAS1+ExS0FFRcA8AAABmeyJvcmlnaW4iOiJodHRwczovL3R3aXR0ZXIuY29tOjQ0MyIsImZlYXR1cmUiOiJMYXVuY2ggSGFuZGxlciIsImV4cGlyeSI6MTY1NTI1MTE5OSwiaXNTdWJkb21haW4iOnRydWV9" /><style>
+#ScriptLoadFailure button[type=submit]:hover { background-color: rgb(39, 44, 48) !important; }
+@media (prefers-color-scheme: dark) {
+  #placeholder { background-color: #000000 }
+  #ScriptLoadFailure span, #placeholder svg { color: #FFFFFF !important; }
+  #ScriptLoadFailure button[type=submit] { background-color: rgb(239, 243, 244) !important; }
+  #ScriptLoadFailure button[type=submit]:hover { background-color: rgb(215, 219, 220) !important; }
+  #ScriptLoadFailure button[type=submit] span { color: #000000 !important; }
+}</style><style>html,body{height: 100%;}::cue{white-space:normal}</style><style id="react-native-stylesheet">[stylesheet-group="0"]{}
+body{margin:0;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-search-results-button,input::-webkit-search-results-decoration{display:none;}
+[stylesheet-group="1"]{}
+.css-146c3p1{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:rgba(0,0,0,1.00);display:inline;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;list-style:none;margin:0px;padding:0px;position:relative;text-align:start;text-decoration:none;white-space:pre-wrap;word-wrap:break-word;}
+.css-175oi2r{align-items:stretch;background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;display:flex;flex-basis:auto;flex-direction:column;flex-shrink:0;list-style:none;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;text-decoration:none;z-index:0;}
+.css-1jxf684{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:inherit;display:inline;font:inherit;list-style:none;margin:0px;padding:0px;position:relative;text-align:inherit;text-decoration:none;white-space:inherit;word-wrap:break-word;}
+.css-9pa8cd{bottom:0px;height:100%;left:0px;opacity:0;position:absolute;right:0px;top:0px;width:100%;z-index:-1;}
+[stylesheet-group="2"]{}
+.r-13awgt0{flex:1;}
+.r-1adg3ll{display:block;}
+.r-1jkafct{border-bottom-left-radius:2px;border-bottom-right-radius:2px;border-top-left-radius:2px;border-top-right-radius:2px;}
+.r-1phboty{border-bottom-style:solid;border-left-style:solid;border-right-style:solid;border-top-style:solid;}
+.r-1udh08x{overflow-x:hidden;overflow-y:hidden;}
+.r-4iw3lz{border-bottom-width:0;border-left-width:0;border-right-width:0;border-top-width:0;}
+.r-4qtqp9{display:inline-block;}
+.r-6koalj{display:flex;}
+.r-bztko3{overflow-x:visible;overflow-y:visible;}
+.r-crgep1{margin:0px;}
+.r-hvic4v{display:none;}
+.r-krxsd3{display:-webkit-box;}
+.r-rs99b7{border-bottom-width:1px;border-left-width:1px;border-right-width:1px;border-top-width:1px;}
+.r-sdzlij{border-bottom-left-radius:9999px;border-bottom-right-radius:9999px;border-top-left-radius:9999px;border-top-right-radius:9999px;}
+.r-t60dpp{padding:0px;}
+.r-wwvuq4{padding:0;}
+.r-xoduu5{display:inline-flex;}
+.r-ywje51{margin:auto;}
+.r-z2wwpe{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;}
+[stylesheet-group="2.1"]{}
+.r-1559e4e{padding-bottom:2px;padding-top:2px;}
+.r-1fkl15p{padding-left:32px;padding-right:32px;}
+.r-3o4zer{padding-left:12px;padding-right:12px;}
+.r-3pj75a{padding-left:16px;padding-right:16px;}
+.r-cxgwc0{padding-left:24px;padding-right:24px;}
+.r-dd0y9b{padding-bottom:20px;padding-top:20px;}
+.r-ddtstp{margin-bottom:0px;margin-top:0px;}
+.r-dp7rxi{padding-bottom:40px;padding-top:40px;}
+.r-f8sm7e{margin-left:auto;margin-right:auto;}
+.r-n7gxbd{padding-left:4px;padding-right:4px;}
+.r-s49dbf{margin-bottom:1px;margin-top:1px;}
+.r-sjygvo{padding-left:1em;padding-right:1em;}
+[stylesheet-group="2.2"]{}
+.r-15peodp{right:-9999px;}
+.r-19qo34d{left:-9999px;}
+.r-1ca1ndr{margin-left:0.5em;}
+.r-1ez5h0i{margin-left:4px;}
+.r-1gs4q39{margin-right:4px;}
+.r-1kkk96v{margin-left:8px;}
+.r-1kpi4qh{margin-left:0.075em;}
+.r-1l2kgy{margin-right:0.5em;}
+.r-1q6cnnd{right:-2px;}
+.r-1wron08{margin-right:8px;}
+.r-3t4u6i{margin-left:2px;}
+.r-45ll9u{left:50%;}
+.r-5f1w11{left:-2px;}
+.r-k4bwe5{margin-right:0.075em;}
+.r-o59np7{padding-right:8px;}
+.r-ocobd0{right:50%;}
+.r-qjj4hq{padding-left:8px;}
+.r-x1x4zq{margin-right:2px;}
+[stylesheet-group="3"]{}
+.r-105ug2t{pointer-events:auto!important;}
+.r-109y4c4{height:1px;}
+.r-10ptun7{height:16px;}
+.r-10v3vxq{transform:scaleX(-1);}
+.r-117bsoe{margin-bottom:20px;}
+.r-11c0sde{margin-top:24px;}
+.r-11j9u27{visibility:hidden;}
+.r-12181gd{box-shadow:0 0 2px rgba(0,0,0,0.03) inset;}
+.r-12sks89{min-height:22px;}
+.r-12vffkv>*{pointer-events:auto;}
+.r-12vffkv{pointer-events:none!important;}
+.r-12ym1je{width:18px;}
+.r-135wba7{line-height:24px;}
+.r-13qz1uu{width:100%;}
+.r-13wfysu{-webkit-text-decoration-line:none;text-decoration-line:none;}
+.r-146iojx{max-width:300px;}
+.r-1472mwg{height:24px;}
+.r-14j79pv{color:rgba(83,100,113,1.00);}
+.r-14lw9ot{background-color:rgba(255,255,255,1.00);}
+.r-15ysp7h{min-height:32px;}
+.r-16dba41{font-weight:400;}
+.r-16y2uox{flex-grow:1;}
+.r-176fswd{transform:translateX(-50%) translateY(-50%);}
+.r-1777fci{justify-content:center;}
+.r-17bb2tj{animation-duration:0.75s;}
+.r-17leim2{background-repeat:repeat;}
+.r-17s6mgv{justify-content:flex-end;}
+.r-18jsvk2{color:rgba(15,20,25,1.00);}
+.r-18tzken{width:56px;}
+.r-18u37iz{flex-direction:row;}
+.r-18yzcnr{height:22px;}
+.r-19wmn03{width:20px;}
+.r-19yznuf{min-height:52px;}
+.r-1abnn5w{animation-play-state:paused;}
+.r-1acpoxo{width:36px;}
+.r-1ad0z5i{word-break:break-all;}
+.r-1awozwy{align-items:center;}
+.r-1b43r93{font-size:14px;}
+.r-1betnmo{max-width:672px;}
+.r-1blnp2b{width:72px;}
+.r-1blvdjr{font-size:23px;}
+.r-1ceczpf{min-height:24px;}
+.r-1cwl3u0{line-height:16px;}
+.r-1d2f490{left:0px;}
+.r-1ddef8g{-webkit-text-decoration-line:underline;text-decoration-line:underline;}
+.r-1dn12g7{line-height:48px;}
+.r-1ebb2ja{list-style:none;}
+.r-1ff274t{text-align:right;}
+.r-1gkfh8e{font-size:11px;}
+.r-1h0z5md{justify-content:flex-start;}
+.r-1h8ys4a{padding-top:4px;}
+.r-1hjwoze{height:18px;}
+.r-1iln25a{word-wrap:normal;}
+.r-1inkyih{font-size:17px;}
+.r-1ipicw7{width:300px;}
+.r-1iusvr4{flex-basis:0px;}
+.r-1janqcz{width:16px;}
+.r-1jaylin{width:-webkit-max-content;width:-moz-max-content;width:max-content;}
+.r-1k78y06{font-family:Tahoma, Arial, sans-serif;}
+.r-1kihuf0{align-self:center;}
+.r-1ldzwu0{animation-timing-function:linear;}
+.r-1loqt21{cursor:pointer;}
+.r-1mlwlqe{flex-basis:auto;}
+.r-1mrlafo{background-position:0;}
+.r-1muvv40{animation-iteration-count:infinite;}
+.r-1mwlp6a{height:56px;}
+.r-1nao33i{color:rgba(231,233,234,1.00);}
+.r-1niwhzg{background-color:rgba(0,0,0,0.00);}
+.r-1ny4l3l{outline-style:none;}
+.r-1oifz5y{background-color:rgba(170,17,0,1.00);}
+.r-1oszu61{align-items:stretch;}
+.r-1otgn73{touch-action:manipulation;}
+.r-1p0dtai{bottom:0px;}
+.r-1pi2tsx{height:100%;}
+.r-1ps3wis{min-width:44px;}
+.r-1qd0xha{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+.r-1qi8awa{min-width:36px;}
+.r-1r5jyh0{min-height:130px;}
+.r-1r8g8re{height:36px;}
+.r-1s2hp8q{min-height:26px;}
+.r-1sxrcry{background-size:auto;}
+.r-1tl8opc{font-family:"Segoe UI",Meiryo,system-ui,-apple-system,BlinkMacSystemFont,sans-serif;}
+.r-1to6hqq{background-color:rgba(255,212,0,1.00);}
+.r-1ttztb7{text-align:inherit;}
+.r-1udbk01{text-overflow:ellipsis;}
+.r-1v2oles{top:50%;}
+.r-1vmecro{direction:rtl;}
+.r-1vr29t4{font-weight:800;}
+.r-1wb8bfx{text-decoration-thickness:2px;}
+.r-1wbh5a2{flex-shrink:1;}
+.r-1wvb978{font-feature-settings:'ss01' on;}
+.r-1wyyakw{z-index:-1;}
+.r-1xcajam{position:fixed;}
+.r-1xk2f4g{clip:rect(1px, 1px, 1px, 1px);}
+.r-1xnzce8{-moz-user-select:text;-webkit-user-select:text;user-select:text;}
+.r-1xvli5t{height:1.25em;}
+.r-1y7e96w{min-width:22px;}
+.r-1ye8kvj{max-width:600px;}
+.r-1yef0xd{animation-name:r-11cv4x;}
+.r-1yjpyg1{font-size:31px;}
+.r-1ykxob0{top:60%;}
+.r-2o02ov{margin-top:40px;}
+.r-2tavb8{background-color:rgba(0,0,0,0.60);}
+.r-2yi16{min-height:36px;}
+.r-36ujnk{font-style:italic;}
+.r-37tt59{line-height:32px;}
+.r-3s2u2q{white-space:nowrap;}
+.r-417010{z-index:0;}
+.r-4gszlv{background-size:cover;}
+.r-4hwcpe{font-family:Vazirmatn, Tahoma, Arial, sans-serif;}
+.r-4wgw6l{min-width:32px;}
+.r-54znze{color:rgba(239,243,244,1.00);}
+.r-56xrmm{line-height:12px;}
+.r-6026j{background-color:rgba(255,255,255,0.85);}
+.r-633pao{pointer-events:none!important;}
+.r-6416eg{-moz-transition-property:background-color, box-shadow;-webkit-transition-property:background-color, box-shadow;transition-property:background-color, box-shadow;}
+.r-64el8z{min-width:52px;}
+.r-7q8q6z{cursor:default;}
+.r-8akbws{-webkit-box-orient:vertical;}
+.r-8jfcpp{top:-2px;}
+.r-92ng3h{width:1px;}
+.r-a023e6{font-size:15px;}
+.r-adyw6z{font-size:20px;}
+.r-agouwx{transform:translateZ(0);}
+.r-ah5dr5>*{pointer-events:none;}
+.r-ah5dr5{pointer-events:auto!important;}
+.r-aqfbo4{backface-visibility:hidden;}
+.r-b88u0q{font-weight:700;}
+.r-bcqeeo{min-width:0px;}
+.r-bnwqim{position:relative;}
+.r-bt1l66{min-height:20px;}
+.r-bvlit7{margin-bottom:-12px;}
+.r-clrlgt{animation-name:r-imtty0;}
+.r-deolkf{box-sizing:border-box;}
+.r-dflpy8{height:1.2em;}
+.r-dnmrzs{max-width:100%;}
+.r-ehq7j7{background-size:contain;}
+.r-emqnss{transform:translateZ(0px);}
+.r-eqz5dr{flex-direction:column;}
+.r-ero68b{min-height:40px;}
+.r-fdjqy7{text-align:left;}
+.r-fm7h5w{font-family:"TwitterChirpExtendedHeavy","Verdana",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+.r-h9hxbl{width:1.2em;}
+.r-icoktb{opacity:0.5;}
+.r-ifefl9{min-height:0px;}
+.r-impgnl{transform:translateX(50%) translateY(-50%);}
+.r-iphfwy{padding-bottom:4px;}
+.r-ipm5af{top:0px;}
+.r-jmul1s{transform:scale(1.1);}
+.r-jwli3a{color:rgba(255,255,255,1.00);}
+.r-kemksi{background-color:rgba(0,0,0,1.00);}
+.r-lp5zef{min-width:24px;}
+.r-lrsllp{width:24px;}
+.r-lrvibr{-moz-user-select:none;-webkit-user-select:none;user-select:none;}
+.r-m6rgpd{vertical-align:text-bottom;}
+.r-majxgm{font-weight:500;}
+.r-n6v787{font-size:13px;}
+.r-nhe8su{animation-duration:0.5s;}
+.r-nvplwv{animation-timing-function:ease-out;}
+.r-nwxazl{line-height:40px;}
+.r-o7ynqc{transition-duration:0.2s;}
+.r-orgf3d{opacity:0;}
+.r-peo1c{min-height:44px;}
+.r-poiln3{font-family:inherit;}
+.r-pp5qcn{vertical-align:-20%;}
+.r-q4m81j{text-align:center;}
+.r-qlhcfr{font-size:0.001px;}
+.r-qvk6io{line-height:0px;}
+.r-qvutc0{word-wrap:break-word;}
+.r-rjixqe{line-height:20px;}
+.r-rki7wi{bottom:12px;}
+.r-s67bdx{font-size:48px;}
+.r-sb58tz{max-width:1000px;}
+.r-tjvw6i{text-decoration-thickness:1px;}
+.r-u6sd8q{background-repeat:no-repeat;}
+.r-u8s1d{position:absolute;}
+.r-ueyrd6{line-height:36px;}
+.r-uho16t{font-size:34px;}
+.r-vkv6oe{min-width:40px;}
+.r-vqxq0j{border:0 solid black;}
+.r-vrz42v{line-height:28px;}
+.r-vvn4in{background-position:center;}
+.r-wy61xf{height:72px;}
+.r-x3cy2q{background-size:100% 100%;}
+.r-x572qd{background-color:rgba(247,249,249,1.00);}
+.r-xigjrr{-webkit-filter:blur(4px);filter:blur(4px);}
+.r-yc9v9c{width:22px;}
+.r-yn5ncy{animation-fill-mode:both;}
+.r-yy2aun{font-size:26px;}
+.r-yyyyoo{fill:currentcolor;}
+.r-z7pwl0{max-width:700px;}
+.r-z80fyv{height:20px;}
+.r-zchlnj{right:0px;}
+@-webkit-keyframes r-11cv4x{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+@-webkit-keyframes r-imtty0{0%{opacity:0;}100%{opacity:1;}}
+@keyframes r-11cv4x{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+@keyframes r-imtty0{0%{opacity:0;}100%{opacity:1;}}
+.r-2eghd0{position:absolute;visibility:hidden;top:0;width:50px;pointer-events:none}
+.r-2eghd0.loaded{visibility:visible;top:50vh;width:50px}</style></head><body style="background-color: #FFFFFF;"><noscript><style>
+    body {
+      -ms-overflow-style: scrollbar;
+      overflow-y: scroll;
+      overscroll-behavior-y: none;
+    }
+
+    .errorContainer {
+      background-color: #FFF;
+      color: #0F1419;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 10%;
+      font-family: Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    .errorButton {
+      margin: 3em 0;
+    }
+
+    .errorButton a {
+      background: #1DA1F2;
+      border-radius: 2.5em;
+      color: white;
+      padding: 1em 2em;
+      text-decoration: none;
+    }
+
+    .errorButton a:hover,
+    .errorButton a:focus {
+      background: rgb(26, 145, 218);
+    }
+
+    .errorFooter {
+      color: #657786;
+      font-size: 80%;
+      line-height: 1.5;
+      padding: 1em 0;
+    }
+
+    .errorFooter a,
+    .errorFooter a:visited {
+      color: #657786;
+      text-decoration: none;
+      padding-right: 1em;
+    }
+
+    .errorFooter a:hover,
+    .errorFooter a:active {
+      text-decoration: underline;
+    }
+
+      #placeholder,
+      #react-root {
+        display: none !important;
+      }
+      body {
+        background-color: #FFF !important;
+      }
+    </style>
+    <div class="errorContainer">
+      <svg role="img" aria-label="X logo" width="48" height="48" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M86.8918 28.25H99.0219L72.5243 58.5334L103.698 99.75H79.285L60.1647 74.7536L38.2929 99.75H26.1627L54.5069 67.3565L24.5938 28.25H49.6199L66.9004 51.0974L86.8918 28.25ZM82.6337 92.4904H89.3555L45.9716 35.1301H38.7584L82.6337 92.4904Z" fill="black"/>
+      </svg>
+      <h1>JavaScript is not available.</h1>
+      <p>We’ve detected that JavaScript is disabled in this browser. Please enable JavaScript or switch to a supported browser to continue using x.com. You can see a list of supported browsers in our Help Center.</p>
+      <p class="errorButton"><a href="https://help.x.com/using-x/x-supported-browsers">Help Center</a></p>
+    <p class="errorFooter">
+      <a href="https://x.com/tos">Terms of Service</a>
+      <a href="https://x.com/privacy">Privacy Policy</a>
+      <a href="https://support.x.com/articles/20170514">Cookie Policy</a>
+      <a href="https://legal.twitter.com/imprint.html">Imprint</a>
+      <a href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo">Ads info</a>
+      © 2025 X Corp.
+    </p>
+</div></noscript><div id="react-root" style="height:100%;display:flex;"><div class="css-175oi2r r-13awgt0 r-12vffkv"><div class="css-175oi2r r-13awgt0 r-12vffkv"><div aria-label="Loading…" class="css-175oi2r r-kemksi r-1p0dtai r-zchlnj r-1d2f490 r-1xcajam r-ipm5af" id="placeholder"><svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-lrvibr r-m6rgpd r-1p0dtai r-1nao33i r-wy61xf r-zchlnj r-1d2f490 r-ywje51 r-u8s1d r-ipm5af r-1blnp2b"><g><path d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"></path></g></svg></div><div class="css-175oi2r r-hvic4v r-zchlnj r-1d2f490 r-1xcajam r-1ykxob0" id="ScriptLoadFailure"><form action="" method="GET"><div class="css-175oi2r r-1awozwy r-q4m81j"><div dir="ltr" class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-1qd0xha r-a023e6 r-rjixqe r-16dba41" style="color:rgba(231,233,234,1.00)"><span class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3">Something went wrong, but don’t fret — let’s give it another shot.</span></div><br/><input name="failedScript" type="hidden" value=""/><button style="min-width:36px;min-height:36px;padding-left:16px;padding-right:16px;border-radius:9999px;border-style:solid;border-width:1px;user-select:none;cursor:pointer;background-color:#EFF3F4;border-color:transparent;color:#0F1419" type="submit"><div dir="ltr" class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-q4m81j r-a023e6 r-rjixqe r-b88u0q" style="color:rgba(15,20,25,1.00)"><span class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3">Try again</span></div></button><div dir="ltr" class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-1qd0xha r-a023e6 r-rjixqe r-16dba41 r-1oifz5y r-z2wwpe r-jwli3a r-6koalj r-1gs4q39 r-1ez5h0i r-11c0sde r-iphfwy r-o59np7 r-qjj4hq r-1h8ys4a"><img alt="⚠️" draggable="false" src="https://abs-0.twimg.com/emoji/v2/svg/26a0.svg" class="r-4qtqp9 r-dflpy8 r-k4bwe5 r-1kpi4qh r-pp5qcn r-h9hxbl"/><span class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3"> Some privacy related extensions may cause issues on x.com. Please disable them and try again.</span></div></div></form></div></div></div></div><svg viewBox="0 0 24 24" id="loading-x-anim-0" aria-hidden="true" class="r-1p0dtai r-13gxpu9 r-4qtqp9 r-yyyyoo r-wy61xf r-1d2f490 r-2eghd0 r-ywje51 r-dnmrzs r-u8s1d r-zchlnj r-1plcrui r-ipm5af r-lrvibr r-1blnp2b"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path><path d="M 10,30 C 161,249 90,213 126,9 h 207 s 214,159 247,222 C 70,36 171,233 115,90 h 97 s 4,173 180,252 C 110,247 197,176 39,69 h 141 s 181,164
+
+URL: https://projects.fivethirtyeight.com/2023-nfl-predictions/games/
+
+        <!doctype html>
+        <html lang="en" lang="en">
+            <head>
+                <!-- ABCNEWS | eb51f11ba590 | 3881 | 45c7d26f5b4cb74559d5f423164ac1988d1fab8b | abcnews.go.com | Tue, 04 Nov 2025 22:04:21 GMT -->
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+                <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+                <meta property="og:locale" content="en_US" />
+                
+
+                <script>
+                    window.__dataLayer = {"helpersEnabled":true,"page":{},"pzn":{},"site":{"device":"desktop","portal":"news"},"visitor":{}},
+                        consentToken = window.localStorage.getItem('consentToken');
+
+                    if (consentToken) {
+                        window.__dataLayer.visitor = { consent : JSON.parse(consentToken) }; 
+                    }
+                </script>
+                <script src="https://dcf.espn.com/TWDC-DTCI/prod/Bootstrap.js"></script>
+                <link rel="preload" as="font" href="https://s.abcnews.com/assets/dtci/fonts/post-grotesk/PostGrotesk-Book.woff2" crossorigin>
+<link rel="preload" as="font" href="https://s.abcnews.com/assets/dtci/fonts/post-grotesk/PostGrotesk-Bold.woff2" crossorigin>
+<link rel="preload" as="font" href="https://s.abcnews.com/assets/dtci/fonts/post-grotesk/PostGrotesk-Medium.woff2" crossorigin>
+<link rel="preload" as="font" href="https://s.abcnews.com/assets/dtci/fonts/post-grotesk/PostGrotesk-Light.woff2" crossorigin>
+<link rel="preload" as="font" href="https://s.abcnews.com/assets/dtci/fonts/klim/tiempos/TiemposHeadline-Regular.woff2" crossorigin>
+<link rel="preload" as="font" href="https://s.abcnews.com/assets/dtci/fonts/klim/tiempos/TiemposHeadline-RegularItalic.woff2" crossorigin>
+<link rel="preload" as="font" href="https://s.abcnews.com/assets/dtci/fonts/klim/tiempos/TiemposHeadline-Medium.woff2" crossorigin>
+<link rel="preload" as="image" href="https://s.abcnews.com/assets/dtci/icomoon/svg/logo.svg" >
+<link rel="preconnect" href="https://fastcast.semfs.engsvc.go.com">
+<link rel="preconnect" href="https://cdn.registerdisney.go.com">
+                
+                <link data-react-helmet="true" rel="stylesheet" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/css/fusion-4502323e.css"/><link data-react-helmet="true" rel="stylesheet" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/css/9993-9ad856db.css"/><link data-react-helmet="true" rel="stylesheet" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/css/abcnews-6911d455.css"/><link data-react-helmet="true" rel="stylesheet" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/css/2091-65ebf8e0.css"/><link data-react-helmet="true" rel="stylesheet" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/css/8535-8e21a6bb.css"/><link data-react-helmet="true" rel="stylesheet" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/css/1733-9fa52771.css"/><link data-react-helmet="true" rel="stylesheet" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/css/6583-af294b91.css"/><link data-react-helmet="true" rel="stylesheet" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/css/7709-5c2dacb6.css"/><link data-react-helmet="true" rel="stylesheet" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/css/1647-190c6e17.css"/><link data-react-helmet="true" rel="stylesheet" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/css/337-57de88bd.css"/><link data-react-helmet="true" rel="stylesheet" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/css/section-0bd35cca.css"/><link data-react-helmet="true" rel="canonical" href="https://abcnews.go.com/Politics"/><link data-react-helmet="true" rel="manifest" href="/manifest.json"/><link data-react-helmet="true" rel="shortcut icon" href="https://s.abcnews.com/assets/dtci/images/favicon.ico" type="image/x-icon"/>
+                <script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/runtime-d5905c13.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/9993-66f9a287.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/6205-1d745251.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/8554-7135b86f.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/5741-b72d637c.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/9910-6c8a2262.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/7854-1fd771ba.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/1776-2e8efa49.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/7110-a7fc0d53.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/5793-8536813b.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/5426-78d7d412.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/5427-97ce5665.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/8015-ee7fca82.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/4664-20ef51e8.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/1763-aa81d821.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/7651-c4de29cc.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/2233-e4237f4d.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/37-3f3fcae6.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/2091-b9df903c.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/9338-5dfb2607.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/963-4a7a080d.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/4724-58536d93.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/6189-86e0b759.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/3305-fd8bd7f1.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/1648-5bdfbb73.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/6493-e4183b4b.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/4210-78a18dda.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/9156-88f1cfa7.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/6652-31efedad.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/8535-8cb72f58.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/9806-703e7b74.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/1733-955e2e43.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/6583-c076174f.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/7709-3fe5c7f5.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/1647-fcf6cfdb.js" defer></script><script src="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/337-10ba825c.js" defer></script>
+                <link rel="prefetch" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/_manifest.js" as="script" /><link rel="prefetch" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/abcnews-170fd0df.js" as="script" />
+<link rel="prefetch" href="//assets-cdn.abcnews.com/abcnews/45c7d26f5b4c-release-10-28-2025.16/client/abcnews/section-e66454f6.js" as="script" />
+                <title data-react-helmet="true">Politics News | Breaking Political News, Video &amp; Analysis-ABC News - ABC News</title>
+                <meta data-react-helmet="true" name="description" content="ABC News is your trusted source on political news stories and videos. Get the latest coverage and analysis on everything from the Trump presidency, Senate, House and Supreme Court."/><meta data-react-helmet="true" name="keywords" content="2020 Election, Election Polls, Presidential Election, 2020 Election News, Primary Election, Donald Trump, Joe Biden, breaking news, Democrats, Republicans, Analysis, Democratic Candidates, Republican Candidates, Political news"/><meta data-react-helmet="true" name="theme-color" content="#fff"/><meta data-react-helmet="true" name="copyright" content="2025 ABC News"/><meta data-react-helmet="true" name="author" content="ABC News"/><meta data-react-helmet="true" name="robots" content="index, follow"/><meta data-react-helmet="true" property="fb:admins" content="704409894"/><meta data-react-helmet="true" property="fb:app_id" content="4942312939"/><meta data-react-helmet="true" name="fb_title" content="ABC News – Breaking News, Latest News and Videos"/><meta data-react-helmet="true" property="og:site_name" content="ABC News"/><meta data-react-helmet="true" property="og:url" content="https://abcnews.go.com/Politics"/><meta data-react-helmet="true" property="og:title" content="ABC News – Breaking News, Latest News and Videos"/><meta data-react-helmet="true" property="og:description" content="ABC News is your trusted source on political news stories and videos. Get the latest coverage and analysis on everything from the Trump presidency, Senate, House and Supreme Court."/><meta data-react-helmet="true" property="og:image" content="https://s.abcnews.com/images/US/abc_news_default_2000x2000_update_16x9_992.jpg"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="fb:pages" content="86680728811"/><meta data-react-helmet="true" property="fb:pages" content="59306617060"/><meta data-react-helmet="true" property="fb:pages" content="214832449817"/><meta data-react-helmet="true" property="fb:pages" content="66660497800"/><meta data-react-helmet="true" property="fb:pages" content="184096565021911"/><meta data-react-helmet="true" property="fb:pages" content="295479040495545"/><meta data-react-helmet="true" property="fb:pages" content="163497464933"/><meta data-react-helmet="true" property="fb:pages" content="149475666523"/><meta data-react-helmet="true" property="fb:pages" content="1161108697272926"/><meta data-react-helmet="true" property="fb:pages" content="263058762303"/><meta data-react-helmet="true" property="fb:pages" content="55845270277"/><meta data-react-helmet="true" name="twitter:app:name:iphone" content="ABC News"/><meta data-react-helmet="true" name="twitter:app:id:iphone" content="300255638"/><meta data-react-helmet="true" name="twitter:app:url:iphone" content="abcnewsiphone://link/section,"/><meta data-react-helmet="true" name="twitter:app:name:ipad" content="ABC News"/><meta data-react-helmet="true" name="twitter:app:id:ipad" content="306934135"/><meta data-react-helmet="true" name="twitter:app:url:ipad" content="abcnewsipad://link/section,"/><meta data-react-helmet="true" name="twitter:app:name:googleplay" content="ABC News"/><meta data-react-helmet="true" name="twitter:app:id:googleplay" content="com.abc.abcnews"/><meta data-react-helmet="true" name="twitter:app:url:googleplay" content="https://abcnews.go.com/"/>
+                <script data-react-helmet="true" src="https://scripts.webcontentassessor.com/scripts/0b90f464007ee375f4e9cd06c3914e59274887f92e97c606a62fdf9e3a4728b5"></script><script data-react-helmet="true" async="true" src="https://www.googletagmanager.com/gtag/js?id=DC-4139589"></script><script data-react-helmet="true" src="https://s.abcnews.com/assets/dtci/js/floodlight_global.js"></script>
+                
+
+                <script data-nr-type="legacy" data-nr-pct="100">(() => {function gc(n){n=document.cookie.match("(^|;) ?"+n+"=([^;]*)(;|$)");return n?n[2]:null}function sc(n){document.cookie=n}function smpl(n){n/=100;return!!n&&Math.random()<=n}var _nr=!1,_nrCookie=gc("_nr");null!==_nrCookie?"1"===_nrCookie&&(_nr=!0):smpl(100)?(_nr=!0,sc("_nr=1; path=/")):(_nr=!1,sc("_nr=0; path=/"));_nr && (() => {;window.NREUM||(NREUM={});NREUM.init={distributed_tracing:{enabled:true},privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]}};;NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","sa":1,"licenseKey":"16357338ab","applicationID":"395029741"};__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(31),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(32),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError";if(!c.disabled){var l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(14),t(13),"addEventListener"in window&&t(7),c.xhrWrappable&&t(15),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){U++,L=g.hash,this[u]=y.now()}function o(){U--,g.hash!==L&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(11),b=t(12),E=t(9),R=t(7),O=t(14),T=t(8),S=t(15),P=t(10),M=t("ee"),C=M.get("tracer"),N=t(23);t(17),y.features.spa=!0;var L,U=0;M.on(u,r),b.on(p,r),P.on(p,r),M.on(d,o),b.on(l,o),P.on(l,o),M.buffer([u,d,"xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+c,"clearTimeout"+s,u]),S.buffer([u,"new-xhr","send-xhr"+s]),T.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),C.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,m+s),a(T,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,N(!0)),w[v]("load",i,N(!0)),w[v]("popstate",function(){i(0,U>1)},N(!0))}},{}],5:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function o(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+p])try{window.performance[h](m,o,!1)}catch(t){}else try{window.performance[h]("webkit"+m,o,!1)}catch(t){}}function i(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(14),f=t(13),u=t(6),d=t(23),p="learResourceTimings",l="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",O=t("loader");if(!O.disabled){O.features.stn=!0,t(9),"addEventListener"in window&&t(7);var T=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof T&&(this.bstStart=O.now())}),a.on(b,function(t,e){var n=t[0];n instanceof T&&s("bst",[n,e,this.bstStart,O.now()])}),c.on(x,function(t,e,n){this.bstStart=O.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),this.bstType])}),f.on(x,function(){this.bstStart=O.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=O.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):l in window.performance&&(window.performance["c"+p]?window.performance[l](m,o,d(!1)):window.performance[l]("webkit"+m,o,d(!1))),document[l]("scroll",i,d(!1)),document[l]("keypress",i,d(!1)),document[l]("click",i,d(!1))}}},{}],6:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],7:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],8:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],
+

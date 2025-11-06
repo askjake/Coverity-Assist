@@ -1,0 +1,22 @@
+URL: URL (if any)
+ERROR: Invalid URL 'URL (if any)': No scheme supplied. Perhaps you meant https://URL (if any)?
+
+CMD: Required bash command (if any)
+RET=2
+STDOUT:
+
+STDERR:
+/bin/sh: 1: Syntax error: "(" unexpected
+
+
+CMD: curl -X POST http://jenkins-server/job/default-pipeline/build
+RET=6
+STDOUT:
+
+STDERR:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: jenkins-server
+
+

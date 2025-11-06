@@ -1,0 +1,21 @@
+CMD: curl -X GET "localhost:9200/rtr-prod/_search?q=alert_name:IP_AD_INSERTION*"
+RET=7
+STDOUT:
+
+STDERR:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to localhost port 9200: Connection refused
+
+
+CMD: psql -c "SELECT * FROM ds_stbh_live_eks.ds_stbh_live_dishconnected WHERE alert_name LIKE 'IP_AD_INSERTION%'"
+RET=127
+STDOUT:
+
+STDERR:
+/bin/sh: 1: psql: not found
+
+

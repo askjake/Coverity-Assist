@@ -1,0 +1,7 @@
+The task requires a comprehensive report on James Fitzgerald who works for DISH, but so far we only have search strategies without actual information about the person. We need to gather concrete information about this individual.
+Google Search,Find information about James Fitzgerald at DISH Network,curl -s "https://www.google.com/search?q=James+Fitzgerald+DISH+Network",-
+LinkedIn API,Look for public profile information about James Fitzgerald at DISH,-,https://www.linkedin.com/pub/dir?firstName=James&lastName=Fitzgerald&company=DISH
+DISH Corporate Website,Check executive team or employee directory for James Fitzgerald,-,https://about.dish.com/management-team
+Bloomberg,Look for executive profile if James Fitzgerald is in leadership,-,https://www.bloomberg.com/research/stocks/private/person.asp?personId=
+ZoomInfo,Find professional profile of James Fitzgerald at DISH,-,https://www.zoominfo.com/p/James-Fitzgerald
+News Search,Find press releases or news mentioning James Fitzgerald at DISH,curl -s "https://news.google.com/search?q=James+Fitzgerald+DISH+Network",-

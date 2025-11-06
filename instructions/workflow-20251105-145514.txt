@@ -1,0 +1,410 @@
+URL: https://www.google.com/maps/dir/Denver
+<!DOCTYPE html><html itemscope="" itemtype="http://schema.org/Place" lang="en"> <head>   <link href="/maps/_/js/k=maps.m.en.9mcx7y8ef1Y.es5.O/m=sc2,per,mo,lp,ep,ti,stx,ds,dwi,enr,pwd,dw,pdm,log,std,b/am=5AAASAIS/rt=j/d=1/rs=ACT90oGqZa9z6xyX-S4_Ul2kYZpbDSrxaA?wli=m.UC6gtuwd_qY.loadSv.O%3A%3Bm.OjAyXfRV4FE.mapcore.O%3A%3B&amp;cb=M" as="script" rel="preload" type="application/javascript" nonce="OksdwFIQF4uYoUD1vDoPfA">  <link href="/maps/preview/opensearch.xml?hl=en" title="Google Maps" rel="search" type="application/opensearchdescription+xml"> <title>  Google Maps  </title> <meta content=" Find local businesses, view maps and get driving directions in Google Maps. " name="Description">  <meta content="Google Maps" itemprop="name"> <meta content="Google Maps" property="og:title">  <meta content="https://maps.google.com/maps/api/staticmap?center=39.73920667%2C-105.0726519&amp;zoom=12&amp;size=900x900&amp;language=en&amp;sensor=false&amp;client=google-maps-frontend&amp;signature=Mu-1fYwk9ZKXoyUX2YlKT5lHa5c" itemprop="image"> <meta content="https://maps.google.com/maps/api/staticmap?center=39.73920667%2C-105.0726519&amp;zoom=12&amp;size=900x900&amp;language=en&amp;sensor=false&amp;client=google-maps-frontend&amp;signature=Mu-1fYwk9ZKXoyUX2YlKT5lHa5c" property="og:image"> <meta content="900" property="og:image:width"> <meta content="900" property="og:image:height">  <meta content="Find local businesses, view maps and get driving directions in Google Maps." itemprop="description"> <meta content="Find local businesses, view maps and get driving directions in Google Maps." property="og:description">  <meta content="Google Maps" property="og:site_name"> <meta content="summary" name="twitter:card">  <meta content="Anm+hhtuh7NJguqSnXHEAIqqMaV+GXCks8WYXHJKF7l6AeYMj+wO+fi9OdDqFnJTg9t0492DykVxx4jpvFbxnA8AAABseyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY5NTE2Nzk5OSwiaXNTdWJkb21haW4iOnRydWV9" http-equiv="origin-trial"> <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport"> <meta content="notranslate" name="google"> <meta content="origin" name="referrer"> <meta content="ByHT0GXztW_RcGxS0o86DBf1WtNu02FfqlcT8njnSqU" name="google-site-verification"> <meta content="Diln__r3p9-tt39P2Cl2Amvx6oFB4PATnxuFBaw6ej8" name="google-site-verification"> <meta content="Q3PYRz1EUxp_7LF_eIg9Yh1cJa8_y9gnPgGfk4fDPes" name="google-site-verification">  <script nonce="OksdwFIQF4uYoUD1vDoPfA">(function(){var kEI='L2ULabbGBN3P0PEP5pefwAI';window.APP_OPTIONS=[null,"20251102.0",null,["/search?tbm\u003dmap\u0026authuser\u003d0\u0026hl\u003den\u0026gl\u003dus","/s?tbm\u003dmap\u0026gs_ri\u003dmaps\u0026suggest\u003dp\u0026authuser\u003d0\u0026hl\u003den\u0026gl\u003dus","/maps/preview/directions?authuser\u003d0\u0026hl\u003den\u0026gl\u003dus",null,null,"/maps/rpc/vp?authuser\u003d0\u0026hl\u003den\u0026gl\u003dus",[["/maps/vt"],757,["/maps/vt/stream"],null,0,null,1003,"/maps/vt",null,null,"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SAEaHBICZW4aAnVzYhIIRBIOCgNzZXQSB1JvYWRtYXAgATIDwAIBIhcAAQIDBAUGBwgJCgsMDQ4PEBESExQVFjDoAjisAkoQY3Jpc2lzX3dpbGRmaXJlc2JZCCoSOxIXCAISCXBob3RvcGluc/LOnbUMBBgDMAIaCBICZW4aAnVzIAEyFMgDAfADDfADEvgDEfgDFpoEAggBIgINEjCQHDiEB0oOYmFzZW1hcC1waG90b3NidwgtEj0SGwgCEhd0cmF2ZWwtbWFwLXJlYWNoYWJpbGl0eRocEgJlbhoCdXNiEghEEg4KA3NldBIHUm9hZG1hcCABIhcAAQIDBAUGBwgJCgsMDQ4PEBESExQVFjCAowVKF3RyYXZlbC1tYXAtcmVhY2hhYmlsaXR5YpQBCDESYBIOCAISCmRpcmVjdGlvbnMaHBICZW4aAnVzYhIIRBIOCgNzZXQSB1JvYWRtYXAgATIlCAwQAjAAOAFYAOABBoACAbgCAcACAcgCAdgCAegCAZADAeADAaIBBhgBMAF4ARhkIhcAAQIDBAUGBwgJCgsMDQ4PEBESExQVFjCAmp4BOICjBUoKZGlyZWN0aW9ucxLiMAj1BRJ1CAEScWh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtUm9hZG1hcFNhdGVsbGl0ZS1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEnUIAhJxaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1Sb2FkbWFwU2F0ZWxsaXRlLUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTESdQgDEnFodHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLVJvYWRtYXBTYXRlbGxpdGUtRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJvCAQSa2h0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtTmF2aWdhdGlvbi1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEncIBRJzaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1OYXZpZ2F0aW9uTG93TGlnaHQtRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJ4CAYSdGh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtTmF2aWdhdGlvblNhdGVsbGl0ZS1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEmwIBxJoaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1Sb2FkbWFwLUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTESbAgIEmhodHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLVJvYWRtYXAtRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJ2CAkScmh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtUm9hZG1hcEFtYmlhY3RpdmUtRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJsCAoSaGh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtUm9hZG1hcC1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEnUICxJxaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1Sb2FkbWFwU2F0ZWxsaXRlLUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTESbAgMEmhodHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLVRlcnJhaW4tRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJvCA0Sa2h0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtTmF2aWdhdGlvbi1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEm8IDhJraHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1OYXZpZ2F0aW9uLUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTESdggPEnJodHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLVJvYWRtYXBBbWJpYWN0aXZlLUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTESfAgQEnhodHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLVJvYWRtYXBBbWJpYWN0aXZlTG93Qml0LUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTESdwgREnNodHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLU5hdmlnYXRpb25Mb3dMaWdodC1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEnMIEhJvaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1UcmFuc2l0Rm9jdXNlZC1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEmwIExJoaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1Sb2FkbWFwLUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTEScggUEm5odHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLVJvdXRlT3ZlcnZpZXctRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJsCBUSaGh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtUm9hZG1hcC1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEnYIFhJyaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1OYXZpZ2F0aW9uQW1iaWVudC1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEnoIFxJ2aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1OYXZpZ2F0aW9uQW1iaWVudERhcmstRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJ8CBkSeGh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtQmFzZW1hcEVkaXRpbmdTYXRlbGxpdGUtRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJsCBoSaGh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtUm9hZG1hcC1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEnAIGxJsaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1Sb2FkbWFwRGFyay1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEnYIHBJyaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1Sb3V0ZU92ZXJ2aWV3RGFyay1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEnAIHRJsaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1UZXJyYWluRGFyay1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEncIHhJzaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1UcmFuc2l0Rm9jdXNlZERhcmstRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJsCB8SaGh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtUm9hZG1hcC1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEnAIIBJsaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1Sb2FkbWFwRGFyay1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEnAIIRJsaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1Sb2FkbWFwRGFyay1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEnkIJRJ1aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1OYXZpZ2F0aW9uSGlnaERldGFpbC1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEoEBCCYSfWh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtTmF2aWdhdGlvbkhpZ2hEZXRhaWxMb3dMaWdodC1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEmsIKRJnaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1UcmF2ZWwtRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJvCCoSa2h0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtVHJhdmVsRGFyay1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEngIKxJ0aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1OYXZpZ2F0aW9uU2F0ZWxsaXRlLUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTESeAgsEnRodHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLVRlcnJhaW5WZWN0b3JDbGllbnQtRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJ8CC0SeGh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtVGVycmFpblZlY3RvckNsaWVudERhcmstRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJ2CC4Scmh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtTmF2aWdhdGlvbkFtYmllbnQtRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJ6CC8Sdmh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtTmF2aWdhdGlvbkFtYmllbnREYXJrLUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTESdggwEnJodHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLUFpclF1YWxpdHlIZWF0bWFwLUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTESeggxEnZodHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLUFpclF1YWxpdHlIZWF0bWFwRGFyay1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEnMIMhJvaHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1OYXZpZ2F0aW9uRWdtbS1FTmF2TGlnaHRlclJvYWRzLTU5OWU1NTM1NDZmMjRjYzliYjg5NDRmYmE0YjA2NjUxEnsIMxJ3aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vbWFwcy9yZXMvQ29tcGFjdExlZ2VuZC1OYXZpZ2F0aW9uRWdtbUxvd0xpZ2h0LUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTESfAg0EnhodHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLU5hdmlnYXRpb25FZ21tU2F0ZWxsaXRlLUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTESdQg1EnFodHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLU5hdmlnYXRpb25UdW5uZWwtRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJ9CDYSeWh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtTmF2aWdhdGlvblR1bm5lbExvd0xpZ2h0LUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTESdgg3EnJodHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLU5hdmlnYXRpb25HbGFzc2VzLUVOYXZMaWdodGVyUm9hZHMtNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTEScgg4Em5odHRwczovL3d3dy5nc3RhdGljLmNvbS9tYXBzL3Jlcy9Db21wYWN0TGVnZW5kLUltbWVyc2l2ZVZpZXctRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MRJ2CDkScmh0dHBzOi8vd3d3LmdzdGF0aWMuY29tL21hcHMvcmVzL0NvbXBhY3RMZWdlbmQtTmF2aWdhdGlvbk1pbk1vZGUtRU5hdkxpZ2h0ZXJSb2Fkcy01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MSIgNTk5ZTU1MzU0NmYyNGNjOWJiODk0NGZiYTRiMDY2NTEoATJJaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL3Z0L3N4Zm9ybXM/dj01OTllNTUzNTQ2ZjI0Y2M5YmI4OTQ0ZmJhNGIwNjY1MTpgCi6AfIB4gHSAcIBsgGiAZIBggFyAWIBUgFCATIBIgESAQIA8gDiANIAwgCyAKIAkEgQIABAAEgQIARABEgQIAhACEg0IAxD///////////8BEg0IBBD+//////////8BOM7FUzjRxVM4ut2oAji/xMYiOL+IzCI42ZP4LDi99PgsOLSW+Sw41Yn6LA\u003d\u003d",null,["/maps/vt/proto"],"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
+
+URL: https://www.gasbuddy.com/tripcostcalculator
+Forbidden
+
+URL: https://roadtrippers.com
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx</center>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'999d300a9e7eb84b',t:'MTc2MjM1NDQ4MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
+
+URL: https://www.interstaterestareas.com
+<head><title>Not Acceptable!</title></head><body><h1>Not Acceptable!</h1><p>An appropriate representation of the requested resource could not be found on this server. This error was generated by Mod_Security.</p></body></html>
+
+URL: https://www.tripadvisor.com
+<html lang="en"><head><title>tripadvisor.com</title><style>#cmsg{animation: A 1.5s;}@keyframes A{0%{opacity:0;}99%{opacity:0;}100%{opacity:1;}}</style></head><body style="margin:0"><p id="cmsg">Please enable JS and disable any ad blocker</p><script data-cfasync="false">var dd={'rt':'c','cid':'AHrlqAAAAAMA0xeONvr03tYAI6X-vw==','hsh':'2F05D671381DB06BEE4CC52C7A6FD3','t':'bv','qp':'','s':46694,'e':'58fbf206f872005024e9c9c44bd618e36b67f0eef2e4f8810000b27fcc916f36a636a62f0cd42198a53b69090f2fe58a','host':'geo.captcha-delivery.com','cookie':'biRo65txO2uH5mtSOx5buz48wSw~7sA~4Zi_~bHiZUjGCFVNhup6zwmVZRHnt3P2hxtIsIkbOlX3vIa_St498QjwoDUVihEtjGQbsI~rLyOwiZqq3aRwJWmOx3DPS4jK'}</script><script data-cfasync="false" src="https://ct.captcha-delivery.com/c.js"></script></body></html>
+
+CMD: stops for breaks
+RET=127
+STDOUT:
+
+STDERR:
+/bin/sh: 1: stops: not found
+
+
+CMD: curl -s "https://www.google.com/maps/dir/Denver
+RET=2
+STDOUT:
+
+STDERR:
+/bin/sh: 1: Syntax error: Unterminated quoted string
+
+
+URL: https://www.interstaterestareas.com/interstate-70-rest-areas/
+<head><title>Not Acceptable!</title></head><body><h1>Not Acceptable!</h1><p>An appropriate representation of the requested resource could not be found on this server. This error was generated by Mod_Security.</p></body></html>
+
+URL: https://www.gasbuddy.com/trip
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Found - GasBuddy.com</title>
+
+    <script src="/Scripts/lib/gasbuddy.main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+    <link href="/Content/css?v=D1kCpUcLPv6T7EC7f4pq0JY4OJx_4ATYwiDrw92kND81" rel="stylesheet"/>
+
+    <script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+    <script src="/bundles/jquery?v=cr2m_QBRpjRuuxyjAK9VTfCnKCT-rwItKazh9uX4w_c1"></script>
+
+    <!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N3CG6XK');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-
+N3CG6XK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    
+
+<nav id="topNavbar" class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarItems">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand-container">
+                <a class="navbar-brand" href="/">
+                    <img src="https://static.gasbuddy.com/web/gas-buddy-logo-midnight-txt.svg" alt="GasBuddy Logo" />
+                </a>
+            </div>
+            <div class="hidden-md hidden-lg find-gas-container">
+                <a class="secondary-button" href="/home">
+                    Find Gas
+                </a>
+            </div>
+            <div class="locale-container">
+                
+
+<style type="text/css">
+    .locale-button {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 20px;
+        z-index: 1001;
+    }
+
+    #localeModal .modal-content {
+        padding: 3rem;
+    }
+
+    #localeModal .modal-header {
+        border-bottom: 0 none;
+    }
+
+    #localeModal .modal-title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .language-content {
+        padding: 1rem 0;
+    }
+
+    .language-content > label,
+    .language-content > input {
+        font-size: 16px;
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
+
+    .language-actions > button
+    {
+        width: 48%;
+        padding: 0.8em 1.5em;
+    }
+
+    .language-actions > button + button {
+        margin-left: 1rem;
+    }
+
+    .primary-button {
+        background-color: #ee5340;
+        border: 2px solid #ee5340;
+        border-radius: 4px;
+        color: white;
+        font-weight: bold;
+        padding: 0.4em 1.5em;
+        text-transform: uppercase;
+        transition: all 150ms ease-in
+    }
+
+    .lang-message {
+        margin: 1rem 0;
+    }
+
+    @media (max-width: 991px) {
+        .locale-button {
+            position: relative;
+            top: unset;
+            right: unset;
+            margin: 0.8rem 1rem;
+        }
+    }
+</style>
+
+<img class="locale-button" src="https://static.gasbuddy.com/web/icons/en-flag.svg" alt="English Language" data-toggle="modal" data-target="#localeModal" />
+
+
+<div id="localeModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Select your preferred language</h3>
+            </div>
+            <div class="modal-body">
+                <div class="language-content">
+                    <input id="englishRadio" name="language" type="radio" value="en" checked="checked" />
+                    <label for="englishRadio">&#127482;&#127480; English</label>
+                    <br />
+                    <input id="frenchRadio" name="language" type="radio" value="fr" />
+                    <label for="frenchRadio">&#127467;&#127479; Français</label>
+                </div>
+                <div class="language-actions">
+                    <button class="btn secondary-button btn-md" data-dismiss="modal">Cancel</button>
+                    <button id="localeSubmitButton" class="btn primary-button btn-md">Submit</button>
+                </div>
+                <div id="changeLanguageError" class="lang-message" style="display: none">
+                    <span>An error occurred updating your language. Please try again later.</span>
+                </div>
+                <div id="languageRefreshing" class="lang-message" style="display: none">
+                    <span>Language updated successfully. Refreshing page to apply changes...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var isUpdatingLanguage;
+    $("#localeSubmitButton").click(function (e) {
+        var selectedLanguage = $('input[name="language"]:checked').val();
+        var currLanguage = "en";
+
+        if (!isUpdatingLanguage && currLanguage !== selectedLanguage) {
+            $("#changeLanguageError").hide();
+            isUpdatingLanguage = $.ajax({
+                type: "POST",
+                url: '/language/update',
+                data: { "language": selectedLanguage },
+                datatype: "json",
+                headers: GasBuddy.Token.generateHeader(),
+                success: function () {
+                    $("#languageRefreshing").show();
+                    isUpdatingLanguage = null;
+                    window.location.reload(true);
+                },
+                error: function () {
+                    $("#changeLanguageError").show();
+                    isUpdatingLanguage = null;
+                }
+            });
+        }
+    });
+</script>
+
+            </div>
+        </div>
+        <div id="navbarItems" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav dropdown ">
+                <li class="dropdown dropdown-toggle">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                        <span class="primary-link">Find Gas</span>
+                        <span class="pull-right fas fa-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/home">Search</a></li>
+                        <li class="dropdown-toggle">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">By City<span class="pull-right fas fa-chevron-down"></span></a>
+                            <ul class="dropdown-menu secondary-menu two-columns">
+                                <li><a class="dropdown-item" href="/gasprices/georgia/atlanta">Atlanta</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/massachusetts/boston">Boston</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/illinois/chicago">Chicago</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/ohio/cleveland">Cleveland</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/texas/dallas">Dallas</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/colorado/denver">Denver</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/michigan/detroit">Detroit</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/texas/houston">Houston</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/california/los-angeles">Los Angeles</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/florida/miami">Miami</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/quebec/montreal">Montreal</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/new-york/new-york-city">New York City</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/florida/orlando">Orlando</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/pennsylvania/philadelphia">Philadelphia</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/arizona/phoenix">Phoenix</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/california/san-diego">San Diego</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/california/san-francisco">San Francisco</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/washington/seattle">Seattle</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/florida/tampa">Tampa</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/ontario/toronto">Toronto</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/washington-dc">Washington DC</a></li>
+                                <li><a class="see-all-link" href="/gasprices">See All</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-toggle">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">By State &amp; Province<span class="pull-right fas fa-chevron-down"></span></a>
+                            <ul class="dropdown-menu secondary-menu two-columns">
+                                <li><a class="dropdown-item" href="/gasprices/alabama">Alabama</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/arizona">Arizona</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/california">California</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/florida">Florida</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/georgia">Georgia</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/illinois">Illinois</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/indiana">Indiana</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/massachusetts">Massachusetts</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/michigan">Michigan</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/missouri">Missouri</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/new-jersey">New Jersey</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/new-york">New York</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/north-carolina">North Carolina</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/ohio">Ohio</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/pennsylvania">Pennsylvania</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/tennessee">Tennessee</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/texas">Texas</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/alberta">Alberta</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/british-columbia">British Columbia</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/manitoba">Manitoba</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/ontario">Ontario</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/quebec">Quebec</a></li>
+                                <li><a class="dropdown-item" href="/gasprices/saskatchewan">Saskatchewan</a></li>
+                                <li><a class="see-all-link" href="/gasprices">See All</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-toggle">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">By Brand<span class="pull-right fas fa-chevron-down"></span></a>
+                            <ul class="dropdown-menu secondary-menu">
+                                <li><a class="dropdown-item" href="/brands/bp">BP</a></li>
+                                <li><a class="dropdown-item" href="/brands/citgo">CITGO</a></li>
+                                <li><a class="dropdown-item" href="/brands/chevron">Chevron</a></li>
+                                <li><a class="dropdown-item" href="/brands/conoco">Conoco</a></li>
+                                <li><a class="dropdown-item" href="/brands/exxon">Exxon</a></li>
+                                <li><a class="dropdown-item" href="/brands/marathon">Marathon</a></li>
+                                <li><a class="dropdown-item" href="/brands/phillips-66">Phillips 66</a></li>
+                                <li><a class="dropdown-item" href="/brands/shell">Shell</a></li>
+                                <li><a class="dropdown-item" href="/brands/valero">Valero</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                        <li class="dropdown dropdown-toggle">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                <span class="primary-link">Pay with GasBuddy</span><span class="pull-right fas fa-chevron-down"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://pay.gasbuddy.com">Get the Card</a></li>
+                                <li><a class="dropdown-item" href="/pay">About the Card</a></li>
+                                <li><a class="dropdown-item" href="/pay/premium">Premium Membership</a></li>
+                            </ul>
+                        </li>
+
+                <li class="dropdown dropdown-toggle">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                        <span class="primary-link">Gas Tools</span><span class="pull-right fas fa-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/charts">Gas Price Charts</a></li>
+                        <li><a class="dropdown-item" href="/gaspricemap">Gas Price Map</a></li>
+                        <li><a class="dropdown-item" href="https://www.gasbuddy.com/go/fueldemand" target="_blank">Fuel Demand</a></li>
+                        <li><a class="dropdown-item" href="https://fuelinsights.gasbuddy.com" target="_blank">Fuel Insights</a></li>
+                        <li><a class="dropdown-item" href="https://tracker.gasbuddy.com" target="_blank">Outage Tracker</a></li>
+                        <li><a class="dropdown-item" href="/vehicles/recalls/search">Vehicle Recalls</a></li>
+                        <li><a class="dropdown-item" href="/account/fuel-log-book">Fuel Logbook</a></li>
+                        <li><a class="dropdown-item" href="/leaderboards">Leaderboards</a></li>
+                    </ul>
+                </li>
+                <li class="standalone-link">
+                    <a href="/tripcostcalculator">Plan Your Trip</a>
+                </li>
+                <li class="dropdown dropdown-toggle">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                        <span class="primary-link">Blog & Podcast</span><span class="pull-right fas fa-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/go/blog" target="_blank">Blog</a></li>
+                        <li><a class="dropdown-item" href="/podcast/over-a-barrel">Podcast</a></li>
+                    </ul>
+                </li>
+                <li class="hidden-md hidden-lg">
+                    <div class="social-media-badges">
+                        <a class="social-media-badge" href="https://www.instagram.com/gasbuddy/" target="_blank">
+                            <span class="fab fa-instagram"></span>
+                        </a>
+                        <a class="social-media-badge" href="https://www.facebook.com/gasbuddy" target="_blank">
+                            <span class="fab fa-facebook"></span>
+                        </a>
+                        <a class="social-media-badge" href="https://twitter.com/gasbuddy" target="_blank">
+                            <span class="fab fa-twitter"></span>
+                        </a>
+                        <a class="social-media-badge" href="https://www.linkedin.com/company/gasbuddy" target="_blank">
+                            <span class="fab fa-linkedin-in"></span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="invisible-nav-div"></div>
+    </div>
+</nav>
+<div style="background-color: #052530;color: white;padding: 1em 2em;text-align: center;font-size: 14px;text-transform: uppercase">
+    Please note that we recently updated our privacy policy. 
+    Your continued use of the GasBuddy app or website indicates your consent to the modified 
+    <a href="https://www.gasbuddy.com/privacy" target="_blank" style="color:#03c3d6">privacy policy</a> 
+    as well as our <a href="https://www.gasbuddy.com/disclaimer" target="_blank" style="color:#03c3d6">terms of service</a>. 
+    If you do not agree with the revised privacy policy, please stop using the GasBuddy website and mobile application. 
+    If you would like to request that we delete your information or wish to exercise your privacy rights, 
+    please use this <a href="https://help.gasbuddy.com/hc/en-us/requests/new?ticket_form_id=22705859409943" target="_blank" style="color:#03c3d6">form</a> 
+    or contact us at <a href="/cdn-cgi/l/email-protection#8ffffde6f9eeecf6fdeafefaeafcfbcfe8eefcedfaebebf6a1ece0e2" target="_blank" style="color:#03c3d6"><span class="__cf_email__" data-cfemail="48383a213e292b313a2d393d2d3b3c082f293b2a3d2c2c31662b2725">[email&#160;protected]</span></a>.
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    $(function () {
+        var stickyHeight = $('nav#topNavbar')[0].offsetTop;
+
+        $(document).ready(function () {
+
+            $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                $(this).parent().siblings().removeClass('open');
+                $(this).parent().toggleClass('open');
+            });
+
+            $('a.dropdown-item').on('click', function (event) {
+                logLocalyticsEvent(event);
+            });
+
+           
+
+CMD: times
+RET=0
+STDOUT:
+0m0.000000s 0m0.000000s
+0m0.000000s 0m0.000000s
+
+STDERR:
+
+

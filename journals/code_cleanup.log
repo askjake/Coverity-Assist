@@ -1,0 +1,4 @@
+[2025-11-04 18:58:13] [workflow] wrote instructions → /home/jacob.montgomery@dtcsse.local/Coverity/instructions/workflow.instruct
+[2025-11-04 18:58:13] /trigger-workflow error: generate_resource_list() missing 2 required positional arguments: 'chat_url' and 'token'
+[2025-11-04 19:04:03] [workflow] wrote instructions → /home/jacob.montgomery@dtcsse.local/Coverity/instructions/workflow.instruct
+[2025-11-04 19:04:03] /trigger-workflow error: generate_resource_list() missing 2 required positional arguments: 'chat_url' and 'token'

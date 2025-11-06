@@ -1,0 +1,176 @@
+URL: URL (if any)
+ERROR: Invalid URL 'URL (if any)': No scheme supplied. Perhaps you meant https://URL (if any)?
+
+CMD: Required bash command (if any)
+RET=2
+STDOUT:
+
+STDERR:
+/bin/sh: 1: Syntax error: "(" unexpected
+
+
+CMD: curl -X POST http://jenkins-server/job/default-pipeline/build
+RET=6
+STDOUT:
+
+STDERR:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: jenkins-server
+
+
+CMD: git push origin main
+RET=128
+STDOUT:
+
+STDERR:
+fatal: not a git repository (or any of the parent directories): .git
+
+
+URL: https://github.com/username/repo/actions
+Not Found
+
+CMD: git push origin main
+RET=128
+STDOUT:
+
+STDERR:
+fatal: not a git repository (or any of the parent directories): .git
+
+
+URL: https://gitlab.com/username/repo/-/pipelines
+<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{line-height:2.25rem;font-size:1.5rem;font-weight:500}@media (width <= 720px){.h2{line-height:1.5rem;font-size:1.25rem}}#challenge-error-text{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+");background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme: dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cvId: '3',cZone: 'gitlab.com',cType: 'managed',cRay: '999666e4f9228639',cH: 'uKXQlU9sNMXWxtXcLGgFcOqFPAjSCEqQ5i4SHH6OtFw-1762283326-1.2.1.1-yZUO4Gy0MIgy8mI8bTvCEWZCJ1nBRWAb5x3OCKM4lZqpFm.SUkXvdYqRNhSNtcg0',cUPMDTk:"\/users\/sign_in?__cf_chl_tk=U3W12IMk7yvw_AEhVrJIYTJuCRchDLzR.0f2qIZUOGk-1762283326-1.0.1.1-cPYHHt50uqZWGRKqOcLD9Ddqn33HA4lFEcLNwZsvW2k",cFPWv: 'g',cITimeS: '1762283326',cTplC:0,cTplV:5,cTplB: '0',fa:"\/users\/sign_in?__cf_chl_f_tk=U3W12IMk7yvw_AEhVrJIYTJuCRchDLzR.0f2qIZUOGk-1762283326-1.0.1.1-cPYHHt50uqZWGRKqOcLD9Ddqn33HA4lFEcLNwZsvW2k",md: 'Ub2x760jdCWW9.Rf2JX2qe7RumWpmUVo.Psj_MgKS20-1762283326-1.2.1.1-t6ToAjCDDOkTtsVSFL3wODQUXZJ81Z22P9m83u.19FLOUUQAUN4TfmBEX2jMDSC_nVWg8Gmm.i4Y870wirfiQZ9SmCgRafPT3ZDsihbXmlMXmKKbeBhJ6kK1ZFQmzx0JYcTNsPc5Zb7l0CqXS58gUEf4BFpU9QAq9gdymIfTTsosSYS5UbLJ8f8cBYkZz7tstI332QK1Zq9a_9O6JteO0AYQF3.Xt.x7pRjtWuiAqauV83olRYy8tcsQZZaXwI491XXNGKS6OwFjcC08o1Ho7960McG7TnxfbC7vlABnS_zmGGlcWrG3TG44lxRlIi0RnGJORksMmNPgU59_b5rPgc05p._DJS3BSZ5irRvWIfh.ugRK8wcgU6_gHgDBApgufrnxmVR5EEki32D0tUb_Ri2Zun4p7Zf5qQuN0fPGhuMliLewwVxq06Xx8FVd9LT7cmm9Tz4sMBKfkSj6fIXHQ0lxcw2omGpIKKWAN4ZN4mwLBAkRvdbILVOnn9CdQCpF6y_VtZB3PqZ49ASgrPUXn5BXVrGsd5aVjkjzuLrhvyUH_Qu0ZOXC_mF6qiPP0DJ.MJZ0oaK0tjBwXQ4dCWCtH3hQ1Y1sLSkPskHFUXvmfIeeaW2CTJriQKbuJ4wfMJqjXsItkl8T0wBrCj.LRV0LN5DuqbE9KFuMeAriIhAfrmWZwuPoP_U0s5xoXzraUPUyqYZvFab1ptnfSZo.T82ZFmkga_luZlup7GlGZ2my3OSYiWIDA3_Z5TRrGEq.UcUraogotwFzFqDS7COxxPdrgK_NP7r0WrazXUZ4iyPahbJOMBB_TjkutoxdtfS0xen.b3AXfxsQ0U7Gt_Svgy0c_Q8AEjl0Fgdvs4PLbyEGZPXkyo_VobxaqLzftC1JDMOenVX6JZUCOVNrmAtbUeTXoSVaMLWpSDZ7LfUDTdKaXSMCZssuzYayZL5mxmo9BoUK',mdrd: 'eLKy87.ZMkQ_tMV6KIzVqOWjEx9sMWRvkjGTACI.grA-1762283326-1.2.1.1-2sk873C.9fhQChryYhISoLeIgqRCWP7PvcSh3P_8XbSZAvtgxOCPaxBuJXBE.lYaKFe89qoSEJn_PREH5AOn1Jb0p72Realo7Dj2qCDAnPp4bpxnrqza4P1ZPHagR16FOlM1.bfWvSHGTZ95RG5LhVE16Ib7tGOzPo_q5K8FRajfL0i8q7bfjVQvLGj2XAum0JSVcq6y8uR5F7.A_yGaJ0nuWgcGbtWw1wkoOJ1LBVhgQllIi4tR6SNIcHJoqCGen7o.l04bhgydr2I1Vprr7EdmisNnSKHO.FSUxq46VPAdPwaPPjJWCZvZBIRcVK2In9ml2DRqg2QyNOwYqhi_KNWZ10XHp4Dst9oqjkS9HD6IMMI469n0tmkpzon8GttKG65KkR2wJvb1.8rVVS4R_Ii_1r6oO37pQl72pbp3ixBpRGdbHro4dPAysukjKWWIvAaKYjDPLucRlBZhpqWrGNsTxt7XokgQz7Haysl_cjGe.F8_yqnTtoDInanmVDeYStENfAz4Bl5_leRiAXXpPXBnCPm9ZtpLVW.w8rRAfTRYOgVpIEfwVABdZ1F8RBerPUTSMyrdCrgq9f1zutPmwOd.Lgq84IC1PRyR4oCPhRpxAHFXsHZP3gkdAIp8BAc29FmTdNlgHZuGDFbuR30PAJuWsn.biUfEDq6j6Ua8LZiDqZTm8S_jSyaLC3SC8.fVTOtfot6PsIAqLZvTfA0_oZf3sqqeyD8vjBzWjGVIp71ZPB8H_YEz4BiVpuAC3naLNvXf6K_zH3QMl4vLs9yk7X416M0.fhorkvN0am8TPbL1hupfJ88Y4btV3sfmu2OahRx48o4c4i5K.3hcY8rW0rXKrFa8F61pVY62ef4OJ13IXyjALr388JnQSF5V.sd5V9m9u_u33P6GfKG6HDSMziFnFCBao9r.hwgY8moYsIr4dD9km6Z_K26p2GFIHUZZpCCnfzeodbwae0z9H93Aq_vZgZHSrT9h94OxJbHAMM4BW1_8oN8GoN7yBAlupBdCacKCrKsXXBZk0yM5M21iFiadjjGVxKtYBdD_BoZUTqwLi74ejn8bHfoOyFvVAHjK2VO7jpAGl2pxqK.5bqzTXZOFPUVd7oWLHd_KC_aNofhBb_MdIRZwRGLTMj6mG55POhdhyasmZg68IbTlGlggx7h2MzRVscl54VHTP5SKr07ah9B7SPokhVGuiaHg7Ut0DV6TI7IJxCd_Y62VkeOeJROZeaHuL0bod7daa35GIqFwGRtv73btfh9Y8dQHPpa07L.4BiSPu1xZSL4lotRmWQWdhn158z3.R_aVa7Wo5jF9UTBfB83vx7c2aJpbdIwsOftkJ1eZZOEfruHjHc.Cb6QtyaDlDwkmCN_xSSAN3kcFrLUOoMGvEt0sq3C9hG3oEZhmUh_tuDY2fKsP35q4taUyXaypzEArl.ZpkQQ2.rHtlnbUpcUfFSsIPvDAT6txbRNwqOHHrnQS2weNJmfKA8W3x_9Jo48pyRmqYFNyhtdSkGyvxatpt_EmsesJAU2dSKZPEuph.vLkRN8aMgZrHGHkmjj0eHO2gwYuh1eAXMrbbAaJLQ_liRxvaFTM3sgOIulqvggCk4SCsD3XFsmXL_zJzQaijXgHhndFZEMzXj7LSXfpZyPCzj9bK5sO0VgGEVCG7A74ByIB2_ojAqwb1deiKg2Jgxtj0hDNqMG1neputKjtfsiesZC9d4EDWl.Cc3vL9.OiFs4Mv4Tu2AL3Te70S4RQbXTXfb.p5Ng1j8TA2OFh6zqEST8m791hTl8_PTezTWUaKpn8J3XbNuIXll8BNPHdVw3SaeEsY9TwaQoxQJgmsa.uHmDxi9.eu4h6FSXf8yfaXkzCXz4j8TPMNiQtul0a4IQ0AysEHMXSI9UiR3pQ6JOQuOTKO0mlN5QDB7b_dST8CyqABssb_cORDIcJzDOXkmJ4Pyj6SadcSV0xrS0_C3rP04kkv6weA1ktKJxXdpKgplukJMxPUPymWePkfclPT_X6ITT3BmXYkEKhQeIVQDRh8i0Oay4z6nfyOy4K7Q9FdXyzMhQI77.KTImv2yu8kdyV8cw0ZvMpF8ALvf29xHPbFz6rZhhurg3iKYlufjkzkiExwja9LyuqSdE2mzyBBQXUlshhyXXP8eFIrXMM90bK.u18CCSpb8RAIdLPrEeF9f5.0f8zViKiUlOYNLm8PX..Uiqcv_LX6uV_IzlUeN4yIGv0AYprGQmVCaIrzG3wPGjBIpayZcZvAw5twuZ6_w3JypwxY79gvx.a7OUuNKSHR.go4XVe91EVEgDfvmEW2s8AFzDRU3DXbyW4Oajp_mW2Wib2xGRpU7shDo6rc2JnILNZGakU.csKtDCPVuElRuJey3ksM7PtYpAoU4o0CXzmZNM33ZzeIe96jvWR88sw_Tgt4zEr2krd',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=999666e4f9228639';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"\/users\/sign_in?__cf_chl_rt_tk=U3W12IMk7yvw_AEhVrJIYTJuCRchDLzR.0f2qIZUOGk-1762283326-1.0.1.1-cPYHHt50uqZWGRKqOcLD9Ddqn33HA4lFEcLNwZsvW2k"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script></body></html>
+
+CMD: git push origin main
+RET=128
+STDOUT:
+
+STDERR:
+fatal: not a git repository (or any of the parent directories): .git
+
+
+CMD: curl -X POST -u username:password http://bamboo-server/rest/api/latest/queue/PROJ-PLAN
+RET=6
+STDOUT:
+
+STDERR:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: bamboo-server
+
+
+URL: https://dev.azure.com/organization/project/_build
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+    
+    
+
+<html lang="en-US">
+<head><title>
+	
+            Azure DevOps Services | Sign In
+        
+</title><meta http-equiv="X-UA-Compatible" content="IE=11;&#32;IE=10;&#32;IE=9;&#32;IE=8" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico"/>
+
+    <link data-bundlelength="516085" data-bundlename="commoncss" data-highcontrast="/_static/tfs/M263_20251013.8/_cssbundles/HighContrast/vss-bundle-commoncss-vM3HCC22eD0oWtPEbH4RDSm54rp68Q2N_1JCAvjFKd4M=" data-includedstyles="jQueryUI-Modified;Core;Splitter;PivotView" href="/_static/tfs/M263_20251013.8/_cssbundles/Default/vss-bundle-commoncss-vVleoV7R0qTd8pEnREipvI5W1MCAR5-lhJ73tyraGzxU=" rel="stylesheet" />
+<link data-bundlelength="117380" data-bundlename="viewcss" data-highcontrast="/_static/tfs/M263_20251013.8/_cssbundles/HighContrast/vss-bundle-viewcss-vBW0p6q0a_HAmmH0JlDIu0-EL6yOjwzFSTITQmrZMjl0=" data-includedstyles="VSS.Controls" href="/_static/tfs/M263_20251013.8/_cssbundles/Default/vss-bundle-viewcss-vgnuW9GR0kLGtSSUS4Z1jRy1kzQpSQUcR8RyKDrH-z3Y=" rel="stylesheet" />
+
+    <!--UxServices customizations -->
+    
+    <link href="/_static/tfs/M263_20251013.8/_content/Authentication.css" type="text/css" rel="stylesheet" />
+    
+</head>
+
+<body class="platform">
+
+    <script type="text/javascript"> var __vssPageContext = {"webContext":{"user":{"id":"aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa","name":"Anonymous","email":"","uniqueName":"TEAM FOUNDATION\\Anonymous"},"host":{"id":"d9d07558-dcc0-41ba-ae7a-215ea40d6880","name":"TEAM FOUNDATION","uri":"https://spsprodeus22.vssps.visualstudio.com/","relativeUri":"/","hostType":"deployment","scheme":"https","authority":"spsprodeus22.vssps.visualstudio.com"}},"moduleLoaderConfig":{"baseUrl":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/","paths":{"VSS/Resources":"en-US","UserManagement/Scripts/Resources":"en-US","Authentication/Scripts/Resources":"en-US","Profile/Scripts/Resources":"en-US","Account/Scripts/Resources":"en-US"},"map":{},"contributionPaths":{"VSS":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/VSS","pathType":"default"},"VSS/Resources":{"value":"en-US","pathType":"resource"},"q":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/q","pathType":"default"},"knockout":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/knockout","pathType":"default"},"mousetrap":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/mousetrap","pathType":"default"},"mustache":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/mustache","pathType":"default"},"react":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/react.15.3","pathType":"default"},"react-dom":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/react-dom.15.3","pathType":"default"},"react-transition-group":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/react-transition-group.15.3","pathType":"default"},"jQueryUI":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/jQueryUI","pathType":"default"},"jquery":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/jquery","pathType":"default"},"OfficeFabric":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/OfficeFabric","pathType":"default"},"tslib":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/tslib","pathType":"default"},"@uifabric":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/@uifabric","pathType":"default"},"VSSUI":{"value":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/VSSUI","pathType":"default"}},"shim":{"jquery":{"deps":[],"exports":"jQuery"}},"waitSeconds":30},"coreReferences":{"stylesheets":[{"url":"/_static/tfs/M263_20251013.8/_cssbundles/Default/vss-bundle-ext-core-css-vjapY0wXg0TR6OC6NvdB3QBXQvwBy2yRgojbz3lmWNas=","highContrastUrl":null,"isCoreStylesheet":true}],"scripts":[{"identifier":"JQuery","url":"/_static/3rdParty/_scripts/jquery-3.6.0.min.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true},{"identifier":"JQueryXDomain","url":"/_static/3rdParty/_scripts/jquery.xdomainrequest.min.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true},{"identifier":"Promise","url":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/promise.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true},{"identifier":"GlobalScripts","url":"/_static/tfs/M263_20251013.8/_scripts/TFS/min/global-scripts.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true},{"identifier":"LoaderFixes","url":"/_static/tfs/M263_20251013.8/_scripts/TFS/pre-loader-shim.min.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":false},{"identifier":"AMDLoader","url":"/_static/3rdParty/_scripts/require.min.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true},{"identifier":"LoaderFixes","url":"/_static/tfs/M263_20251013.8/_scripts/TFS/post-loader-shim.min.js","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":false}],"coreScriptsBundle":{"identifier":"CoreBundle","url":"/_public/_Bundling/Content?bundle=vss-bundle-basejs-vx38JYf0FTtFkI9k88H54KYCLs9sIP_6xJwgWGnd-xvw=","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true},"extensionCoreReferences":{"identifier":"CoreBundle","url":"/_public/_Bundling/Content?bundle=vss-bundle-ext-core-vajARv_MqIQOnhkXFEidriI7NlgItGjiaPK9d3Nb5JHw=","fallbackUrl":null,"fallbackCondition":null,"isCoreModule":true}},"webAccessConfiguration":{"isHosted":true,"paths":{"rootPath":"/","staticContentRootPath":"/","staticContentVersion":"M263_20251013.8","resourcesPath":"/_static/tfs/M263_20251013.8/_content/","staticRootTfs":"/_static/tfs/M263_20251013.8/","cdnFallbackStaticRootTfs":"/_static/tfs/M263_20251013.8/","staticRoot3rdParty":"/_static/3rdParty/"},"api":{"webApiVersion":"1","areaPrefix":"_","controllerPrefix":""},"mailSettings":{"enabled":false},"registryItems":{}},"microsoftAjaxConfig":{"cultureInfo":{"name":"en-US","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"$","NaNSymbol":"NaN","CurrencyNegativePattern":0,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"0001-01-01T00:00:00","MaxSupportedDateTime":"9999-12-31T23:59:59.9999999","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2049,"IsReadOnly":true},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"dddd, MMMM d, yyyy h:mm:ss tt","LongDatePattern":"dddd, MMMM d, yyyy","LongTimePattern":"h:mm:ss tt","MonthDayPattern":"MMMM d","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'","ShortDatePattern":"M/d/yyyy","ShortTimePattern":"h:mm tt","SortableDateTimePattern":"yyyy'-'MM'-'dd'T'HH':'mm':'ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy'-'MM'-'dd HH':'mm':'ss'Z'","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ShortestDayNames":["Su","Mo","Tu","We","Th","Fr","Sa"],"DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"IsReadOnly":true,"NativeCalendarName":"Gregorian Calendar","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""]},"numberShortForm":{"QuantitySymbols":["K","M","B"],"NumberGroupSize":1000,"ThousandSymbol":"K"},"eras":null}},"timeZonesConfiguration":{},"featureAvailability":{"featureStates":{"VisualStudio.Services.Contribution.EnableOnPremUnsecureBrowsers":false,"VisualStudio.Service.WebPlatform.ClientErrorReporting":false,"Microsoft.VisualStudio.Services.Gallery.Client.UseCdnAssetUri":false,"VisualStudio.Services.WebAccess.SubresourceIntegrity":false,"VisualStudio.Services.IdentityPicker.ReactProfileCard":true}},"appInsightsConfiguration":{"enabled":false,"instrumentationKey":"00000000-0000-0000-0000-000000000000","insightsScriptUrl":null},"diagnostics":{"sessionId":"fa8837ee-06c4-4fd1-b81e-2114e450ce5c","activityId":"fa8837ee-06c4-4fd1-b81e-2114e450ce5c","bundlingEnabled":true,"webPlatformVersion":"M263","serviceVersion":"Dev20.M263.1 (build: AzureDevOps_M263_20251013.8)"},"navigation":{"topMostLevel":"deployment","area":"","currentController":"Signin","currentAction":"Index","routeId":"LegacyWebAccessRoute","routeValues":{"controller":"Signin","action":"Index"}},"globalization":{"explicitTheme":"","theme":"Default","culture":"en-US","timezoneOffset":0,"timeZoneId":"UTC"},"serviceInstanceId":"951917ac-a960-4999-8464-e3f0aa25b381","hubsContext":{},"serviceLocations":{"locations":{"951917ac-a960-4999-8464-e3f0aa25b381":{"Application":"https://spsprodeus22.vssps.visualstudio.com/","Deployment":"https://spsprodeus22.vssps.visualstudio.com/"}}}};</script><script type="text/javascript"> var __cultureInfo = __vssPageContext.microsoftAjaxConfig.cultureInfo;</script>
+<script type="text/javascript">if (window.performance && window.performance.mark) { window.performance.mark('startLoadBundleOuter-basejs'); }</script>
+<script data-bundlelength="127542" data-bundlename="basejs" src="/_public/_Bundling/Content?bundle=vss-bundle-basejs-vx38JYf0FTtFkI9k88H54KYCLs9sIP_6xJwgWGnd-xvw=" type="text/javascript"></script>
+<script type="text/javascript">if (window.performance && window.performance.mark) { window.performance.mark('endLoadBundleOuter-basejs'); }</script>
+
+
+<script type="text/javascript"> require.config(__vssPageContext.moduleLoaderConfig);</script>
+
+    <input name="__RequestVerificationToken" type="hidden" value="6SMt3liYhjJohQFtss30os4_iINpkkIaERk8rUJXuAWfjs04rjc_s0XEVGa769T4xf28zsMuXGqcUiA4_76mrR-NM_CN29uIBcvWOdgX2HU1" /><input name="__RequestVerificationToken2" type="hidden" value="__RequestVerificationToken2188eb2ff-b1d2-4f34-a664-9a06bcc173f0" />
+    
+    
+
+
+    
+    
+    <div class="account signin main-container hide">
+
+
+            <div class="page-content">
+                <div class="header-section" role="banner">
+                    
+
+                    <link rel="stylesheet" type="text/css" href="/_static/tfs/M263_20251013.8/_content/Combined.css">
+                    <div id="ux-header" class="FF ltr vsIntegrate" xmlns="http://www.w3.org/1999/xhtml">
+                        <span id="isMobile"></span>
+                        <div class="upperBand">
+                            <div class="upperBandContent">
+                                <div class="left"></div>
+                                <div class="right">
+                                    <div class="profileImage"></div>
+
+                                    <div id="signIn">
+                                        <a class=":SignedOutProfileElement: createProfileLink" href="/go/profile" title="Anonymous">Anonymous</a>
+                                        <a class="scarabLink" href="/_signout">Sign out</a>
+                                    </div>
+                                </div>
+                                <div class="clear-both"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-section" role="main">
+                    
+    
+            <div class="signin-main-content">
+                <noscript>
+                    <span class="error">Microsoft Internet Explorer&#39;s Enhanced Security Configuration is currently enabled on your environment. This enhanced level of security prevents our web integration experiences from displaying or performing correctly. To continue with your operation please disable this configuration or contact your administrator.</span>
+                </noscript>
+                <div class="provider-control">                    
+                    <script class="options" defer="defer" type="application/json">{"providerOptions":{"force":false,"orgIdAuthUrl":"https://login.microsoftonline.com/77f27dff-52b7-4cd5-9edc-5fabb378f167/oauth2/authorize?client_id=499b84ac-1321-427f-aa17-267ca6975798\u0026site_id=501454\u0026response_mode=form_post\u0026response_type=code+id_token\u0026redirect_uri=https%3A%2F%2Fspsprodeus22.vssps.visualstudio.com%2F_signedin\u0026nonce=a98c4b43-fa57-4013-a364-f94b958c0105\u0026state=realm%3Ddev.azure.com%26reply_to%3Dhttps%253A%252F%252Fdev.azure.com%252Forganization%252Fproject%252F_build%26ht%3D2%26hid%3D0d4a2964-dc81-4d92-a204-89e34e0e1b35%26nonce%3Da98c4b43-fa57-4013-a364-f94b958c0105%26lltid%3D181dbdde-4db8-42c5-8ea2-63c19250c06c%26protocol%3Dwsfederation\u0026resource=499b84ac-1321-427f-aa17-267ca6975798\u0026cid=a98c4b43-fa57-4013-a364-f94b958c0105\u0026wsucxt=1\u0026instance_aware=true","user":null,"signInContext":"eyJodCI6MiwiaGlkIjoiODAwMGU2NjctNzE3MC00YWZhLWIzNGQtNzIyYzA1MjUzNzI4IiwicXMiOnsicmVhbG0iOiJkZXYuYXp1cmUuY29tIiwicmVwbHlfdG8iOiJodHRwczovL2Rldi5henVyZS5jb20vb3JnYW5pemF0aW9uL3Byb2plY3QvX2J1aWxkIiwiaHQiOiIyIiwiaGlkIjoiMGQ0YTI5NjQtZGM4MS00ZDkyLWEyMDQtODllMzRlMGUxYjM1Iiwibm9uY2UiOiJhOThjNGI0My1mYTU3LTQwMTMtYTM2NC1mOTRiOTU4YzAxMDUiLCJsbHRpZCI6IjE4MWRiZGRlLTRkYjgtNDJjNS04ZWEyLTYzYzE5MjUwYzA2YyIsInByb3RvY29sIjoid3NmZWRlcmF0aW9uIn0sInJyIjoiIiwidmgiOiIiLCJjdiI6IiIsImNzIjoiIn01"}}</script>
+                </div>
+            </div>
+
+
+                </div>
+                 
+    
+    </div>
+
+
+    
+    
+
+    <script type="text/javascript">if (window.performance && window.performance.mark) { window.performance.mark('startLoadBundleOuter-common'); }</script>
+<script data-bundlelength="228545" data-bundlename="common" data-includedscripts="VSS/Bundling" src="/_public/_Bundling/Content?bundle=vss-bundle-common-vifaWipagpSKhR0NdRVQluHAMBIRImGQsW_s8KvTucZo=" type="text/javascript"></script>
+<script type="text/javascript">if (window.performance && window.performance.mark) { window.performance.mark('endLoadBundleOuter-common'); }</script>
+<script type="text/javascript">if (window.performance && window.performance.mark) { window.performance.mark('startLoadBundleOuter-view'); }</script>
+<script data-bundlelength="158476" data-bundlename="view" data-includedscripts="Authentication/Scripts/SPS.Authentication.Controls;Authentication/Scripts/SPS.Authentication" src="/_public/_Bundling/Content?bundle=vss-bundle-view-vj80bmWmKXweKXIQHz7QTMoh6VNWtHDSMdiMiojFTZgY=" type="text/javascript"></script>
+<script type="text/javascript">if (window.performance && window.performance.mark) { window.performance.mark('endLoadBundleOuter-view'); }</script>
+
+<script type="text/javascript"> if (window.performance && window.performance.mark) { window.performance.mark('requireStart'); }
+require(["Authentication/Scripts/SPS.Authentication.Controls","Authentication/Scripts/SPS.Authentication"], function(){  if (window.performance && window.performance.mark) { window.performance.mark('requireEnd'); } window.requiredModulesLoaded=true;  });
+</script>
+
+</body>
+</html>
+
+
+CMD: git push origin main
+RET=128
+STDOUT:
+
+STDERR:
+fatal: not a git repository (or any of the parent directories): .git
+
+

@@ -1,0 +1,678 @@
+URL: URL (if any)
+ERROR: Invalid URL 'URL (if any)': No scheme supplied. Perhaps you meant https://URL (if any)?
+
+CMD: Required bash command (if any)
+RET=2
+STDOUT:
+
+STDERR:
+/bin/sh: 1: Syntax error: "(" unexpected
+
+
+URL: https://www.google.com/search?q=james+fitzgerald+dish+network
+<!DOCTYPE html><html lang="en"><head><title>Google Search</title><style>body{background-color:#fff}</style><script nonce="Oa7MaKrJ4OkBa4F459Bx_g">window.google = window.google || {};window.google.c = window.google.c || {cap:0};</script></head><body><noscript><style>table,div,span,p{display:none}</style><meta content="0;url=/httpservice/retry/enablejs?sei=I5ULaYrENf6r0PEPoKr68Ao" http-equiv="refresh"><div style="display:block">Please click <a href="/httpservice/retry/enablejs?sei=I5ULaYrENf6r0PEPoKr68Ao">here</a> if you are not redirected within a few seconds.</div></noscript><script nonce="Oa7MaKrJ4OkBa4F459Bx_g">(function(){var sctm=false;(function(){sctm&&google.tick("load","pbsst");}).call(this);})();</script><script nonce="Oa7MaKrJ4OkBa4F459Bx_g">//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjogMywic291cmNlcyI6WyIiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJuYW1lcyI6WyJjbG9zdXJlRHluYW1pY0J1dHRvbiJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEifQ==
+(function(){var f=function(t,B,K,S,Z,E,Q,a,x,b){{x=91;while(x!=5)if(x==91)x=15;else if(x==62)b=S,x=t;else if(x==23){if((a=(Q=S,U.trustedTypes),a)&&a.createPolicy){try{Q=a.createPolicy(E,{createHTML:w,createScript:w,createScriptURL:w})}catch(P){if(U.console)U.console[Z](P.message)}b=Q}else b=Q;x=30}else if(x==t)x=(K|2)>>4<2&&K<<2>=25?23:30;else{if(x==30)return b;x==15&&(x=(K&B)==K?62:t)}}},w=function(t){return f.call(this,29,109,5,t)},U=this||self;(0,eval)(function(t,B){return(B=f(29,109,7,null,"error","ks"))&&t.eval(B.createScript("1"))===1?function(K){return B.createScript(K)}:function(K){return""+K}}(U)(Array(Math.random()*7824|0).join("\n")+['//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjogMywic291cmNlcyI6WyIiXSwic291cmNlc0NvbnRlbnQiOlsiICJdLCJuYW1lcyI6WyJjbG9zdXJlRHluYW1pY0J1dHRvbiJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEifQ==',
+'(function(){/*',
+'',
+' Copyright Google LLC',
+' SPDX-License-Identifier: Apache-2.0',
+'*/',
+'var o9=function(x,K,t,B,a,U,S,w,f,b,P,Q,Z,E,g){{E=91;while(E!=5)if(E==60)f++,E=55;else{if(E==93)throw Error("Invalid event type");if(E==12)throw Error("addEventListener and attachEvent are unavailable.");if(E==56)xd++,E=29;else if(E==15)E=(a+9^3)>=a&&(a-9^21)<a?62:29;else if(E==24)E=Array.isArray(B)?89:37;else if(E==17)E=55;else if(E==91)E=15;else if(E==23)E=x&&x.once?50:24;else if(E==87)K.attachEvent(Kl(52,x.toString(),"on",7),Z),E=56;else if(E==43)E=K.addListener&&K.removeListener?75:12;else if(E==62)E=x?44:93;else{if(E==30)return g;E==44?(b=Bv(34,t,S)?!!S.capture:!!S,(Q=QA(10,K))||(K[a9]=Q=new b_(K)),P=Q.add(x,B,U,b,f),E=36):E==37?(S=z(S,9),U&&U[w$]?U.S.add(String(B),S,w,Bv(42,t,x)?!!x.capture:!!x,K):o9(B,U,"object",S,27,w,x,false,K),E=30):E==61?(Z=fl(5),P.proxy=Z,Z.src=K,Z.listener=P,E=26):E==42?(Z6||(S=b),S===void 0&&(S=w),K.addEventListener(x.toString(),Z,S),E=56):E==75?(K.addListener(Z),E=56):E==36?E=P.proxy?29:61:E==90?(o9(x,K,"object",B[f],17,U,S,false),E=60):E==89?(f=0,E=17):E==29?E=(a-3|25)>=a&&(a-8^25)<a?23:30:E==26?E=K.addEventListener?42:0:E==0?E=K.attachEvent?87:43:E==50?(QA(5,t,0,x,K,B,U,S),E=30):E==55&&(E=f<B.length?90:30)}}}},Bv=function(x,K,t,B,a,U,S){{U=48;while(U!=15)if(U==7)U=(x^67)<12&&(x|1)>>3>=2?82:18;else if(U==82)K(function(w){w(t)}),S=[function(){return t},function(){}],U=18;else{if(U==87)return S;U==91?(S=!!(a=t.kV,-2*~B+~(a|B)+K*(a&~B)+(~a^B))&&!!(t.fR&B),U=7):U==47?(S=K,U=8):U==18?U=(x^43)<14&&(x<<2&11)>=7?10:87:U==48?U=73:U==10?(B=typeof t,S=B==K&&t!=null||B=="function",U=87):U==73?U=(x-1&11)>=10&&(x|9)>>4<4?47:8:U==8&&(U=(x&109)==x?91:7)}}},z=function(x,K,t,B,a,U,S,w,f){for(w=74;w!=32;)if(w==95)w=(K|5)>>3?88:98;else if(w==88)w=K<<1>=26&&(K^6)<29?58:1;else{if(w==1)return f;w==74?w=62:w==58?(G(B,t,x),x[EB]=2796,w=1):w==62?w=(K^56)>>5<3&&(K-3&7)>=6?37:95:w==37?(typeof x==="function"?f=x:(x[Pv]||(x[Pv]=function(b){return x.handleEvent(b)}),f=x[Pv]),w=95):w==98&&(S=typeof a,U=S!=x?S:a?Array.isArray(a)?"array":S:"null",f=U==B||U==x&&typeof a.length==t,w=88)}},QA=function(x,K,t,B,a,U,S,w,f,b,P){{b=27;while(b!=97)if(b==27)b=87;else if(b==49)b=(x|48)==x?15:67;else if(b==87)b=(x+2^10)>=x&&(x+8^22)<x?71:96;else if(b==40)b=Array.isArray(U)?72:31;else if(b==64)b=47;else{if(b==42)return P;if(b==93)QA(3,"object",0,B,a,U[f],S,w),b=46;else if(b==53)this.n===0?P=[0,0]:(this.u.sort(function(Q,Z){return Q-Z}),P=[this.n,this.u[this.u.length>>1]]),b=11;else if(b==47)b=f<U.length?93:49;else if(b==75)t=K[a9],P=t instanceof b_?t:null,b=42;else if(b==96)b=(x|1)>=24&&x+6<43?53:11;else if(b==31)w=z(w,25),S&&S[w$]?S.S.add(String(U),w,true,Bv(38,K,B)?!!B.capture:!!B,a):o9(U,S,"object",w,8,true,B,false,a),b=49;else if(b==67)b=(x&74)==x?75:42;else if(b==71)b=t?73:59;else if(b==15)this.listener=a,this.proxy=null,this.src=U,this.type=K,this.capture=!!B,this.nR=t,this.key=++mo,this.SX=this.jX=false,b=67;else if(b==72)f=t,b=64;else if(b==46)f++,b=47;else if(b==73)b=typeof K!=="function"?74:96;else if(b==11)b=(x&39)==x?40:49;else{if(b==74)throw Error("Invalid decorator function "+K);if(b==59)throw Error("Invalid class name "+t);}}}},Ac=function(x,K,t,B,a,U,S,w,f,b,P,Q){for(P=33;P!=74;)if(P==41)f={},Gv=(f.atomic=false,f.autocomplete="none",f.dropeffect="none",f.haspopup=false,f.live="off",f.multiline=false,f.multiselectable=false,f.orientation="vertical",f.readonly=false,f.relevant="additions text",f.required=false,f.sort="none",f.busy=false,f.disabled=false,f.hidden=false,f.invalid=x,f),P=3;else if(P==18)P=S===""||S==void 0?24:45;else if(P==16)Q=Math.floor(this.B()),P=11;else if(P==14)P=K+3&5?99:42;else if(P==45)a.setAttribute(w,S),P=14;else if(P==24)P=Gv?3:41;else if(P==39)Array.isArray(S)&&(S=S.join(B)),w=t+U,P=18;else if(P==84)P=(K|5)>>4?11:16;else if(P==42)S.classList?S.classList.remove(w):(S.classList?S.classList.contains(w):pl(16,w,U,W(50,a,S)))&&jI(21,t,Array.prototype.filter.call(W(55,a,S),function(Z){return Z!=w}).join(B),S),P=99;else if(P==11)P=((K|1)&7)==1?39:14;else if(P==33)P=84;else if(P==3)b=Gv,U in b?a.setAttribute(w,b[U]):a.removeAttribute(w),P=14;else if(P==99)return Q},W=function(x,K,t,B,a,U,S){{a=34;while(a!=38)if(a==43)U=function(){},U.prototype=B.prototype,t.X=B.prototype,t.prototype=new U,t.prototype.constructor=t,t.Gu=function(w,f,b){for(var P=21;P!=91;)if(P==60)P=26;else if(P==46)Q[Z-K]=arguments[Z],P=17;else if(P==17)Z++,P=26;else{if(P==42)return B.prototype[f].apply(w,Q);if(P==21)var Q=Array((P=60,arguments).length-K),Z=K;else P==26&&(P=Z<arguments.length?46:42)}},a=73;else{if(a==73)return S;a==66?a=x+4>>3==3?43:73:a==34?a=31:a==80?(Hv.call(this,K?K.type:""),this.relatedTarget=this.currentTarget=this.target=null,this.button=this.screenY=this.screenX=this.clientY=this.clientX=this.offsetY=this.offsetX=0,this.key="",this.charCode=this.keyCode=0,this.metaKey=this.shiftKey=this.altKey=this.ctrlKey=false,this.state=null,this.pointerId=0,this.pointerType="",this.timeStamp=0,this.yH=null,K&&this.init(K,t),a=99):a==90?(this.YQ=L.document||document,a=57):a==99?a=(x^62)<13&&(x^69)>>3>=2?65:66:a==31?a=(x-6|53)<x&&(x+1^20)>=x?90:57:a==57?a=(x-4&15)>=9&&x+7>>5<1?80:99:a==65&&(S=t.classList?t.classList:zv("string",t,K,12).match(/\\S+/g)||[],a=66)}}},zv=function(x,K,t,B,a,U,S,w,f,b,P){{b=10;while(b!=57)if(b==25)b=(B+3&28)<4&&(B^52)>=6?76:18;else{if(b==6)return P;if(b==24)b=t<x.length?43:2;else if(b==54)U=void 0,b=92;else if(b==7)K=a=0,S=[],b=19;else if(b==34)K++,b=62;else if(b==71)b=38;else if(b==51)t.HP(function(Q){a=Q},x,K),P=a,b=52;else if(b==10)b=25;else if(b==19)b=62;else if(b==76){if(K.v.length){(K.I&&":TQR:TQR:"(),K).Q0=a,K.I=true;try{U=K.B(),K.LR=0,K.Xo=U,K.PP=0,K.BP=U,f=kd(12,null,true,254,":",a,K),w=t?0:10,S=K.B()-K.BP,K.JM+=S,K.RE&&K.RE(S-K.i,K.D,K.G,K.PP),K.D=false,K.G=false,K.i=0,S<w||K.z5--<=0||(S=Math.floor(S),K.rO.push(S<=x?S:254))}finally{K.I=false}P=f}b=18}else b==68?(t=0,a="",b=75):b==80?(a-=8,S.push((U=w>>a,-~U-(U^255)+2*(~U&255)+(U|-256))),b=71):b==38?b=a>7?80:34:b==52?b=(B^94)&11?28:7:b==92?(P=U,b=90):b==45?(t+=8192,b=24):b==4?b=K?68:54:b==70?(P=typeof K.className==x?K.className:K.getAttribute&&K.getAttribute("class")||t,b=6):b==46?(K=window.btoa,b=4):b==2?(U=K(a).replace(/\\+/g,"-").replace(/\\//g,"_").replace(/=/g,""),b=92):b==75?b=24:b==90?b=B-9<<1<B&&B-5<<1>=B?70:6:b==43?(a+=String.fromCharCode.apply(null,x.slice(t,t+8192)),b=45):b==14?b=38:b==28?b=B+6>>3==3?46:90:b==18?b=(B^46)>>4?52:51:b==99?(a+=t,w=w<<t|x[K],b=14):b==62?b=K<x.length?99:23:b==23&&(P=S,b=28)}}},D6=function(x,K,t,B,a,U,S,w,f,b,P,Q,Z,E){{Q=23;while(Q!=59)if(Q==41)a=B.type,w=B.proxy,S.removeEventListener?S.removeEventListener(a,w,B.capture):S.detachEvent?S.detachEvent(Kl(52,a,"on",3),w):S.addListener&&S.removeListener&&S.removeListener(w),xd--,U=QA(64,S),Q=16;else if(Q==51)Z(f),Q=64;else if(Q==58)Q=!z(B,3,"number","array",f)||Bv(46,B,f)&&f.nodeType>t?51:9;else if(Q==35)Q=95;else if(Q==94)Q=typeof B!=="number"&&B&&!B.jX?10:20;else if(Q==16)Q=U?66:88;else{if(Q==19)return E;if(Q==17)Q=U.QH==x?68:20;else if(Q==20)Q=((K^30)&3)>=1&&K-4>>4<1?0:19;else if(Q==64)P++,Q=95;else if(Q==23)Q=96;else if(Q==96)Q=K-2>=28&&(K<<2&6)<1?94:20;else if(Q==88)p(75,t,B),Q=20;else if(Q==95)Q=P<S.length?99:19;else if(Q==99)f=S[P],Q=58;else if(Q==10)S=B.src,Q=15;else if(Q==9){a:{if(f&&typeof f.length=="number"){if(Bv(39,B,f)){b=typeof f.item=="function"||typeof f.item==a;break a}if(typeof f==="function"){b=typeof f.item=="function";break a}}b=x}Q=(Kl(52,t,"",16,b?cv(34,8,t,f):f,Z),64)}else Q==0?(Z=function(g){g&&w.appendChild(typeof g==="string"?U.createTextNode(g):g)},P=1,Q=35):Q==14?(d$(55,12,1,B,S.S),Q=20):Q==66?(d$(55,14,1,B,U),Q=17):Q==68?(U.src=t,S[a9]=t,Q=20):Q==15&&(Q=S&&S[w$]?14:41)}}},jI=function(x,K,t,B,a,U,S,w,f,b,P,Q){for(Q=24;Q!=29;)if(Q==0)Q=(x-4&13)==1?93:36;else if(Q==96)Q=(x|2)>=28&&x+3<38?90:76;else if(Q==24)Q=96;else if(Q==89)P=Math.floor(this.JM+(this.B()-this.BP)),Q=2;else if(Q==36)Q=x<<1&10?26:40;else if(Q==40)P=(b=g$[K.substring(0,3)+"_"])?b(K.substring(3),t,B,a,U,S,w,f):Bv(66,t,K),Q=26;else{if(Q==2)return P;Q==90?(B.l=((B.l?B.l+"~":"E:")+t.message+K+t.stack).slice(0,2048),Q=76):Q==93?(typeof B.className==K?B.className=t:B.setAttribute&&B.setAttribute("class",t),Q=36):Q==73?Q=0:Q==26?Q=(x|4)>>4?2:89:Q==76&&(Q=((x^81)&15)==2?73:0)}},e=function(x,K,t,B,a,U,S,w,f,b,P){return(x>>(((x<<1&15)==2&&(b=(S=(w=t[B]<<24,U=t[(B|0)+K]<<16,-~(w|U)-(w&~U)+(w^U)+(w|~U)),a=t[(B|0)+2]<<8,-~(S&a)-K+(S^a))|t[-2*~(B&3)+-3-(~B^3)]),x^79)>=23&&x+2<25&&(K.U?b=R9(K,K.h):(a=$d(8,K,true),a&128&&(a^=128,B=$d(2,K,true),a=(t=a<<2,-2*~(t&B)+-2+(t^B))),b=a)),(x-2&13)==1&&(B=Ll(8,true,t),B&128&&(B=(U=K-(~B&K),a=Ll(8,true,t)<<7,2*(U&a)+~a+2*(~U&a)-(~U|a))),b=B),1)&16)<4&&(x>>1&15)>=6&&(b=P=function(){for(var Q=62;Q!=46;)if(Q==81)w&&f&&w.removeEventListener(f,P,Wv),Q=46;else if(Q==11){var Z=zv(254,(u(5,S,0,E),S),false,61,false);Q=75}else if(Q==74)Q=S.F?87:81;else if(Q==49)Z=u_(null,511,E,S),Q=75;else if(Q==45)Q=B==t?67:49;else if(Q==87)var E=[eI,(Q=36,U),a,void 0,w,f,arguments];else if(Q==36)Q=B==K?11:45;else if(Q==62)Q=S.o==S?74:46;else if(Q==67){var g=!S.v.length&&!S.I;Q=((u(6,S,0,E),g)&&zv(254,S,false,64,false),75)}else if(Q==75)return Z}),b},l_=function(x,K,t,B,a,U,S,w,f,b){{b=77;while(b!=72)if(b==77)b=16;else if(b==74)Fp.call(this),t||Xp||(Xp=new Yd),this.Mt=void 0,this.dA=null,this.xQ=false,this.oE=this.W=null,this.sJ=false,this.U2=this.T5=null,b=55;else if(b==16)b=B+3&3?55:74;else if(b==60)Array.prototype.forEach.call(a,function(P,Q,Z){for(Z=18;Z!=46;)Z==27?(Q=zv("string",t,K,11),jI(23,"string",Q+(Q.length>0?" "+P:P),t),Z=46):Z==18?Z=t.classList?45:71:Z==71?Z=(t.classList?t.classList.contains(P):pl(5,P,1,W(x,K,t)))?46:27:Z==45&&(t.classList.add(P),Z=46)}),b=62;else{if(b==62)return f;if(b==55)b=(B+8^18)<B&&(B-4^27)>=B?69:62;else if(b==63){for(w in U=((Array.prototype.forEach.call(W((S={},52),K,t),function(P){S[P]=true}),Array.prototype).forEach.call(a,function(P){S[P]=true}),K),S)U+=U.length>0?" "+w:w;b=(jI(37,"string",U,t),62)}else b==69&&(b=t.classList?60:63)}}},p=function(x,K,t,B,a,U,S,w,f,b,P){{b=66;while(b!=58)if(b==26)b=(x+2&47)<x&&(x+6^22)>=x?67:94;else if(b==67)sB.call(this,B),b=5;else if(b==31)b=(x&43)==x?37:46;else if(b==41)f=(w=Object.getPrototypeOf(f.prototype))&&w.constructor,b=33;else if(b==33)b=17;else if(b==17)b=f?80:21;else if(b==46)b=(x|1)>>3==2?34:16;else if(b==96)b=21;else{if(b==94)return P;b==71?b=(a=vv[S])?96:41:b==44?(t.jX=true,t.listener=K,t.proxy=K,t.src=K,t.nR=K,b=31):b==66?b=47:b==16?b=(x|24)==x?97:26:b==30?(this.V=U,b=94):b==64?b=17:b==80?(S=Jc(9,15,f),b=71):b==34?(this.o=K,b=16):b==5?b=(U=t)?30:83:b==37?(P=!!(B.fR&t)&&i_(32,t,B)!=a&&(!(U=B.fP,-1-~t-(~U&t))||B.dispatchEvent(Tv(14,14,8,16,1,K,a,t)))&&!B.g,b=46):b==83?(f=this.constructor,b=64):b==21?(U=a?typeof a.kQ==="function"?a.kQ():new a:null,b=30):b==97?(K.kQ=function(){return K.pR?K.pR:K.pR=new K},K.pR=void 0,b=26):b==47&&(b=(x|72)==x?44:31)}}},Fy=function(x,K,t,B,a,U,S,w,f,b,P){for(b=(w.jr=Tv(14,28,(w.Wm=p5,w.er=(w.LP=w[E2],Am),w.L),{get:function(){return this.concat()}}),w.nP=yA[w.L](w.jr,{value:{value:{}}}),0),f=[];b<390;b++)f[b]=String.fromCharCode(b);(w.As=B,w.qY=10001,w).v=(w.z5=(w.JM=0,w.Xo=0,25),[]);while({})if(w.AM=false,true)break;if((w.vm=(w.C=void 0,w.Pm=(w.E2=(w.RE=t,w.lE=(w.Tu=[],0),(w.Q0=(w.gO=(w.Y=void 0,void 0),w.R=(w.U=void 0,1),false),w.i=(w.H=null,0),w).PP=(w.o=w,w.D=false,w.dO=(w.LR=void 0,[]),0),w.I=false,w.Nt=void 0,w.eX=[],w.F=[],(w.K=0,w.iE=[],w).rO=[],P=window.performance||{},w.h=(w.l=void 0,void 0),w.BP=(w.Js=0,0),w.UJ=function(Q){return p.call(this,16,Q)},w.G=false,w.vP=0,false),[]),P.timeOrigin||(P.timing||{}).navigationStart||0),a&&a.length==2)&&(w.Tu=a[0],w.Pm=a[1]),S)try{w.Nt=JSON.parse(S)}catch(Q){w.Nt={}}if(!(z(function(Q,Z,E,g,c,d,k,D){for(D=61;D!=41;)D==42?D=63:D==61?(g=X(Q,54),c=e(37,127,Q),Z="",d=q(37,Q),k=d.length,E=0,D=34):D==63?D=c--?1:84:D==84?(l(Q,g,Z),D=41):D==1?(E=((E|0)+(e(51,127,Q)|0))%k,Z+=f[d[E]],D=42):D==34&&(D=63)},(z((z(function(Q){v(11,0,4,Q)},(z(function(Q,Z,E,g,c,d){for(d=34;d!=86;)d==77?(E=Wt(46,2,1,Q),g=E.ts,c=E.y0,d=28):d==28?d=Q.o==Q||c==Q.UJ&&g==Q?58:86:d==58?(G(Q,E.Xb,c.apply(g,E.A)),Q.Xo=Q.B(),d=86):d==34&&(d=u(25,Z,2,true,Q,false)?86:77)},19,(z(function(Q){L5(Q,4)},(z(function(Q){Ht(Q,1)},28,(l(w,(z(function(Q,Z,E,g){Mr(Q,(g=(E=(Z=e(8,Q),e(7,Q)),v)(15,Q),g),I(Q,Z)||I(Q,E))},14,494,(z(function(){},28,(l(w,268,(G(w,(G((z(function(Q,Z,E,g,c,d,k,D,H,O){for(O=66;O!=48;)O==38?O=c<Z.length?44:95:O==44?(k+=String.fromCharCode((g=Z[c],2*(g|0)+2*~g-(g|-122)-(~g|121))),O=88):O==88?(c++,O=38):O==89?O=38:O==95?(l(Q,H,k in D|0),O=48):O==66&&(d=X(Q,40),E=e(6,Q),H=e(7,Q),D=I(Q,E),Z=q(d,Q),c=0,k="",O=89)},16,(z(function(Q,Z,E,g,c,d,k,D,H){{H=52;while(H!=2)H==52?(c=e(6,Q),Z=e(10,Q),D=X(Q,51),E=q(c,Q),d=I(Q,Z),k=0,g="",H=99):H==99?H=72:H==38?(G(Q,D,E[g]),H=2):H==50?(g+=String.fromCharCode(d[k]^121),H=13):H==13?(k++,H=72):H==72&&(H=k<d.length?50:38)}},20,(z(function(Q,Z,E,g,c,d,k,D,H){for(H=81;H!=32;)H==15?(G(Q,k,d),H=32):H==86?(D=(Z=e(53,127,Q),-~(D&Z)+-2-~(D|Z))%E,d.push(c[D]),H=30):H==18?H=g--?86:15:H==66?H=18:H==81?(k=X(Q,39),g=e(67,127,Q),d=[],c=F(37,Q),D=0,E=c.length,H=66):H==30&&(H=18)},15,383,w),471),w),227),w),w),376,0),164),0),$g(4))),249),w),w)),158),[154,0,0]),396),w),13),177,w),128),w),21),174,w),function(Q,Z,E,g,c){G(Q,(E=I((c=I(Q,(Z=v(38,(g=e(8,Q),Q)),Z)),Q),g),Z),c+E)}),15,63,w),19),155,w),!null)!=null)w.rA=0;z(function(Q,Z,E,g,c,d,k,D,H,O,Y,n,N,V,A,nl,m,Mg){{m=91;while(m!=60)m==1?(E++,m=24):m==71?(E=0,m=7):m==32?(N++,m=78):m==90?(V[E]&&(H[E]=v(39,Q)),m=1):m==85?m=78:m==17?(Z=Mg(1),V.push(Z),g+=Z?0:1,m=6):m==94?(z(function(T,tc,UB,r,OB,R){for(R=41;R!=40;)R==87?R=43:R==28?(tc=r[tc],R=84):R==43?R=UB<D?72:54:R==34?R=97:R==72?(tc=H[UB],R=71):R==71?R=V[UB]?84:34:R==84?(OB.push(tc),R=14):R==97?R=tc>=r.length?7:28:R==41?(r=[],UB=0,OB=[],R=87):R==64?R=97:R==54?(T.U=v(28,A.slice(),T),T.h=v(58,OB,T),R=40):R==7?(r.push(X(T,35)),R=64):R==14&&(UB++,R=43)},13,Y,Q),m=60):m==2?(A.push(F(v(36,Q),Q)),m=36):m==40?m=n<D?17:16:m==36?m=31:m==7?m=24:m==31?m=nl--?2:94:m==78?m=N<D?5:71:m==91?(Mg=function(T,tc){for(;d<T;)c|=Ll(8,true,Q)<<d,d+=8;return tc=c&((d-=T,1)<<T)-1,c>>=T,tc},Y=X(Q,38),d=c=0,k=(Mg(3)|0)+1,D=Mg(5),g=n=0,V=[],m=10):m==24?m=E<D?90:11:m==6?(n++,m=40):m==5?(V[N]||(H[N]=Mg(O)),m=32):m==11?(nl=k,A=[],m=12):m==12?m=31:m==16?(O=((g|0)-1).toString(2).length,H=[],N=0,m=85):m==10&&(m=40)}},(G(w,228,((z(function(Q){L5(Q,3)},30,(z(function(Q,Z,E,g,c){Z=I(Q,(E=q((c=v(7,(g=e(6,Q),Q)),g),Q)!=0,c)),E&&l(Q,376,Z)},13,(z(function(Q,Z,E,g,c,d,k,D,H,O){{O=75;while(O!=93)O==23?(D=Wt(46,2,1,Q.o),H=D.y0,E=D.A,d=D.ts,c=E.length,k=D.Xb,g=c==0?new d[H]:c==1?new d[H](E[0]):c==2?new d[H](E[0],E[1]):c==3?new d[H](E[0],E[1],E[2]):c==4?new d[H](E[0],E[1],E[2],E[3]):2(),G(Q,k,g),O=93):O==75&&(O=u(27,Z,2,true,Q,false)?93:23)}},29,226,(l(w,(z(function(Q,Z,E,g,c,d,k,D){l((E=I(Q,(D=q((c=F((k=X(Q,(d=X((Z=e(7,Q),Q),35),g=e(8,Q),36)),k),Q),g),Q),d)),Q),Z,e(24,2,1,c,D,E,Q))},23,290,(z(function(Q,Z,E,g){l(Q,(Z=e((E=v(36,Q),g=Ll(8,true,Q),10),Q),Z),q(E,Q)>>>g)},(l(w,182,(l(w,300,(z(function(Q,Z){O2(376,2,(Z=q(v(37,Q),Q),Z),Q.o,104,0)},22,386,(Mr(w,22,(G(w,256,(G(w,358,(w.IJ=(z(function(Q,Z,E,g,c,d){(c=(d=q((g=(Z=v(39,(E=e(7,Q),Q)),v(6,Q)),E),Q),q(Z,Q)),l)(Q,g,d[c])},16,(G(w,260,((z(function(Q,Z,E,g,c,d){G((E=q((g=X(Q,(Z=v(46,(d=v(7,Q),Q)),51)),c=I(Q,d),Z),Q),Q),g,+(c==E))},21,1,(Mr((z(function(Q,Z,E,g,c,d,k,D,H,O,Y,n,N,V,A){for(A=77;A!=66;)if(A==92)g=c.length,n=0,Y=Y>0?Y:1,A=1;else if(A==86)V(c.slice(n,-2*~(n|Y)+(n^Y)+2*(~n^Y)),O),A=70;else if(A==91)A=Q.o==Q?92:66;else if(A==52){for(H in D=[],c)D.push(H);A=91,c=D}else A==1?A=62:A==77?A=u(26,Z,2,true,Q,true)?66:57:A==70?(n+=Y,A=62):A==57?(N=e(10,Q),E=v(38,Q),d=v(14,Q),k=e(11,Q),O=F(k,Q),c=F(N,Q),V=I(Q,E),Y=q(d,Q),A=12):A==62?A=n<g?86:66:A==12&&(A=f5("splice",c,"array")=="object"?52:91)},14,186,(z(function(Q,Z,E,g,c){(c=f5((Z=I(Q,(E=(g=v(37,Q),e)(10,Q),g)),"splice"),Z,"array"),l)(Q,E,c)},14,(Mr((z(function(Q,Z){Mr((Z=e(11,Q),Q),Z,[])},(Mr(w,456,(G(((Mr(w,(z(function(Q,Z,E,g,c,d){for(d=52;d!=50;)d==89?(l(Q,g,E),d=50):d==71?(E.push(Ll(8,true,Q)),d=13):d==13?(Z++,d=75):d==75?d=Z<c?71:89:d==52?(g=v(36,Q),c=e(35,127,Q),Z=0,E=[],d=23):d==23&&(d=75)},21,273,w),281),[]),new kg("Submit")).dispose(),w),339,[]),[0,0,0])),29),56,w),w),397,$g(4)),302),w),w)),w),469,w),w)),l)(w,435,{}),0)),350),w),G(w,359,735),0),0)),{})),[])),w)),$g(4))),[])),20),351,w),w)),432),[]),w)),209),w),333),w),z)(function(Q,Z,E){G(Q,(Z=e(8,(E=X(Q,53),Q)),Z),""+I(Q,E))},23,102,w),[2048])),20),61,w);while(true)if((w.NY=0,!(true==[]))==!"")break;zv(254,w,true,93,(u(19,(u((z(function(Q,Z,E,g,c){for(c=81;c!=88;)c==81?c=u(28,Z,2,true,Q,false)?88:63:c==63&&(g=e(11,Q),E=v(15,Q),Mr(Q,E,function(d){return eval(d)}(Ra(q(g,Q.o)))),c=88)},(z(function(Q,Z,E){(E=v(47,Q),Z=q(E,Q.o),Z[0]).removeEventListener(Z[1],Z[2],Wv)},19,252,(z(function(Q,Z,E,g,c){{c=73;while(c!=91)c==52?(E--,c=43):c==98?(G(Q,376,Q.K),c=91):c==38?(g=v(14,Q),Z[g]=Q.F[g],c=52):c==73?(Z=Q.iE.pop(),c=88):c==87?c=43:c==43?c=E>0?38:63:c==88?c=Z?81:98:c==81?(E=Ll(8,true,Q),c=87):c==63&&(Z[281]=Q.F[281],Z[228]=Q.F[228],Q.F=Z,c=91)}},(z(function(Q){Ht(Q,4)},30,(z(function(Q,Z,E,g,c,d,k,D,H,O,Y){for(Y=90;Y!=6;)Y==28?Y=d!==0?61:6:Y==90?(O=X(Q,37),c=v(37,Q),k=v(15,Q),E=v(47,Q),Z=F(k,Q),H=F(c,Q),d=q(O,Q.o),D=F(E,Q),Y=28):Y==61&&(g=e(23,2,1,1,D,Z,Q,d,H),d.addEventListener(H,g,Wv),F(22,Q).push(function(){d.removeEventListener(H,g,Wv)}),G(Q,260,[d,H,g]),Y=6)},31,474,(z(function(Q,Z,E,g,c,d){l((d=(g=F((Z=(c=X(Q,(E=v(5,Q),39)),v(7,Q)),c),Q),q)(E,Q),Q),Z,d in g|0)},22,29,(z((l(w,159,L),function(Q,Z,E,g,c,d,k,D){{D=74;while(D!=41)D==74?(g=v(5,Q),c=v(14,Q),Z=e(6,Q),D=84):D==82?D=g==38?17:41:D==55?(E=F(Z,Q),k=F(g,Q),d=F(c,Q),k[d]=E,D=82):D==51?D=d==2?73:41:D==73?(Q.C=$d(32,Q,false),Q.Y=void 0,D=41):D==17?(Q.Y=void 0,D=51):D==84&&(D=Q.o==Q?55:41)}}),15,198,w),w)),w)),13),w),16),487,w),w)),31),391,w),K||u(17,w,0,[EB]),18),w,0,[uX,x]),w),0,[eZ,U]),true))},aa=function(x,K,t,B,a,U,S,w,f,b,P){for(f=42;f!=39;)if(f==9)f=(K&113)==K?13:x;else if(f==95)Bt.call(this),this.S=new b_(this),this.cP=null,this.YV=this,f=33;else if(f==13)b=t&&t.parentNode?t.parentNode
+
+URL: https://www.linkedin.com/search/results/people/?keywords=james%20fitzgerald%20dish
+<!DOCTYPE html>
+
+        
+        
+      
+    
+    
+    
+    
+
+    
+
+
+    
+    <html lang="en-US" class="artdeco ">
+      <head>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="asset-url" id="artdeco/static/images/icons.svg" content="https://static.licdn.com/sc/h/6bja66gymvrvqrp5m6btz3vkz">
+        <title>
+            
+          LinkedIn Login, Sign in | LinkedIn
+      
+        </title>
+        <link rel="shortcut icon" href="https://static.licdn.com/sc/h/9lb1g1kp916tat669q9r5g2kz">
+        <link rel="apple-touch-icon" href="https://static.licdn.com/sc/h/1exdo4axa6eaw1jioxh1vu4fj">
+        <link rel="apple-touch-icon-precomposed" href="https://static.licdn.com/sc/h/55ggxxse8uyjdh2x78ht3j40q">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://static.licdn.com/sc/h/1exdo4axa6eaw1jioxh1vu4fj">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://static.licdn.com/sc/h/55ggxxse8uyjdh2x78ht3j40q">
+        <meta name="treeID" content="AAZC3Px2eOAczt+eWIi50Q==">
+        <meta name="pageKey" content="d_checkpoint_lg_consumer_login">
+        <meta name="pageInstance" content="urn:li:page:checkpoint_lg_uasLogin;HLXINDiAQpKBnnM/ptAv9A==">
+        <meta id="heartbeat_config" data-enable-page-view-heartbeat-tracking>
+          <meta name="appName" content="checkpoint-frontend">
+<!----><!---->
+        
+        <meta name="description" content="Login to LinkedIn to keep in touch with people you know, share ideas, and build your career.">
+        <meta name="robots" content="noarchive">
+        <meta property="og:site_name" content="LinkedIn">
+        <meta property="og:title" content="LinkedIn Login, Sign in | LinkedIn">
+        <meta property="og:description" content="Login to LinkedIn to keep in touch with people you know, share ideas, and build your career.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.linkedin.com">
+          <meta property="og:image" content="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@linkedin">
+        <meta name="twitter:title" content="LinkedIn Login, Sign in | LinkedIn">
+        <meta name="twitter:description" content="Login to LinkedIn to keep in touch with people you know, share ideas, and build your career.">
+        
+        
+      
+          <meta property="al:android:url" content="https://www.linkedin.com/login">
+          <meta property="al:android:package" content="com.linkedin.android">
+          <meta property="al:android:app_name" content="LinkedIn">
+          <meta property="al:ios:app_store_id" content="288429040">
+          <meta property="al:ios:app_name" content="LinkedIn">
+
+          
+        
+        <link rel="stylesheet" href="https://static.licdn.com/sc/h/b0kavuaety589yosyy4zw4yl1">
+      
+        
+        
+          
+    <link rel="canonical" href="https://www.linkedin.com/login">
+
+    <link rel="alternate" hreflang="ar" href="https://www.linkedin.com/login/ar">
+    <link rel="alternate" hreflang="cs" href="https://www.linkedin.com/login/cs">
+    <link rel="alternate" hreflang="da" href="https://www.linkedin.com/login/da">
+    <link rel="alternate" hreflang="de" href="https://www.linkedin.com/login/de">
+    <link rel="alternate" hreflang="en" href="https://www.linkedin.com/login">
+    <link rel="alternate" hreflang="es" href="https://www.linkedin.com/login/es">
+    <link rel="alternate" hreflang="fr" href="https://www.linkedin.com/login/fr">
+    <link rel="alternate" hreflang="hi" href="https://www.linkedin.com/login/hi">
+    <link rel="alternate" hreflang="id" href="https://www.linkedin.com/login/id">
+    <link rel="alternate" hreflang="it" href="https://www.linkedin.com/login/it">
+    <link rel="alternate" hreflang="ja" href="https://www.linkedin.com/login/ja">
+    <link rel="alternate" hreflang="ko" href="https://www.linkedin.com/login/ko">
+    <link rel="alternate" hreflang="ms" href="https://www.linkedin.com/login/ms">
+    <link rel="alternate" hreflang="nl" href="https://www.linkedin.com/login/nl">
+    <link rel="alternate" hreflang="no" href="https://www.linkedin.com/login/no">
+    <link rel="alternate" hreflang="pl" href="https://www.linkedin.com/login/pl">
+    <link rel="alternate" hreflang="pt" href="https://www.linkedin.com/login/pt">
+    <link rel="alternate" hreflang="ro" href="https://www.linkedin.com/login/ro">
+    <link rel="alternate" hreflang="ru" href="https://www.linkedin.com/login/ru">
+    <link rel="alternate" hreflang="sv" href="https://www.linkedin.com/login/sv">
+    <link rel="alternate" hreflang="th" href="https://www.linkedin.com/login/th">
+    <link rel="alternate" hreflang="tl" href="https://www.linkedin.com/login/tl">
+    <link rel="alternate" hreflang="tr" href="https://www.linkedin.com/login/tr">
+    <link rel="alternate" hreflang="zh" href="https://www.linkedin.com/login/zh">
+    <link rel="alternate" hreflang="zh-cn" href="https://www.linkedin.com/login/zh">
+    <link rel="alternate" hreflang="zh-tw" href="https://www.linkedin.com/login/zh-tw">
+    <link rel="alternate" hreflang="x-default" href="https://www.linkedin.com/login">
+  
+        
+      
+        
+          <link rel="preload" href="https://static.licdn.com/sc/h/747beangl1o9s9ip7xf9o6pir">
+          <link rel="preload" href="https://static.licdn.com/sc/h/8aidj8cqawduo88wnxdz9a7h0">
+        <link rel="preload" href="https://static.licdn.com/sc/h/9g3tctwatljrndj2jabyz43gj">
+        <link rel="preload" href="https://static.licdn.com/sc/h/1jsnxp2vq8df2hjvbgi68kub0">
+      
+      
+        <link rel="preload" href="https://static.licdn.com/sc/h/4sll27nhw6098wle5vkan60sk">
+        <link rel="preload" href="https://static.licdn.com/sc/h/97qei2oi6yuxufnx7rswp7aot">
+      
+      </head>
+      <body class="system-fonts ">
+        
+          
+
+    
+    <div id="app__container" class="glimmer">
+      <header>
+        
+              
+        
+        
+    
+
+    <a class="linkedin-logo" href="/" aria-label="LinkedIn">
+        
+
+        <li-icon aria-label="LinkedIn" size="28dp" alt="LinkedIn" color="brand" type="linkedin-logo">
+            <svg width="102" height="26" viewbox="0 0 102 26" fill="none" xmlns="http://www.w3.org/2000/svg" id="linkedin-logo" preserveaspectratio="xMinYMin meet" focusable="false">
+                <path d="M13 10H17V22H13V10ZM15 3.8C14.5671 3.80984 14.1468 3.94718 13.7917 4.19483C13.4365 4.44247 13.1623 4.7894 13.0035 5.19217C12.8446 5.59493 12.8081 6.03562 12.8985 6.45903C12.989 6.88244 13.2024 7.26975 13.5119 7.57245C13.8215 7.87514 14.2135 8.07976 14.6389 8.16067C15.0642 8.24159 15.504 8.1952 15.903 8.02732C16.3021 7.85943 16.6428 7.57752 16.8824 7.2169C17.122 6.85627 17.2499 6.43297 17.25 6C17.2515 5.70645 17.1939 5.4156 17.0807 5.14474C16.9675 4.87388 16.801 4.62854 16.5911 4.42331C16.3812 4.21808 16.1322 4.05714 15.8589 3.95006C15.5855 3.84299 15.2934 3.79195 15 3.8ZM4 4H0V22H11V18H4V4ZM57.9 16.2C57.9 16.61 57.9 16.86 57.9 17H48.9C48.9021 17.169 48.9256 17.337 48.97 17.5C49.1765 18.0933 49.5745 18.6011 50.1014 18.9433C50.6282 19.2855 51.254 19.4427 51.88 19.39C52.4142 19.4129 52.9468 19.3171 53.4396 19.1096C53.9324 18.9021 54.3731 18.5881 54.73 18.19L57.45 19.87C56.7533 20.6812 55.88 21.322 54.8971 21.7433C53.9142 22.1645 52.8479 22.3549 51.78 22.3C48.19 22.3 45.12 20.25 45.12 16.11C45.091 15.2506 45.2411 14.3946 45.5608 13.5963C45.8804 12.798 46.3626 12.075 46.9767 11.4731C47.5908 10.8712 48.3234 10.4037 49.128 10.1001C49.9325 9.7966 50.7914 9.66374 51.65 9.71C55.08 9.71 57.9 12 57.9 16.2ZM54.15 14.69C54.16 14.3669 54.0997 14.0455 53.9731 13.748C53.8466 13.4506 53.6569 13.1842 53.4172 12.9673C53.1775 12.7504 52.8935 12.5883 52.5849 12.492C52.2763 12.3958 51.9505 12.3678 51.63 12.41C50.9638 12.3515 50.3013 12.558 49.7865 12.9849C49.2716 13.4118 48.9459 14.0245 48.88 14.69H54.15ZM68 4H72V22H68.61V20.57C68.1486 21.1444 67.5541 21.5977 66.878 21.8904C66.2019 22.1832 65.4646 22.3066 64.73 22.25C62.22 22.25 59.18 20.39 59.18 16C59.18 12.08 61.87 9.75 64.68 9.75C65.299 9.72159 65.9167 9.82856 66.4902 10.0634C67.0636 10.2983 67.5788 10.6555 68 11.11V4ZM68.3 16C68.3 14.12 67.13 12.87 65.64 12.87C65.2366 12.8697 64.8373 12.9508 64.466 13.1084C64.0946 13.266 63.7589 13.4969 63.4788 13.7872C63.1988 14.0775 62.9801 14.4214 62.836 14.7981C62.6919 15.1749 62.6252 15.5769 62.64 15.98C62.6279 16.3815 62.6966 16.7813 62.842 17.1557C62.9874 17.5301 63.2064 17.8716 63.4862 18.1597C63.766 18.4479 64.1008 18.677 64.4708 18.8333C64.8407 18.9897 65.2383 19.0702 65.64 19.07C66.0201 19.0542 66.393 18.9609 66.7357 18.7957C67.0785 18.6305 67.3838 18.3969 67.6329 18.1094C67.8821 17.8219 68.0698 17.4864 68.1845 17.1236C68.2992 16.7609 68.3385 16.3785 68.3 16ZM45.76 10H41L37.07 14.9H37V4H33V22H37V16.27H37.07L41.07 22H46L41 15.48L45.76 10ZM26.53 9.7C25.7825 9.68818 25.0441 9.8653 24.3833 10.2149C23.7226 10.5645 23.1607 11.0754 22.75 11.7H22.7V10H19V22H23V15.47C22.956 15.1525 22.9801 14.8292 23.0706 14.5216C23.1611 14.2141 23.316 13.9294 23.525 13.6863C23.7341 13.4432 23.9924 13.2474 24.2829 13.1118C24.5734 12.9763 24.8894 12.9041 25.21 12.9C26.31 12.9 27 13.49 27 15.42V22H31V14.56C31 10.91 28.71 9.7 26.53 9.7ZM102 2V24C102 24.5304 101.789 25.0391 101.414 25.4142C101.039 25.7893 100.53 26 100 26H78C77.4696 26 76.9609 25.7893 76.5858 25.4142C76.2107 25.0391 76 24.5304 76 24V2C76 1.46957 76.2107 0.960859 76.5858 0.585786C76.9609 0.210714 77.4696 0 78 0L100 0C100.53 0 101.039 0.210714 101.414 0.585786C101.789 0.960859 102 1.46957 102 2ZM84 10H80V22H84V10ZM84.25 6C84.2599 5.553 84.1365 5.11317 83.8954 4.73664C83.6542 4.36011 83.3064 4.06396 82.8962 3.88597C82.4861 3.70798 82.0322 3.65622 81.5925 3.73731C81.1528 3.8184 80.7472 4.02865 80.4275 4.34124C80.1079 4.65382 79.8885 5.05456 79.7976 5.49233C79.7066 5.9301 79.7482 6.38503 79.9169 6.79909C80.0856 7.21314 80.3739 7.56754 80.7449 7.81706C81.1159 8.06657 81.5529 8.19989 82 8.2C82.2934 8.20805 82.5855 8.15701 82.8588 8.04994C83.1322 7.94286 83.3812 7.78192 83.5911 7.57669C83.801 7.37146 83.9675 7.12612 84.0807 6.85526C84.1939 6.5844 84.2514 6.29355 84.25 6ZM98 14.56C98 10.91 95.71 9.66 93.53 9.66C92.7782 9.65542 92.0375 9.84096 91.3766 10.1994C90.7158 10.5578 90.1562 11.0774 89.75 11.71V10H86V22H90V15.47C89.956 15.1525 89.9801 14.8292 90.0706 14.5216C90.1611 14.2141 90.316 13.9294 90.525 13.6863C90.7341 13.4432 90.9924 13.2474 91.2829 13.1118C91.5734 12.9763 91.8894 12.9041 92.21 12.9C93.31 12.9 94 13.49 94 15.42V22H98V14.56Z" fill="#0A66C2"></path>
+            </svg>
+        </li-icon>
+
+  
+    </a>
+  
+      
+      
+            
+      </header>
+
+      <main class="app__content" role="main">
+        
+              
+        
+          
+<!----><!---->  
+          
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <form method="post" id="otp-generation" class="hidden__imp">
+      
+    <input name="csrfToken" value="ajax:3224546013070547813" type="hidden">  
+
+      <input name="resendUrl" id="input-resend-otp-url" type="hidden">
+      <input name="midToken" type="hidden">
+      <input name="session_redirect" value="/flagship-web/search/results/people/?keywords=james%20fitzgerald%20dish" type="hidden">
+      <input name="parentPageKey" value="d_checkpoint_lg_consumer_login" type="hidden">
+      <input name="pageInstance" value="urn:li:page:checkpoint_lg_uasLogin;HLXINDiAQpKBnnM/ptAv9A==" type="hidden">
+      <input name="controlId" value="d_checkpoint_lg_consumer_login-SignInUsingOneTimeSignInLink" type="hidden">
+      <input name="session_redirect" value="/flagship-web/search/results/people/?keywords=james%20fitzgerald%20dish" type="hidden">
+      <input name="trk" type="hidden">
+      <input name="authUUID" type="hidden">
+      <input name="encrypted_session_key" type="hidden">
+<!---->    </form>
+    <code id="i18nOtpSuccessMessage" style="display: none"><!--"We’ve sent a one time link to your email address. Don’t see it? Check your spam folder."--></code>
+    <code id="i18nOtpErrorMessage" style="display: none"><!--"An unexpected error has occurred. Please try again."--></code>
+    <code id="i18nOtpRestrictedMessage" style="display: none"><!--"For the security of your account, you should contact us to sign in with your one-time password from the \u003ca href=\"/help/linkedin/ask/MPRRF\"\u003eLinkedIn Help Center.\u003c/a\u003e"--></code>
+<!----><!---->  
+        
+    <div data-litms-pageview="true"></div>
+  
+        <div class="card-layout">
+          <div id="organic-div">
+            
+    
+    
+    
+    
+
+    <div class="header__content ">
+    <h1 class="header__content__heading ">
+        Sign in
+    </h1>
+    <p class="header__content__subheading ">
+<!---->          </p>
+  </div>
+  
+              <div class="alternate-signin-container">
+                
+<!---->          
+    
+    
+
+<!---->      <div class="alternate-signin__btn--google invisible__imp  margin-top-12"></div>
+  
+        
+    
+    
+    
+    
+
+<!---->  
+<!---->        
+    
+    
+
+    <button class="sign-in-with-apple-button hidden__imp" aria-label="Sign in with Apple" type="button">
+      
+
+        <svg width="24" height="24" viewbox="0 2 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="24" height="24" fill="transparent"></rect>
+            <path d="M17.569 12.6254C17.597 15.652 20.2179 16.6592 20.247 16.672C20.2248 16.743 19.8282 18.1073 18.8662 19.5166C18.0345 20.735 17.1714 21.9488 15.8117 21.974C14.4756 21.9986 14.046 21.1799 12.5185 21.1799C10.9915 21.1799 10.5142 21.9489 9.2495 21.9987C7.93704 22.0485 6.93758 20.6812 6.09906 19.4673C4.38557 16.9842 3.0761 12.4508 4.83438 9.39061C5.70786 7.87092 7.26882 6.90859 8.96311 6.88391C10.2519 6.85927 11.4683 7.753 12.2562 7.753C13.0436 7.753 14.5219 6.67821 16.0759 6.83605C16.7265 6.8632 18.5527 7.09947 19.7253 8.81993C19.6309 8.87864 17.5463 10.095 17.569 12.6254ZM15.058 5.1933C15.7548 4.34789 16.2238 3.171 16.0959 2C15.0915 2.04046 13.877 2.67085 13.1566 3.5158C12.5109 4.26404 11.9455 5.46164 12.0981 6.60946C13.2176 6.69628 14.3612 6.03925 15.058 5.1933Z" fill="black"></path>
+        </svg>
+  
+      <span class="sign-in-with-apple-button__text">
+        Sign in with Apple
+      </span>
+    </button>
+    <code id="appleSignInLibScriptPath" style="display: none"><!--"https://static.licdn.com/sc/h/1gpe377m8n1eq73qveizv5onv"--></code>
+    <code id="i18nErrorAppleSignInGeneralErrorMessage" style="display: none"><!--"Something went wrong. Please try using username and password."--></code>
+    <code id="lix_checkpoint_auth_nexus_apple_flow" style="display: none"><!--true--></code>
+  
+        
+    
+    
+    
+
+<!---->  
+<!----><!----><!---->
+<!---->
+<!---->      
+    
+
+    <a aria-label="Sign in with a passkey" class="alternate-signin__btn margin-top-12" role="button" id="sign-in-with-passkey-btn" style="display:none">
+      <span class="btn-text">
+          Sign in with a passkey
+      </span>
+    </a>
+  
+<!----><!---->        
+    
+
+    <p class="google-auth-button__tc hidden__imp">
+        By clicking Continue, you agree to LinkedIn’s <a href="/legal/user-agreement" target="_blank" data-tracking-will-navigate="true">User Agreement</a>, <a href="/legal/privacy-policy" target="_blank" data-tracking-will-navigate="true">Privacy Policy</a>, and <a href="/legal/cookie-policy" target="_blank" data-tracking-will-navigate="true">Cookie Policy</a>.
+    </p>
+  
+      
+    
+
+    <div id="or-separator" class="or-separator margin-top-24 snapple-seperator hidden__imp">
+      <span class="or-text">or</span>
+    </div>
+  
+    <code id="googleGSILibPath" style="display: none"><!--"https://static.licdn.com/sc/h/aofke6z5sqc44bjlvj6yr05c8"--></code>
+    <code id="useGoogleGSILibraryTreatment" style="display: none"><!--"middle"--></code>
+    <code id="usePasskeyLogin" style="display: none"><!--"support"--></code>
+
+  
+              </div>
+            
+    
+    
+    
+    
+    
+
+    <form method="post" class="login__form" action="/checkpoint/lg/login-submit" novalidate>
+        
+    <input name="csrfToken" value="ajax:3224546013070547813" type="hidden">  
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <code id="login_form_validation_error_username" style="display: none"><!--"Please enter a valid username."--></code>
+    <code id="consumer_login__text_plain__large_username" style="display: none"><!--"Email or phone number must be between 3 to 128 characters."--></code>
+      <code id="consumer_login__text_plain__no_username" style="display: none"><!--"Please enter an email address or phone number."--></code>
+
+    <div class="form__input--floating margin-top-24 email-input-type">
+<!---->        <input id="username" name="session_key" aria-describedby="error-for-username" required validation="email|tel" value autofocus autocomplete="username" placeholder=" " aria-label="Email or phone" type="email">
+        <label class="form__label--floating" for="username" aria-hidden="true">
+          Email or phone
+        </label>
+      <div error-for="username" id="error-for-username" class="form__label--error  hidden__imp" role="alert" aria-live="assertive">
+<!---->      </div>
+    </div>
+    <code id="domainSuggestion" style="display: none"><!--false--></code>
+  
+
+<!---->        <input name="ac" value="0" type="hidden">
+        <input name="loginFailureCount" value="0" type="hidden">
+      <input name="sIdString" value="3995c39f-6b0c-4bfd-9c9a-43117532475c" type="hidden">
+      
+      <input id="pkSupported" name="pkSupported" value="false" type="hidden">
+
+      <input name="parentPageKey" value="d_checkpoint_lg_consumer_login" type="hidden">
+      <input name="pageInstance" value="urn:li:page:checkpoint_lg_uasLogin;HLXINDiAQpKBnnM/ptAv9A==" type="hidden">
+      <input name="trk" type="hidden">
+      <input name="authUUID" type="hidden">
+      <input name="session_redirect" value="/flagship-web/search/results/people/?keywords=james%20fitzgerald%20dish" type="hidden">
+      <input name="loginCsrfParam" value="f887fae8-bea2-4b67-87d6-a25014509cb0" type="hidden">
+      <input name="fp_data" value="default" id="fp_data_login" type="hidden">
+      <input name="apfc" value="{}" id="apfc-login" type="hidden">
+
+      <input name="_d" value="d" type="hidden">
+<!----><!---->        <input name="showGoogleOneTapLogin" value="true" type="hidden">
+        <input name="showAppleLogin" value="true" type="hidden">
+        <input name="showMicrosoftLogin" value="true" type="hidden">
+        <code id="i18nShow" style="display: none"><!--"Show"--></code>
+        <code id="i18nHide" style="display: none"><!--"Hide"--></code>
+          <input name="controlId" value="d_checkpoint_lg_consumer_login-login_submit_button" type="hidden">
+          
+    
+    
+    
+    
+    
+    
+
+    <code id="consumer_login__text_plain__empty_password" style="display: none"><!--"Please enter a password."--></code>
+    <code id="consumer_login__text_plain__small_password" style="display: none"><!--"The password you provided must have at least 6 characters."--></code>
+    <code id="consumer_login__text_plain__large_password" style="display: none"><!--"The password you provided must have at most 400 characters."--></code>
+    <code id="consumer_login__text_plain__wrong_password" style="display: none"><!--"Hmm, that’s not the right password. Please try again"--></code>
+    <code id="consumer_login__text_plain__large_password_200_chars" style="display: none"><!--"The password you provided must have at most 200 characters."--></code>
+
+    <div class="form__input--floating margin-top-24">
+<!---->      <input id="password" aria-describedby="error-for-password" name="session_password" required validation="password" autocomplete="current-password" aria-label="Password" type="password">
+        <label for="password" class="form__label--floating" aria-hidden="true">
+            Password
+        
+
+URL: https://about.dish.com/management-team
+<h1>Not Found</h1><p>The requested page could not be found</p><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'999e5bc39bddc54c',t:'MTc2MjM2Njc1Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+
+URL: https://www.bloomberg.com/profile/company/DISH:US
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://assets.bwbx.io/s3/foundation/event-recorder-client/1.0/event-recorder-client.min.js" crossOrigin="anonymous" async/>
+        </script>
+        <script>
+            (function eventRecorderInit() {
+                window.eventRecorder = window.eventRecorder || {
+                    cmd: [],
+                };
+
+                /**
+                 * This bootstrap is required because async code will execute all functions in cmd queue once its loaded and ready.
+                 */
+                window.eventRecorder.cmd.push(function init() {
+                    const eventRecorder = window.getEventRecorderClient("shichang");
+
+                    eventRecorder.fireEvent("PageLoaded");
+                });
+            })();
+        </script>
+        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+        
+        
+        <script id="ccpa-stub-script">
+            (function () { var e = false; var c = window; var t = document; function r() { if (!c.frames["__uspapiLocator"]) { if (t.body) { var a = t.body; var e = t.createElement("iframe"); e.style.cssText = "display:none"; e.name = "__uspapiLocator"; a.appendChild(e) } else { setTimeout(r, 5) } } } r(); function p() { var a = arguments; __uspapi.a = __uspapi.a || []; if (!a.length) { return __uspapi.a } else if (a[0] === "ping") { a[2]({ gdprAppliesGlobally: e, cmpLoaded: false }, true) } else { __uspapi.a.push([].slice.apply(a)) } } function l(t) { var r = typeof t.data === "string"; try { var a = r ? JSON.parse(t.data) : t.data; if (a.__cmpCall) { var n = a.__cmpCall; c.__uspapi(n.command, n.parameter, function (a, e) { var c = { __cmpReturn: { returnValue: a, success: e, callId: n.callId } }; t.source.postMessage(r ? JSON.stringify(c) : c, "*") }) } } catch (a) { } } if (typeof __uspapi !== "function") { c.__uspapi = p; __uspapi.msgHandler = l; c.addEventListener("message", l, false) } })();
+        </script>
+    
+        
+        <script id="msps-stub-script">
+            window.__gpp_addFrame=function(e){if(!window.frames[e])if(document.body){var t=document.createElement("iframe");t.style.cssText="display:none",t.name=e,document.body.appendChild(t)}else window.setTimeout(window.__gpp_addFrame,10,e)},window.__gpp_stub=function(){var e=arguments;if(__gpp.queue=__gpp.queue||[],__gpp.events=__gpp.events||[],!e.length||1==e.length&&"queue"==e[0])return __gpp.queue;if(1==e.length&&"events"==e[0])return __gpp.events;var t=e[0],p=e.length>1?e[1]:null,s=e.length>2?e[2]:null;if("ping"===t)p({gppVersion:"1.1",cmpStatus:"stub",cmpDisplayStatus:"hidden",signalStatus:"not ready",supportedAPIs:["2:tcfeuv2","5:tcfcav1","6:uspv1","7:usnatv1","8:uscav1","9:usvav1","10:uscov1","11:usutv1","12:usctv1"],cmpId:0,sectionList:[],applicableSections:[],gppString:"",parsedSections:{}},!0);else if("addEventListener"===t){"lastId"in __gpp||(__gpp.lastId=0),__gpp.lastId++;var n=__gpp.lastId;__gpp.events.push({id:n,callback:p,parameter:s}),p({eventName:"listenerRegistered",listenerId:n,data:!0,pingData:{gppVersion:"1.1",cmpStatus:"stub",cmpDisplayStatus:"hidden",signalStatus:"not ready",supportedAPIs:["2:tcfeuv2","5:tcfcav1","6:uspv1","7:usnatv1","8:uscav1","9:usvav1","10:uscov1","11:usutv1","12:usctv1"],cmpId:0,sectionList:[],applicableSections:[],gppString:"",parsedSections:{}}},!0)}else if("removeEventListener"===t){for(var a=!1,i=0;i<__gpp.events.length;i++)if(__gpp.events[i].id==s){__gpp.events.splice(i,1),a=!0;break}p({eventName:"listenerRemoved",listenerId:s,data:a,pingData:{gppVersion:"1.1",cmpStatus:"stub",cmpDisplayStatus:"hidden",signalStatus:"not ready",supportedAPIs:["2:tcfeuv2","5:tcfcav1","6:uspv1","7:usnatv1","8:uscav1","9:usvav1","10:uscov1","11:usutv1","12:usctv1"],cmpId:0,sectionList:[],applicableSections:[],gppString:"",parsedSections:{}}},!0)}else"hasSection"===t?p(!1,!0):"getSection"===t||"getField"===t?p(null,!0):__gpp.queue.push([].slice.apply(e))},window.__gpp_msghandler=function(e){var t="string"==typeof e.data;try{var p=t?JSON.parse(e.data):e.data}catch(e){p=null}if("object"==typeof p&&null!==p&&"__gppCall"in p){var s=p.__gppCall;window.__gpp(s.command,(function(p,n){var a={__gppReturn:{returnValue:p,success:n,callId:s.callId}};e.source.postMessage(t?JSON.stringify(a):a,"*")}),"parameter"in s?s.parameter:null,"version"in s?s.version:"1.1")}},"__gpp"in window&&"function"==typeof window.__gpp||(window.__gpp=window.__gpp_stub,window.addEventListener("message",window.__gpp_msghandler,!1),window.__gpp_addFrame("__gppLocator"));
+        </script>
+    
+        
+        <script id="gdpr-stub-script">
+            function _typeof(t){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}!function(){for(var t,e,o=[],n=window,r=n;r;){try{if(r.frames.__tcfapiLocator){t=r;break}}catch(t){}if(r===n.top)break;r=n.parent}t||(function t(){var e=n.document,o=!!n.frames.__tcfapiLocator;if(!o)if(e.body){var r=e.createElement("iframe");r.style.cssText="display:none",r.name="__tcfapiLocator",e.body.appendChild(r)}else setTimeout(t,5);return!o}(),n.__tcfapi=function(){for(var t=arguments.length,n=new Array(t),r=0;r<t;r++)n[r]=arguments[r];if(!n.length)return o;"setGdprApplies"===n[0]?n.length>3&&2===parseInt(n[1],10)&&"boolean"==typeof n[3]&&(e=n[3],"function"==typeof n[2]&&n[2]("set",!0)):"ping"===n[0]?"function"==typeof n[2]&&n[2]({gdprApplies:e,cmpLoaded:!1,cmpStatus:"stub"}):o.push(n)},n.addEventListener("message",(function(t){var e="string"==typeof t.data,o={};if(e)try{o=JSON.parse(t.data)}catch(t){}else o=t.data;var n="object"===_typeof(o)?o.__tcfapiCall:null;n&&window.__tcfapi(n.command,n.version,(function(o,r){var a={__tcfapiReturn:{returnValue:o,success:r,callId:n.callId}};t&&t.source&&t.source.postMessage&&t.source.postMessage(e?JSON.stringify(a):a,"*")}),n.parameter)}),!1))}();
+        </script>
+    
+        <script id="cmp-client-config">
+            (function(){
+                function getCookieValue(name) {
+                    const matches = document.cookie.match("(^|;) ?" + name + "=([^;$]*)");
+                    return matches ? matches[2] : "";
+                }
+                const isKisa = true && getCookieValue("country_code") === "KR";
+                window._sp_queue = [];
+                window._sp_ = {
+                    config: {
+                        accountId: 1425,
+                        authCookie: "_breg-uid",
+                        baseEndpoint: "https://sourcepointcmp.bloomberg.com",
+                        propertyId: isKisa ? 29886 : 31489,
+                        propertyHref: isKisa ? "https://kisa.bloomberg.com" : "https://mc.bloomberg.com",
+                        joinHref: true,
+                        targetingParams: {
+                            isKisa: isKisa,
+                            view: window.isTerminal ? "terminal" : "web"
+                        },
+                        usnat: {
+                            includeUspApi: true
+                        },
+                        gdpr: {},
+                        events: {}
+                    }
+                }
+            })();
+        </script>
+        <script async src="https://sourcepointcmp.bloomberg.com/unified/wrapperMessagingWithoutDetection.js"></script>
+
+        <script src="https://assets.bwbx.io/s3/foundation/cmp-client/v3/cmp-client.min.js" crossorigin="anonymous" async></script>
+        <script>
+            window.cmpClient = window.cmpClient || {
+                cmd: []
+            };
+            window.cmpClient.cmd.push(function () {
+                const cmpClient = window.getCmpClient();
+                cmpClient.init();
+            });
+        </script>
+        
+            <title>DISH Network Corp - Company Profile and News - Bloomberg Markets</title>
+            <meta name="title" content="DISH Network Corp - Company Profile and News">
+        
+        <script type="application/ld+json">
+            {"@context":"http://schema.org","@type":"NewsMediaOrganization","address":{"@type":"PostalAddress","addressCountry":"USA","addressLocality":"New York","addressRegion":"NY","postalCode":"10022","streetAddress":"731 Lexington Avenue"},"diversityPolicy":"https://www.bloomberg.com/diversity-inclusion","name":"Bloomberg","email":"inquiry1@bloomberg.net","legalName":"Bloomberg Finance L.P.","leiCode":"5493001KJTIIGC8Y1R12","telephone":"(212) 318-2000","url":"https://www.bloomberg.com","logo":"https://www.bloomberg.com/logo-bloomberg.svg","brand":[{"@type":"Brand","name":"Bloomberg markets","url":"https://www.bloomberg.com/markets"},{"@type":"Brand","name":"Bloomberg technology","url":"https://www.bloomberg.com/technology"},{"@type":"Brand","name":"Bloomberg pursuits","url":"https://www.bloomberg.com/pursuits"},{"@type":"Brand","name":"Bloomberg politics","url":"https://www.bloomberg.com/politics"},{"@type":"Brand","name":"Bloomberg opinion","url":"https://www.bloomberg.com/opinion","logo":"https://www.bloomberg.com/logo-bloomberg_opinion.svg"},{"@type":"Brand","name":"Bloomberg businessweek","url":"https://www.bloomberg.com/businessweek","logo":"https://www.bloomberg.com/logo-bloomberg_businessweek.svg"},{"@type":"Brand","name":"Bloomberg green","url":"https://www.bloomberg.com/green"},{"@type":"Brand","name":"Bloomberg equality","url":"https://www.bloomberg.com/equality"},{"@type":"Brand","name":"Bloomberg citylab","url":"https://www.bloomberg.com/citylab"},{"@type":"Brand","name":"Bloomberg crypto","url":"https://www.bloomberg.com/crypto"},{"@type":"Brand","name":"Bloomberg industries","url":"https://www.bloomberg.com/industries"},{"@type":"Brand","name":"Bloomberg economics","url":"https://www.bloomberg.com/economics"},{"@type":"Brand","name":"Bloomberg ai","url":"https://www.bloomberg.com/ai"},{"@type":"Brand","name":"Bloomberg wealth","url":"https://www.bloomberg.com/wealth"}]}
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+            <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","name":"DISH Network Corp - Company Profile and News","description":"Company profile page for DISH Network Corp including stock price, company news, executives, board members, and contact information","keywords":"DISH, DISH Network Corp, NYSE, Nasdaq, S&P, FTSE, DJIA, DAX, DISH news, DISH stock, DISH stock price, stock, stock price","mainEntityOfPage":"https://www.bloomberg.com/profile/company/DISH:US","mentions":[{"@context":"http://schema.org","@type":"Thing","name":"communications","url":"https://www.bloomberg.com/markets/sectors/communication-services"},{"@context":"http://schema.org","@type":"Thing","name":"DISH Network Corp","url":"https://www.bloomberg.com/quote/DISH:US"}],"publisher":{"@type":"Organization","name":"Bloomberg","url":"https://www.bloomberg.com","logo":{"@type":"ImageObject","url":"https://assets.bwbx.io/s3/bbgmkts/images/bloomberg-logo-amp.png","width":262,"height":60}},"isAccessibleForFree":"False","hasPart":{"@type":"WebPageElement","isAccessibleForFree":"False","cssSelector":".paywall"}}</script><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"DISH Network Corp","description":"DISH Network Corporation operates as a satellite television company. The Company provides a direct broadcast satellite subscription television, audio programming, and interactive television services to commercial and residential subscribers. DISH Network serves customers worldwide.","address":"9601 South Meridian Blvd\nEnglewood, CO 80112\nUnited States","telephone":"1-877-621-0194","foundingDate":"04/26/1995","url":"www.dish.com","numberOfEmployees":15300,"employee":[{"@context":"http://schema.org","@type":"Person","name":"Hamid Akhavan","jobTitle":"Pres/Head:Strategy & Operations","worksFor":"ECHOSTAR CORP-A","image":{"@type":"ImageObject","url":"https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ilMfY5GgbFbw/v1/80x80.jpg"}},{"@context":"http://schema.org","@type":"Person","name":"Jeffrey H Blum \"Jeff\"","jobTitle":"Exec VP:External & Government Affairs","worksFor":"DISH NETWORK CORP-A","image":{"@type":"ImageObject","url":"https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iUWLFA4VIBeg/v2/80x80.png"}},{"@context":"http://schema.org","@type":"Person","name":"Tom A Ortolf","jobTitle":"Secretary/Treasurer"},{"@context":"http://schema.org","@type":"Person","name":"Charles William Ergen \"Charlie\"","worksFor":"EchoStar Corp"},{"@context":"http://schema.org","@type":"Person","name":"Hamid Akhavan","worksFor":"EchoStar Corp"},{"@context":"http://schema.org","@type":"Person","name":"Tom A Ortolf","worksFor":null}]}</script>
+            <meta name="description" content="Company profile page for DISH Network Corp including stock price, company news, executives, board members, and contact information">
+            <meta name="keywords" content="DISH, DISH Network Corp, NYSE, Nasdaq, S&P, FTSE, DJIA, DAX, DISH news, DISH stock, DISH stock price, stock, stock price">
+            <link rel="shortcut icon" type="image/png" href="https://assets.bwbx.io/s3/bbgmkts/images/favicon-black.png"/>
+            <meta property="og:site_name" content="Bloomberg.com">
+            <meta property="og:title" content="DISH Network Corp - Company Profile and News">
+            <meta property="og:description" content="Company profile page for DISH Network Corp including stock price, company news, executives, board members, and contact information">
+            <meta property="og:image" content="/images/markets-logo.png">
+            <meta property="og:type" content="company">
+            <meta property="og:url" content="https://www.bloomberg.com/profile/company/DISH:US">
+            <meta name="twitter:card" content="summary">
+            <meta name="twitter:description" content="Company profile page for DISH Network Corp including stock price, company news, executives, board members, and contact information">
+            <meta name="twitter:title" content="DISH Network Corp - Company Profile and News">
+            <meta name="twitter:url" content="https://www.bloomberg.com/profile/company/DISH:US">
+            <meta name="twitter:creator" content="@markets">
+            <meta name="twitter:site" content="@markets">
+            <link rel="canonical" href="https://www.bloomberg.com/profile/company/DISH:US">
+        
+        <meta name="will-have-content-metadata" content="true" />
+        <link href="https://assets.bwbx.io/font-service/css" rel="preconnect" crossorigin />
+        <link href="assets.bwbx.io" rel="preconnect" crossorigin />
+        <link href="//www.bbthat.com" rel="preconnect" crossorigin />
+        <link href="//www.googletagmanager.com" rel="preconnect" crossorigin />
+        <link href="//tracking.bloomberg.com" rel="preconnect" crossorigin />
+        <link href="//sourcepointcmp.bloomberg.com" rel="preconnect" crossorigin />
+        <link href="//sb.scorecardresearch.com" rel="preconnect" crossorigin />
+        <link href="//www.google.com" rel="dns-fetch" crossorigin />
+        <link href="//www.google-analytics.com" rel="dns-fetch" crossorigin />
+        <link rel="preload" as="font" rel="stylesheet" href="https://assets.bwbx.io/font-service/css/AvenirNext|Bloomberg|BWHaasGroteskWeb:400,500,700,900|BW Haas Text Mono A|Bloomberg Logotypes|BWHaasGroteskTF:400/styled-font-face.css" />
+        <link rel="preload" as="style" rel="stylesheet" href="https://assets.bwbx.io/s3/bbgmkts/assets/normalize-5ea3c32ceb502ab3016e.css" />
+        <link rel="preload" as="style" rel="stylesheet" href="https://assets.bwbx.io/s3/bbgmkts/assets/navReset-de72b441de5b74358539.css" />
+        <link rel="preload" as="style" rel="stylesheet" href="https://assets.bwbx.io/s3/bbgmkts/assets/companyProfile-a2f58ead276aa41e5156.css" />
+        
+            <link rel="preload" as="font" href="https://assets.bwbx.io/s3/fontservice/fonts/AvenirNext-Regular-c581cf2eb7.woff2" />
+<link rel="preload" as="font" href="https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-048eeffe56.woff2" />
+<link rel="preload" as="font" href="https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-55Roman-Web-5cf5733cd9.woff2" />
+<link rel="preload" as="font" href="https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-65Medium-Web-8f5de0c368.woff2" />
+<link rel="preload" as="font" href="https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-75Bold-Web-de8c77cce2.woff2" />
+<link rel="preload" as="font" href="https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-95Black-Web-3629d1569b.woff2" />
+<link rel="preload" as="font" href="https://assets.bwbx.io/s3/fontservice/fonts/BW Haas Text Mono A-55 Roman-9fa796a3f4.woff2" />
+<link rel="preload" as="font" href="https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGroteskTF-55Roman-Web-b3ecfeedba.woff2" />
+            <style>
+                
+@font-face {
+    font-family: 'AvenirNext';
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+    
+    src: url('https://assets.bwbx.io/s3/fontservice/fonts/AvenirNext-Regular-bfcab206b9.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/AvenirNext-Regular-c581cf2eb7.woff2') format('woff2'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/AvenirNext-Regular-bb2c0bebff.woff') format('woff'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/AvenirNext-Regular-ddfabb3b0c.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Bloomberg';
+    font-display: block;
+    font-weight: 400;
+    font-style: normal;
+    
+    src: url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-250afba92d.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-048eeffe56.woff2') format('woff2'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-5c2599d032.woff') format('woff'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-0506a6c14c.svg') format('svg'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-aa2f00257e.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BWHaasGroteskWeb';
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+    
+    src: url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-55Roman-Web-7998fbcba8.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-55Roman-Web-5cf5733cd9.woff2') format('woff2'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-55Roman-Web-a1ea4fd367.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'BWHaasGroteskWeb';
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+    
+    src: url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-65Medium-Web-d9a88b8a91.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-65Medium-Web-8f5de0c368.woff2') format('woff2'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-65Medium-Web-e205ada7dd.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'BWHaasGroteskWeb';
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+    
+    
+    src: url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-75Bold-Web-de8c77cce2.woff2') format('woff2'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-75Bold-Web-506363704e.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'BWHaasGroteskWeb';
+    font-display: swap;
+    font-weight: 900;
+    font-style: normal;
+    
+    
+    src: url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-95Black-Web-3629d1569b.woff2') format('woff2'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasGrotesk-95Black-Web-37847ad026.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'BW Haas Text Mono A';
+    font-display: swap
+
+URL: https://www.sec.gov/edgar/browse/?CIK=1001082
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SEC.gov | Request Rate Threshold Exceeded</title>
+<style>
+html {height: 100%}
+body {height: 100%; margin:0; padding:0;}
+#header {background-color:#003968; color:#fff; padding:15px 20px 10px 20px;font-family:Arial, Helvetica, sans-serif; font-size:20px; border-bottom:solid 5px #000;}
+#footer {background-color:#003968; color:#fff; padding:15px 20px;font-family:Arial, Helvetica, sans-serif; font-size:20px;}
+#content {max-width:650px;margin:60px auto; padding:0 20px 100px 20px; background-image:url(seal_bw.png);background-repeat:no-repeat;background-position:50% 100%;}
+h1 {font-family:Georgia, Times, serif; font-size:20px;}
+h2 {text-align:center; font-family:Georgia, Times, serif; font-size:20px; width:100%; border-bottom:solid #999 1px;padding-bottom:10px; margin-bottom:20px;}
+h3 {font-family:Georgia, Times, serif; font-size:16px; margin:25px 0 0 0;}
+p {font-family:Verdana, Geneva, sans-serif;font-size:14px;line-height:1.3;}
+.grey_box {background-color:#eee; padding:5px 40px 20px 40px;margin-top:75px;}
+.grey_box p {font-size:12px;line-height:1.5}
+.note {padding: 0 40px; font-style: italic;}
+</style>
+</head>
+
+<body>
+<div id="header">U.S. Securities and Exchange Commission</div>
+<div id="content">
+<h1>Automated access to our sites must comply with SEC.gov's Privacy and Security Policy.</h1>
+
+<p>Please visit <a href="https://www.sec.gov/developer" target="_blank">www.sec.gov/developer</a> for more developer resources and Fair Access guidelines.</p>
+<p>Please visit <a href="https://www.sec.gov/privacy" target="_blank">www.sec.gov/privacy</a> for more information on Privacy Policy.</p>
+
+<p>Reference ID: 0.c9cf5868.1762366759.454772c5</p>
+
+</body>
+</html>
+
+
+CMD: curl -s https://www.sec.gov/cgi-bin/browse-edgar?CIK=0001001082&Find=Search
+RET=0
+STDOUT:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SEC.gov | Your Request Originates from an Undeclared Automated Tool</title>
+<style>
+html {height: 100%}
+body {height: 100%; margin:0; padding:0;}
+#header {background-color:#003968; color:#fff; padding:15px 20px 10px 20px;font-family:Arial, Helvetica, sans-serif; font-size:20px; border-bottom:solid 5px #000;}
+#footer {background-color:#003968; color:#fff; padding:15px 20px;font-family:Arial, Helvetica, sans-serif; font-size:20px;}
+#content {max-width:650px;margin:60px auto; padding:0 20px 100px 20px; background-image:url(seal_bw.png);background-repeat:no-repeat;background-position:50% 100%;}
+h1 {font-family:Georgia, Times, serif; font-size:20px;}
+h2 {text-align:center; font-family:Georgia, Times, serif; font-size:20px; width:100%; border-bottom:solid #999 1px;padding-bottom:10px; margin-bottom:20px;}
+h3 {font-family:Georgia, Times, serif; font-size:16px; margin:25px 0 0 0;}
+p {font-family:Verdana, Geneva, sans-serif;font-size:14px;line-height:1.3;}
+.grey_box {background-color:#eee; padding:5px 40px 20px 40px;margin-top:75px;}
+.grey_box p {font-size:12px;line-height:1.5}
+.note {padding: 0 40px; font-style: italic;}
+</style>
+</head>
+
+<body>
+<div id="header">U.S. Securities and Exchange Commission</div>
+<div id="content">
+<h1>Your Request Originates from an Undeclared Automated Tool</h1>
+<p>To allow for equitable access to all users, SEC reserves the right to limit requests originating from undeclared automated tools. Your request has been identified as part of a network of automated tools outside of the acceptable policy and will be managed until action is taken to declare your traffic.</p>
+
+<p>Please declare your traffic by updating your user agent to include company specific information.</p>
+
+
+<p>For best practices on efficiently downloading information from SEC.gov, including the latest EDGAR filings, visit <a href="https://www.sec.gov/developer" target="_blank">sec.gov/developer</a>. You can also <a href="https://public.govdelivery.com/accounts/USSEC/subscriber/new?topic_id=USSEC_260" target="_blank">sign up for email updates</a> on the SEC open data program, including best practices that make it more efficient to download data, and SEC.gov enhancements that may impact scripted downloading processes. For more information, contact <a href="mailto:opendata@sec.gov">opendata@sec.gov</a>.</p>
+
+<p>For more information, please see the SEC’s <a href="#internet">Web Site Privacy and Security Policy</a>. Thank you for your interest in the U.S. Securities and Exchange Commission.
+<p>Reference ID: 0.c9cf5868.1762366759.454774ad</p>
+<div class="grey_box">
+<h2>More Information</h2>
+<h3><a name="internet">Internet Security Policy</a></h3>
+
+<p>By using this site, you are agreeing to security monitoring and auditing. For security purposes, and to ensure that the public service remains available to users, this government computer system employs programs to monitor network traffic to identify unauthorized attempts to upload or change information or to otherwise cause damage, including attempts to deny service to users.</p>
+
+<p>Unauthorized attempts to upload information and/or change information on any portion of this site are strictly prohibited and are subject to prosecution under the Computer Fraud and Abuse Act of 1986 and the National Information Infrastructure Protection Act of 1996 (see Title 18 U.S.C. §§ 1001 and 1030).</p>
+
+<p>To ensure our website performs well for all users, the SEC monitors the frequency of requests for SEC.gov content to ensure automated searches do not impact the ability of others to access SEC.gov content. We reserve the right to block IP addresses that submit excessive requests.  Current guidelines limit users to a total of no more than 10 requests per second, regardless of the number of machines used to submit requests. </p>
+
+<p>If a user or application submits more than 10 requests per second, further requests from the IP address(es) may be limited for a brief period. Once the rate of requests has dropped below the threshold for 10 minutes, the user may resume accessing content on SEC.gov. This SEC practice is designed to limit excessive automated searches on SEC.gov and is not intended or expected to impact individuals browsing the SEC.gov website. </p>
+
+<p>Note that this policy may change as the SEC manages SEC.gov to ensure that the website performs efficiently and remains available to all users.</p>
+</div>
+<br>
+<p class="note"><b>Note:</b> We do not offer technical support for developing or debugging scripted downloading processes.</P>
+</div>
+</body>
+</html>
+
+STDERR:
+
+

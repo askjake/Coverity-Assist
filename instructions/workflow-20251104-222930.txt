@@ -1,0 +1,1160 @@
+URL: https://www.nfl.com/teams/denver-broncos/
+
+
+<!DOCTYPE html>
+    <html lang="en-US" dir="ltr" />
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="dns-prefetch" href="//nflenterprises.tt.omtrdc.net" crossorigin>
+
+  <link rel="preconnect" href="//securepubads.g.doubleclick.net" crossorigin>
+    <link rel="preconnect" href="//cdn.onesignal.com" crossorigin>
+    <link rel="preconnect" href="//assets.adobedtm.com" crossorigin>
+
+
+
+
+
+
+<title>Denver Broncos News, Scores, Stats, Schedule | NFL.com</title>
+<meta name="description" content="Get the latest Denver Broncos news. Find news, video, standings, scores and schedule information for the Denver Broncos" />
+<meta name="keywords" content="" />
+
+<meta property="og:title" content="NFL.com | Official Site of the National Football League" />
+<meta property="og:description" content="The official source for NFL news, video highlights, fantasy football, game-day coverage, schedules, stats, scores and more." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.nfl.com/teams/denver-broncos/" />
+<meta property="og:site_name" content="NFL.com" />
+<meta property="og:locale" content="en-US" />
+<meta property="og:image" content="https://static.www.nfl.com/t_headshot_desktop/league/api/clubs/logos/DEN" />
+<meta property="og:image:type" content="image/jpeg" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="NFL.com | Official Site of the National Football League" />
+<meta name="twitter:description" content="The official source for NFL news, video highlights, fantasy football, game-day coverage, schedules, stats, scores and more." />
+<meta name="twitter:image:src" content="https://static.www.nfl.com/t_headshot_desktop/league/api/clubs/logos/DEN" />
+<meta name="twitter:site" content="@NFL" />
+
+<link rel="canonical" href="https://www.nfl.com/teams/denver-broncos/" />  
+  
+  <link href="/manifest.json" rel="manifest" />
+  
+
+
+<link rel="icon" href="https://static.www.nfl.com/league/run3dfyjniqxah4ehxfu" />
+
+<link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProDisplayC/All-ProDisplayC-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProDisplayC/All-ProDisplayC-BoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProSans/All-ProSans--bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProSans/All-ProSans--boldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProSans/All-ProSans--regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProSans/All-ProSans--regularItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProStats/All-ProStats--bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProStats/All-ProStats--medium.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/All-ProStats/All-ProStats--regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Druk/Druk--Bold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Druk/Druk--BoldItalic.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Druk/Druk--SuperItalic.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Black.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Bold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--ExtraBold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--ExtraLight.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Light.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Medium.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Regular.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous"><link rel="preload" href="https://www.nfl.com/compiledassets/assets/fonts/NFL/Saira/Saira--Thin.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+<link href="https://www.nfl.com/compiledassets/css/base.css?_t=87e91fa39991dbda1c46f4501bf54b27" rel="preload" as="style" crossorigin type="text/css" /><link href="https://www.nfl.com/compiledassets/css/base.css?_t=87e91fa39991dbda1c46f4501bf54b27" rel="stylesheet" type="text/css" />  <link rel="preload" as="style" href="https://www.nfl.com/compiledassets/theming/5f330197ad251d8e6747ab2d34f39a11" crossorigin/>
+  <link rel="stylesheet" type="text/css" href="https://www.nfl.com/compiledassets/theming/5f330197ad251d8e6747ab2d34f39a11" />
+  <link rel="dns-prefetch" as="style" href="https://p.nfltags.com/nfl/live/tailwind.generated.css" crossorigin />
+  <link rel="preconnect" as="style" href="https://p.nfltags.com/nfl/live/tailwind.generated.css" crossorigin />
+  <link rel="stylesheet" type="text/css" href="https://p.nfltags.com/nfl/live/tailwind.generated.css" />
+<script>
+  // Picture element HTML5 shiv
+  document.createElement("picture");
+  window.baseUrl = "https://www.nfl.com";
+  window.fbappid = "404205130228139";
+  window.marketoHostName = "";
+</script>
+  
+
+
+  <!-- OneTrust Cookies Consent Notice start -->
+  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+          type="text/javascript" charset="UTF-8"
+          data-domain-script="e7957cc7-f869-4093-8b89-94bbc6dd16d8"></script>
+
+
+
+<script type="text/javascript">
+  function OptanonWrapper() {
+    oneTrustAppendScriptHelper();
+    oneTrustInsertScriptHelper();
+    oneTrustDataRequire();
+    setAdsRestrictDataProcessingLocalStorage();
+    refreshPageAfterCookiesSettingsChange();
+    showCookiesMessageForHiddenModules();
+  }
+
+  function showCookiesMessageForHiddenModules() {
+    var dataOneTrustHiddenMessages = document.querySelectorAll('[data-onetrust-hidden-message]');
+    if (!dataOneTrustHiddenMessages) {
+      return;
+    }
+
+    ///1. For each module with hidden message div
+    dataOneTrustHiddenMessages.forEach(function (element) {
+      ///2. Check for the cookie categories attribute
+      var cookieCategories = element.getAttribute('data-onetrust-category-hidden-message');
+      if (!cookieCategories) {
+        return;
+      }
+
+      ///3. Split the cookie categories string
+      var splittedCategories = cookieCategories.split('-');
+      ///4. If the module cookie categories are not all included in the window.OnetrustActiveGroups
+      if (!splittedCategories.every(c => window.OnetrustActiveGroups.includes(c))) {
+        ///Update the hidden message text based on the metadata
+        element.innerHTML = 'You are unable to interact with this content due to your Cookie Consent choices, you can enable cookies in the footer by selecting Cookie Settings.';
+        ///Show the message removing the hidden class
+        element.classList.remove('nfl-u-visibility-hidden');
+      }
+    });
+  }
+
+  function oneTrustInsertScriptHelper() {
+    /// Docs: https://my.onetrust.com/s/article/UUID-518074a1-a6da-81c3-be52-bae7685d9c94#UUID-518074a1-a6da-81c3-be52-bae7685d9c94_N1690409864050
+    var scriptsToInsert = document.querySelectorAll('[data-onetrust-insert-script]');
+    if (!scriptsToInsert) {
+      return;
+    }
+
+    scriptsToInsert.forEach(function (element) {
+      var isAsync = element.hasAttribute('async');
+      var srcValue = element.getAttribute('data-src');
+      var cookieCategory = element.getAttribute('data-onetrust-category');
+
+      window.OneTrust.InsertScript(srcValue, 'head', null, null, cookieCategory, isAsync);
+    });
+  }
+
+  function oneTrustAppendScriptHelper() {
+    ///Custom logic (i.e.: for Microsoft Dynamics v1)
+    var scriptsToAppend = document.querySelectorAll('[data-onetrust-append-script-custom]');
+    if (!scriptsToAppend) {
+      return;
+    }
+
+    scriptsToAppend.forEach(function (element) {
+      var cookieCategory = element.getAttribute('data-onetrust-category');
+      if (window.OnetrustActiveGroups.indexOf(cookieCategory) === -1) {
+        return;
+      }
+
+      var source = element.getAttribute('data-src');
+      if (source) {
+        //We need to add a new DOM node containing 'src' to fire the MutationObserver and load the script
+        var clonedNode = element.cloneNode(true);
+        clonedNode.setAttribute('src', source);
+        clonedNode.removeAttribute('data-onetrust-append-script-custom');
+        clonedNode.removeAttribute('data-src');
+        element.replaceWith(clonedNode);
+        return;
+      }
+
+      var type = element.getAttribute('type');
+      if (type && type == 'text/plain') {
+        //We need to add a timeout to be sure that this script is loaded after the first one
+        var timeOutScript;
+        clearTimeout(timeOutScript);
+
+        timeOutScript = setTimeout(function () {
+          //We need to add a new DOM node containing 'src' to fire the MutationObserver and load the script
+          var clonedNode = element.cloneNode(true);
+          clonedNode.setAttribute('type', "text/javascript");
+          clonedNode.removeAttribute('data-onetrust-append-script-custom');
+          element.replaceWith(clonedNode);
+        }, 2000);
+      }
+    });
+  }
+
+  function oneTrustDataRequire() {
+    /// Custom method for the 'data-require' modules
+    var dataOneTrustRequireItems = document.querySelectorAll('[data-onetrust-require]');
+    if (!dataOneTrustRequireItems) {
+      return;
+    }
+
+    dataOneTrustRequireItems.forEach(function (element) {
+      var cookieCategory = element.getAttribute('data-onetrust-category');
+      if (window.OnetrustActiveGroups.indexOf(cookieCategory) === -1) {
+        return;
+      }
+
+      var dataRequire = element.getAttribute('data-onetrust-require');
+
+      //We need to add a new DOM node containing 'data-require' to fire the MutationObserver in the requireModule.js and load the data-require script
+      var clonedNode = element.cloneNode(true);
+      clonedNode.setAttribute('data-require', dataRequire);
+      clonedNode.removeAttribute('data-onetrust-require');
+      element.replaceWith(clonedNode);
+    });
+  }
+
+  function setAdsRestrictDataProcessingLocalStorage() {
+    if (window.OnetrustActiveGroups.indexOf('C0004') > 0) {
+      localStorage.setItem('user.restrictDataProcessing', 0);
+    }
+    else {
+      localStorage.setItem('user.restrictDataProcessing', 1);
+    }
+  }
+
+  function getCookie(name) {
+    /// function to pull cookie value
+    var value = "; " + document.cookie;
+    var parts = value.split("; " + name + "=");
+    if (parts.length == 2) return parts.pop().split(";").shift();
+  }
+
+  function refreshPageAfterCookiesSettingsChange() {
+    /// Docs: https://my.onetrust.com/s/article/UUID-534defd9-7ec8-fc0e-78bf-8dce8c6c5593?language=en_US
+    var OABCcookieName = "OptanonAlertBoxClosed";
+    var bannerAcceptBtn = document.getElementById("onetrust-accept-btn-handler");
+    var pcAllowAllBtn = document.getElementById("accept-recommended-btn-handler");
+    var pcRejectAllBtn = document.getElementById("onetrust-reject-all-handler");
+    var pcSaveBtn = document.getElementsByClassName("save-preference-btn-handler onetrust-close-btn-handler")[0];
+    var pcRefuseAllBtn = document.getElementsByClassName("ot-pc-refuse-all-handler")[0];
+    var OABCcookie = getCookie(OABCcookieName);
+
+    // IF logic needed here because ot-banner-sdk DIV is not injected on page loads if banner is not exposed
+    if (!OABCcookie && bannerAcceptBtn) {
+      bannerAcceptBtn.addEventListener('click', function () {
+        window.console.log("Allowed all via Banner");
+        window.location.reload();
+      });
+    }
+    if (pcAllowAllBtn) {
+      pcAllowAllBtn.addEventListener('click', function () {
+          window.console.log("Allowed all via Preference Center");
+          window.location.reload();
+      });
+    }
+    if (pcRejectAllBtn) {
+      pcRejectAllBtn.addEventListener('click', function () {
+        window.console.log("Rejected all via Preference Center");
+        window.location.reload();
+      });
+    }
+    if (pcSaveBtn) {
+      pcSaveBtn.addEventListener('click', function () {
+          setTimeout(() => {
+              window.console.log("Set custom settings via Preference Center");
+              window.location.reload();
+          }, 1000) //quick timeout so that the consent receipt can be sent and the cookie can be updated
+      });
+    }
+    if (pcRefuseAllBtn) {
+      pcRefuseAllBtn.addEventListener('click', function () {
+        window.console.log("Rejected all via Preference Center");
+        window.location.reload();
+      });
+    }
+  }
+</script>  <!-- OneTrust Cookies Consent Notice end -->
+  <!-- IAB CCPA script start -->
+  <!-- IAB CCPA script end -->
+
+  
+<script data-onetrust-insert-script data-src=//apv-launcher.minute.ly/api/launcher/MIN-70000.js data-onetrust-category=C0004 async></script>
+  <script async defer src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script type="text/javascript" src="https://imasdk.googleapis.com/js/sdkloader/gpt_proxy.js"></script>
+  
+
+
+<script type="text/javascript">
+  window.gptconfig = {};
+  var googletag = window.googletag || {};
+  googletag.cmd = window.googletag.cmd || [];
+  window.gptSlots = [];
+  var advPageInfo = {"Sections":["teams","denver-broncos","landing"],"AdUnitName":"teams/denver-broncos/landing","IsCustom":false};
+  var adUnitName = advPageInfo.AdUnitName;
+  var clubAdvId = '/4595/nfl.com/';
+  var leagueAdvId = '/4595/nfl.com/';
+  var testParameter = '';
+window.adUnit = leagueAdvId + adUnitName;
+  var screenWidth = window.innerWidth;
+  var companionSize = [[0, 0]];
+  var companionVidSkinSize = [[0, 0]];
+  if (screenWidth > 1024) {
+    companionSize = [[970, 90], [728, 90]];
+    companionVidSkinSize = [[1, 1]];
+  }
+  else if (screenWidth > 760 && screenWidth <= 1024) {
+    companionSize = [[728, 90]];
+  } 
+  else if (screenWidth > 100 && screenWidth <= 760) {
+
+    companionSize = [[320, 50]]
+  }
+
+  googletag.cmd.push(function () {
+    gptconfig.responsiveMappings = {};
+    gptconfig.responsiveMappings['leaderboard'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+    [728, 90],
+    [970, 90]
+    ]).
+    addSize([760, 1], [
+    [728, 90]
+    ]).
+    addSize([100, 1], [
+    [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['inpage_1'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+      [728, 90],
+      [970, 90]
+    ]).
+    addSize([760, 1], [
+      [728, 90]
+    ]).
+    addSize([100, 1], [
+      [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['inpage_2'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+      [728, 90],
+      [970, 90]
+    ]).
+    addSize([760, 1], [
+      [728, 90]
+    ]).
+    addSize([100, 1], [
+      [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['mrec'] = googletag.sizeMapping().
+    addSize([100,1],[
+    [300, 250]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['mrec-photogallery'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [300, 600],
+    [300, 250]
+    ]).
+    addSize([100,1],[
+    [300, 250]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['mrec-photogallery-list'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+    [728, 90],
+    [970, 250],
+    [970, 90]
+    ]).
+    addSize([100, 1], [
+    [300, 250],
+    [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['package-c'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [300, 600]
+    ]).
+    addSize([100,1],[
+    [300, 250]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['package-b'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [160, 600]
+    ]).
+    addSize([100,1],[
+    [300, 250]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['presented-by'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [100, 30]
+    ]).
+    addSize([100,1],[
+    [100, 30],
+    [30, 30]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['companion'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [728, 90],
+    [970, 90]
+    ]).
+    addSize([760, 1], [
+    [728, 90]
+    ]).
+    addSize([100,1],[
+    [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['interstitials'] = googletag.sizeMapping().
+    addSize([1024,1],[
+    [1, 4]
+    ]).
+    addSize([760,1],[
+    [3, 4]
+    ]).
+    addSize([100,1],[
+    [3, 4]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['game_sched_inline'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+    [728, 90],
+    [970, 90]
+    ]).
+    addSize([760, 1], [
+    [728, 90]
+    ]).
+    addSize([100, 1], [
+    [320, 50]
+    ]).
+    addSize([0, 0], []).
+    build();
+
+    gptconfig.responsiveMappings['teaminfo'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+      [300, 250]
+    ]).
+    addSize([760, 1], [
+      [300, 250]
+    ]).
+    addSize([100, 1], [
+      [300, 250]
+    ]).
+    addSize([0, 0], []).
+      build();
+
+    gptconfig.responsiveMappings['billboard'] = googletag.sizeMapping().
+    addSize([1024, 1], [
+      [970, 415]
+    ]).
+    addSize([760, 1], [
+      [640, 415]
+    ]).
+    addSize([100, 1], [
+      [300, 300]
+    ]).
+    addSize([0, 0], []).
+      build();
+
+
+    gptconfig.responsiveMappings["rightrail"] = googletag.sizeMapping()
+      .addSize([992, 0], [
+          [300, 250],
+      ])
+      .addSize([768, 0], [
+          [300, 250],
+      ])
+      .addSize([0, 0], [
+          [300, 250]
+      ])
+      .build();
+
+    gptconfig.responsiveMappings["picks-rightrail"] = googletag.sizeMapping()
+      .addSize([0, 0], [
+        [300, 250],
+    ]).build();
+
+    gptconfig.responsiveMappings["prospects-rightrail"] = googletag.sizeMapping()
+      .addSize([992, 0], [
+          [300, 600]
+      ])
+      .addSize([768, 0], [
+          [728, 90]
+      ])
+      .addSize([0, 0], [
+          [320, 50]
+      ])
+      .build();
+
+    gptconfig.responsiveMappings["teams-rightrail"] = googletag.sizeMapping()
+      .addSize([992, 0], [
+          [300, 250]
+      ])
+      .addSize([768, 0], [
+          [728, 90]
+      ])
+      .addSize([0, 0], [
+          [320, 50]
+      ])
+      .build();
+
+    gptconfig.responsiveMappings['bottom'] = googletag.sizeMapping()
+      .addSize([0, 0], [
+          [300, 250]
+      ])
+      .addSize([768, 0], [
+          [728, 90]
+      ])
+      .addSize([1024, 0], [
+          [300,
+
+URL: https://www.espn.com/nfl/team/_/name/den/denver-broncos
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+Request blocked.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: FqR6nScddLTo_n2NW4i41RaVZPk70NAAL2QkUyAkJNg0LGexO6LpyQ==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+
+URL: https://www.vegasinsider.com/nfl/odds/
+<!DOCTYPE html> <html> <head> <title>VegasInsider - Page Not Found</title> <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no" /> <meta name="apple-mobile-web-app-capable" content="yes" /> <link rel="stylesheet" media="none" onload="if (media !== 'all') media = 'all';" type="text/css" href="https://bctn-vi.s3.amazonaws.com/css/error.css?v=203bcd9" /> <link rel="stylesheet" media="none" onload="if (media !== 'all') media = 'all';" type="text/css" href="https://fonts.googleapis.com/css?family=Saira+Condensed:400,700&display=swap" /> </head> <body> <header class="alt-header"> <div class="alt-splash"> <a href="/"> <img class="alt-logo" src="https://bctn-vi.s3.amazonaws.com/img/logo.svg?v=203bcd9" alt="VegasInsider" /> </a> </div> </header> <div class="module error"> <div class="module-body"> <div class="error-image"> <img width="" src="https://cdn.vegasinsider.com/themes/vegasinsider/assets/public/images/VI404_dog.webp" alt="Out of Bounds" /> </div> <div class="error-top"> <span class="error-top-code">404</span> <h1 class="error-top-status">Not Found</h1> <span class="error-top-message bold">Post not found: nfl--odds</span> <p class="error-top-worry">But don't worry, we have other pages...</p> </div> <div class="error-bottom"> <div class="error-bottom-buttons"> <a href="/picks/" class="button">EXPERT PICKS</a> <a href="/odds/" class="button">VEGAS ODDS</a> <a href="/scores/" class="button">LATEST SCORES</a> </div> <ul class="error-bottom-links"> <li>Return to the <a href="/" style="color:#FCC138">VegasInsider homepage</a></li> <li>Sign in to your <a href="/sign-in/" style="color:#FCC138">MyInsider Account</a></li> <li>Looking to bet in your state?</li> <li>Visit our <a href="/sportsbooks/states/" style="color:#FCC138">US sportsbooks state overview</a></li> </ul> </div> </div> </div> </body> </html>
+
+URL: https://www.cbssports.com/nfl/picks/
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://ogp.me/ns/fb#" class="">
+<head>
+            <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content="en" http-equiv="Content-Language">
+<meta name="google" content="notranslate">
+
+                                            <link rel="preconnect dns-prefetch" href="https://sportshub.cbsistatic.com">
+                                                            <link rel="preconnect dns-prefetch" href="https://sportsfly.cbsistatic.com">
+                                                            <link rel="preconnect dns-prefetch" href="https://sports.cbsimg.net">
+                                                            <link rel="preconnect dns-prefetch" href="https://cdn.privacy.paramount.com">
+                                                            <link rel="preconnect dns-prefetch" href="https://global.ketchcdn.com">
+                        
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:site_name" content="CBS Sports">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+    <meta property="og:image" content="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediacss/images/fantasy/default-article-image-large.png">
+<meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.cbssports.com/">
+<meta property="fb:pages" content="25902406772">
+<meta property="fb:app_id" content="297742330311988">
+<meta property="fb:admins" content="100002967552623">
+<meta property="article:publisher" content="https://www.facebook.com/cbssports">
+
+    
+    
+    
+<meta content="14885860" name="twitter:account_id">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@cbssports" name="twitter:site">
+<meta content="@cbssports" name="twitter:creator">
+<meta content="Sports live scoring and news - CBS Sports" name="twitter:title">
+<meta content="CBSSports.com features live scoring and news for NFL football, MLB baseball, NBA basketball, NHL hockey, college basketball and football. CBSSports.com is also your source for fantasy sports news." name="twitter:description">
+<meta content="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediacss/images/fantasy/default-article-image-large.png" name="twitter:image">
+<meta content="CBSSports.com features live scoring and news for NFL football, MLB baseball, NBA basketball, NHL hockey, college basketball and football. CBSSports.com is also your source for fantasy sports news." name="msapplication-tooltip">
+<meta content="https://www.cbssports.com/" name="msapplication-starturl">
+<meta content="width=1024;height=768" name="msapplication-window">
+<meta content="#1483b2" name="msapplication-navbutton-color">
+
+
+<meta name="google-site-verification" content="EdjXVFTZ6BgUzS3Void8cMiXXzE6bXDvNg-Yjl3VZj8">
+
+
+
+<link rel="preload" fetchpriority="high" as="image" href="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediacss/images/core/video-slate.png" type="image/jpg">
+        <meta name="viewport" content="width=device-width, maximum-scale=5">
+    
+            
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="blue">
+
+    <link rel="apple-touch-icon" href="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediacss/images/core/webclips/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediacss/images/core/webclips/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediacss/images/core/webclips/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediacss/images/core/webclips/touch-icon-ipad-retina.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediacss/images/core/webclips/apple-touch-icon-180.png">
+    
+                                <link rel="stylesheet" href="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediacss/css/main.desktop.css">
+            <link rel="stylesheet" href="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediacss/css/icon-moon/icon-moon.css">
+        
+            <link rel="stylesheet" href="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediacss/css/error/error.desktop.css">
+        
+            <link rel="stylesheet" href="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediacss/css/v2/pages/esi/pre-esi-reset.css">
+        <link rel="stylesheet" href="https://www.cbssports.com/_next/static/css/esi/layout.css?_c=1pEwe8NVb4dFBbSEboMmt"><link rel="stylesheet" href="https://www.cbssports.com/_next/static/css/esi/page.css?_c=1pEwe8NVb4dFBbSEboMmt">
+
+        <link rel="stylesheet" href="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediacss/css/v2/pages/esi/esi-nav-overrides.css">
+    
+    
+                        
+                    <script type="text/javascript" data-name="gdprScript">
+    const consentAge = 18;
+    const cookies = document.cookie.split(';');
+    let pidValue = '';
+    let hasPidCoppa = false;
+    let isLoggedIn = false;
+
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.startsWith('pid=')) {
+            pidValue = cookie.substring(4);
+            isLoggedIn = pidValue.charAt(0).toLowerCase() === 'l';
+        }
+        if (cookie.startsWith('pid_coppa=')) {
+            hasPidCoppa = true;
+        }
+    }
+
+    function getCookie(name) {
+        const v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+        return v ? v[2] : null;
+    }
+
+    function setCookie(name, value, days) {
+        let expires = '';
+        const domain = '.cbssports.com';
+        if (days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = '; expires=' + date.toUTCString();
+        }
+        document.cookie = name + '=' + (value || '') + expires + '; path=/; domain=' + domain + ';';
+    }
+
+    function getAge() {
+        const cookie = getCookie('pid_coppa');
+        if (cookie) {
+            const decodedCookie = atob(cookie);
+            const splitCookie = decodedCookie.split('@');
+            if (splitCookie.length > 1) {
+                return splitCookie[1];
+            }
+        }
+        return 99;
+    }
+
+    // Set up OneTrust object with Privacy Cross-Platform Consent Token
+    if (isLoggedIn) {
+        const privacyEncodedCookie = getCookie('privacyConsent');
+        if (privacyEncodedCookie !== null) {
+            try {
+                const privacyCookie = decodeURIComponent(privacyEncodedCookie)
+                // Parse the JSON string from the cookie value
+                const { privacy_id, privacy_jwt } = JSON.parse(privacyCookie);
+                // OneTrust object definition
+                if (privacy_id && privacy_jwt) {
+                    const OneTrust = {
+                        dataSubjectParams: {
+                            id: privacy_id,
+                            isAnonymous: false,
+                            token: privacy_jwt,
+                        }
+                    };
+                    window.OneTrust = OneTrust;
+                }
+            } catch (e) {
+                console.error('PKW-Error parsing cookie JSON:', e);
+            }
+        }
+    }
+
+    // Create the fly_landingPath cookie if it doesn't exist
+    // This is used to determine the entry point landing path for users
+    if (!getCookie('fly_landingPath')) {
+        const landingPath = window.location.origin + window.location.pathname ;
+        setCookie('fly_landingPath', landingPath, 365);
+    }
+</script>
+
+<script>!function(){window.semaphore=window.semaphore||[],window.ketch=function(){window.semaphore.push(arguments)};var e=document.createElement("script");e.type="text/javascript",e.src="https://global.ketchcdn.com/web/v3/config/cbs_sports/cbs_sports/boot.js",e.defer=e.async=!0,document.getElementsByTagName("head")[0].appendChild(e)}();</script>
+<script id="bb-cbsoptanon" src="https://cdn.privacy.paramount.com/dist/optanon-v2.0.0.js" type="text/javascript" async></script>
+
+<script type="text/javascript">
+    if (isLoggedIn && !hasPidCoppa) {
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', '/api/user/age/');
+        xhr.setRequestHeader('Cache-Control', 'no-cache, no-store, max-age=0, must-revalidate');
+        xhr.setRequestHeader('Pragma', 'no-cache');
+        xhr.setRequestHeader('Accept', 'application/json');
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                hasPidCoppa = document.cookie.indexOf('pid_coppa') >= 0;
+            }
+        };
+        xhr.onerror = function() {
+            console.log('getUserAgeAction functionality Error...');
+        };
+        xhr.send();
+    }
+</script>
+
+<script type="text/javascript">
+    // CBSOptanon Bootstrap Code.
+    (function(a){
+        const w=window,b='cbsoptanon',q='cmd',r='config';
+        w[b] = w[b] ? w[b] : {};
+        w[b][q] = w[b][q] ? w[b][q] : [];
+        w[b][r] = w[b][r] ? w[b][r] : [];
+        a.forEach(function(z){
+            w[b][z] = w[b][z] || function(){
+                var c=arguments;
+                w[b][q].push(function(){
+                    w[b][z].apply(w[b],c);
+                })
+            }
+        });
+    })(["onIframesReady","onFormsReady","onScriptsReady","onAdsReady"]);
+
+    // Load Scripts: Optanon Category 3 (functionalAllowed)
+    window.cbsoptanon.cmd.push(function(cmp) {
+        cmp.ot.functionalAllowed(function(allowed) {
+            if (allowed) {
+            window.cbsoptanon.tags.loadDeferredScripts('optanon-category-3');
+            }
+        });
+    });
+
+    // Load Scripts: Optanon Category 4 (targetingAllowed)
+    window.cbsoptanon.cmd.push(function(cmp) {
+        cmp.ot.targetingAllowed(function(allowed) {
+            if (allowed) {
+                window.cbsoptanon.tags.loadDeferredScripts('optanon-category-4');
+            }
+        });
+    });
+
+    // Load Scripts: Optanon Category 5 (socialAllowed)
+    window.cbsoptanon.cmd.push(function(cmp) {
+        cmp.ot.socialAllowed(function(allowed) {
+            if (allowed) {
+                window.cbsoptanon.tags.loadDeferredScripts('optanon-category-5');
+            }
+        });
+    });
+
+    // Code needed for ads / BidBarrel to work right.
+    window.cbsoptanon.config.push({
+        enableServices: false,
+        setNpaOnConsentChange: true,
+        tfcd: hasPidCoppa ? getAge() < consentAge : false,
+    });
+    window.cbsoptanon.onIframesReady(function(_cbsoptanon) {
+        _cbsoptanon.tags.load('IFRAME');
+    });
+</script>
+        <script type="text/javascript" data-name="webNotificationsScript">
+    function loadUA() {
+        !function(n,r,e,t,c){var i,o="Promise"in n,u={then:function(){return u},catch:function(n){
+        return n(new Error("Airship SDK Error: Unsupported browser")),u}},s=o?new Promise((function(n,r){i=function(e,t){e?r(e):n(t)}})):u;
+            s._async_setup=function(n){if(o)try{i(null,n(c))}catch(n){i(n)}},n[t]=s;var a=r.createElement("script");
+            a.src=e,a.async=!0,a.id="_uasdk",a.rel=t,r.head.appendChild(a)}(window,document,'https://aswpsdkus.com/notify/v1/ua-sdk.min.js',
+            'UA', {
+                appKey: 'nc2vzUKITAyG3E4PK9yQ_Q',
+                token: 'MTpuYzJ2elVLSVRBeUczRTRQSzl5UV9ROkZPUnR1MVJkTUhYTExQQjAwT09yZzBYNE8yNGtLcFNDbFRxbjhvS01ISW8',
+                vapidPublicKey: 'BC-RGbqv3uep1fUhhSMMctITmleQkFudVf2vBx4oMylN5GfhzWCdeKfLZoXFNAf0QjnReX6Qpjj4qahS53w6LaQ=',
+                workerUrl: '/service-workers/ua-push-worker.prod.js'
+            });
+    }
+    cbsoptanon.onScriptsReady(function(cmp) {
+        cmp.ot.targetingAllowed(function(allowed) {
+            if (allowed) {
+                loadUA();
+            }
+        });
+        cmp.ot.awaitInitialConsent(function(consent_model) {
+            cmp.ot.addOnConsentChangedHandler(function() {
+                cmp.ot.targetingAllowed(function(allowed) {
+                    if (allowed) {
+                        loadUA();
+                    }
+                });
+            });
+        });
+    });
+</script>
+    
+        <script type="text/javascript" src="https://sportsfly.cbsistatic.com/fly-317/bundles/sportsmediajs/js-build/libs/require-2.3.5.js"></script>
+<script type="text/javascript">
+
+            
+    require.config({"baseUrl":"https:\/\/sportsfly.cbsistatic.com\/fly-317\/bundles\/sportsmediajs\/js-build","config":{"version":{"fly\/components\/accordion":"1.0","fly\/components\/alert":"1.0","fly\/components\/base":"1.0","fly\/components\/carousel":"1.0","fly\/components\/dropdown":"1.0","fly\/components\/fixate":"1.0","fly\/components\/form-validate":"1.0","fly\/components\/image-gallery":"1.0","fly\/components\/iframe-messenger":"1.0","fly\/components\/load-more":"1.0","fly\/components\/load-more-article":"1.0","fly\/components\/load-more-scroll":"1.0","fly\/components\/loading":"1.0","fly\/components\/modal":"1.0","fly\/components\/modal-iframe":"1.0","fly\/components\/network-bar":"1.0","fly\/components\/poll":"1.0","fly\/components\/search-player":"1.0","fly\/components\/social-button":"1.0","fly\/components\/social-counts":"1.0","fly\/components\/social-links":"1.0","fly\/components\/tabs":"1.0","fly\/components\/video":"1.0","fly\/libs\/easy-xdm":"2.4.17.1","fly\/libs\/jquery.cookie":"1.2","fly\/libs\/jquery.throttle-debounce":"1.1","fly\/libs\/jquery.widget":"1.9.2","fly\/libs\/omniture.s-code":"1.0","fly\/utils\/jquery-mobile-init":"1.0","fly\/libs\/jquery.mobile":"1.3.2","fly\/libs\/backbone":"1.0.0","fly\/libs\/underscore":"1.5.1","fly\/libs\/jquery.easing":"1.3","fly\/managers\/ad":"2.0","fly\/managers\/components":"1.0","fly\/managers\/cookie":"1.0","fly\/managers\/debug":"1.0","fly\/managers\/geo":"1.0","fly\/managers\/gpt":"4.3","fly\/managers\/history":"2.0","fly\/managers\/madison":"1.0","fly\/managers\/social-authentication":"1.0","fly\/utils\/data-prefix":"1.0","fly\/utils\/data-selector":"1.0","fly\/utils\/function-natives":"1.0","fly\/utils\/guid":"1.0","fly\/utils\/log":"1.0","fly\/utils\/object-helper":"1.0","fly\/utils\/string-helper":"1.0","fly\/utils\/string-vars":"1.0","fly\/utils\/url-helper":"1.0","libs\/jshashtable":"2.1","libs\/select2":"3.5.1","libs\/jsonp":"2.4.0","libs\/jquery\/mobile":"1.4.5","libs\/modernizr.custom":"2.6.2","libs\/velocity":"1.2.2","libs\/dataTables":"1.10.6","libs\/dataTables.fixedColumns":"3.0.4","libs\/dataTables.fixedHeader":"2.1.2","libs\/dateformat":"1.0.3","libs\/waypoints\/infinite":"3.1.1","libs\/waypoints\/inview":"3.1.1","libs\/waypoints\/jquery.waypoints":"3.1.1","libs\/waypoints\/sticky":"3.1.1","libs\/jquery\/dotdotdot":"1.6.1","libs\/jquery\/flexslider":"2.1","libs\/jquery\/lazyload":"1.9.3","libs\/jquery\/maskedinput":"1.3.1","libs\/jquery\/marquee":"1.3.1","libs\/jquery\/numberformatter":"1.2.3","libs\/jquery\/placeholder":"0.2.4","libs\/jquery\/scrollbar":"0.1.6","libs\/jquery\/tablesorter":"2.0.5","libs\/jquery\/touchswipe":"1.6.18","libs\/jquery\/ui\/jquery.ui.core":"1.11.4","libs\/jquery\/ui\/jquery.ui.draggable":"1.11.4","libs\/jquery\/ui\/jquery.ui.mouse":"1.11.4","libs\/jquery\/ui\/jquery.ui.position":"1.11.4","libs\/jquery\/ui\/jquery.ui.slider":"1.11.4","libs\/jquery\/ui\/jquery.ui.sortable":"1.11.4","libs\/jquery\/ui\/jquery.ui.touch-punch":"0.2.3","libs\/jquery\/ui\/jquery.ui.autocomplete":"1.11.4","libs\/jquery\/ui\/jquery.ui.accordion":"1.11.4","libs\/jquery\/ui\/jquery.ui.tabs":"1.11.4","libs\/jquery\/ui\/jquery.ui.menu":"1.11.4","libs\/jquery\/ui\/jquery.ui.dialog":"1.11.4","libs\/jquery\/ui\/jquery.ui.resizable":"1.11.4","libs\/jquery\/ui\/jquery.ui.button":"1.11.4","libs\/jquery\/ui\/jquery.ui.tooltip":"1.11.4","libs\/jquery\/ui\/jquery.ui.effects":"1.11.4","libs\/jquery\/ui\/jquery.ui.datepicker":"1.11.4"}},"shim":{"liveconnection\/managers\/connection":{"deps":["liveconnection\/libs\/sockjs-0.3.4"]},"liveconnection\/libs\/sockjs-0.3.4":{"exports":"SockJS"},"libs\/setValueFromArray":{"exports":"set"},"libs\/getValueFromArray":{"exports":"get"},"fly\/libs\/jquery.mobile-1.3.2":["version!fly\/utils\/jquery-mobile-init"],"libs\/backbone.marionette":{"deps":["jquery","version!fly\/libs\/underscore","version!fly\/libs\/backbone"],"exports":"Marionette"},"fly\/libs\/underscore-1.5.1":{"exports":"_"},"fly\/libs\/backbone-1.0.0":{"deps":["version!fly\/libs\/underscore","jquery"],"exports":"Backbone"},"libs\/jquery\/ui\/jquery.ui.tabs-1.11.4":["jquery","version!libs\/jquery\/ui\/jquery.ui.core","version!fly\/libs\/jquery.widget"],"libs\/jquery\/flexslider-2.1":["jquery"],"libs\/dataTables.fixedColumns-3.0.4":["jquery","version!libs\/dataTables"],"libs\/dataTables.fixedHeader-2.1.2":["jquery","version!libs\/dataTables"],"https:\/\/sports.cbsimg.net\/js\/CBSi\/app\/VideoPlayer\/AdobePass-min.js":["https:\/\/sports.cbsimg.net\/js\/CBSi\/util\/Utils-min.js"]},"map":{"*":{"adobe-pass":"https:\/\/sports.cbsimg.net\/js\/CBSi\/app\/VideoPlayer\/AdobePass-min.js","facebook":"https:\/\/connect.facebook.net\/en_US\/sdk.js","facebook-debug":"https:\/\/connect.facebook.net\/en_US\/all\/debug.js","google":"https:\/\/apis.google.com\/js\/plusone.js","google-csa":"https:\/\/www.google.com\/adsense\/search\/async-ads.js","google-javascript-api":"https:\/\/www.google.com\/jsapi","google-client-api":"https:\/\/accounts.google.com\/gsi\/client","gpt":"https:\/\/securepubads.g.doubleclick.net\/tag\/js\/gpt.js","hlsjs":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/hls.js\/1.0.7\/hls.js","recaptcha":"https:\/\/www.google.com\/recaptcha\/api.js?onload=loadRecaptcha&render=explicit","recaptcha_ajax":"https:\/\/www.google.com\/recaptcha\/api\/js\/recaptcha_ajax.js","supreme-golf":"https:\/\/sgapps-staging.supremegolf.com\/search\/assets\/js\/bundle.js","taboola":"https:\/\/cdn.taboola.com\/libtrc\/cbsinteractive-cbssports\/loader.js","twitter":"https:\/\/platform.twitter.com\/widgets.js","video-avia":"https:\/\/sports.cbsimg.net\/fly\/js\/avia-js\/2.48.0\/player\/avia.min.js","video-avia-ui":"https:\/\/sports.cbsimg.net\/fly\/js\/avia-js\/2.48.0\/plugins\/ui\/avia.ui.min.js","video-avia-gam":"https:\/\/sports.cbsimg.net\/fly\/js\/avia-js\/2.48.0\/plugins\/gam\/avia.gam.min.js","video-avia-hls":"https:\/\/sports.cbsimg.net\/fly\/js\/avia-js\/2.48.0\/plugins\/hls\/avia.hls.min.js","video-avia-playlist":"https:\/\/sports.cbsimg.net\/fly\/js\/avia-js\/2.48.0\/plugins\/playlist\/avia.playlist.min.js","video-ima3":"https:\/\/imasdk.googleapis.com\/js\/sdkloader\/ima3.js","video-ima3-dai":"https:\/\/imasdk.googleapis.com\/js\/sdkloader\/ima3_dai.js","video-utils":"https:\/\/sports.cbsimg.net\/js\/CBSi\/util\/Utils-min.js","video-vast-tracking":"https:\/\/sports.cbsimg.net\/fly\/js\/sb55\/vast-js\/vtg-vast-client.js"}},"waitSeconds":300});
+
+        
+</script>
+
+
+            <script type="application/javascript" data-name="webVitalsScript">
+    (
+        function () {
+            function getCookie(name) {
+                const v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+                return v ? v[2] : null;
+            }
+
+            const webVitalsCookieName = 'webVitalsGroup';
+            const webVitalsGroupOn = '1';
+            const webVitalsGroupOff = '0';
+
+            // 10% group
+            function isExecutedByPercent() {
+                const percentOfCustomersToApply = 10;
+                return (Math.floor(Math.random() * percentOfCustomersToApply) + 1) === 1;
+            }
+
+            // Set cookie if customer match percent group
+            if (getCookie(webVitalsCookieName) === null) {
+                if (
+
+URL: https://www.weather.gov/
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<title>National Weather Service</title>
+<meta name="DC.title" content="National Weather Service" />
+<meta name="DC.description" content="NOAA National Weather Service National Weather Service" />
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" />
+<meta name="DC.date.created" scheme="ISO8601" content="" />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.keywords" content="weather, National Weather Service" />
+<meta name="DC.publisher" content="NOAA's National Weather Service" />
+<meta name="DC.contributor" content="National Weather Service" />
+<meta name="DC.rights" content="/disclaimer.php" />
+<meta name="rating" content="General" />
+<meta name="robots" content="index,follow" />
+
+
+        <link href="/css/weatherstyle.css" rel="stylesheet" type="text/css" />
+        <link href="/css/template.css" rel="stylesheet" type="text/css" />
+        <link href="/css/myfcst.css" rel="stylesheet" type="text/css" />
+        <link href="/css/ForecastSearch.css" rel="stylesheet" type="text/css" />
+        <link href="/css/pointforecast.css" rel="stylesheet" type="text/css" />
+        <link href="/css/jqueryui10_3_1custom/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>        <script type="text/javascript" src="/js/jquery-ui-1.10.3.custom.min.js"></script>        <script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>        <script type="text/javascript" src="/js/ForecastSearch.js"></script>        <script type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&sub-agency=NOAA&yt=true&pga4=G-736JJ6NL0V"></script>        <script type="text/javascript" src="/js/topNavMenu.js"></script>        <script type="text/javascript" src="/js/NidsESRI.js"></script>        <script type="text/javascript" src="/js/nwsexit.js"></script>
+
+
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-736JJ6NL0V"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+            gtag('config', 'G-736JJ6NL0V');
+    </script>
+
+    </head>
+
+    <body> 
+        
+
+        <div class="header">
+    <div class="header-content">
+        <a href="https://www.weather.gov" class="header-nws"><img src="/bundles/templating/images/header/header.png" alt="National Weather Service"/></a>
+        <a href="http://www.commerce.gov" class="header-doc"><img src="/bundles/templating/images/header/header_doc.png" alt="United States Department of Commerce"/></a>
+        <a href="http://www.noaa.gov" class="header-noaa" title="National Oceanic and Atmospheric Administration"></a>
+    </div>
+    <div style="clear:both"></div>
+</div>
+<div class="header-shadow">
+    <div class="header-shadow-content"></div>
+</div>
+<script>
+    var domains = {
+        weather: "https://www.weather.gov",
+        forecast: "https://forecast.weather.gov",
+        airquality: "https://airquality.weather.gov",
+        aviation: "https://aviationweather.gov",
+        water: "https://water.weather.gov",
+        graphical: "https://graphical.weather.gov",
+        api: "https://api.weather.gov",
+        radar: "https://radar.weather.gov",
+        esriGeocode: "https://geocode.arcgis.com"
+    }
+</script>
+
+
+        <div class="center">
+
+            <div class="content">
+    <div class="topnav">
+        <ul id="topnav">
+            <li>
+                <script type="text/javascript">
+                    function goBack() {
+                        if (document.referrer.toLowerCase().indexOf("weather.gov") != -1) {
+                            history.back();
+                        } else {
+                            document.location.href = "https://www.weather.gov";
+                        }
+                    }
+                </script>
+                <div class="topMenuNavList home">
+                    <a href="#" onclick="goBack();">HOME</a>
+                </div>
+            </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/forecastmaps/">FORECAST</a>
+                    </div>
+                                                                        <div style="opacity: 0;" class="sub">
+                                <ul>
+                                                                            <li>
+                                            <a href="https://www.weather.gov">Local</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://digital.weather.gov">Graphical</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://aviationweather.gov">Aviation</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/marine/">Marine</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://water.noaa.gov">Rivers and Lakes</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.nhc.noaa.gov">Hurricanes</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.spc.noaa.gov">Severe Weather</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/fire/">Fire Weather</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://gml.noaa.gov/grad/solcalc/">Sunrise/Sunset</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.cpc.ncep.noaa.gov">Long Range Forecasts</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.cpc.ncep.noaa.gov">Climate Prediction</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.swpc.noaa.gov">Space Weather</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                                                            </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/wrh/climate">PAST WEATHER</a>
+                    </div>
+                                                                        <div style="opacity: 0;" class="sub">
+                                <ul>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/wrh/climate">Past Weather</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://gml.noaa.gov/grad/solcalc/">Astronomical Data</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.climate.gov/maps-data/dataset/past-weather-zip-code-data-table">Certified Weather Data</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                                                            </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/safety/">SAFETY</a>
+                    </div>
+                                                                                </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/informationcenter">INFORMATION</a>
+                    </div>
+                                                                        <div style="opacity: 0;" class="sub">
+                                <ul>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/wrn/wea">Wireless Emergency Alerts</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/owlie/publication_brochures">Brochures</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/wrn/">Weather-Ready Nation</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/coop/">Cooperative Observers</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/briefing/">Daily Briefing</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/hazstat">Damage/Fatality/Injury Statistics</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="http://mag.ncep.noaa.gov">Forecast Models</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/gis/">GIS Data Portal</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/nwr">NOAA Weather Radio</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/publications/">Publications</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/skywarn/">SKYWARN Storm Spotters</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/stormready">StormReady</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/tsunamiready/">TsunamiReady</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/notification/">Service Change Notices</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                                                            </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/education/">EDUCATION</a>
+                    </div>
+                                                                                </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/news">NEWS</a>
+                    </div>
+                                                                                </li>
+                            <li>
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/search/">SEARCH</a>
+                    </div>
+                                            <div style="opacity: 0;" class="sub">
+                            <ul class="no-links">
+                            <li><!-- Begin search code -->
+                                <div id="site-search">
+                                    <form method="get" action="https://search.usa.gov/search" style="margin-bottom: 0; margin-top: 0;">
+                                        <input type="hidden" name="v:project" value="firstgov" />
+                                        <label for="query">Search For</label>
+                                        <input type="text" name="query" id="query" size="12" />
+                                        <input type="submit" value="Go" />
+                                        <p>
+                                            <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+                                            <label for="nws" class="search-scope">NWS</label>
+                                            <input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+                                            <label for="noaa" class="search-scope">All NOAA</label>
+                                        </p>
+                                    </form>
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                                    </li>
+                            <li class="last">
+                    <div class="topMenuNavList section-link">
+                        <a href="https://www.weather.gov/about/">ABOUT</a>
+                    </div>
+                                                                        <div style="opacity: 0;" class="sub">
+                                <ul>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/about/">About NWS</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/organization">Organization</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://sites.google.com/a/noaa.gov/nws-insider/">For NWS Employees</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/ncep/">National Centers</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.noaa.gov/nws-careers">Careers</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/contact">Contact Us</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://forecast.weather.gov/glossary.php">Glossary</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.weather.gov/socialmedia">Social Media</a>
+                                        </li>
+                                                                            <li>
+                                            <a href="https://www.noaa.gov/NWStransformation">NWS Transformation</a>
+                                        </li>
+                                                                    </ul>
+                            </div>
+                                                            </li>
+                    </ul>
+    </div>
+</div>
+
+
+            <div class="center-content">
+               <div id="zipcity_news">
+                <div class="one-sixth-first">
+    <div id="forecast-lookup">
+        <form name="getForecast" id="getForecast" action="https://forecast.weather.gov/zipcity.php" method="get">
+            <label for="inputstring">Local forecast by <br />"City, St" or ZIP code</label>
+            <input id="inputstring" name="inputstring" type="text" value="Enter location ..." onclick="this.value=''" />
+            <input name="btnSearch" id="btnSearch" type="submit" value="Go" />
+            <div id="txtError">
+                <div id="errorNoResults" style="display:none;">Sorry, the location you searched for was not found. Please try another search.</div>
+                <div id="errorMultipleResults" style="display:none">Multiple locations were found. Please select one of the following:</div>
+                <div id="errorChoices" style="display:none"></div>
+                <input id="btnCloseError" type="button" value="Close" style="display:none" />
+            </div>
+            <div id="txtHelp"><a style="text-decoration: underline;" href="javascript:void(window.open('https://www.weather.gov/ForecastSearchHelp.html','locsearchhelp','status=0,toolbar=0,location=0,menubar=0,directories=0,resizable=1,scrollbars=1,height=500,width=530').focus());">Location Help</a></div>
+        </form>
+    </div>
+</div>
+
+                    <div class="five-sixth-last">
+                    <style type="text/css">
+                #topnews.important {
+                    background-color: #d2d2d2;
+                    height: 100%;
+                    margin-bottom: 5px;
+                    position: relative;
+                }
+
+                #topnews .icon {
+                    display: none;
+                }
+
+                #topnews.important .icon {
+                    background-color: #135997;
+                    display: table-cell;
+                    height: 100%;
+                    text-a
+
