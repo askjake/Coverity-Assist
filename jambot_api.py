@@ -36,6 +36,7 @@ journaler_mod = try_import("journaler")         # optional helpers
 bert2_mod = try_import("bert2")                 # optional BERTopic pipeline
 log_rag_mod = try_import("log_rag")             # optional embed/RAG helpers
 
+
 from requests.adapters import HTTPAdapter
 try:
     # urllib3 v1 & v2 compat
@@ -142,6 +143,7 @@ def ensure_text(b: bytes) -> str:
         return b.decode("utf-8")
     except Exception:
         return b.decode("latin-1", errors="replace")
+
 
 # ---------------- Health ----------------
 

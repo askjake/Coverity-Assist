@@ -5,9 +5,7 @@ Local web_search helper (incognito-ish, low bandwidth).
 - Returns dict with results and (optionally) fetched plaintext per URL
 - Meant to be imported by coverity_assist_gateway
 """
-
 import re
-import time
 from typing import Dict, Any, List
 import requests
 
@@ -35,7 +33,6 @@ def do_web_search(query: str, max_results: int = 6, fetch_pages: bool = False) -
     results = _ddg_lite(query, max_results=max_results)
     return {
         "query": query,
-        "fetched_at": int(time.time()),
         "results": results,
         "note": "local web_search helper"
     }

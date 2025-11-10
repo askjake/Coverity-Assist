@@ -1,0 +1,147 @@
+from fastapi import FastAPI, HTTPException, Body
+from pydantic import BaseModel
+import os
+import json
+import requests
+from typing import Optional, List, Dict, Any
+
+# Same env conventions as your Streamlit app / gateway
+COVERITY_ASSIST_URL = os.environ.get(
+    "COVERITY_ASSIST_URL",
+    "http://coverity-assist.dishtv.technology/chat",
+).rstrip("/")
+TOKEN = os.environ.get("COVERITY_ASSIST_TOKEN", "")
+INFERENCE_PROFILE_ARN = os.environ.get("BEDROCK_APPLICATION_INFERENCE_PROFILE_ARN", "")
+
+app = FastAPI(title="coverity-assist-proxy", version="1.0")
+
+
+def _bearer_header() -> Dict[str, str]:
+    return {
+        "Authorization": "Bearer %s" % TOKEN,
+        "Content-Type": "application/json",
+    }
+
+
+class ChatIn(BaseModel):
+    # direct pass-through of the upstream chat payload
+    messages: List[Dict[str, Any]]
+    max_tokens: int = 800
+    system: Optional[str] = None
+    inference_profile_arn: Optional[str] = None
+
+
+@app.get("/health")
+def health():
+    return {
+        "status": "OK",
+        "has_token": bool(TOKEN),
+        "inference_profile_arn": INFERENCE_PROFILE_ARN or None,
+    }
+
+
+@app.post("/chat")
+def chat(body: ChatIn = Body(...)):
+    if not TOKEN:
+        raise HTTPException(status_code=401, detail="Missing COVERITY_ASSIST_TOKEN")
+
+    payload: Dict[str, Any] = {
+        "messages": body.messages,
+        "max_tokens": body.max_tokens,
+    }
+    if body.system:
+        payload["system"] = body.system
+
+    # Prefer request value; fall back to env default
+    ipa = body.inference_profile_arn or INFERENCE_PROFILE_ARN
+    if ipa:
+        payload["inference_profile_arn"] = ipa
+
+    try:
+        r = requests.post(
+            COVERITY_ASSIST_URL,
+            headers=_bearer_header(),
+            json=payload,
+            timeout=120,
+        )
+        r.raise_for_status()
+        # Pass upstream JSON straight through
+        return r.json()
+    except requests.HTTPError as e:
+        raise HTTPException(status_code=r.status_code, detail=r.text) from e
+
+
+class ValidateIn(BaseModel):
+    original_request: str
+    summary: str
+    max_tokens: int = 300
+
+
+@app.post("/validate")
+def validate(body: ValidateIn):
+    if not TOKEN:
+        raise HTTPException(status_code=401, detail="Missing COVERITY_ASSIST_TOKEN")
+
+    # Same validation contract as your gateway: STRICT JSON only
+    system = "Return STRICT JSON only. No prose."
+    user = (
+        "Original request:\n---\n"
+        + body.original_request
+        + "\n---\n\n"
+        "Did the summary below fully satisfy the request? If not, list concrete next actions "
+        "(bash commands or URLs) we should run/fetch next.\n\n"
+        "Summary:\n---\n"
+        + body.summary
+        + "\n---\n\n"
+        'Respond JSON with keys: "complete": true|false, '
+        '"next_actions": [ {"cmd": "."}, {"url": "."} ]'
+    )
+
+    payload: Dict[str, Any] = {
+        "messages": [{"role": "user", "content": user}],
+        "max_tokens": body.max_tokens,
+        "system": system,
+    }
+    if INFERENCE_PROFILE_ARN:
+        payload["inference_profile_arn"] = INFERENCE_PROFILE_ARN
+
+    try:
+        r = requests.post(
+            COVERITY_ASSIST_URL,
+            headers=_bearer_header(),
+            json=payload,
+            timeout=120,
+        )
+        r.raise_for_status()
+        try:
+            resp_data = r.json()
+        except ValueError:
+            resp_data = {}
+
+        textish = (
+            resp_data.get("content")
+            or resp_data.get("response")
+            or resp_data.get("text")
+            or r.text
+        )
+
+        try:
+            data = json.loads(textish)
+        except Exception:
+            data = {"complete": False, "next_actions": []}
+
+        if not isinstance(data, dict):
+            data = {"complete": False, "next_actions": []}
+
+        data.setdefault("complete", False)
+        data.setdefault("next_actions", [])
+        return data
+    except requests.HTTPError as e:
+        raise HTTPException(status_code=r.status_code, detail=r.text) from e
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    port = int(os.environ.get("PORT", "8000"))
+    uvicorn.run("app:app", host="0.0.0.0", port=port)
