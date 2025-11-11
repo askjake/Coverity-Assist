@@ -1,0 +1,28 @@
+apiVersion: platform.datasolutions.com/v1alpha1
+kind: XApp
+metadata:
+  name: coverity-assist-dev
+  namespace: coverity-assist-dev
+spec:
+  description: Coverity-Assist Bedrock proxy (dev)
+  image: 233532778289.dkr.ecr.us-west-2.amazonaws.com/coverity-assist:<GIT_SHA>
+  replicas: 1
+  port: 8000
+  host: coverity-assist-dev.dishtv.technology
+
+  env:
+    - name: COVERITY_ASSIST_URL
+      value: "http://coverity-assist.dishtv.technology/chat"
+    - name: BEDROCK_APPLICATION_INFERENCE_PROFILE_ARN
+      valueFrom:
+        secretKeyRef:
+          name: coverity-assist-secrets
+          key: BEDROCK_APPLICATION_INFERENCE_PROFILE_ARN
+    - name: COVERITY_ASSIST_TOKEN
+      valueFrom:
+        secretKeyRef:
+          name: coverity-assist-secrets
+          key: COVERITY_ASSIST_TOKEN
+
+  # if your XApp schema includes extra fields like resources, istio, etc.,
+  # mirror them from an existing app and just swap the image/host/env pieces.
