@@ -1,0 +1,171 @@
+# app/app.py
+from __future__ import annotations
+import os, json, requests
+from typing import Optional, List, Dict, Any
+
+from fastapi import FastAPI, HTTPException, Body
+from pydantic import BaseModel
+
+from .middleware import (
+    RequestTelemetryMiddleware,
+    with_request_telemetry,   # kept available if you want decorator-style
+    set_token_usage,
+)
+
+# ---- helpers to read env consistently ----------------------------------------
+def _first_env(*names: str) -> str:
+    for n in names:
+        v = os.getenv(n)
+        if v:
+            return v
+    return ""
+
+def get_inference_profile_arn() -> str:
+    return _first_env(
+        "INFERENCE_PROFILE_ARN",
+        "APPLICATION_INFERENCE_PROFILE_ARN",
+        "BEDROCK_APPLICATION_INFERENCE_PROFILE_ARN",
+        "BEDROCK_INFERENCE_PROFILE_ARN",
+        "APPLICATION_PROFILE_ARN",
+        "PROFILE_ARN",
+    )
+
+def get_token_len() -> int:
+    return len(os.getenv("COVERITY_ASSIST_TOKEN", ""))
+
+# ---- config ------------------------------------------------------------------
+COVERITY_ASSIST_URL = os.getenv(
+    "COVERITY_ASSIST_URL",
+    "http://coverity-assist.dishtv.technology/chat",
+).rstrip("/")
+TOKEN = os.getenv("COVERITY_ASSIST_TOKEN", "")
+DEFAULT_INFERENCE_PROFILE_ARN = get_inference_profile_arn()
+
+# ---- app + middleware --------------------------------------------------------
+app = FastAPI(title="coverity-assist-proxy", version="1.0")
+app.add_middleware(
+    RequestTelemetryMiddleware,
+    infer_arn_getter=get_inference_profile_arn,
+    token_len_getter=get_token_len,
+)
+# If you *also* want the decorator style, you can do:
+# app.middleware("http")(with_request_telemetry)
+
+# ---- models ------------------------------------------------------------------
+class ChatIn(BaseModel):
+    messages: List[Dict[str, Any]]
+    max_tokens: int = 800
+    system: Optional[str] = None
+    inference_profile_arn: Optional[str] = None
+
+class ValidateIn(BaseModel):
+    original_request: str
+    summary: str
+    max_tokens: int = 300
+
+# ---- routes ------------------------------------------------------------------
+@app.get("/health")
+def health():
+    arn = get_inference_profile_arn()
+    return {
+        "status": "OK",
+        "has_token": get_token_len() > 0,
+        "inference_profile_arn": arn or None,
+    }
+
+def _bearer_header() -> Dict[str, str]:
+    return {
+        "Authorization": f"Bearer {TOKEN}",
+        "Content-Type": "application/json",
+    }
+
+@app.post("/chat")
+def chat(body: ChatIn = Body(...)):
+    if not TOKEN:
+        raise HTTPException(status_code=401, detail="Missing COVERITY_ASSIST_TOKEN")
+
+    payload: Dict[str, Any] = {
+        "messages": body.messages,
+        "max_tokens": body.max_tokens,
+    }
+    if body.system:
+        payload["system"] = body.system
+
+    # Prefer request value; fall back to env default
+    ipa = body.inference_profile_arn or DEFAULT_INFERENCE_PROFILE_ARN
+    if ipa:
+        payload["inference_profile_arn"] = ipa
+
+    try:
+        r = requests.post(COVERITY_ASSIST_URL, headers=_bearer_header(), json=payload, timeout=120)
+        r.raise_for_status()
+        # If upstream returns token usage in headers, capture it:
+        # Example: X-Token-Usage: {"prompt":123,"completion":456,"total":579}
+        tu = r.headers.get("X-Token-Usage")
+        if tu:
+            try:
+                set_token_usage(**json.loads(tu))
+            except Exception:
+                pass
+        return r.json()
+    except requests.HTTPError as e:
+        raise HTTPException(status_code=r.status_code, detail=r.text) from e
+
+@app.post("/validate")
+def validate(body: ValidateIn):
+    if not TOKEN:
+        raise HTTPException(status_code=401, detail="Missing COVERITY_ASSIST_TOKEN")
+
+    system = "Return STRICT JSON only. No prose."
+    user = (
+        "Original request:\n---\n"
+        + body.original_request
+        + "\n---\n\n"
+        "Did the summary below fully satisfy the request? If not, list concrete next actions "
+        "(bash commands or URLs) we should run/fetch next.\n\n"
+        "Summary:\n---\n"
+        + body.summary
+        + "\n---\n\n"
+        'Respond JSON with keys: "complete": true|false, '
+        '"next_actions": [ {"cmd": "."}, {"url": "."} ]'
+    )
+
+    payload: Dict[str, Any] = {
+        "messages": [{"role": "user", "content": user}],
+        "max_tokens": body.max_tokens,
+        "system": system,
+    }
+    ipa = DEFAULT_INFERENCE_PROFILE_ARN
+    if ipa:
+        payload["inference_profile_arn"] = ipa
+
+    try:
+        r = requests.post(COVERITY_ASSIST_URL, headers=_bearer_header(), json=payload, timeout=120)
+        r.raise_for_status()
+        try:
+            resp_data = r.json()
+        except ValueError:
+            resp_data = {}
+        textish = (
+            resp_data.get("content")
+            or resp_data.get("response")
+            or resp_data.get("text")
+            or r.text
+        )
+        try:
+            data = json.loads(textish)
+        except Exception:
+            data = {"complete": False, "next_actions": []}
+        if not isinstance(data, dict):
+            data = {"complete": False, "next_actions": []}
+        data.setdefault("complete", False)
+        data.setdefault("next_actions", [])
+        return data
+    except requests.HTTPError as e:
+        raise HTTPException(status_code=r.status_code, detail=r.text) from e
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get("PORT", "8000"))
+    uvicorn.run("app.app:app", host="0.0.0.0", port=port)
+

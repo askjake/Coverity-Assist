@@ -1,0 +1,1 @@
+{ "Comment": "CNAME for coverity-assist-stg.dishtv.technology", "Changes": [ { "Action": "UPSERT", "ResourceRecordSet": { "Name": "coverity-assist-stg.dishtv.technology", "Type": "CNAME", "TTL": 60, "ResourceRecords": [ { "Value": "k8s-nginxing-ingressn-5cf4062945-d273428efda23a94.elb.us-west-2.amazonaws.com" } ] } } ] }

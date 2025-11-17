@@ -1,0 +1,53 @@
+# app/middleware.py
+import time, uuid, contextvars
+from typing import Callable, Optional
+from fastapi import Request
+from starlette.middleware.base import BaseHTTPMiddleware
+
+_token_usage_var = contextvars.ContextVar("token_usage", default=None)
+
+def set_token_usage(usage: Optional[int]):
+    _token_usage_var.set(usage)
+
+class RequestTelemetryMiddleware(BaseHTTPMiddleware):
+    def __init__(
+        self,
+        app,
+        infer_arn_getter: Callable[[], str],
+        token_len_getter: Callable[[], int],
+    ):
+        super().__init__(app)
+        self._infer_arn_getter = infer_arn_getter
+        self._token_len_getter = token_len_getter
+
+    async def dispatch(self, request: Request, call_next):
+        rid = request.headers.get("x-request-id") or str(uuid.uuid4())
+        t0 = time.perf_counter()
+        try:
+            response = await call_next(request)
+        finally:
+            pass
+        dt_ms = int((time.perf_counter() - t0) * 1000)
+
+        # Pull current token usage if the handler set it
+        usage = _token_usage_var.get()
+        # Snapshot env-derived state
+        arn = (self._infer_arn_getter() or "").strip() or "none"
+        token_present = "true" if (self._token_len_getter() > 0) else "false"
+
+        # Set headers
+        response.headers["x-request-id"] = rid
+        response.headers["x-duration-ms"] = str(dt_ms)
+        response.headers["x-token-present"] = token_present
+        response.headers["x-inference-profile"] = arn
+        if usage is not None:
+            response.headers["x-token-usage"] = str(usage)
+
+        return response
+
+# Convenience decorator if you prefer function wrapping later
+def with_request_telemetry(endpoint):
+    async def wrapper(*args, **kwargs):
+        return await endpoint(*args, **kwargs)
+    return wrapper
+

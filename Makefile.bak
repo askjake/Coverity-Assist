@@ -1,0 +1,93 @@
+# ---------- Makefile ----------
+.RECIPEPREFIX := |
+SHELL := /bin/bash -o pipefail -o errexit
+
+# Defaults (override with: make stg-all NS=... HOST=... IMG=... PORT=... ZONE_ID=...)
+NS        ?= coverity-assist-stg
+HOST      ?= coverity-assist-stg.dishtv.technology
+IMG       ?= 233532778289.dkr.ecr.us-west-2.amazonaws.com/coverity-assist:dev1
+PORT      ?= 8000
+SVC_PORT  ?= 5004
+K8S_DIR   ?= k8s
+ZONE_NAME ?= dishtv.technology
+# ZONE_ID (optional). If set, we skip discovery.
+
+.PHONY: stg-apply stg-proof stg-dns external-health stg-all clean-make-gunk
+
+clean-make-gunk:
+| rm -f echo sh kubectl .alb .hzid .change.json || true
+
+stg-apply:
+| if ! command -v envsubst >/dev/null; then echo "envsubst missing; install: sudo dnf install -y gettext"; exit 2; fi
+| kubectl get ns $(NS) >/dev/null 2>&1 || kubectl create ns $(NS)
+| if [[ -z "$$COVERITY_ASSIST_TOKEN" || -z "$$INFERENCE_PROFILE_ARN" ]]; then \
+|   echo "Set COVERITY_ASSIST_TOKEN and INFERENCE_PROFILE_ARN in your shell"; exit 2; fi
+| kubectl -n $(NS) create secret generic coverity-assist-secrets \
+|   --from-literal=COVERITY_ASSIST_TOKEN="$$COVERITY_ASSIST_TOKEN" \
+|   --from-literal=INFERENCE_PROFILE_ARN="$$INFERENCE_PROFILE_ARN" \
+|   --dry-run=client -o yaml | kubectl apply -f -
+| env NS=$(NS) HOST=$(HOST) IMG=$(IMG) PORT=$(PORT) SVC_PORT=$(SVC_PORT) \
+|   envsubst < $(K8S_DIR)/stg-deploy.yaml  | kubectl apply -n $(NS) -f -
+| env NS=$(NS) HOST=$(HOST) IMG=$(IMG) PORT=$(PORT) SVC_PORT=$(SVC_PORT) \
+|   envsubst < $(K8S_DIR)/stg-svc.yaml     | kubectl apply -n $(NS) -f -
+| env NS=$(NS) HOST=$(HOST) IMG=$(IMG) PORT=$(PORT) SVC_PORT=$(SVC_PORT) \
+|   envsubst < $(K8S_DIR)/stg-ingress.yaml | kubectl apply -n $(NS) -f -
+| kubectl -n $(NS) rollout status deploy/coverity-assist
+| # be explicit: wait for pods ready
+| kubectl -n $(NS) wait --for=condition=Ready --timeout=120s pod -l app=coverity-assist
+
+stg-proof:
+| echo "=== Cluster-internal health ==="
+| kubectl -n $(NS) delete pod/ca-curl --ignore-not-found
+| kubectl -n $(NS) run ca-curl --restart=Never --image=curlimages/curl -- \
+|   sh -lc "curl -fsS http://coverity-assist.$(NS).svc.cluster.local:$(SVC_PORT)/health | tee /tmp/out; sleep 1"
+| kubectl -n $(NS) wait --for=condition=Ready --timeout=60s pod/ca-curl || true
+| kubectl -n $(NS) logs ca-curl || true
+| kubectl -n $(NS) delete pod/ca-curl --ignore-not-found
+| echo "=== Pod env snapshot ==="
+| POD=$$(kubectl -n $(NS) get pod -l app=coverity-assist -o jsonpath='{.items[0].metadata.name}'); \
+| kubectl -n $(NS) exec $$POD --container web -- sh -lc 'echo -n TOKEN_LEN=; printenv COVERITY_ASSIST_TOKEN | wc -c; echo INFERENCE_PROFILE_ARN=$$INFERENCE_PROFILE_ARN'
+| echo "=== Service & Endpoints ==="
+| kubectl -n $(NS) get svc coverity-assist -o wide
+| kubectl -n $(NS) get endpointslices -l kubernetes.io/service-name=coverity-assist -o json | \
+|   jq -r '.items[0].ports[0] as $$p | {endpointIPs:(.items[0].endpoints|map(.addresses[0])), portName:$$p.name, port:$$p.port}'
+
+stg-dns:
+| # discover ALB hostname or NLB IP
+| for i in {1..30}; do \
+|   HN=$$(kubectl -n $(NS) get ingress coverity-assist-nginx -o jsonpath='{.status.loadBalancer.ingress[0].hostname}' 2>/dev/null || true); \
+|   IP=$$(kubectl -n $(NS) get ingress coverity-assist-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' 2>/dev/null || true); \
+|   if [[ -n "$$HN" || -n "$$IP" ]]; then ALB="$$HN"; ALBIP="$$IP"; break; fi; \
+|   echo "waiting for LB address… ($$i)"; sleep 4; \
+| done; \
+| if [[ -z "$$ALB" && -z "$$ALBIP" ]]; then echo "Ingress address not ready"; exit 2; fi; \
+| if [[ -n "$(ZONE_ID)" ]]; then HZID="$(ZONE_ID)"; \
+| else \
+|   ZONE=$$(echo $(HOST) | awk -F. '{print $$(NF-1)"."$$NF}'); \
+|   HZID=$$(aws route53 list-hosted-zones-by-name --dns-name $$ZONE \
+|         --query "HostedZones[?Name=='$$ZONE.'].Id" --output text | sed 's#.*/##' | head -n1); \
+| fi; \
+| echo "Updating $(HOST) in zone $$HZID -> $${ALB:-$${ALBIP}}"; \
+| if [[ -n "$$ALB" ]]; then \
+|   jq -nc --arg host '$(HOST)' --arg alb "$$ALB" \
+|     '{Comment:"CNAME for " + $host,Changes:[{Action:"UPSERT",ResourceRecordSet:{Name:$host,Type:"CNAME",TTL:60,ResourceRecords:[{Value:$alb}]}}]}' \
+|     > .change.json; \
+| else \
+|   jq -nc --arg host '$(HOST)' --arg ip "$$ALBIP" \
+|     '{Comment:"A for " + $host,Changes:[{Action:"UPSERT",ResourceRecordSet:{Name:$host,Type:"A",TTL:60,ResourceRecords:[{Value:$ip}]}}]}' \
+|     > .change.json; \
+| fi; \
+| aws route53 change-resource-record-sets --hosted-zone-id $$HZID --change-batch file://.change.json --output json --query 'ChangeInfo'; \
+| echo "DNS updated."
+
+external-health:
+| echo "=== External health (poll) ==="
+| i=0; until curl -fsS "https://$(HOST)/health" \
+|   | tee /dev/stderr | jq -e '.status=="OK" and .has_token==true' >/dev/null; do \
+|   i=$$((i+1)); if [ $$i -gt 30 ]; then echo "timeout waiting for external /health"; exit 1; fi; sleep 2; done
+| echo "=== Telemetry headers ==="
+| curl -fsSI "https://$(HOST)/health" | grep -Ei 'x-(request-id|duration-ms|token-present|inference-profile|token-usage)'
+
+stg-all: clean-make-gunk stg-apply stg-proof stg-dns external-health
+| @echo "stg-all complete."
+# ---------- end Makefile ----------

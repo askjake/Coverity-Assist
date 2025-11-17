@@ -1,0 +1,142 @@
+SHELL := /bin/bash
+# Use '>' to start recipe lines (no tabs required)
+.RECIPEPREFIX := >
+
+# -------- Defaults (override per call) --------
+NS        ?= coverity-assist-stg
+HOST      ?= coverity-assist-stg.dishtv.technology
+PORT      ?= 8000
+SVC_PORT  ?= 5004
+IMG       ?= 233532778289.dkr.ecr.us-west-2.amazonaws.com/coverity-assist:dev1
+ZONE_ID   ?=
+
+PROD_NS   ?= coverity-assist-prod
+PROD_HOST ?= coverity-assist.dishtv.technology
+PROD_ZONE_ID ?=
+
+.PHONY: stg-apply stg-proof stg-dns stg-all stg-bounce stg-harden \
+        prod-apply prod-dns prod-all prod-canary-apply prod-canary-weight prod-canary-disable \
+        external-health clean-make-gunk
+
+# -------- Stage deploy (stable) --------
+stg-apply:
+> if ! command -v envsubst >/dev/null; then echo "envsubst missing; install: sudo dnf install -y gettext"; exit 2; fi
+> kubectl get ns $(NS) >/dev/null 2>&1 || kubectl create ns $(NS)
+> if [[ -z "$$COVERITY_ASSIST_TOKEN" || -z "$$INFERENCE_PROFILE_ARN" ]]; then \
+>   echo "Set COVERITY_ASSIST_TOKEN and INFERENCE_PROFILE_ARN in your shell"; exit 2; fi
+> kubectl -n $(NS) create secret generic coverity-assist-secrets \
+>   --from-literal=COVERITY_ASSIST_TOKEN="$$COVERITY_ASSIST_TOKEN" \
+>   --from-literal=INFERENCE_PROFILE_ARN="$$INFERENCE_PROFILE_ARN" \
+>   --dry-run=client -o yaml | kubectl apply -f -
+> env NS=$(NS) HOST=$(HOST) IMG=$(IMG) PORT=$(PORT) SVC_PORT=$(SVC_PORT) envsubst < k8s/stg-deploy.yaml  | kubectl apply -n $(NS) -f -
+> env NS=$(NS) HOST=$(HOST) IMG=$(IMG) PORT=$(PORT) SVC_PORT=$(SVC_PORT) envsubst < k8s/stg-svc.yaml     | kubectl apply -n $(NS) -f -
+> env NS=$(NS) HOST=$(HOST) IMG=$(IMG) PORT=$(PORT) SVC_PORT=$(SVC_PORT) envsubst < k8s/stg-ingress.yaml | kubectl apply -n $(NS) -f -
+> kubectl -n $(NS) rollout status deploy/coverity-assist
+> NEWPOD=$$( kubectl -n $(NS) get pods -l app=coverity-assist -o json \
+>   | jq -r '.items | sort_by(.metadata.creationTimestamp) | .[-1].metadata.name' ); \
+>   echo "Newest pod: $$NEWPOD"; \
+>   kubectl -n $(NS) wait --for=condition=Ready --timeout=180s "pod/$$NEWPOD"
+
+# -------- Stage proof (health/env/endpoints) --------
+stg-proof:
+> echo "=== Cluster-internal health ==="
+> -kubectl -n $(NS) delete pod/ca-curl --ignore-not-found
+> kubectl -n $(NS) run ca-curl --restart=Never --image=curlimages/curl -- \
+>   sh -lc "curl -fsS http://coverity-assist.$(NS).svc.cluster.local:$(SVC_PORT)/health | tee /tmp/out; sleep 1"
+> kubectl -n $(NS) wait --for=condition=Ready --timeout=60s pod/ca-curl || true
+> kubectl -n $(NS) logs ca-curl || true
+> -kubectl -n $(NS) delete pod/ca-curl --ignore-not-found
+
+> echo "=== Pod env snapshot ==="
+> POD=$$( kubectl -n $(NS) get pods -l app=coverity-assist -o json | jq -r '.items | sort_by(.metadata.creationTimestamp) | .[-1].metadata.name' ); \
+>   kubectl -n $(NS) exec $$POD -- sh -lc 'python - <<PY
+>
+import urllib.request, json
+print(json.dumps(json.load(urllib.request.urlopen("http://127.0.0.1:'"$(PORT)"'/health")), indent=2))
+PY'; \
+>   kubectl -n $(NS) exec $$POD -- sh -lc 'echo -n TOKEN_LEN=; printenv COVERITY_ASSIST_TOKEN | wc -c; echo INFERENCE_PROFILE_ARN=$$INFERENCE_PROFILE_ARN'
+
+> echo "=== Service & Endpoints ==="
+> kubectl -n $(NS) get svc coverity-assist -o wide
+> kubectl -n $(NS) get endpointslices -l kubernetes.io/service-name=coverity-assist -o json \
+>   | jq -r '.items[0].ports[0] as $$p | {endpointIPs:(.items[0].endpoints|map(.addresses[0])), portName:$$p.name, port:$$p.port}'
+
+# -------- Route53 wire-up for STAGE --------
+stg-dns:
+> if [[ -z "$(ZONE_ID)" ]]; then echo "ZONE_ID is required (e.g. make stg-dns ZONE_ID=Zxxxxxxxx)"; exit 2; fi
+> HN=$$(kubectl -n $(NS) get ingress coverity-assist-nginx -o jsonpath='{.status.loadBalancer.ingress[0].hostname}' 2>/dev/null || true); \
+> IP=$$(kubectl -n $(NS) get ingress coverity-assist-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' 2>/dev/null || true); \
+> if [[ -z "$$HN" && -z "$$IP" ]]; then echo "Ingress address not ready"; exit 2; fi; \
+> echo "Updating $(HOST) in zone $(ZONE_ID) -> $${HN:-$${IP}}"; \
+> if [[ -n "$$HN" ]]; then \
+>   cat > .change.json <<JSON ; \
+{ "Comment": "CNAME for $(HOST)", "Changes": [ { "Action": "UPSERT", "ResourceRecordSet": { "Name": "$(HOST)", "Type": "CNAME", "TTL": 60, "ResourceRecords": [ { "Value": "$$HN" } ] } } ] }
+JSON \
+> else \
+>   cat > .change.json <<JSON ; \
+{ "Comment": "A for $(HOST)", "Changes": [ { "Action": "UPSERT", "ResourceRecordSet": { "Name": "$(HOST)", "Type": "A", "TTL": 60, "ResourceRecords": [ { "Value": "$$IP" } ] } } ] }
+JSON \
+> fi; \
+> aws route53 change-resource-record-sets --hosted-zone-id $(ZONE_ID) --change-batch file://.change.json --output json --query 'ChangeInfo'; \
+> echo "DNS updated."
+
+# -------- Stage bounce (useful if CrashLoop had old pod) --------
+stg-bounce:
+> kubectl -n $(NS) rollout restart deploy/coverity-assist
+> kubectl -n $(NS) rollout status  deploy/coverity-assist
+> kubectl -n $(NS) wait --for=condition=Ready --timeout=180s pod -l app=coverity-assist
+
+# -------- Stage harden (HPA/PDB/NetPol) --------
+stg-harden:
+> kubectl -n $(NS) apply -f k8s/hpa.yaml
+> kubectl -n $(NS) apply -f k8s/pdb.yaml
+> kubectl -n $(NS) apply -f k8s/netpol-egress.yaml
+> kubectl -n $(NS) get hpa,pdb,netpol
+
+# -------- End-to-end stage --------
+stg-all: stg-apply stg-proof stg-dns external-health
+
+# -------- External health for whatever HOST is set --------
+external-health:
+> echo "=== External health (poll) ==="
+> i=0; \
+> until OUT=$$(curl -fsS "https://$(HOST)/health"); do \
+>   i=$$((i+1)); if [ $$i -gt 30 ]; then echo "timeout waiting for external /health"; exit 1; fi; sleep 2; \
+> done; \
+> echo "$$OUT" | tee /dev/stderr | jq -e '.status=="OK" and .has_token==true' >/dev/null
+> echo "=== Telemetry headers (GET) ==="
+> curl -fsS -D - -o /dev/null "https://$(HOST)/health" | grep -Ei 'x-(request-id|duration-ms|token-present|inference-profile|token-usage)' || true
+
+# ======================= PROD =======================
+
+prod-apply:
+> $(MAKE) stg-apply NS=$(PROD_NS) HOST=$(PROD_HOST) IMG="$(IMG)" PORT=$(PORT) SVC_PORT=$(SVC_PORT)
+
+prod-dns:
+> $(MAKE) stg-dns  NS=$(PROD_NS) HOST=$(PROD_HOST) ZONE_ID=$(PROD_ZONE_ID)
+
+prod-all: prod-apply prod-dns
+> $(MAKE) external-health HOST=$(PROD_HOST)
+
+# Canary: deploy service/deploy/ingress (header X-Canary: 1)
+prod-canary-apply:
+> env IMG=$(IMG) PORT=$(PORT) HOST=$(PROD_HOST) envsubst < k8s/prod-deploy-canary.yaml         | kubectl apply -n $(PROD_NS) -f -
+> env IMG=$(IMG) PORT=$(PORT) HOST=$(PROD_HOST) envsubst < k8s/prod-svc-canary.yaml            | kubectl apply -n $(PROD_NS) -f -
+> env IMG=$(IMG) PORT=$(PORT) HOST=$(PROD_HOST) envsubst < k8s/prod-ingress-canary-header.yaml | kubectl apply -n $(PROD_NS) -f -
+> kubectl -n $(PROD_NS) rollout status deploy/coverity-assist-canary || true
+
+# Weighted canary (no header needed) — set 0..100
+prod-canary-weight:
+> if [[ -z "$$W" ]]; then echo "Usage: make prod-canary-weight W=20"; exit 2; fi
+> kubectl -n $(PROD_NS) annotate ingress coverity-assist-canary-header \
+>   nginx.ingress.kubernetes.io/canary-weight="$$W" --overwrite
+
+# Disable weighted canary (header-only remains)
+prod-canary-disable:
+> kubectl -n $(PROD_NS) annotate ingress coverity-assist-canary-header \
+>   nginx.ingress.kubernetes.io/canary-weight- --overwrite
+
+# -------- Clean local crumbs --------
+clean-make-gunk:
+> rm -f "=" "CACHED" "[internal]" "exporting" "naming" "transferring" "writing" || true
+> rm -f echo sh kubectl .alb .hzid .change.json || true

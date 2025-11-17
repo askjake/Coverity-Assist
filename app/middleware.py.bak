@@ -1,0 +1,86 @@
+# app/middleware.py
+import time
+import uuid
+import json
+import logging
+import contextvars
+from typing import Optional, Dict, Any
+from fastapi import Request
+from starlette.responses import Response
+
+# Context for per-request token usage (set from route code)
+_token_usage_ctx: contextvars.ContextVar[Optional[Dict[str, Any]]] = contextvars.ContextVar(
+    "token_usage_ctx", default=None
+)
+
+def set_token_usage(input_tokens: Optional[int] = None,
+                    output_tokens: Optional[int] = None,
+                    total_tokens: Optional[int] = None,
+                    **extra):
+    payload = {"input": input_tokens, "output": output_tokens, "total": total_tokens}
+    payload.update({k: v for k, v in extra.items() if v is not None})
+    _token_usage_ctx.set(payload)
+
+def get_token_usage() -> Optional[Dict[str, Any]]:
+    return _token_usage_ctx.get()
+
+class JsonRequestLogger(logging.LoggerAdapter):
+    def process(self, msg, kwargs):
+        rid = kwargs.pop("rid", None)
+        payload = {
+            "msg": msg,
+            "request_id": rid,
+            **kwargs.pop("extra", {})
+        }
+        return json.dumps(payload), {}
+
+logger = JsonRequestLogger(logging.getLogger("telemetry"), {})
+
+async def with_request_telemetry(request: Request, call_next):
+    # Correlation / Request-ID
+    rid = request.headers.get("X-Request-ID") or str(uuid.uuid4())
+
+    # Start timing
+    t0 = time.perf_counter()
+    # clear token usage at request start
+    _token_usage_ctx.set(None)
+
+    # Pass request downstream
+    response: Response = await call_next(request)
+
+    # Duration
+    dur_ms = int((time.perf_counter() - t0) * 1000)
+
+    # If a route recorded token usage, expose as headers
+    usage = get_token_usage() or {}
+    if usage:
+        # Common header names
+        response.headers["X-Model-Usage-Input"] = str(usage.get("input", ""))
+        response.headers["X-Model-Usage-Output"] = str(usage.get("output", ""))
+        response.headers["X-Model-Usage-Total"] = str(usage.get("total", ""))
+
+    # Always return a request-id + timing
+    response.headers["X-Request-ID"] = rid
+    response.headers["X-Response-Time-ms"] = str(dur_ms)
+
+    # Structured log line
+    try:
+        logger.info(
+            "request_complete",
+            extra=dict(
+                method=request.method,
+                path=request.url.path,
+                status=getattr(response, "status_code", None),
+                dur_ms=dur_ms,
+                token_usage=usage or None,
+                client=str(request.client.host if request.client else None),
+                user_agent=request.headers.get("user-agent"),
+            ),
+            rid=rid,
+        )
+    except Exception:
+        # Never fail the request because of logging
+        pass
+
+    return response
+
