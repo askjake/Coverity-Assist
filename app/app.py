@@ -31,13 +31,6 @@ def _probe(name: str):
         pass
     return None
 
-APP_INFO = _get_or_create_gauge("ca_app_info", "Runtime version metadata", ["version","image","track"])
-APP_INFO.labels(
-    version=os.getenv("CA_REVISION","unknown"),
-    image=os.getenv("IMG","unknown"),
-    track=os.getenv("CA_PLANE","stable"),
-).set(1)
-
 
 def _get_or_create(MetricCls, name, documentation, labelnames=(), **kwargs):
     if _DISABLE_METRICS or MetricCls is None:
@@ -346,4 +339,9 @@ def metrics():
     _bump("metrics")
     return Response(content=generate_latest(), media_type=CONTENT_TYPE_LATEST)
 
-
+APP_INFO = _get_or_create_gauge("ca_app_info", "Runtime version metadata", ["version","image","track"])
+APP_INFO.labels(
+    version=os.getenv("CA_REVISION","unknown"),
+    image=os.getenv("IMG","unknown"),
+    track=os.getenv("CA_PLANE","stable"),
+).set(1)
