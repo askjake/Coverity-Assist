@@ -1,0 +1,30 @@
+stg-dns:
+| for i in {1..30}; do \
+|   HN=$$(kubectl -n $(NS) get ingress coverity-assist-nginx -o jsonpath='{.status.loadBalancer.ingress[0].hostname}'); \
+|   IP=$$(kubectl -n $(NS) get ingress coverity-assist-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}'); \
+|   if [[ -n "$$HN" || -n "$$IP" ]]; then ALB="$$HN"; ALBIP="$$IP"; break; fi; \
+|   echo "waiting for LB address… ($$i)"; sleep 4; \
+| done; \
+| if [[ -z "$$ALB" && -z "$$ALBIP" ]]; then echo "Ingress address not ready"; exit 2; fi; \
+| if [[ -n "$(ZONE_ID)" ]]; then HZID="$(ZONE_ID)"; \
+| else \
+|   ZONE=$$(echo $(HOST) | awk -F. '{print $$(NF-1)"."$$NF}'); \
+|   HZID=$$(aws route53 list-hosted-zones-by-name --dns-name $$ZONE \
+|         | jq -r '.HostedZones[] | select(.Name=="'$$ZONE'.") | .Id' \
+|         | sed 's#.*/##' | head -n1); \
+| fi; \
+| echo "Updating $(HOST) in zone $$HZID -> $${ALB:-$${ALBIP}}"; \
+| if [[ -n "$$ALB" ]]; then \
+|   aws route53 change-resource-record-sets \
+|     --hosted-zone-id $$HZID \
+|     --change-batch "$$(jq -nc --arg host '$(HOST)' --arg target "$$ALB" \
+|       '{Comment:("CNAME for " + $host),Changes:[{Action:"UPSERT",ResourceRecordSet:{Name:$host,Type:"CNAME",TTL:60,ResourceRecords:[{Value:$target}]}}]}')" \
+|   | jq '.ChangeInfo' && echo "DNS updated (CNAME)."; \
+| else \
+|   aws route53 change-resource-record-sets \
+|     --hosted-zone-id $$HZID \
+|     --change-batch "$$(jq -nc --arg host '$(HOST)' --arg ip "$$ALBIP" \
+|       '{Comment:("A for " + $host),Changes:[{Action:"UPSERT",ResourceRecordSet:{Name:$host,Type:"A",TTL:60,ResourceRecords:[{Value:$ip}]}}]}')" \
+|   | jq '.ChangeInfo' && echo "DNS updated (A)."; \
+| fi
+

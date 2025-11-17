@@ -1,0 +1,22 @@
+stg-apply:
+| if ! command -v envsubst >/dev/null; then \
+|   echo "envsubst missing; install with: sudo dnf install -y gettext"; exit 2; fi
+| kubectl get ns $(NS) >/dev/null 2>&1 || kubectl create ns $(NS)
+| if [[ -z "$$COVERITY_ASSIST_TOKEN" || -z "$$INFERENCE_PROFILE_ARN" ]]; then \
+|   echo "Set COVERITY_ASSIST_TOKEN and INFERENCE_PROFILE_ARN in your shell"; exit 2; fi
+| kubectl -n $(NS) create secret generic coverity-assist-secrets \
+|   --from-literal=COVERITY_ASSIST_TOKEN="$$COVERITY_ASSIST_TOKEN" \
+|   --from-literal=INFERENCE_PROFILE_ARN="$$INFERENCE_PROFILE_ARN" \
+|   --dry-run=client -o yaml | kubectl apply -f -
+| CURR_IMG=$$(kubectl -n $(NS) get deploy coverity-assist \
+|   -o jsonpath='{.spec.template.spec.containers[0].image}' 2>/dev/null || true); \
+| USE_IMG="$${IMG:-$$CURR_IMG}"; \
+| test -n "$$USE_IMG" || { echo "IMG not set and no current image found"; exit 2; }
+| env NS=$(NS) HOST=$(HOST) IMG=$$USE_IMG PORT=$(PORT) SVC_PORT=$(SVC_PORT) \
+|   envsubst < $(K8S_DIR)/stg-deploy.yaml  | kubectl apply -n $(NS) -f -
+| env NS=$(NS) HOST=$(HOST) IMG=$$USE_IMG PORT=$(PORT) SVC_PORT=$(SVC_PORT) \
+|   envsubst < $(K8S_DIR)/stg-svc.yaml     | kubectl apply -n $(NS) -f -
+| env NS=$(NS) HOST=$(HOST) IMG=$$USE_IMG PORT=$(PORT) SVC_PORT=$(SVC_PORT) \
+|   envsubst < $(K8S_DIR)/stg-ingress.yaml | kubectl apply -n $(NS) -f -
+| kubectl -n $(NS) rollout status deploy/coverity-assist
+

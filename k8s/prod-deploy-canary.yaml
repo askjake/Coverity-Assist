@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coverity-assist-canary
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: coverity-assist-canary
+  template:
+    metadata:
+      labels:
+        app: coverity-assist-canary
+        track: canary
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "${PORT}"
+        prometheus.io/path: "/metrics"
+    spec:
+      containers:
+      - name: web
+        image: ${IMG}
+        command: ["sh","-lc"]
+        args: ["exec uvicorn app:app --host 0.0.0.0 --port ${PORT}"]
+        ports:
+        - containerPort: ${PORT}
+        env:
+        - name: PORT
+          value: "${PORT}"
+        - name: TRACK
+          value: "canary"
+        - name: COVERITY_ASSIST_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: coverity-assist-secrets
+              key: COVERITY_ASSIST_TOKEN
+        - name: INFERENCE_PROFILE_ARN
+          valueFrom:
+            secretKeyRef:
+              name: coverity-assist-secrets
+              key: INFERENCE_PROFILE_ARN
+        - name: CA_REVISION
+          value: ""
+        - name: CA_PLANE
+          value: "canary"
+        - name: BEDROCK_APPLICATION_INFERENCE_PROFILE_ARN
+          valueFrom:
+            secretKeyRef:
+              name: coverity-assist-secrets
+              key: INFERENCE_PROFILE_ARN
+        readinessProbe:
+          httpGet: { path: /health, port: ${PORT} }
+        livenessProbe:
+          httpGet: { path: /health, port: ${PORT} }

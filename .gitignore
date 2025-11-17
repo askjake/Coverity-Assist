@@ -1,0 +1,9 @@
+*.bak
+app/*.bak*
+*.swp
+CACHED
+exporting
+writing
+transferring
+=
+[internal]
