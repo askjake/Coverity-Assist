@@ -1,16 +1,5 @@
-FROM python:3.11-slim
-
-WORKDIR /app
-
-# Install runtime deps
-RUN pip install --no-cache-dir fastapi "uvicorn[standard]" requests
-
-# Copy only what we need for the proxy
-COPY app.py /app/
-
-ENV PYTHONUNBUFFERED=1 \
-    PORT=8000
-
-EXPOSE 8000
-
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+FROM 233532778289.dkr.ecr.us-west-2.amazonaws.com/coverity-assist:dev1
+# app code is already laid down by your overlay process
+COPY app /app
+# expose metrics client
+RUN pip install --no-cache-dir prometheus-client

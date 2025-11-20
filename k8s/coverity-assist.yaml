@@ -1,0 +1,81 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coverity-assist
+  namespace: ${NS}
+  labels: { app: coverity-assist }
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: coverity-assist } }
+  template:
+    metadata:
+      labels: { app: coverity-assist }
+    spec:
+      containers:
+      - name: web
+        image: ${IMAGE}
+        imagePullPolicy: IfNotPresent
+        ports:
+        - name: http
+          containerPort: 8000
+        env:
+        - name: PORT
+          value: "8000"
+        - name: COVERITY_ASSIST_TOKEN
+          valueFrom: { secretKeyRef: { name: coverity-assist-secrets, key: COVERITY_ASSIST_TOKEN } }
+        - name: INFERENCE_PROFILE_ARN
+          valueFrom: { secretKeyRef: { name: coverity-assist-secrets, key: INFERENCE_PROFILE_ARN } }
+        args: ["sh","-lc","exec uvicorn app:app --host 0.0.0.0 --port ${PORT:-8000}"]
+        readinessProbe:
+          httpGet: { path: /health, port: 8000, scheme: HTTP }
+          initialDelaySeconds: 5
+          periodSeconds: 5
+          timeoutSeconds: 2
+          failureThreshold: 6
+        livenessProbe:
+          httpGet: { path: /health, port: 8000, scheme: HTTP }
+          initialDelaySeconds: 15
+          periodSeconds: 10
+          timeoutSeconds: 2
+          failureThreshold: 6
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: coverity-assist
+  namespace: ${NS}
+  labels: { app: coverity-assist }
+spec:
+  type: ClusterIP
+  selector: { app: coverity-assist }
+  ports:
+  - name: http
+    port: 5004
+    targetPort: 8000
+    protocol: TCP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: coverity-assist-nginx
+  namespace: ${NS}
+  annotations:
+    cert-manager.io/cluster-issuer: ${CLUSTER_ISSUER}
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts: [ ${HOST} ]
+    secretName: coverity-assist-tls
+  rules:
+  - host: ${HOST}
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: coverity-assist
+            port:
+              name: http
+

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: coverity-assist
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "8000"
+    prometheus.io/path: "/metrics"
+spec:
+  selector:
+    app: coverity-assist
+  ports:
+  - name: http
+    port: ${SVC_PORT}
+    targetPort: ${PORT}

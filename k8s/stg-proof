@@ -1,0 +1,16 @@
+# --- proof (no interactive -it; no race) ---
+stg-proof:
+> echo "=== Cluster-internal health ==="
+> kubectl -n $(NS) delete pod/ca-curl --ignore-not-found
+> kubectl -n $(NS) run ca-curl --restart=Never --image=curlimages/curl -- \
+>   sh -lc "curl -fsS http://coverity-assist.$(NS).svc.cluster.local:$(SVC_PORT)/health && echo"
+> kubectl -n $(NS) wait --for=condition=Ready --timeout=60s pod/ca-curl || true
+> kubectl -n $(NS) logs ca-curl || true
+> kubectl -n $(NS) delete pod/ca-curl --ignore-not-found
+> echo "=== Pod env snapshot ==="
+> POD=$$(kubectl -n $(NS) get pod -l app=coverity-assist -o jsonpath='{.items[0].metadata.name}'); \
+> kubectl -n $(NS) exec $$POD -- sh -lc 'echo -n TOKEN_LEN=; printenv COVERITY_ASSIST_TOKEN | wc -c; echo INFERENCE_PROFILE_ARN=$$INFERENCE_PROFILE_ARN'
+> echo "=== Service & Endpoints ==="
+> kubectl -n $(NS) get svc coverity-assist -o wide
+> kubectl -n $(NS) get endpointslices -l kubernetes.io/service-name=coverity-assist -o json \
+>   | jq -r '.items[0].ports[0] as $$p | {endpointIPs:(.items[0].endpoints|map(.addresses[0])), portName:$$p.name, port:$$p.port}'

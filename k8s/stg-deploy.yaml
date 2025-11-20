@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coverity-assist
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: coverity-assist
+  template:
+    metadata:
+      labels:
+        app: coverity-assist
+        track: stable
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "${PORT}"
+        prometheus.io/path: "/metrics"
+    spec:
+      containers:
+      - name: web
+        image: ${IMG}
+        command: ["sh","-lc"]
+        args: ["exec uvicorn app:app --host 0.0.0.0 --port ${PORT}"]
+        ports:
+        - containerPort: ${PORT}
+        env:
+        - name: PORT
+          value: "${PORT}"
+        - name: COVERITY_ASSIST_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: coverity-assist-secrets
+              key: COVERITY_ASSIST_TOKEN
+        - name: INFERENCE_PROFILE_ARN
+          valueFrom:
+            secretKeyRef:
+              name: coverity-assist-secrets
+              key: INFERENCE_PROFILE_ARN
+        - name: CA_REVISION
+          value: ""
+        - name: CA_PLANE
+          value: "stable"
+        - name: BEDROCK_APPLICATION_INFERENCE_PROFILE_ARN
+          valueFrom:
+            secretKeyRef:
+              name: coverity-assist-secrets
+              key: INFERENCE_PROFILE_ARN
+        readinessProbe:
+          httpGet: { path: /health, port: ${PORT} }
+          initialDelaySeconds: 5
+          periodSeconds: 5
+          timeoutSeconds: 2
+          failureThreshold: 6
+        livenessProbe:
+          httpGet: { path: /health, port: ${PORT} }
+          initialDelaySeconds: 15
+          periodSeconds: 10
+          timeoutSeconds: 2
+          failureThreshold: 6
