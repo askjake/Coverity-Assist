@@ -19,9 +19,21 @@ SCRIPTS_DIR      = os.environ.get("JAMBOT_SCRIPTS_DIR", str(Path.cwd() / "script
 JAMBOT_BASE_URL  = os.environ.get("JAMBOT_BASE_URL", "http://127.0.0.1:5000")  # Flask from gateway
 JOURNALS_DIR     = os.environ.get("JOURNALS_DIR", str(Path.cwd() / "journals"))
 DEFAULT_INFERENCE_PROFILE_ARN = os.environ.get("BEDROCK_APPLICATION_INFERENCE_PROFILE_ARN", "")
+STATE_DIR = os.environ.get("STATE_DIRECTORY")
+
+# --- SSL control (match gateway behavior) ---
+VERIFY_SSL = os.environ.get("GATEWAY_VERIFY_SSL", "1").lower() not in ("0", "false", "no", "off")
+
+if not VERIFY_SSL:
+    try:
+        import urllib3
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    except Exception:
+        pass
 
 os.makedirs(SCRIPTS_DIR, exist_ok=True)
 os.makedirs(JOURNALS_DIR, exist_ok=True)
+
 
 # Attempt to load optional local helper modules from the working dir if present.
 def try_import(name: str):
@@ -95,8 +107,20 @@ def coverity_chat(url: str,
                   use_top_level_system: bool = False,
                   inference_profile_arn: Optional[str] = None) -> Tuple[bool, str]:
     try:
-        payload = build_chat_payload(user_text, system_text, max_tokens, use_top_level_system, inference_profile_arn)
-        r = requests.post(url, headers=bearer_header(token), json=payload, timeout=120)
+        payload = build_chat_payload(
+            user_text,
+            system_text,
+            max_tokens,
+            use_top_level_system,
+            inference_profile_arn,
+        )
+        r = requests.post(
+            url,
+            headers=bearer_header(token),
+            json=payload,
+            timeout=120,
+            verify=VERIFY_SSL,  # <-- key change
+        )
         if not http_ok(r):
             return False, f"[{r.status_code}] {r.text}"
         data = r.json()
@@ -104,6 +128,7 @@ def coverity_chat(url: str,
         return True, out
     except Exception as e:
         return False, f"Client error: {e}"
+
 
 def jambot_get(url_path: str) -> Tuple[bool, Any]:
     try:
@@ -119,7 +144,7 @@ def jambot_get(url_path: str) -> Tuple[bool, Any]:
 
 def jambot_post_json(url_path: str, json_body: Optional[Dict[str, Any]] = None) -> Tuple[bool, Any]:
     try:
-        r = requests.post(f"{JAMBOT_BASE_URL}{url_path}", json=json_body, timeout=120)
+        r = requests.post(f"{JAMBOT_BASE_URL}{url_path}", json=json_body, timeout=599)
         if not http_ok(r):
             return False, f"[{r.status_code}] {r.text}"
         try:
@@ -154,8 +179,25 @@ def run_local_script(path: Path, args: List[str]) -> Tuple[bool, str]:
         return False, f"Exec error: {e}"
 
 def parse_domains(text: str) -> List[str]:
-    raw = [t.strip() for t in (text or "").replace("\n", ",").split(",")]
-    return [x for x in raw if x]
+    out: List[str] = []
+    seen = set()
+    for raw in (text or "").replace("\r", "\n").split("\n"):
+        tok = raw.strip()
+        if not tok:
+            continue
+        host = tok
+        if "://" in tok:
+            try:
+                host = urlparse(tok).netloc
+            except Exception:
+                host = tok
+        host = host.lower().lstrip(".")
+        if host.startswith("www."):
+            host = host[4:]
+        if host and host not in seen:
+            seen.add(host)
+            out.append(host)
+    return out
 
 def domain_of(url: str) -> str:
     try:
@@ -358,21 +400,36 @@ def now_in_tz(tz_name: str) -> datetime:
             return datetime.now()
 
 def ddg_lite_search(query: str) -> str:
-    """Very light HTML fallback; returns first snippet if available."""
+    """Very light HTML fallback; returns first snippet if available, or a clear error string."""
     import re, html
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
         "Accept-Language": "en-US,en;q=0.9",
     }
-    r = requests.get("https://lite.duckduckgo.com/lite/", params={"q": query}, headers=headers, timeout=15)
-    if r.status_code != 200:
-        return f"Fallback search HTTP {r.status_code}"
-    m = re.search(r"<a[^>]+class=['\"]result-link['\"][^>]*>(.*?)</a>.*?<td[^>]*>(.*?)</td>", r.text, re.S | re.I)
+    try:
+        r = requests.get(
+            "https://lite.duckduckgo.com/lite/",
+            params={"q": query},
+            headers=headers,
+            timeout=15,
+            verify=VERIFY_SSL,  # <- respect your env flag
+        )
+        r.raise_for_status()
+    except Exception as e:
+        # Don’t crash Streamlit if corp SSL interception breaks certs
+        return f"DuckDuckGo lite fallback unavailable: {e}"
+
+    m = re.search(
+        r"<a[^>]+class=['\"]result-link['\"][^>]*>(.*?)</a>.*?<td[^>]*>(.*?)</td>",
+        r.text,
+        re.S | re.I,
+    )
     if m:
         title = html.unescape(re.sub("<.*?>", "", m.group(1)))
         snippet = html.unescape(re.sub("<.*?>", "", m.group(2))).strip()
         return f"**{title}**\n\n{snippet}"
     return "No results found."
+
 
 with tabs[2]:
     st.subheader("Web Search")
@@ -565,7 +622,11 @@ with tabs[2]:
                     if isinstance(local_res, dict) and "results" in local_res:
                         local_items = local_res["results"]
                         local_items = filter_results(local_items, allowlist, blocklist)
-                        result_obj = {"results": local_items}
+                        if not local_items:
+                            result_obj = None  # force fallback to gateway/WWW
+                        else:
+                            result_obj = {"results": local_items}
+
                     else:
                         result_obj = local_res
                 except Exception as e:
@@ -759,6 +820,7 @@ with tabs[3]:
             except Exception as e:
                 st.error(f"Combine failed: {e}")
 
+
 # ---------- Scripts & Workflow Tab ----------
 
 with tabs[4]:
@@ -766,49 +828,77 @@ with tabs[4]:
 
     st.caption(f"Scripts dir: {SCRIPTS_DIR}")
     files = sorted(Path(SCRIPTS_DIR).glob("*"))
-    sel = st.selectbox("Select a script", options=["(new)"] + [f.name for f in files])
+    script_names = ["(new)"] + [f.name for f in files]
+    sel_name = st.selectbox("Select a script", options=script_names)
+    sel_name_str = str(sel_name) if sel_name is not None else "(new)"
 
-    editor_key = "script_editor_buf"
-    if sel == "(new)":
+    if sel_name_str == "(new)":
         new_name = st.text_input("New filename (e.g., demo.sh)", value="demo.sh")
-        content = st.text_area("Contents", height=240, key=editor_key, value="#!/usr/bin/env bash\n\necho Hello from JAMbot script\n")
+        content = st.text_area(
+            "Contents",
+            height=240,
+            key="script_editor_new",
+            value="#!/usr/bin/env bash\n\necho Hello from JAMbot script\n",
+        )
         if st.button("Save New"):
             p = Path(SCRIPTS_DIR) / new_name
             p.write_text(content, encoding="utf-8")
             st.success(f"Saved {p}")
     else:
-        p = Path(SCRIPTS_DIR) / sel
+        p = Path(SCRIPTS_DIR) / sel_name_str
         try:
             buf = p.read_text(encoding="utf-8")
         except Exception as e:
             buf = f"# Error reading file: {e}"
-        content = st.text_area("Contents", height=240, key=editor_key, value=buf)
+        content = st.text_area(
+            "Contents",
+            height=240,
+            key=f"script_editor_{sel_name_str}",
+            value=buf,
+        )
         colx, coly = st.columns(2)
         with colx:
             if st.button("Save Changes"):
                 p.write_text(content, encoding="utf-8")
                 st.success(f"Saved {p}")
         with coly:
-            args = st.text_input("Arguments", value="")
             if st.button("Run Script"):
-                ok, out = run_local_script(p, args.split())
-                st.code(out)
-                st.success("OK" if ok else "Failed")
+                try:
+                    # Use PowerShell on Windows, bash otherwise
+                    if os.name == "nt":
+                        cmd = ["powershell", "-ExecutionPolicy", "Bypass", "-File", str(p)]
+                    else:
+                        cmd = ["bash", str(p)]
+                    result = subprocess.run(
+                        cmd,
+                        capture_output=True,
+                        text=True,
+                        cwd=SCRIPTS_DIR,
+                    )
+                    st.text_area(
+                        "Output",
+                        result.stdout + "\n" + result.stderr,
+                        height=160,
+                    )
+                except Exception as e:
+                    st.error(f"Failed to run script: {e}")
 
     st.divider()
     st.write("**Trigger JAMbot Workflow (/trigger-workflow)**")
     if st.button("Trigger Workflow Now"):
-        ok, resp = jambot_post_json("/trigger-workflow", json_body={
-            "original_request": "Streamlit requested workflow run",
-            "task_description": "Kick off the default pipeline.",
-            "chat_url": chat_url,
-            "token": token,
-            "inference_profile_arn": inference_profile_arn,
-            "auto_iterate": st.session_state.auto_iter,
-            "max_iters": int(st.session_state.max_iters),
-        })
+        ok, resp = jambot_post_json(
+            "/trigger-workflow",
+            json_body={
+                "original_request": "Streamlit requested workflow run",
+                "task_description": "Kick off the default pipeline.",
+                "chat_url": chat_url,
+                "token": token,
+                "inference_profile_arn": inference_profile_arn,
+                "auto_iterate": st.session_state.auto_iter,
+                "max_iters": int(st.session_state.max_iters),
+            },
+        )
         st.write(resp if ok else f"❌ {resp}")
-
 # ---------- DB Tools Tab ----------
 
 with tabs[5]:

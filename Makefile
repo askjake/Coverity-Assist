@@ -1,19 +1,25 @@
-ECR_REPO   := 233532778289.dkr.ecr.us-west-2.amazonaws.com/coverity-assist
-AWS_REGION := us-west-2
+# Makefile for Coverity-Assist X App image
 
-# You can override TAG on the command line, e.g. `make TAG=dev1 docker-push`
-TAG ?= dev
-IMAGE_TAG := $(ECR_REPO):$(TAG)
+REGION   ?= us-west-2
+ACCOUNT  ?= 233532778289
+REPO     ?= coverity-assist
+ECR      ?= $(ACCOUNT).dkr.ecr.$(REGION).amazonaws.com/$(REPO)
+TAG      ?= 0.0.1
+IMAGE    ?= $(ECR):$(TAG)
 
-docker-build:
-	docker build -t $(IMAGE_TAG) .
+.PHONY: login image push run-local
 
-docker-login:
-	aws ecr get-login-password --region $(AWS_REGION) \
-	  | docker login --username AWS --password-stdin 233532778289.dkr.ecr.us-west-2.amazonaws.com
+login:
+	aws ecr get-login-password --region $(REGION) \
+	  | docker login --username AWS --password-stdin \
+	    $(ACCOUNT).dkr.ecr.$(REGION).amazonaws.com
 
-docker-push: docker-build docker-login
-	docker push $(IMAGE_TAG)
+image:
+	docker build -t $(IMAGE) .
 
-print-image:
-	@echo $(IMAGE_TAG)
+push: image
+	$(MAKE) login
+	docker push $(IMAGE)
+
+run-local:
+	uvicorn app:app --host 0.0.0.0 --port 8000 --reload

@@ -12,7 +12,7 @@ import requests
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118 Safari/537.36"
 HEADERS = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9"}
 
-def _ddg_lite(query: str, max_results: int = 6, timeout: int = 15) -> List[Dict[str, str]]:
+def _ddg_lite(query: str, max_results: int = 15, timeout: int = 150) -> List[Dict[str, str]]:
     url = "https://lite.duckduckgo.com/lite/"
     r = requests.get(url, params={"q": query}, headers=HEADERS, timeout=timeout)
     r.raise_for_status()

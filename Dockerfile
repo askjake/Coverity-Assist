@@ -1,15 +1,30 @@
-FROM python:3.11-slim
+# Dockerfile
+FROM python:3.12-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
-# Install runtime deps
-RUN pip install --no-cache-dir fastapi "uvicorn[standard]" requests
+# System deps for psycopg2 (DB-ready) + curl for debugging
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      build-essential \
+      libpq-dev \
+      curl \
+    && rm -rf /var/lib/apt/lists/*
 
-# Copy only what we need for the proxy
-COPY app.py /app/
+# Install Python deps – includes DB libs so you're ready when RDS shows up
+RUN pip install --no-cache-dir \
+    fastapi \
+    uvicorn[standard] \
+    requests \
+    pydantic \
+    sqlalchemy \
+    psycopg2-binary \
+    python-dotenv
 
-ENV PYTHONUNBUFFERED=1 \
-    PORT=8000
+# Copy your app
+COPY app.py /app/app.py
 
 EXPOSE 8000
 

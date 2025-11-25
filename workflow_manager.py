@@ -95,7 +95,7 @@ def run_commands(resources_path: Path) -> Path:
 
             if url and url not in ("-", "N/A", "NA", "None"):
                 try:
-                    r = session.get(url, timeout=30, verify=True)
+                    r = session.get(url, timeout=30, verify=False)
                     body = r.text[:20000]
                     out.write(f"URL: {url}\n{body}\n\n")
                 except Exception as e:
