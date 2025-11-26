@@ -8,6 +8,14 @@ Local web_search helper (incognito-ish, low bandwidth).
 import re
 from typing import Dict, Any, List
 import requests
+VERIFY_SSL = os.environ.get("GATEWAY_VERIFY_SSL", "0").lower() not in ("0", "false", "no", "off")
+
+if not VERIFY_SSL:
+    try:
+        import urllib3
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    except Exception:
+        pass
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118 Safari/537.36"
 HEADERS = {"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9"}

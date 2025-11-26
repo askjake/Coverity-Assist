@@ -9,11 +9,14 @@ from datetime import datetime
 from typing import Optional, Tuple, Any, List, Dict
 
 import streamlit as st
+import certifi
+import os
+os.environ['SSL_CERT_FILE'] = certifi.where()
 
 # ---------- Config ----------
 
 DEFAULT_CHAT_URL = os.environ.get("COVERITY_ASSIST_URL", "http://coverity-assist.dishtv.technology/chat")
-DEFAULT_TOKEN    = os.environ.get("COVERITY_ASSIST_TOKEN", "")
+DEFAULT_TOKEN    = os.environ.get("COVERITY_ASSIST_TOKEN", "eyJhbGciOiJIUzI1NiJ9.eyJhY3RvclR5cGUiOiJVU0VSIiwiYWN0b3JJZCI6InRlc3R1c2VyIiwidHlwZSI6IlBFUlNPTkFMIiwidmVyc2lvbiI6IjIiLCJqdGkiOiIyZDhmOWIxNC01YzIzLTQ5NTMtYmVkZi0yNWZiYmY2OWVkNjIiLCJzdWIiOiJ0ZXN0dXNlciIsImlzcyI6InRlc3Qtc2VydmljZSJ9.mKpL7NxBHR8lyoC6vw4jGY54r_q228kcCIzdGbTfWYN")
 PROMPTS_PATH     = os.environ.get("COVERITY_ASSIST_PROMPTS", str(Path.cwd() / ".coverity_assist_prompts.json"))
 SCRIPTS_DIR      = os.environ.get("JAMBOT_SCRIPTS_DIR", str(Path.cwd() / "scripts"))
 JAMBOT_BASE_URL  = os.environ.get("JAMBOT_BASE_URL", "http://127.0.0.1:5000")  # Flask from gateway
@@ -22,7 +25,7 @@ DEFAULT_INFERENCE_PROFILE_ARN = os.environ.get("BEDROCK_APPLICATION_INFERENCE_PR
 STATE_DIR = os.environ.get("STATE_DIRECTORY")
 
 # --- SSL control (match gateway behavior) ---
-VERIFY_SSL = os.environ.get("GATEWAY_VERIFY_SSL", "1").lower() not in ("0", "false", "no", "off")
+VERIFY_SSL = os.environ.get("GATEWAY_VERIFY_SSL", "0").lower() not in ("0", "false", "no", "off")
 
 if not VERIFY_SSL:
     try:

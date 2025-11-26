@@ -1,4 +1,4 @@
-#!/usr/bin/env python3 
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Coverity Assist Gateway (v3c, 2025-11-06)
@@ -11,7 +11,7 @@ Coverity Assist Gateway (v3c, 2025-11-06)
 """
 from __future__ import annotations
 import os
-VERIFY_SSL = os.environ.get("GATEWAY_VERIFY_SSL", "1").lower() not in ("0", "false", "no", "off")
+VERIFY_SSL = os.environ.get("GATEWAY_VERIFY_SSL", "0").lower() not in ("0", "false", "no", "off")
 
 if not VERIFY_SSL:
     try:
@@ -29,6 +29,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional, Dict, Any, List, Tuple
 from urllib.parse import urlparse
+import certifi
+import os
+os.environ['SSL_CERT_FILE'] = certifi.where()
 
 import requests
 from flask import Flask, request, jsonify

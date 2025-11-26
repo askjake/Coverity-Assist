@@ -22,6 +22,14 @@ for d in (JOURNALS_DIR, INSTRUCTIONS_DIR):
     d.mkdir(parents=True, exist_ok=True)
 
 session = requests.Session()
+VERIFY_SSL = os.environ.get("GATEWAY_VERIFY_SSL", "0").lower() not in ("0", "false", "no", "off")
+
+if not VERIFY_SSL:
+    try:
+        import urllib3
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    except Exception:
+        pass
 
 def _bearer_headers(token: str) -> Dict[str, str]:
     return {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
