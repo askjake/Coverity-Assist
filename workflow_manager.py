@@ -39,7 +39,7 @@ def coverity_chat(
     token: Optional[str],
     user_text: str,
     system_text: Optional[str] = None,
-    max_tokens: int = 800,
+    max_tokens: int = 1500,
     inference_profile_arn: Optional[str] = None,
 ) -> str:
     """
@@ -63,6 +63,38 @@ def write_instructions(task_text: str) -> Path:
     p = INSTRUCTIONS_DIR / "workflow.instruct"
     p.write_text(task_text or "", encoding="utf-8")
     return p
+
+
+def run_workflow_with_correction(workflow_data: Dict[str, Any], executor: SelfCorrectingExecutor):
+    """Run workflow with automatic error correction."""
+
+    for iteration in workflow_data.get("iterations", []):
+        for action in iteration.get("validation", {}).get("next_actions", []):
+            if "cmd" in action:
+                success, output, history = executor.execute_with_correction(
+                    command=action["cmd"],
+                    context=f"Workflow iteration {iteration.get('iteration')}",
+                )
+                # Update action with result
+                action["result"] = {
+                    "success": success,
+                    "output": output,
+                    "attempts": len(history.attempts),
+                }
+
+            elif "url" in action:
+                success, output, history = executor.execute_with_correction(
+                    url=action["url"],
+                    context=f"Workflow iteration {iteration.get('iteration')}",
+                )
+                action["result"] = {
+                    "success": success,
+                    "output": output,
+                    "attempts": len(history.attempts),
+                }
+
+    return workflow_data
+
 
 def generate_resource_list(
     task_text: str,

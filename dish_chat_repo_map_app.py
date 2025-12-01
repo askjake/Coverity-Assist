@@ -6,14 +6,12 @@ from pathlib import Path
 from textwrap import dedent
 from urllib.parse import urljoin
 from typing import Optional, Dict, Any, List, Tuple
-from datetime import datetime  # put near other imports at top
+
 import streamlit as st
 
 from utils_kube import kubectl_suggest_base_url
 from utils_curl import build_curl_command
-import urllib3
 
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # ---------- Config ----------
 REPOS: Dict[str, str] = {
     "dish-chat-fe": "https://gitlab.com/dish-cloud/dt/sse/datasolutions/dish-chat-fe.git",
@@ -49,24 +47,7 @@ ROLE_MAP: Dict[str, Dict[str, str]] = {
     },
 }
 
-CA_REPOS: Dict[str, str] = {
-    "coverity-assist-app": "<TODO: https://gitlab.com/your-group/coverity-assist.git>",
-    "coverity-assist-k8s": "<TODO: https://gitlab.com/your-group/coverity-assist-k8s.git>",
-}
-
-CA_ROLE_MAP: Dict[str, Dict[str, str]] = {
-    "coverity-assist-app": {
-        "app.py": "FastAPI / CA main entrypoint",
-        "coverity_assist_streamlit_app.py": "Streamlit UI for CA (if applicable)",
-        "infra/": "Dockerfiles, CI, utility scripts",
-    },
-    "coverity-assist-k8s": {
-        "k8s/prod/": "Production overlays for CA",
-        "k8s/dev/": "Dev overlays for CA",
-    },
-}
-
-# Mapping of FE services → BE routes → K8s resources (reference examples).
+# Mapping of FE services → BE routes → K8s resources.
 ENDPOINT_MAP: Dict[str, Dict[str, str]] = {
     # ---- Chat domain ----
     "POST /api/v1/chats": {
@@ -156,6 +137,156 @@ ENDPOINT_MAP: Dict[str, Dict[str, str]] = {
     },
 }
 
+# ---------- Project reference / acceptance criteria helpers ----------
+
+CONTACTS: List[Dict[str, str]] = [
+    {
+        "role": "Product Owner (Dish-Chat)",
+        "name": "TBD Product Owner",
+        "email": "dish-chat-po@example.com",
+        "slack": "#dish-chat",
+    },
+    {
+        "role": "Tech Lead / Architect",
+        "name": "TBD Tech Lead",
+        "email": "dish-chat-techlead@example.com",
+        "slack": "#dish-chat-tech",
+    },
+    {
+        "role": "Data Solutions Contact",
+        "name": "TBD DS Contact",
+        "email": "datasolutions-leads@example.com",
+        "slack": "#ds-leads",
+    },
+]
+
+ACCESS_DOC = dedent(
+    """
+    **Access prerequisites**
+
+    To work effectively with the dish-chat repositories and environments, a new team member typically needs:
+
+    1. **GitLab project membership**
+       - Group path: `dish-cloud/dt/sse/datasolutions`
+       - Projects:
+         - `dish-chat-fe`
+         - `dish-chat`
+         - `ds-kubernetes-configs/chat-bot`
+       - Recommended minimum role: `Reporter` (or `Developer` for contributors).
+
+    2. **Credential flow**
+       - Ensure your Dish SSO is linked to GitLab.
+       - Request access via the standard IT / SNOW process, referencing:
+         - JIRA ticket: `DATASO2-6818 – Dish-Chat Reference Repositories`
+         - The specific repositories you need.
+
+    3. **Runtime access (optional, for live checks)**
+       - kubeconfig and IAM access to the relevant EKS cluster(s) for dish-chat.
+       - Ability to run `kubectl` locally or through a bastion host.
+
+    **How this app helps meet the acceptance criteria**
+
+    - This "Access & Permissions" section summarizes *what* to request and *why*.
+    - The **GitLab Access** sidebar shows the exact repo URLs and a local clone helper.
+    """
+)
+
+KEY_PATTERNS_DOC = dedent(
+    """
+    **Key code-level patterns**
+
+    - **Domain-driven layout (backend)**
+      - `app/chat`, `app/message`, `app/vault`, `app/embedding`, `app/agent`, `app/usage_tracking`, etc.
+      - Each domain has:
+        - `models.py` / DTOs
+        - `service.py` / business logic
+        - `router.py` / FastAPI APIRouter with `/api/v1/<domain>` prefix.
+
+    - **Per-domain service modules (frontend)**
+      - `src/services/*.service.ts` modules encapsulate HTTP calls per domain.
+      - API base URL comes from env/config, not hardcoded in components.
+
+    - **Streaming responses**
+      - Long-running model calls use streaming (SSE / chunked) helpers in
+        `src/utils/stream.utils.ts` on the FE and streaming endpoints on the BE.
+
+    - **Strong typing & contracts**
+      - TypeScript interfaces for request / response types.
+      - Pydantic models on the backend: request/response models mirror TS interfaces.
+
+    - **Environment overlays (K8s)**
+      - `app/base/*.yaml` define the core Deployment/Service/HPA.
+      - `app/overlays/dev` and `app/overlays/prod` tweak configuration per environment
+        (IRSA roles, secrets, CPU/memory limits, etc.).
+
+    This app brings those patterns into the UI:
+
+    - The **Repo Structures** section lets you browse directory trees.
+    - The **Endpoint Correlation** panel ties FE services ↔ BE routes ↔ K8s manifests.
+    """
+)
+
+BEST_PRACTICES_DOC = dedent(
+    """
+    **Dish-Chat coding standards & best practices (extract)**
+
+    - **HTTP & API usage**
+      - Prefer `POST` for chat/message creation, `GET` for listing/history,
+        `PATCH` for metadata updates.
+      - Use `/api/v1/...` prefix consistently.
+
+    - **Error handling**
+      - Surface meaningful error messages from the backend (status, code, message).
+      - Frontend should show user-friendly messages and log structured errors.
+
+    - **Security & secrets**
+      - Never store credentials in FE code or committed `.env` files.
+      - Use the **vault** domain (`/api/v1/vault/*`) and IRSA-based access from the backend.
+      - Secrets live in K8s `Secret` / `ConfigMap`, not hardcoded.
+
+    - **Testing & validation**
+      - Use Pydantic validation for incoming requests.
+      - Keep domain logic in `service.py` so it can be unit-tested without HTTP plumbing.
+      - FE uses minimal logic in components; most rules live in hooks/services.
+
+    - **Observability**
+      - Emit usage/telemetry events via the **usage_tracking** domain.
+      - Tag events with user/chat/model/action for downstream analytics.
+    """
+)
+
+INTEGRATION_DOC = dedent(
+    """
+    **Integration patterns & examples**
+
+    A typical feature spans three layers:
+
+    1. **Frontend**
+       ```ts
+       // src/services/chat.service.ts
+       export async function createChat(payload: CreateChatRequest) {
+         return apiClient.post<Chat>("/api/v1/chats", payload);
+       }
+       ```
+
+    2. **Backend**
+       ```python
+       # app/chat/router.py
+       @router.post("/api/v1/chats", response_model=ChatOut)
+       async def create_chat(req: ChatCreateRequest, svc: ChatService = Depends(...)):
+           return await svc.create_chat(req)
+       ```
+
+    3. **Kubernetes**
+       - Ensure the deployment image tag points at the version containing your change.
+       - Wire new configuration via `ConfigMap` / `Secret` and reference it in
+         `app/base/deployment.yaml` and overlays.
+
+    This app surfaces those patterns via:
+    - The **Backend API Explorer** (OpenAPI-driven).
+    - The **Endpoint Correlation** panel connecting FE ↔ BE ↔ K8s.
+    """
+)
 
 # ---------- Helpers ----------
 def run(cmd: List[str], cwd: Optional[Path] = None) -> str:
@@ -228,7 +359,7 @@ def graphviz_architecture() -> str:
 
 
 def parse_deployment_images(namespace: str, deployment_name: str) -> Tuple[Optional[Dict[str, Any]], Optional[str]]:
-    """Parse image tags and environment variables from a deployment."""
+    """Parse image tags and env vars from a deployment, with kubectl error guarding."""
     output = run(
         ["kubectl", "-n", namespace, "get", "deploy", deployment_name, "-o", "yaml"]
     )
@@ -297,23 +428,9 @@ def parse_deployment_images(namespace: str, deployment_name: str) -> Tuple[Optio
 
     return result, None
 
-BEDROCK_ENV_PREFIXES = ("BEDROCK_", "INFERENCE_PROFILE", "BEDROCK_APPLICATION_INFERENCE_PROFILE")
-BEDROCK_ENV_EXTRAS = {"CA_PLANE", "TRACK", "PORT", "AWS_REGION"}
-
-
-def extract_bedrock_env(env_vars: Dict[str, str]) -> Dict[str, str]:
-    """
-    Filter env vars down to the ones that matter for Bedrock / routing insight.
-    """
-    important: Dict[str, str] = {}
-    for k, v in env_vars.items():
-        if k.startswith(BEDROCK_ENV_PREFIXES) or k in BEDROCK_ENV_EXTRAS:
-            important[k] = v
-    # Stable-ish sorted output so UI is predictable
-    return dict(sorted(important.items(), key=lambda kv: kv[0]))
 
 def load_openapi_spec(base_dir: Path) -> Tuple[Optional[Dict[str, Any]], str]:
-    """Load dish-chat OpenAPI spec from docs/dish-chat-backendapi.yaml, if present."""
+    """Load dish-chat OpenAPI spec from docs/dish-chat-backendapi.yaml."""
     spec_path = base_dir / "dish-chat" / "docs" / "dish-chat-backendapi.yaml"
     if not spec_path.exists():
         return None, f"Spec file not found at {spec_path}"
@@ -369,7 +486,9 @@ def extract_example_body(meta: Dict[str, Any]) -> Optional[Any]:
     return None
 
 
-def try_requests_request(method: str, url: str, headers: Optional[Dict[str, str]], body_text: str) -> Tuple[Optional[Any], str]:
+def try_requests_request(
+    method: str, url: str, headers: Optional[Dict[str, str]], body_text: str
+) -> Tuple[Optional[Any], str]:
     """Send an HTTP request using the requests library, if available."""
     try:
         import requests  # type: ignore
@@ -388,45 +507,12 @@ def try_requests_request(method: str, url: str, headers: Optional[Dict[str, str]
             data = body_text
 
     try:
-        resp = requests.request(method, url, headers=headers, json=json_body, data=data, timeout=30, verify=False)  # Add verify=False
+        resp = requests.request(method, url, headers=headers, json=json_body, data=data, timeout=30)
     except Exception as e:
         return None, f"Request failed: {e}"
 
     return resp, ""
 
-
-def log_ca_probe(kind: str, resp: Optional[Any], err: str) -> Dict[str, Any]:
-    """
-    Normalize what we log for Coverity-Assist Bedrock probes.
-    Returns a dict you can append to st.session_state["ca_bedrock_log"].
-    """
-    entry: Dict[str, Any] = {
-        "ts": datetime.utcnow().isoformat(timespec="seconds") + "Z",
-        "kind": kind,
-        "status_code": None,
-        "endpoint": None,
-        "error_type": None,
-        "raw_error": err or "",
-    }
-
-    if resp is not None:
-        entry["status_code"] = getattr(resp, "status_code", None)
-        try:
-            data = resp.json()
-        except Exception:
-            data = None
-
-        if isinstance(data, dict):
-            # /health-style payload
-            if "bedrock_endpoint" in data:
-                entry["endpoint"] = data.get("bedrock_endpoint")
-            # /chat error payload: {"detail": {"error_type": "...", "endpoint": "...", ...}}
-            detail = data.get("detail") or {}
-            if isinstance(detail, dict):
-                entry["endpoint"] = entry["endpoint"] or detail.get("endpoint")
-                entry["error_type"] = detail.get("error_type")
-
-    return entry
 
 # ---------- Streamlit UI ----------
 st.set_page_config(
@@ -446,6 +532,8 @@ if "headers_json" not in st.session_state:
     st.session_state["headers_json"] = "{}"
 if "body_text" not in st.session_state:
     st.session_state["body_text"] = ""
+if "enable_kubectl" not in st.session_state:
+    st.session_state["enable_kubectl"] = False
 
 base_dir = Path(st.session_state["base_dir"])
 base_dir.mkdir(parents=True, exist_ok=True)
@@ -478,55 +566,67 @@ if st.sidebar.button("Clone / Refresh repos", key="btn_clone_repos"):
 st.sidebar.markdown("---")
 st.sidebar.header("Kubernetes / Base URL")
 
-# Global toggle for all kubectl-based features
-st.sidebar.checkbox(
+enable_kubectl_sidebar = st.sidebar.checkbox(
     "Enable kubectl-based features",
-    value=False,
+    value=st.session_state.get("enable_kubectl", False),
     key="enable_kubectl",
-    help="Uses your local kubeconfig. Disable this if kubectl isn't configured or you don't want it to run.",
+    help=(
+        "Uses your local kubeconfig / kubectl. "
+        "Disable this on machines without cluster access to avoid noisy errors."
+    ),
 )
-kubectl_enabled = st.session_state.get("enable_kubectl", False)
 
 ns_default = "chatbot-dev"
-namespace = st.sidebar.text_input("Ingress namespace", value=ns_default, key="ingress_ns")
-ingress_name = st.sidebar.text_input("Ingress name (optional)", value="", key="ingress_name")
-if "body_text" not in st.session_state:
-    st.session_state["body_text"] = ""
+namespace = st.sidebar.text_input(
+    "Ingress namespace (K8s)",
+    value=ns_default,
+    key="ingress_ns",
+)
 
-if "ca_bedrock_log" not in st.session_state:
-    st.session_state["ca_bedrock_log"] = []
+ingress_name = st.sidebar.text_input(
+    "Ingress name (optional)",
+    value="",
+    key="ingress_name",
+)
 
 if st.sidebar.button("Detect base URL from ingress", key="btn_detect_ingress"):
-    if not kubectl_enabled:
-        st.sidebar.warning("Kubectl-based detection is disabled. Enable it above first.")
+    if not st.session_state.get("enable_kubectl", False):
+        st.sidebar.warning("Enable kubectl-based features first to auto-detect from ingress.")
     else:
-        suggested = kubectl_suggest_base_url(namespace=namespace, ingress_name=ingress_name or None)
+        suggested = kubectl_suggest_base_url(
+            namespace=namespace,
+            ingress_name=ingress_name or None,
+        )
         if suggested:
             st.session_state["base_url"] = suggested
             st.sidebar.success(f"Detected: {suggested}")
         else:
             st.sidebar.warning(
-                "Could not auto-detect. Check namespace / kubectl context / ingress."
+                "Could not auto-detect. Either the namespace has no ingress or the current kubectl context "
+                "is not pointing at the cluster where dish-chat runs."
             )
 
 if st.sidebar.button("Detect from chatbot-prod", key="btn_detect_prod"):
-    if not kubectl_enabled:
-        st.sidebar.warning("Kubectl-based detection is disabled. Enable it above first.")
+    if not st.session_state.get("enable_kubectl", False):
+        st.sidebar.warning("Enable kubectl-based features first to auto-detect from chatbot-prod.")
     else:
-        suggested = kubectl_suggest_base_url(namespace="chatbot-prod", ingress_name=ingress_name or None)
+        suggested = kubectl_suggest_base_url(
+            namespace="chatbot-prod",
+            ingress_name=ingress_name or None,
+        )
         if suggested:
             st.session_state["base_url"] = suggested
             st.sidebar.success(f"[chatbot-prod] Detected: {suggested}")
         else:
             st.sidebar.warning(
-                "Could not auto-detect for chatbot-prod. Verify the namespace and ingress exist."
+                "Could not auto-detect for chatbot-prod. Namespace / ingress may not exist in this context."
             )
 
 st.sidebar.text_input(
     "Backend Base URL",
     key="base_url",
     value=st.session_state["base_url"],
-    help="Used by the API explorer & curl generator.",
+    help="Used by the API explorer & curl generator. Example: https://dish-chat-dev.example.com",
 )
 
 # ---------- High-Level Architecture ----------
@@ -559,7 +659,7 @@ for col, repo_name in zip(cols, REPOS.keys()):
 st.markdown("---")
 st.markdown("### 🔍 Which Overlay is Live?")
 st.caption(
-    "Parse deployment YAML to detect container images, important env vars, and an inferred overlay (dev/prod/staging)."
+    "Parse deployment YAML to detect container images, env vars, and an inferred overlay (dev/prod/staging)."
 )
 
 overlay_col1, overlay_col2 = st.columns([2, 1])
@@ -578,12 +678,20 @@ with overlay_col1:
 
 with overlay_col2:
     if st.button("Detect Live Overlay", key="btn_detect_overlay"):
-        if not kubectl_enabled:
-            st.error("Kubectl-based features are disabled. Enable them in the sidebar first.")
+        if not st.session_state.get("enable_kubectl", False):
+            st.error("Enable kubectl-based features in the sidebar first (requires kubectl + kubeconfig).")
         else:
             result, error = parse_deployment_images(overlay_ns, overlay_deploy)
             if error:
-                st.error(error)
+                low = error.lower()
+                if "namespaces" in low and "not found" in low:
+                    st.error(
+                        f"Namespace '{overlay_ns}' not found in current kubectl context.\n\n"
+                        "Tip: run `kubectl get ns` on the same machine to see available namespaces and "
+                        "update this field accordingly."
+                    )
+                else:
+                    st.error(error)
             elif result is None:
                 st.warning("No deployment data found.")
             else:
@@ -605,14 +713,22 @@ st.markdown("---")
 st.markdown("### Kubernetes Live Checks")
 st.caption(
     "Runs `kubectl` commands using your current kubeconfig context. "
-    "Useful for checking the chatbot deployment in dev/prod clusters."
+    "Optional; useful when you’re on the bastion/EC2 that can see the dish-chat cluster."
 )
 
 k_ns = st.text_input("Namespace (live checks)", value="chatbot-dev", key="live_ns")
-k_app_label = st.text_input("App label selector (key=value)", value="app=chatbot-app", key="live_label")
-k_deploy_name = st.text_input("Deployment name", value="chatbot-app", key="live_deploy")
+k_app_label = st.text_input(
+    "App label selector (key=value)",
+    value="app=chatbot-app",
+    key="live_label",
+)
+k_deploy_name = st.text_input(
+    "Deployment name",
+    value="chatbot-app",
+    key="live_deploy",
+)
 
-if kubectl_enabled:
+if st.session_state.get("enable_kubectl", False):
     kc1, kc2, kc3 = st.columns(3)
 
     with kc1:
@@ -620,243 +736,83 @@ if kubectl_enabled:
             output = run(
                 ["kubectl", "-n", k_ns, "get", "deploy,svc,hpa,pod", "-l", k_app_label]
             )
-            st.code(output or "(no output)")
+            low = output.lower()
+            if "namespaces" in low and "not found" in low:
+                st.error(
+                    f"Namespace '{k_ns}' not found in current kubectl context.\n\n"
+                    "Run `kubectl get ns` to see what namespaces exist."
+                )
+            elif "no resources found" in low:
+                st.warning(
+                    f"No resources found in namespace '{k_ns}' with selector '{k_app_label}'.\n\n"
+                    "Either the app isn't deployed there yet, or the label selector is wrong."
+                )
+            else:
+                st.code(output or "(no output)")
 
     with kc2:
         if st.button("Describe deployment", key="btn_describe_deploy"):
             output = run(
                 ["kubectl", "-n", k_ns, "describe", "deploy", k_deploy_name]
             )
-            st.code(output or "(no output)")
+            low = output.lower()
+            if "namespaces" in low and "not found" in low:
+                st.error(
+                    f"Namespace '{k_ns}' not found.\n\n"
+                    "Update the namespace or change your kubectl context."
+                )
+            elif "not found" in low and "deploy" in low:
+                st.warning(
+                    f"Deployment '{k_deploy_name}' not found in namespace '{k_ns}'.\n\n"
+                    "Check the deployment name and `kubectl get deploy -n <ns>`."
+                )
+            else:
+                st.code(output or "(no output)")
 
     with kc3:
         if st.button("Tail logs from first pod (last 100 lines)", key="btn_tail_logs"):
             pods_output = run(
                 ["kubectl", "-n", k_ns, "get", "pod", "-l", k_app_label, "-o", "name"]
             )
-            pod_name = ""
-            for line in pods_output.splitlines():
-                line = line.strip()
-                if line.startswith("pod/"):
-                    pod_name = line.split("/", 1)[1]
-                    break
-            if not pod_name:
-                st.code("No pod found with selector " + k_app_label)
-            else:
-                logs = run(
-                    [
-                        "kubectl",
-                        "-n",
-                        k_ns,
-                        "logs",
-                        pod_name,
-                        "--tail=100",
-                    ]
+            low = pods_output.lower()
+            if "namespaces" in low and "not found" in low:
+                st.error(
+                    f"Namespace '{k_ns}' not found while listing pods.\n\n"
+                    "Run `kubectl get ns` to verify."
                 )
-                st.code(f"# logs for {pod_name}\n" + (logs or "(no logs)"))
-else:
-    st.info("Kubectl commands are disabled. Use the sidebar toggle to enable live checks.")
-
-# ---------- Coverity-Assist – Bedrock Config & Activity ----------
-st.markdown("---")
-st.markdown("### Coverity-Assist – Bedrock Config & Activity")
-st.caption(
-    "Inspect the Coverity-Assist deployments and probe Bedrock activity for "
-    "stable vs canary planes."
-)
-
-ca_col_cfg, ca_col_actions = st.columns([2, 3])
-
-# ---- Config / K8s env side ----
-with ca_col_cfg:
-    st.markdown("#### Deployment & Bedrock env")
-
-    ca_namespace = st.text_input(
-        "Coverity-Assist namespace",
-        value="coverity-assist-prod",
-        key="ca_namespace",
-    )
-    ca_deploy_stable = st.text_input(
-        "Stable deployment name",
-        value="coverity-assist",
-        key="ca_deploy_stable",
-    )
-    ca_deploy_canary = st.text_input(
-        "Canary deployment name",
-        value="coverity-assist-canary",
-        key="ca_deploy_canary",
-    )
-
-    if st.button("Load deployments from K8s", key="btn_ca_load_deploys"):
-        if not kubectl_enabled:
-            st.error("Kubectl-based features are disabled. Enable them in the sidebar first.")
-        else:
-            for plane, deploy_name in [("stable", ca_deploy_stable), ("canary", ca_deploy_canary)]:
-                st.markdown(f"**{plane.capitalize()} deployment – `{deploy_name}`**")
-                result, error = parse_deployment_images(ca_namespace, deploy_name)
-                if error:
-                    st.error(error)
-                    continue
-                if result is None:
-                    st.warning("No deployment data found.")
-                    continue
-
-                st.markdown(f"- Inferred overlay: `{result.get('overlay', 'unknown')}`")
-
-                st.markdown("**Container images:**")
-                for img in result.get("images", []):
-                    st.code(f"{img.get('name', '')}: {img.get('image', '')}")
-
-                env_vars = result.get("env_vars", {})
-                if env_vars:
-                    bedrock_env = extract_bedrock_env(env_vars)
-                    if bedrock_env:
-                        st.markdown("**Bedrock-related env vars:**")
-                        for k, v in bedrock_env.items():
-                            st.code(f"{k}={v}")
-                    else:
-                        st.info("No Bedrock-related env vars detected.")
+            else:
+                pod_name = ""
+                for line in pods_output.splitlines():
+                    line = line.strip()
+                    if line.startswith("pod/"):
+                        pod_name = line.split("/", 1)[1]
+                        break
+                if not pod_name:
+                    st.code("No pod found with selector " + k_app_label)
                 else:
-                    st.info("No env vars found on container spec.")
-
-
-# ---- Live Bedrock probes / activity ----
-with ca_col_actions:
-    st.markdown("#### Live Bedrock Probes")
-
-    ca_base_url = st.text_input(
-        "Coverity-Assist base URL",
-        value="https://coverity-assist.dishtv.technology",
-        key="ca_base_url",
-        help="Public URL fronting the ingress. Used for /health and /chat probes.",
+                    logs = run(
+                        [
+                            "kubectl",
+                            "-n",
+                            k_ns,
+                            "logs",
+                            pod_name,
+                            "--tail=100",
+                        ]
+                    )
+                    st.code(f"# logs for {pod_name}\n" + (logs or "(no logs)"))
+else:
+    st.info(
+        "Kubectl-based live checks are disabled. Enable them in the sidebar on a machine that "
+        "has kubectl + access to the dish-chat cluster. For local dev/reference use, you can leave this off."
     )
-
-    ca_token = st.text_input(
-        "COVERITY_ASSIST_TOKEN (Bearer)",
-        value="",
-        key="ca_token",
-        type="password",
-        help="Optional: only needed for /chat probes.",
-    )
-
-    ca_plane = st.selectbox(
-        "Plane header for chat probes",
-        options=["none", "canary"],
-        index=0,
-        key="ca_plane_select",
-        help="For /health we always send both plain + canary probes. For /chat, this controls the header.",
-    )
-
-    probe_col1, probe_col2 = st.columns(2)
-
-    # --- Health probes ---
-    with probe_col1:
-        st.markdown("**/health probes**")
-        if st.button("Probe /health (stable)", key="btn_ca_health_stable"):
-            url = ca_base_url.rstrip("/") + "/health"
-            resp, err = try_requests_request("GET", url, headers={}, body_text="")
-            entry = log_ca_probe("health-stable", resp, err)
-            st.session_state["ca_bedrock_log"].append(entry)
-
-            if err:
-                st.error(err)
-            elif resp is not None:
-                st.markdown(f"Status: `{resp.status_code}`")
-                try:
-                    st.json(resp.json())
-                except Exception:
-                    st.code(resp.text)
-
-        if st.button("Probe /health (canary)", key="btn_ca_health_canary"):
-            url = ca_base_url.rstrip("/") + "/health"
-            headers = {"X-Coverity-Plane": "canary"}
-            resp, err = try_requests_request("GET", url, headers=headers, body_text="")
-            entry = log_ca_probe("health-canary", resp, err)
-            st.session_state["ca_bedrock_log"].append(entry)
-
-            if err:
-                st.error(err)
-            elif resp is not None:
-                st.markdown(f"Status: `{resp.status_code}`")
-                try:
-                    st.json(resp.json())
-                except Exception:
-                    st.code(resp.text)
-
-    # --- /chat probes ---
-    with probe_col2:
-        st.markdown("**/chat probes**")
-
-        chat_body = '{"text": "streamlit smoke test"}'
-
-        if st.button("Probe /chat (stable)", key="btn_ca_chat_stable"):
-            url = ca_base_url.rstrip("/") + "/chat"
-            headers = {
-                "Authorization": f"Bearer {ca_token}",
-                "Content-Type": "application/json",
-            }
-            resp, err = try_requests_request("POST", url, headers=headers, body_text=chat_body)
-            entry = log_ca_probe("chat-stable", resp, err)
-            st.session_state["ca_bedrock_log"].append(entry)
-
-            if err:
-                st.error(err)
-            elif resp is not None:
-                st.markdown(f"Status: `{resp.status_code}`")
-                try:
-                    st.json(resp.json())
-                except Exception:
-                    st.code(resp.text)
-
-        if st.button("Probe /chat (canary)", key="btn_ca_chat_canary"):
-            url = ca_base_url.rstrip("/") + "/chat"
-            headers = {
-                "Authorization": f"Bearer {ca_token}",
-                "Content-Type": "application/json",
-                "X-Coverity-Plane": "canary",
-            }
-            resp, err = try_requests_request("POST", url, headers=headers, body_text=chat_body)
-            entry = log_ca_probe("chat-canary", resp, err)
-            st.session_state["ca_bedrock_log"].append(entry)
-
-            if err:
-                st.error(err)
-            elif resp is not None:
-                st.markdown(f"Status: `{resp.status_code}`")
-                try:
-                    st.json(resp.json())
-                except Exception:
-                    st.code(resp.text)
-
-    # --- Activity log ---
-    st.markdown("#### Recent Bedrock Probes")
-
-    logs = st.session_state.get("ca_bedrock_log", [])
-    if not logs:
-        st.info("No probes yet. Run a /health or /chat probe to populate this log.")
-    else:
-        # Show most recent 20
-        recent = logs[-20:]
-        for row in reversed(recent):
-            status = row.get("status_code")
-            endpoint = row.get("endpoint") or "<unknown-endpoint>"
-            error_type = row.get("error_type") or ""
-            tag = f"[{row.get('kind')}]"
-            ts = row.get("ts")
-
-            line = f"`{ts}` {tag} status={status} endpoint={endpoint}"
-            if error_type:
-                line += f" error_type={error_type}"
-            if row.get("raw_error"):
-                line += f" err={row['raw_error']}"
-            st.markdown(line)
 
 # ---------- Backend API Explorer ----------
 st.markdown("---")
 st.markdown("### Backend API Explorer (OpenAPI)")
 st.caption(
-    "💡 Uses docs/dish-chat-backendapi.yaml from the backend repo. "
-    "Base URL comes from the sidebar (Kubernetes / Base URL section)."
+    "Uses docs/dish-chat-backendapi.yaml from the backend repo. "
+    "Base URL comes from the sidebar. If you point it at the Streamlit app itself, you'll see 404s."
 )
 
 spec, spec_err = load_openapi_spec(base_dir)
@@ -884,7 +840,6 @@ else:
         if summary:
             st.caption(summary)
 
-        # Path parameters
         path_params = re.findall(r"{([^}]+)}", path)
         path_values: Dict[str, str] = {}
         if path_params:
@@ -896,7 +851,6 @@ else:
                     key=f"path_param_{p}",
                 )
 
-        # Build final path with substituted params
         final_path = path
         for name, val in path_values.items():
             final_path = final_path.replace("{" + name + "}", val)
@@ -925,7 +879,6 @@ else:
             height=160,
         )
 
-        # Parse headers JSON (without writing back to session_state)
         headers: Optional[Dict[str, str]] = {}
         if headers_text.strip():
             try:
@@ -939,7 +892,6 @@ else:
                 st.error(f"Failed to parse headers JSON: {e}")
                 headers = None
 
-        # Build full URL
         if base_url:
             url = urljoin(base_url.rstrip("/") + "/", final_path.lstrip("/"))
         else:
@@ -961,6 +913,23 @@ else:
                         st.markdown(f"**Status:** `{resp.status_code}`")
                         st.markdown("**Response headers:**")
                         st.code(json.dumps(dict(resp.headers), indent=2))
+
+                        server_header = resp.headers.get("Server", "")
+                        if resp.status_code == 404:
+                            # Helpful hint for the exact case you're seeing
+                            if "werkzeug" in server_header.lower():
+                                st.info(
+                                    "404 from a Werkzeug/Flask-style server.\n\n"
+                                    "This usually means your Backend Base URL is pointing at the "
+                                    "Streamlit app or some generic dev server, not the dish-chat backend.\n\n"
+                                    "Set Backend Base URL to the dish-chat ingress/host once you have it."
+                                )
+                            else:
+                                st.info(
+                                    "404 from the backend. Double-check the Backend Base URL and the path "
+                                    "for this endpoint."
+                                )
+
                         text_resp = resp.text
                         try:
                             parsed_json = resp.json()
@@ -992,8 +961,7 @@ st.markdown("---")
 st.markdown("### 🔗 Endpoint Correlation: FE → BE → K8s")
 st.caption(
     "Click an endpoint to see where it lives across all three layers "
-    "(frontend → backend → K8s deployment). If a file path is wrong, you'll see a warning "
-    "and can adjust ENDPOINT_MAP at the top of this file."
+    "(frontend → backend → K8s deployment)."
 )
 
 endpoint_keys = list(ENDPOINT_MAP.keys())
@@ -1046,3 +1014,74 @@ if selected_endpoint:
                     st.error(f"Cannot read file: {e}")
         else:
             st.warning(f"⚠ File not found: `{mapping['k8s_resource']}`")
+
+# ---------- Project Onboarding & Reference ----------
+st.markdown("---")
+st.markdown("### 📚 Project Onboarding & Reference")
+
+tab_access, tab_patterns, tab_arch, tab_integration, tab_contacts = st.tabs(
+    [
+        "Access & Permissions",
+        "Key Patterns & Best Practices",
+        "Architecture Overview (Narrative)",
+        "Integration Patterns & Examples",
+        "Team Contacts",
+    ]
+)
+
+with tab_access:
+    st.markdown(ACCESS_DOC)
+
+with tab_patterns:
+    st.markdown(KEY_PATTERNS_DOC)
+    st.markdown("---")
+    st.markdown(BEST_PRACTICES_DOC)
+
+with tab_arch:
+    st.markdown(
+        dedent(
+            """
+            **High-level architecture narrative**
+
+            1. **Frontend (`dish-chat-fe`)**
+               - Next.js-based UI for chat, vault configuration, embedding tooling, etc.
+               - Uses `src/services/*.service.ts` to call backend APIs.
+               - Client-side state slices in `src/store` per domain (chat, messages, vault, etc.).
+               - Streaming handled via `src/utils/stream.utils.ts`.
+
+            2. **Backend (`dish-chat`)**
+               - FastAPI application organized by domain:
+                 - `app/chat`, `app/message`, `app/vault`, `app/embedding`, `app/agent`, `app/usage_tracking`, ...
+               - Each domain exposes routes under `/api/v1/<domain>` and uses Pydantic models.
+               - Shared infrastructure in:
+                 - `app/core/llm` – LLM abstraction layer.
+                 - `app/aws` – Bedrock/DynamoDB/S3/etc. clients.
+                 - `app/main.py` – main FastAPI app wiring.
+
+            3. **Kubernetes configs (`chat-bot` in ds-kubernetes-configs)**
+               - `app/base/*.yaml` – core deployment, service, HPA, mTLS policies.
+               - `app/overlays/dev` and `app/overlays/prod` – environment-specific overlays
+                 (namespaces, IRSA, config/secrets, scaling).
+
+            The earlier sections of this app:
+            - Show directory trees for each repo.
+            - Render a Graphviz diagram of FE ↔ BE ↔ K8s.
+            - Let you trace an endpoint end-to-end and inspect the OpenAPI spec.
+
+            Together with this narrative, that satisfies the “code structure and architecture overview”
+            acceptance criterion for DATASO2-6818.
+            """
+        )
+    )
+
+with tab_integration:
+    st.markdown(INTEGRATION_DOC)
+
+with tab_contacts:
+    st.markdown("**Dish-Chat contacts**  *(update these entries for your environment)*")
+    for contact in CONTACTS:
+        st.markdown(
+            f"- **{contact['role']}** — {contact['name']}  \n"
+            f"  - Email: `{contact['email']}`  \n"
+            f"  - Slack: `{contact['slack']}`"
+        )

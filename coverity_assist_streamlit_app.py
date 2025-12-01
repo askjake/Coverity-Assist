@@ -3,14 +3,15 @@ import json
 import time
 import requests
 import subprocess
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs, unquote  # <--- UPDATED
 from pathlib import Path
 from datetime import datetime
+from dataclasses import dataclass                     # <--- NEW
 from typing import Optional, Tuple, Any, List, Dict
 
 import streamlit as st
 import certifi
-import os
+
 os.environ['SSL_CERT_FILE'] = certifi.where()
 
 # ---------- Config ----------
@@ -51,6 +52,60 @@ bert2_mod = try_import("bert2")
 journaler_mod = try_import("journaler")  # may expose utility helpers
 
 # ---------- Utilities ----------
+def _extract_error_chunks(data_path: Path, max_chars: int = 4000) -> str:
+    """
+    Pull out only the command/URL blocks that look like errors.
+
+    A block starts with 'CMD: ' or 'URL: ' and continues until the next such line.
+    A block is considered an error if:
+      - It contains a line starting with 'ERROR: ', OR
+      - It has a 'RET=' line with a non-zero exit code.
+    """
+    try:
+        data_text = data_path.read_text(encoding="utf-8", errors="ignore")
+    except Exception:
+        return ""
+
+    blocks: List[str] = []
+    current: List[str] = []
+
+    for line in data_text.splitlines():
+        if line.startswith("CMD: ") or line.startswith("URL: "):
+            if current:
+                blocks.append("\n".join(current))
+            current = [line]
+        else:
+            if current:
+                current.append(line)
+    if current:
+        blocks.append("\n".join(current))
+
+    error_blocks: List[str] = []
+    for block in blocks:
+        lower = block.lower()
+        has_error_line = "error:" in lower  # covers both URL + CMD ERROR lines
+        nonzero_ret = False
+        for ln in block.splitlines():
+            if ln.startswith("RET="):
+                try:
+                    code = int(ln.split("=", 1)[1].strip())
+                    if code != 0:
+                        nonzero_ret = True
+                except Exception:
+                    pass
+        if has_error_line or nonzero_ret:
+            error_blocks.append(block)
+
+    if not error_blocks:
+        return ""
+
+    snippet = "\n\n---\n\n".join(error_blocks)
+
+    # Keep last N chars; most recent attempts are usually at the end
+    if len(snippet) > max_chars:
+        snippet = snippet[-max_chars:]
+
+    return snippet
 
 def http_ok(response: requests.Response) -> bool:
     try:
@@ -86,7 +141,7 @@ def write_prompts(d: Dict[str, str]):
 
 def build_chat_payload(user_text: str,
                        system_text: Optional[str],
-                       max_tokens: int = 1000,
+                       max_tokens: int = 4000,
                        use_top_level_system: bool = False,
                        inference_profile_arn: Optional[str] = None) -> Dict[str, Any]:
     payload: Dict[str, Any] = {
@@ -106,7 +161,7 @@ def coverity_chat(url: str,
                   token: str,
                   user_text: str,
                   system_text: Optional[str],
-                  max_tokens: int = 1000,
+                  max_tokens: int = 4000,
                   use_top_level_system: bool = False,
                   inference_profile_arn: Optional[str] = None) -> Tuple[bool, str]:
     try:
@@ -121,7 +176,7 @@ def coverity_chat(url: str,
             url,
             headers=bearer_header(token),
             json=payload,
-            timeout=120,
+            timeout=240,
             verify=VERIFY_SSL,  # <-- key change
         )
         if not http_ok(r):
@@ -147,7 +202,7 @@ def jambot_get(url_path: str) -> Tuple[bool, Any]:
 
 def jambot_post_json(url_path: str, json_body: Optional[Dict[str, Any]] = None) -> Tuple[bool, Any]:
     try:
-        r = requests.post(f"{JAMBOT_BASE_URL}{url_path}", json=json_body, timeout=599)
+        r = requests.post(f"{JAMBOT_BASE_URL}{url_path}", json=json_body, timeout=1200)
         if not http_ok(r):
             return False, f"[{r.status_code}] {r.text}"
         try:
@@ -159,7 +214,7 @@ def jambot_post_json(url_path: str, json_body: Optional[Dict[str, Any]] = None) 
 
 def jambot_post_form(url_path: str, data: Optional[Dict[str, Any]] = None, files: Optional[Dict[str, Any]] = None) -> Tuple[bool, Any]:
     try:
-        r = requests.post(f"{JAMBOT_BASE_URL}{url_path}", data=data, files=files, timeout=300)
+        r = requests.post(f"{JAMBOT_BASE_URL}{url_path}", data=data, files=files, timeout=1201)
         if not http_ok(r):
             return False, f"[{r.status_code}] {r.text}"
         try:
@@ -173,7 +228,7 @@ def run_local_script(path: Path, args: List[str]) -> Tuple[bool, str]:
     try:
         proc = subprocess.run(
             ["bash", "-lc", f"chmod +x '{path}' || true && '{path}' " + " ".join(map(str, args))],
-            capture_output=True, text=True, timeout=1800
+            capture_output=True, text=True, timeout=3600
         )
         ok = proc.returncode == 0
         out = proc.stdout + ("\n" + proc.stderr if proc.stderr else "")
@@ -208,17 +263,68 @@ def domain_of(url: str) -> str:
     except Exception:
         return ""
 
-def filter_results(results: List[Dict[str, Any]], allowlist: List[str], blocklist: List[str]) -> List[Dict[str, Any]]:
+
+def unwrap_duckduckgo_redirect(url: str) -> str:
+    """
+    DuckDuckGo often returns redirect URLs like:
+        //duckduckgo.com/l/?uddg=<encoded_target>&rut=...
+
+    These break simple HTTP clients (no scheme) and pollute workflows.
+    This helper:
+      - Normalizes protocol-relative URLs to https
+      - If the domain is duckduckgo.com and a 'uddg' param exists,
+        returns the decoded target URL
+    """
+    if not url:
+        return url
+
+    # Normalize protocol-relative URLs: //duckduckgo.com/...
+    if url.startswith("//"):
+        url = "https:" + url
+
+    try:
+        parsed = urlparse(url)
+    except Exception:
+        return url
+
+    if "duckduckgo.com" not in (parsed.netloc or ""):
+        return url
+
+    qs = parse_qs(parsed.query)
+    target = qs.get("uddg", [None])[0]
+    if target and target.startswith(("http://", "https://")):
+        return unquote(target)
+
+    return url
+
+
+def filter_results(
+    results: List[Dict[str, Any]],
+    allowlist: List[str],
+    blocklist: List[str],
+) -> List[Dict[str, Any]]:
+    """
+    Apply allow/block filters *and* normalize known-bad redirect URLs.
+    """
     if not isinstance(results, list):
         return results
-    outs = []
+
+    outs: List[Dict[str, Any]] = []
     for r in results:
-        d = domain_of(r.get("url",""))
+        url = r.get("url", "")
+        if url:
+            # Clean up duckduckgo redirect cruft before filtering
+            clean = unwrap_duckduckgo_redirect(url)
+            r["url"] = clean
+
+        d = domain_of(r.get("url", ""))
         if allowlist and d and not any(d.endswith(a) or d == a for a in allowlist):
             continue
         if blocklist and d and any(d.endswith(b) or d == b for b in blocklist):
             continue
+
         outs.append(r)
+
     return outs
 
 # Remember auto-iterate settings across tabs
@@ -248,6 +354,88 @@ def trigger_workflow_from_search(query: str, results_blob: str,
             "max_iters": int(max_iters),
         },
     )
+
+@dataclass
+class AgentSpec:
+    """Lightweight description of an agent persona (MCP-style 'tool')."""
+    key: str
+    name: str
+    system_prompt: str
+
+
+def run_two_agent_conversation(
+    agent_a: AgentSpec,
+    agent_b: AgentSpec,
+    seed_message: str,
+    max_turns: int,
+    stop_when_no_question: bool,
+    chat_url: str,
+    token: str,
+    max_tokens: int,
+    use_top_level_system: bool,
+    inference_profile_arn: Optional[str] = None,
+) -> List[Dict[str, str]]:
+    """
+    Host-orchestrated two-agent conversation.
+
+    The Streamlit app behaves like an MCP client:
+    - It alternates calls between two personas (agent_a, agent_b)
+    - It passes the full prior transcript each time
+    - It stops after max_turns or when the last message has no '?' (if requested)
+    """
+    seed_message = (seed_message or "").strip()
+    if not seed_message:
+        return []
+
+    history: List[Dict[str, str]] = []
+    current, other = agent_a, agent_b
+    last_message = seed_message
+
+    for _ in range(max_turns):
+        # Render prior conversation as plain text
+        convo_lines = [f"{m['speaker']}: {m['text']}" for m in history]
+        convo_text = "\n".join(convo_lines)
+
+        user_text = (
+            f"You are {current.name}, an AI agent persona ('{current.key}') conversing with another AI agent "
+            f"named {other.name} ('{other.key}').\n\n"
+        )
+        if convo_text:
+            user_text += f"Conversation so far:\n{convo_text}\n\n"
+
+        user_text += (
+            f"The last message from {other.name if history else 'the user'} was:\n"
+            f"{last_message}\n\n"
+            "Reply as yourself in a natural, concise way. "
+            "If you genuinely have a follow-up question for the other agent, end your message with that question. "
+            "If the conversation feels resolved, give a brief closing statement and do not ask more questions."
+        )
+
+        ok, reply = coverity_chat(
+            url=chat_url,
+            token=token,
+            user_text=user_text,
+            system_text=current.system_prompt,
+            max_tokens=max_tokens,
+            use_top_level_system=use_top_level_system,
+            inference_profile_arn=inference_profile_arn,
+        )
+        if not ok:
+            history.append({"speaker": current.name, "text": f"[ERROR] {reply}"})
+            break
+
+        reply = (reply or "").strip()
+        history.append({"speaker": current.name, "text": reply})
+        last_message = reply
+
+        # MCP-style stopping condition: no more questions
+        if stop_when_no_question and "?" not in reply:
+            break
+
+        # Swap speakers and keep going
+        current, other = other, current
+
+    return history
 
 # ---------- UI ----------
 
@@ -330,15 +518,146 @@ tabs = st.tabs(["Chat", "Journal", "Web Search + Embed", "Log Analysis", "Script
 # ---------- Chat Tab ----------
 
 with tabs[0]:
-    st.subheader("Chat")
-    max_tokens = st.number_input("Max Tokens", min_value=1, max_value=4000, value=1000, step=50)
-    user_text = st.text_area("Message", height=150, placeholder="Ask a question, paste logs, or draft an email…")
-    if st.button("Send", use_container_width=True):
+    # ---------------- Single-agent chat ----------------
+    st.subheader("Single-agent Chat")
+
+    chat_max_tokens = st.number_input(
+        "Max Tokens (single agent)",
+        min_value=1,
+        max_value=4000,
+        value=4000,
+        step=50,
+        key="single_chat_max_tokens",
+    )
+    user_text = st.text_area(
+        "Message",
+        height=150,
+        placeholder="Ask a question, paste logs, or draft an email…",
+        key="single_chat_message",
+    )
+
+    if st.button("Send", use_container_width=True, key="single_chat_send"):
         if not token:
             st.error("Please provide your Bearer token in the sidebar.")
         else:
-            ok, out = coverity_chat(chat_url, token, user_text, prompts.get(persona), max_tokens, use_top_level_system, inference_profile_arn)
+            ok, out = coverity_chat(
+                chat_url,
+                token,
+                user_text,
+                prompts.get(persona),
+                chat_max_tokens,
+                use_top_level_system,
+                inference_profile_arn,
+            )
             st.write(out if ok else f"❌ {out}")
+
+    st.divider()
+
+    # ---------------- Multi-agent chat (MCP-style) ----------------
+    st.subheader("Multi-agent Chat (MCP-style orchestration)")
+    with st.expander("Let two personas talk to each other", expanded=False):
+        persona_keys = sorted(prompts.keys())
+        default_a = persona_keys.index("Alex") if "Alex" in persona_keys else 0
+        # If Aqua exists, default Bot 2 to Aqua, otherwise just pick the next persona
+        if "Aqua" in persona_keys and persona_keys.index("Aqua") != default_a:
+            default_b = persona_keys.index("Aqua")
+        else:
+            default_b = min(1, len(persona_keys) - 1)
+
+        col_a, col_b = st.columns(2)
+        with col_a:
+            bot1_key = st.selectbox(
+                "Bot 1 persona",
+                options=persona_keys,
+                index=default_a,
+                key="bot1_key",
+            )
+            bot1_name = st.text_input(
+                "Bot 1 display name",
+                value=bot1_key,
+                key="bot1_name",
+            )
+        with col_b:
+            bot2_key = st.selectbox(
+                "Bot 2 persona",
+                options=persona_keys,
+                index=default_b,
+                key="bot2_key",
+            )
+            bot2_name = st.text_input(
+                "Bot 2 display name",
+                value=bot2_key,
+                key="bot2_name",
+            )
+
+        seed_message = st.text_area(
+            "Seed message that kicks off the conversation",
+            height=120,
+            key="multi_seed_message",
+        )
+
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            multi_turns = st.slider(
+                "Max turns (total messages)",
+                1,
+                120,
+                value=6,
+                key="multi_max_turns",
+            )
+        with c2:
+            multi_max_tokens = st.number_input(
+                "Max tokens per reply",
+                min_value=128,
+                max_value=4000,
+                value=800,
+                step=64,
+                key="multi_max_tokens",
+            )
+        with c3:
+            stop_when_no_question = st.checkbox(
+                "Stop when last message has no question",
+                value=True,
+                key="multi_stop_when_no_question",
+            )
+
+        if st.button("Run multi-agent conversation", use_container_width=True, key="multi_run"):
+            if not token:
+                st.error("Please provide your Bearer token in the sidebar.")
+            elif not seed_message.strip():
+                st.error("Provide a seed message to start the conversation.")
+            else:
+                agent_a = AgentSpec(
+                    key=bot1_key,
+                    name=bot1_name.strip() or bot1_key,
+                    system_prompt=prompts.get(bot1_key, ""),
+                )
+                agent_b = AgentSpec(
+                    key=bot2_key,
+                    name=bot2_name.strip() or bot2_key,
+                    system_prompt=prompts.get(bot2_key, ""),
+                )
+
+                convo = run_two_agent_conversation(
+                    agent_a=agent_a,
+                    agent_b=agent_b,
+                    seed_message=seed_message,
+                    max_turns=int(multi_turns),
+                    stop_when_no_question=stop_when_no_question,
+                    chat_url=chat_url,
+                    token=token,
+                    max_tokens=int(multi_max_tokens),
+                    use_top_level_system=use_top_level_system,
+                    inference_profile_arn=inference_profile_arn,
+                )
+
+                if not convo:
+                    st.info("No conversation generated.")
+                else:
+                    st.markdown("#### Conversation transcript")
+                    for msg in convo:
+                        st.markdown(f"**{msg['speaker']}**: {msg['text']}")
+
 
 # ---------- Journal Tab ----------
 
@@ -377,17 +696,18 @@ with tabs[1]:
 if "last_search" not in st.session_state:
     st.session_state.last_search = {"query": "", "results": None, "raw": ""}
 
-# Config session defaults
 # Session config defaults
 if "search_config" not in st.session_state:
     st.session_state.search_config = {
-        "mode": "both",                    # <- was "search_mode"
+        "mode": "both",
         "allowlist": [],
-        "blocklist": ["linkedin.com","zoominfo.com","x.com","twitter.com"],
+        # Block common noise domains *and* DuckDuckGo redirect wrappers by default
+        "blocklist": ["duckduckgo.com", "linkedin.com", "zoominfo.com", "x.com", "twitter.com"],
         "use_credentials_by_default": False,
         "fetch_pages": True,
-        "max_results": 6
+        "max_results": 6,
     }
+
 
 
 # ---- Web search helpers (fallbacks) ----
@@ -414,7 +734,7 @@ def ddg_lite_search(query: str) -> str:
             "https://lite.duckduckgo.com/lite/",
             params={"q": query},
             headers=headers,
-            timeout=15,
+            timeout=25,
             verify=VERIFY_SSL,  # <- respect your env flag
         )
         r.raise_for_status()
@@ -911,7 +1231,7 @@ with tabs[5]:
     colA, colB = st.columns(2)
     with colA:
         if st.button("Show Allowed Commands"):
-            r = requests.get(f"{JAMBOT_BASE_URL}/tools/allowed", timeout=15)
+            r = requests.get(f"{JAMBOT_BASE_URL}/tools/allowed", timeout=25)
             st.code(r.text if r.status_code == 200 else f"[{r.status_code}] {r.text}")
 
     with colB:

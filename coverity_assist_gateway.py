@@ -56,6 +56,60 @@ for d in (CONFIG_DIR, INSTRUCTIONS_DIR, EMBED_DIR, JOURNALS_DIR):
 SEARCH_CFG  = CONFIG_DIR / "search_config.json"
 
 # ---------------- Helpers ----------------
+def _extract_error_chunks(data_path: Path, max_chars: int = 4000) -> str:
+    """
+    Pull out only the command/URL blocks that look like errors.
+
+    A block starts with 'CMD: ' or 'URL: ' and continues until the next such line.
+    A block is considered an error if:
+      - It contains a line starting with 'ERROR: ', OR
+      - It has a 'RET=' line with a non-zero exit code.
+    """
+    try:
+        data_text = data_path.read_text(encoding="utf-8", errors="ignore")
+    except Exception:
+        return ""
+
+    blocks: List[str] = []
+    current: List[str] = []
+
+    for line in data_text.splitlines():
+        if line.startswith("CMD: ") or line.startswith("URL: "):
+            if current:
+                blocks.append("\n".join(current))
+            current = [line]
+        else:
+            if current:
+                current.append(line)
+    if current:
+        blocks.append("\n".join(current))
+
+    error_blocks: List[str] = []
+    for block in blocks:
+        lower = block.lower()
+        has_error_line = "error:" in lower  # covers both URL + CMD ERROR lines
+        nonzero_ret = False
+        for ln in block.splitlines():
+            if ln.startswith("RET="):
+                try:
+                    code = int(ln.split("=", 1)[1].strip())
+                    if code != 0:
+                        nonzero_ret = True
+                except Exception:
+                    pass
+        if has_error_line or nonzero_ret:
+            error_blocks.append(block)
+
+    if not error_blocks:
+        return ""
+
+    snippet = "\n\n---\n\n".join(error_blocks)
+
+    # Keep last N chars; most recent attempts are usually at the end
+    if len(snippet) > max_chars:
+        snippet = snippet[-max_chars:]
+
+    return snippet
 
 def _strip_www(host: str) -> str:
     host = (host or "").lower().lstrip(".")
@@ -509,30 +563,6 @@ def _generate_resources(task_text: str, chat_url: Optional[str], token: Optional
     _write(p, text)
     return p
 
-def _run_commands(resources_path: Path) -> Path:
-    data_path = INSTRUCTIONS_DIR / "workflow.data"
-    lines = [ln.strip() for ln in resources_path.read_text(encoding="utf-8").splitlines() if ln.strip()]
-    with data_path.open("w", encoding="utf-8") as out:
-        for ln in lines:
-            cols = [c.strip() for c in ln.split(",")]
-            while len(cols) < 4: cols.append("-")
-            cmd, url = cols[2], cols[3]
-
-            if url and url not in ("-", "N/A", "NA", "None", "URL (if any)"):
-                try:
-                    r = session.get(url, timeout=30, verify=False, headers=BASE_HEADERS, proxies=_get_proxies())
-                    body = r.text[:20000]
-                    out.write(f"URL: {url}\n{body}\n\n")
-                except Exception as e:
-                    out.write(f"URL: {url}\nERROR: {e}\n\n")
-
-            if cmd and cmd not in ("-", "N/A", "NA", "None", "Required bash command (if any)"):
-                try:
-                    proc = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=180)
-                    out.write(f"CMD: {cmd}\nRET={proc.returncode}\nSTDOUT:\n{proc.stdout}\nSTDERR:\n{proc.stderr}\n\n")
-                except Exception as e:
-                    out.write(f"CMD: {cmd}\nERROR: {e}\n\n")
-    return data_path
 
 def _summarize(data_path: Path, chat_url: Optional[str], token: Optional[str],
                inference_profile_arn: Optional[str]) -> str:
@@ -545,42 +575,116 @@ def _summarize(data_path: Path, chat_url: Optional[str], token: Optional[str],
     except Exception as e:
         return f"(summary failed: {e})"
 
-def _validate_with_coverity(original_request: str, summary_text: str,
-                            chat_url: Optional[str], token: Optional[str],
-                            inference_profile_arn: Optional[str]):
-    system = "Return STRICT JSON only. No prose."
-    user = (
-        "Original request:\n---\n" + original_request + "\n---\n\n"
-        "Did the summary below fully satisfy the request? If not, list concrete next actions "
-        "(bash commands or URLs) we should run/fetch next.\n\n"
-        "Summary:\n---\n" + summary_text + "\n---\n\n"
-        'Respond JSON with keys: "complete": true|false, "next_actions": [ {"cmd": "..."}, {"url": "..."} ]'
+def _validate_with_coverity(
+    original_request: str,
+    summary_text: str,
+    data_path: Path,
+    chat_url: Optional[str],
+    token: Optional[str],
+    inference_profile_arn: Optional[str],
+) -> Dict:
+    """
+    Ask Coverity-Assist if we're done, and if not, what to try next.
+
+    This version:
+      * Includes a distilled view of only the failing commands/URLs
+      * Asks the model to propose corrected follow-up actions
+      * Returns a JSON-like dict with 'complete', 'next_actions', and 'error_snippet'
+    """
+    error_snippet = _extract_error_chunks(data_path)
+
+    system = (
+        "You are validating an automated multi-step technical workflow. "
+        "You see the user's original request, a summary of what has been done so far, "
+        "and (optionally) a list of commands/URLs that failed. "
+        "Return STRICT JSON only. No prose. "
+        "If some commands or URLs failed, propose concrete corrected follow-up actions."
     )
-    raw = _coverity_chat(user, system_text=system, max_tokens=750,
-                         inference_profile_arn=inference_profile_arn,
-                         url=chat_url, token=token)
+
+    parts = [
+        "Original request:\n---\n",
+        original_request,
+        "\n---\n\nSummary of data gathered so far:\n---\n",
+        summary_text,
+        "\n---\n\n",
+    ]
+
+    if error_snippet:
+        parts.extend(
+            [
+                "The following commands/URLs appear to have errors "
+                "(non-zero exit codes, exceptions, or HTTP failures).\n",
+                "Use them to suggest corrected follow-up actions. "
+                "Avoid blindly repeating obviously broken commands.\n\n---\n",
+                error_snippet,
+                "\n---\n\n",
+            ]
+        )
+
+    parts.append(
+        'Respond with JSON of the form:\n'
+        '{"complete": true|false, '
+        ' "next_actions": [ {"cmd": "..."} | {"url": "..."} | {"cmd": "...", "notes": "..."} ] }\n'
+        "Only include keys 'complete' and 'next_actions' at the top level."
+    )
+
+    user = "".join(parts)
+
+    raw = _coverity_chat(
+        user,
+        system_text=system,
+        max_tokens=750,
+        inference_profile_arn=inference_profile_arn,
+        url=chat_url,
+        token=token,
+    )
+
     try:
         data = json.loads(raw)
-        if not isinstance(data, dict): raise ValueError("not an object")
-        if "complete" not in data: data["complete"] = False
-        if "next_actions" not in data or not isinstance(data["next_actions"], list):
-            data["next_actions"] = []
-        return data
+        if not isinstance(data, dict):
+            raise ValueError("not an object")
+
+        complete = bool(data.get("complete", False))
+        next_actions = data.get("next_actions") or []
+        if not isinstance(next_actions, list):
+            next_actions = []
+
+        # Attach the error snippet so the UI can show it if you want
+        return {
+            "complete": complete,
+            "next_actions": next_actions,
+            "error_snippet": error_snippet,
+        }
     except Exception:
-        return {"complete": False, "next_actions": []}
+        # Fallback: treat as "not complete, nothing new to try"
+        return {
+            "complete": False,
+            "next_actions": [],
+            "error_snippet": error_snippet,
+        }
 
 def _append_actions_to_resources(actions, resources_path: Path) -> None:
+    """
+    Append new Shell/Web actions to the workflow.resources CSV
+    so the next iteration will run them.
+
+    Expected shapes inside 'actions':
+      - {"cmd": "..."} for shell
+      - {"url": "..."} for HTTP
+    """
     rows = []
     for a in actions or []:
-        if not isinstance(a, dict): continue
-        if a.get("cmd"):
+        if not isinstance(a, dict):
+            continue
+        if a.get("cmd") and isinstance(a.get("cmd"), str):
             rows.append(f"Shell,-,{a['cmd']},-")
-        elif a.get("url"):
+        elif a.get("url") and isinstance(a.get("url"), str):
             rows.append(f"Web,-,-,{a['url']}")
     if rows:
         with resources_path.open("a", encoding="utf-8") as f:
             for r in rows:
                 f.write(r + "\n")
+
 
 def _bundle_files() -> str:
     zf = INSTRUCTIONS_DIR / "workflow_bundle.zip"
@@ -615,7 +719,14 @@ def trigger_workflow():
         res_path  = _generate_resources(task_description, chat_url, token, inference_profile_arn)
         data_path = _run_commands(res_path)
         final_summary = _summarize(data_path, chat_url, token, inference_profile_arn)
-        verdict = _validate_with_coverity(original_request, final_summary, chat_url, token, inference_profile_arn)
+        verdict = _validate_with_coverity(
+            original_request,
+            final_summary,
+            data_path,  # <-- NEW
+            chat_url,
+            token,
+            inference_profile_arn,
+        )
 
         iterations.append({
             "iteration": i,
@@ -637,6 +748,30 @@ def trigger_workflow():
 
     bundle_path = _bundle_files()
     return jsonify({"status": "ok", "bundle_path": bundle_path, "iterations": iterations, "final_summary": final_summary}), 200
+def _run_commands(resources_path: Path) -> Path:
+    data_path = INSTRUCTIONS_DIR / "workflow.data"
+    lines = [ln.strip() for ln in resources_path.read_text(encoding="utf-8").splitlines() if ln.strip()]
+    with data_path.open("w", encoding="utf-8") as out:
+        for ln in lines:
+            cols = [c.strip() for c in ln.split(",")]
+            while len(cols) < 4: cols.append("-")
+            cmd, url = cols[2], cols[3]
+
+            if url and url not in ("-", "N/A", "NA", "None", "URL (if any)"):
+                try:
+                    r = session.get(url, timeout=30, verify=False, headers=BASE_HEADERS, proxies=_get_proxies())
+                    body = r.text[:20000]
+                    out.write(f"URL: {url}\n{body}\n\n")
+                except Exception as e:
+                    out.write(f"URL: {url}\nERROR: {e}\n\n")
+
+            if cmd and cmd not in ("-", "N/A", "NA", "None", "Required bash command (if any)"):
+                try:
+                    proc = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=180)
+                    out.write(f"CMD: {cmd}\nRET={proc.returncode}\nSTDOUT:\n{proc.stdout}\nSTDERR:\n{proc.stderr}\n\n")
+                except Exception as e:
+                    out.write(f"CMD: {cmd}\nERROR: {e}\n\n")
+    return data_path
 
 # ---------------- Main ----------------
 
